@@ -1,24 +1,24 @@
-body{
-	margin:0;
-	padding: 0;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    list-style: none;
+    text-decoration: none;
 }
 .main-header{
-
-	/*Fundo podendo ser uma imagem ou não*/
-
+	position: fixed;
+	top: 0;
 	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
-	height: 80vh;
+	padding: 5px 0px;
 	width: 100%;
-	background: black;
+	background: var(--color-black);
 }
 
 .main-header h1{
-	margin-top: 0;
 	color: white;
-	line-height: 450px;
-	font-size: 120px;
+	font-size: 40px;
 	text-align: center;
 }
 
@@ -31,8 +31,10 @@ body{
 }
 
 .align-left{
+	max-width: 50%;
 	display: flex;
-	justify-content: left;
+	align-items: flex-end;
+	justify-content: flex-end;
 	text-align: left;
 }
 
@@ -48,4 +50,35 @@ body{
 	height: 20vh;
 	width: 100%;
 	background: black;
+}
+.s-home .container{
+	padding: 10rem;
+	position: relative;
+}
+.s-home .container .main-home.primary{
+	max-width: 50%;
+	position: absolute;
+	top: 0;
+	right: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+}
+.s-home .container .main-home.second{
+	max-width: 50%;
+	position: absolute;
+	top: 30rem;
+	left: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+}
+.s-home .container .main-home.last{
+	max-width: 50%;
+	position: absolute;
+	top: 60rem;
+	right: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
 }
