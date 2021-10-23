@@ -1,0 +1,51 @@
+body{
+	margin:0;
+	padding: 0;
+}
+.main-header{
+
+	/*Fundo podendo ser uma imagem ou não*/
+
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	height: 80vh;
+	width: 100%;
+	background: black;
+}
+
+.main-header h1{
+	margin-top: 0;
+	color: white;
+	line-height: 450px;
+	font-size: 120px;
+	text-align: center;
+}
+
+/*style conteudo restante*/
+
+.container , .content{
+	height: 100%;
+	width: 100%;
+	margin-top: 150px;
+}
+
+.align-left{
+	display: flex;
+	justify-content: left;
+	text-align: left;
+}
+
+.align-right{
+	display: flex;
+	justify-content: right;
+	text-align: right;
+}
+
+
+
+.m-footer{
+	height: 20vh;
+	width: 100%;
+	background: black;
+}
