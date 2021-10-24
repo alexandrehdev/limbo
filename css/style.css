@@ -1,18 +1,10 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    border: none;
-    outline: none;
-    list-style: none;
-    text-decoration: none;
-}
 .main-header{
 	position: fixed;
 	top: 0;
 	box-sizing: border-box;
 	padding: 5px 0px;
 	width: 100%;
+	z-index: 2021;
 	background: var(--color-black);
 }
 
@@ -24,7 +16,7 @@
 
 /*style conteudo restante*/
 
-.container , .content{
+.content{
 	height: 100%;
 	width: 100%;
 	margin-top: 150px;
@@ -51,8 +43,11 @@
 	width: 100%;
 	background: black;
 }
+
+.s-home{
+	padding: 2rem;
+} 
 .s-home .container{
-	padding: 10rem;
 	position: relative;
 }
 .s-home .container .main-home.primary{
@@ -71,7 +66,7 @@
 	left: 0;
 	display: flex;
 	flex-direction: column;
-	align-items: flex-end;
+	align-items: flex-start;
 }
 .s-home .container .main-home.last{
 	max-width: 50%;
@@ -81,4 +76,8 @@
 	display: flex;
 	flex-direction: column;
 	align-items: flex-end;
+}
+
+.s-home .container .main-home .info-text p{
+	text-align: justify;
 }

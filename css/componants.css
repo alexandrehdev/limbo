@@ -1,14 +1,13 @@
 
 .s-cards{
+    padding: 10rem 0rem;
     background-color: #cacbcc;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .s-cards .container{
-    width: 100%;
     display: flex;
-    padding: 2rem;
     flex-direction: column;
 }
 
@@ -23,10 +22,13 @@
     flex-direction: column;
     width: 100%;
     max-width: 50%;
-    margin-right: 20px;
+    margin-right: 2rem;
 }
 
 .s-cards .container .main-cards .card-left span{
+    font-size: 2rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
     background-color: white;
     padding: 10px;
 }
@@ -34,7 +36,7 @@
 .s-cards .container .main-cards  .card-right{
     display: flex;
     align-items: flex-start;
-    justify-content: flex-end;
+    justify-content: flex-start;
     flex-wrap: wrap;
     gap: 20px;
 }
@@ -55,5 +57,81 @@
 
 .s-cards .container .main-cards  .card-right .card .card-text{
     background-color: white;
-    padding: 10px 10px 38px 10px;
+    padding: 10px 10px 30px 10px;
+}
+.s-cards .container .main-cards  .card-right .card .card-text span{
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 1.4rem;
+}
+
+/* CARDS DESTAQUES DO DIA EM MOVIMENTO */
+
+.s-cards-destaques .container .swiper{
+    padding: 5rem 0rem;
+    width: 100%;
+    max-width: 100rem; /* aumenta o tamanho dos cards do s-cards-destaques*/
+}
+
+.swiper-pagination .swiper-pagination-progressbar-fill{
+    background-color: blueviolet;
+}
+
+.s-cards-destaques .container .swiper-slide{
+    width: 100%;
+    background-color: #fcf9f9;
+    position: relative;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.s-cards-destaques .container .swiper-slide img{
+    width: 100%;
+    border-radius: 2rem;
+    transition: all .3s;
+}
+
+.s-cards-destaques .container .swiper-slide img:hover{
+    filter: opacity(60%);
+}
+.s-cards-destaques .container .swiper-slide .card-left, .s-cards-destaques .container .swiper-slide .card-right{
+    position: absolute;
+    bottom: 10px;
+}
+
+.s-cards-destaques .container .swiper-slide .card-left{
+    display: flex;
+    flex-direction: column;
+    left: 20px;
+}
+
+.s-cards-destaques .container .swiper-slide .card-left span, .s-cards-destaques .container .swiper-slide .card-left h6{
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    color: wheat;
+}
+.s-cards-destaques .container .swiper-slide .card-left h6{
+    font-size: 4rem;
+}
+
+.s-cards-destaques .container .swiper-slide .card-right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 20px;
+}
+
+.s-cards-destaques .container .swiper-slide .card-right span{
+    font-size: 3rem;
+}
+
+.swiper-horizontal .swiper-pagination-progressbar, .swiper-pagination-progressbar.swiper-pagination-horizontal {
+    width: 100%;
+    height: 10px;
+    left: 0;
+    top: auto !important;
+    bottom: 10px !important;
 }
