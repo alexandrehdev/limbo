@@ -29,7 +29,7 @@
     font-family: 'Inter', sans-serif;
     font-weight: 600;
     background-color: white;
-    padding: 10px;
+    padding: 1rem;
 }
 
 .s-cards .container .main-cards  .card-right{
@@ -37,7 +37,7 @@
     align-items: flex-start;
     justify-content: flex-start;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 2rem;
 }
 .s-cards .container .main-cards  .card-right .card{
     max-width: 50%;
@@ -56,7 +56,7 @@
 
 .s-cards .container .main-cards  .card-right .card .card-text{
     background-color: white;
-    padding: 10px 10px 30px 10px;
+    padding: 1rem 1rem 3rem 1rem;
 }
 .s-cards .container .main-cards  .card-right .card .card-text span{
     font-family: 'Inter', sans-serif;
@@ -98,13 +98,13 @@
 }
 .s-cards-destaques .container .swiper-slide .card-left, .s-cards-destaques .container .swiper-slide .card-right{
     position: absolute;
-    bottom: 10px;
+    bottom: 1rem;
 }
 
 .s-cards-destaques .container .swiper-slide .card-left{
     display: flex;
     flex-direction: column;
-    left: 20px;
+    left: 2rem;
 }
 
 .s-cards-destaques .container .swiper-slide .card-left span, .s-cards-destaques .container .swiper-slide .card-left h6{
@@ -120,7 +120,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    right: 20px;
+    right: 2rem;
 }
 
 .s-cards-destaques .container .swiper-slide .card-right span{
@@ -129,8 +129,8 @@
 
 .swiper-horizontal .swiper-pagination-progressbar, .swiper-pagination-progressbar.swiper-pagination-horizontal {
     width: 100%;
-    height: 10px;
+    height: 1rem;
     left: 0;
     top: auto !important;
-    bottom: 10px !important;
+    bottom: 1rem !important;
 }
