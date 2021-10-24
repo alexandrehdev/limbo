@@ -6,10 +6,7 @@
     outline: none;
     list-style: none;
     text-decoration: none;
-}
-
-body{
-
+    font-family: 'Poppins', sans-serif;
 }
 
 .main-header{
@@ -20,15 +17,36 @@ body{
 	width: 100%;
 	z-index: 2021;
 	background: var(--color-black);
+	opacity: 0.8;
 }
 
 .main-header h1{
 	color: white;
-	font-size: 70px;
-	text-align: center;
-	font-family: 'Poppins', sans-serif;
+	font-size: 55px;
+	text-align: left;
 }
 
+.navegation{
+    display: flex;
+    justify-content: center;
+    color: white;
+    margin-top: -40px;
+}
+
+.navegation a{
+    margin-left: 60px;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 18px;
+
+}
+
+.navegation a:hover{
+	border: hidden;
+	border-radius: 10px;
+	background-color: pink;
+}
 /*style conteudo restante*/
 
 .content{
