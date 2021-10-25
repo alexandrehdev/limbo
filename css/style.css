@@ -16,20 +16,42 @@
 }
 
 .navegation{
-    display: flex;
-    justify-content: right;
-    color: white;
-    margin-top: -50px;
+	display: flex;
+	justify-content: right;
+	color: white;
+	margin-top: -50px;
 }
 
 .navegation a{
-    margin-left: 60px;
-    color: white;
-    text-decoration: none;
-    padding: 15px;
-    font-size: 16px;
-
+	margin-left: 60px;
+	color: white;
+	text-decoration: none;
+	padding: 15px;
+	font-size: 16px;
 }
+
+/*elemento principal left side tela API*/
+
+.freegames-table{
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+	grid-gap: 17rem;
+	justify-content: left;
+	margin: 10rem;
+}
+
+.games-recommend{
+	display: grid;
+	justify-content: right;
+	position: relative;
+	top: -60rem;
+}
+
+.games-recommend div{
+	padding: 2rem;
+}
+
+
 
 .navegation a:hover{
 	border-bottom: solid 5px pink;
@@ -128,20 +150,20 @@ div#last {
 }
 
 ::-webkit-scrollbar {
-  width: 5px;
+	width: 5px;
 }
 
 ::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px grey; 
-  border-radius: 10px;
+	box-shadow: inset 0 0 5px grey; 
+	border-radius: 10px;
 }
- 
+
 
 ::-webkit-scrollbar-thumb {
-  background: grey; 
-  border-radius: 10px;
+	background: grey; 
+	border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #b30000; 
+	background: #b30000; 
 }
