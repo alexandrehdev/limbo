@@ -7,7 +7,6 @@
 	width: 100%;
 	z-index: 2021;
 	background: var(--color-black);
-	opacity: 0.8;
 }
 
 .main-header h1{
@@ -83,6 +82,7 @@ main.main {
 }
 
 .s-home{
+	margin-top: 100px;
 	padding: 2rem;
 } 
 .s-home .container{
