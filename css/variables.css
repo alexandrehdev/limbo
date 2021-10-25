@@ -4,4 +4,20 @@
     --color-cinza-escuro: #574a5c;
     --color-cinza-claro: #9895aa;
     --color-branco: #e3e3f1;
+
+
+    /* Extra Colors of application */
+
+    --black-most-light: #0c0c0c;
+    --black: #000000;
+    --gray-2: #808080;
+    --gray: #ccc;
+    --gray-1: ##cacbcc;
+    --white: #ffffff;
+    --blue: #0000ff;
+    --blue-violet: #8a2be2;
+    --wheat: #f5deb3;
+    --antiquewhite: #faebd7;
+    --pink: #ffc0cb;
+    --red: #b30000;
 }

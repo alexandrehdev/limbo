@@ -1,14 +1,3 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    border: none;
-    outline: none;
-    list-style: none;
-    text-decoration: none;
-    font-family: 'Poppins', sans-serif;
-}
-
 .main-header{
 	position: fixed;
 	top: 0;
@@ -18,25 +7,20 @@
 	width: 100%;
 	z-index: 2021;
 	background: var(--color-black);
-	opacity: 1;
+	opacity: 0.8;
 }
 
 .main-header h1{
 	color: white;
 	font-size: 55px;
 	text-align: left;
-	cursor: pointer;
-}
-
-.title-name{
-	margin-left: 12px;
 }
 
 .navegation{
     display: flex;
     justify-content: right;
     color: white;
-    margin-top: -55px;
+    margin-top: -50px;
 }
 
 .navegation a{
@@ -94,54 +78,58 @@
 	text-align: right;
 }
 
-.m-footer{
-	height: 20vh;
-	width: 100%;
-	background: black;
+main.main {
+	height: fit-content;
 }
 
 .s-home{
-	margin-top: 10rem;
 	padding: 2rem;
 } 
 .s-home .container{
 	position: relative;
 }
-.s-home .container .main-home.primary{
-	max-width: 50%;
-	position: absolute;
-	top: 0;
-	right: 0;
+
+div.container {
 	display: flex;
 	flex-direction: column;
+	justify-content: center;
 	align-items: flex-end;
 }
-.s-home .container .main-home.second{
+
+div#primary,
+div#second,
+div#last
+{
 	max-width: 50%;
-	position: absolute;
-	top: 30rem;
-	left: 0;
-	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
-}
-.s-home .container .main-home.last{
-	max-width: 50%;
-	position: absolute;
-	top: 60rem;
-	right: 0;
-	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
+	
+	margin: 2rem 0;
+	
+	transition: transform 200ms;
 }
 
+div#primary:hover,
+div#second:hover,
+div#last:hover
+{
+	transform: scale(1.2);
+}
 
 
+div#primary {
+	align-self: flex-start;
+}
+
+div#second {
+	align-self: flex-end;
+}
+
+div#last {
+	align-self: flex-start;
+}
 
 ::-webkit-scrollbar {
   width: 5px;
 }
-
 
 ::-webkit-scrollbar-track {
   box-shadow: inset 0 0 5px grey; 
