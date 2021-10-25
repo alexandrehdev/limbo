@@ -1,14 +1,3 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    border: none;
-    outline: none;
-    list-style: none;
-    text-decoration: none;
-    font-family: 'Poppins', sans-serif;
-}
-
 .main-header{
 	position: fixed;
 	top: 0;
@@ -89,12 +78,8 @@
 	text-align: right;
 }
 
-
-
-.m-footer{
-	height: 20vh;
-	width: 100%;
-	background: black;
+main.main {
+	height: fit-content;
 }
 
 .s-home{
@@ -103,39 +88,48 @@
 .s-home .container{
 	position: relative;
 }
-.s-home .container .main-home.primary{
-	max-width: 50%;
-	position: absolute;
-	top: 0;
-	right: 0;
+
+div.container {
 	display: flex;
 	flex-direction: column;
-	align-items: flex-end;
-}
-.s-home .container .main-home.second{
-	max-width: 50%;
-	position: absolute;
-	top: 30rem;
-	left: 0;
-	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
-}
-.s-home .container .main-home.last{
-	max-width: 50%;
-	position: absolute;
-	top: 60rem;
-	right: 0;
-	display: flex;
-	flex-direction: column;
+	justify-content: center;
 	align-items: flex-end;
 }
 
+div#primary,
+div#second,
+div#last
+{
+	max-width: 50%;
+	
+	margin: 2rem 0;
+	
+	transition: transform 200ms;
+}
+
+div#primary:hover,
+div#second:hover,
+div#last:hover
+{
+	transform: scale(1.2);
+}
+
+
+div#primary {
+	align-self: flex-start;
+}
+
+div#second {
+	align-self: flex-end;
+}
+
+div#last {
+	align-self: flex-start;
+}
 
 ::-webkit-scrollbar {
   width: 5px;
 }
-
 
 ::-webkit-scrollbar-track {
   box-shadow: inset 0 0 5px grey; 
