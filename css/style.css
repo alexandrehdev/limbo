@@ -18,20 +18,25 @@
 	width: 100%;
 	z-index: 2021;
 	background: var(--color-black);
-	opacity: 0.8;
+	opacity: 1;
 }
 
 .main-header h1{
 	color: white;
 	font-size: 55px;
 	text-align: left;
+	cursor: pointer;
+}
+
+.title-name{
+	margin-left: 12px;
 }
 
 .navegation{
     display: flex;
     justify-content: right;
     color: white;
-    margin-top: -50px;
+    margin-top: -55px;
 }
 
 .navegation a{
@@ -89,8 +94,6 @@
 	text-align: right;
 }
 
-
-
 .m-footer{
 	height: 20vh;
 	width: 100%;
@@ -98,6 +101,7 @@
 }
 
 .s-home{
+	margin-top: 10rem;
 	padding: 2rem;
 } 
 .s-home .container{
@@ -128,8 +132,10 @@
 	right: 0;
 	display: flex;
 	flex-direction: column;
-	align-items: flex-end;
+	align-items: flex-start;
 }
+
+
 
 
 ::-webkit-scrollbar {
