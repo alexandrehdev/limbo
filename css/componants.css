@@ -1,6 +1,6 @@
 .s-cards{
     padding: 10rem 0rem;
-    background-color: #cacbcc;
+    background-color: #666262;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -22,6 +22,12 @@
     width: 100%;
     max-width: 50%;
     margin-right: 2rem;
+    box-shadow: -10px -10px 10px #333;
+}
+
+.s-cards .container .main-cards .card-left img{
+    width: 100%;
+    height: 100%;
 }
 
 .s-cards .container .main-cards .card-left span{
@@ -29,7 +35,7 @@
     font-family: 'Inter', sans-serif;
     font-weight: 600;
     background-color: white;
-    padding: 1rem;
+    padding: 2rem;
 }
 
 .s-cards .container .main-cards  .card-right{
@@ -41,22 +47,28 @@
 }
 .s-cards .container .main-cards  .card-right .card{
     max-width: 50%;
+    height: 20rem;
     display: flex;
     flex-direction: column;
     transition: all .3s;
+    box-shadow: -5px -5px 5px #333;
 }
 
 .s-cards .container .main-cards  .card-right .card:hover{
     transform: scale(1.1);
+    box-shadow: -5px -5px 15px #333;
 }
 
 .s-cards .container .main-cards  .card-right .card img{
-    max-width: 100%;
+    width: 25rem;
+    height: 14rem;
 }
 
 .s-cards .container .main-cards  .card-right .card .card-text{
     background-color: white;
     padding: 1rem 1rem 3rem 1rem;
+    width: 100%;
+    max-width: 25rem;
 }
 .s-cards .container .main-cards  .card-right .card .card-text span{
     font-family: 'Inter', sans-serif;
@@ -168,6 +180,8 @@
     border-top-left-radius: 1rem;
     border-top-right-radius: 1rem;
     width: 100%;
+    height: 100%;
+    max-height: 40rem;
 }
 
 .s-cards-noticias .container .main-cards-noticias .card-noticias .text-card-noticias{
