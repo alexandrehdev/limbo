@@ -66,10 +66,14 @@
 
 /* CARDS DESTAQUES DO DIA EM MOVIMENTO */
 
+.s-cards-destaques{
+    margin-top: 20px;
+}
+
 .s-cards-destaques .container .swiper{
     padding: 5rem 0rem;
     width: 100%;
-    max-width: 100rem; /* aumenta o tamanho dos cards do s-cards-destaques*/
+    max-width: 104rem; /* aumenta o tamanho dos cards do s-cards-destaques*/
 }
 
 .swiper-pagination .swiper-pagination-progressbar-fill{
