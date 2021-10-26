@@ -4,7 +4,9 @@
 <head>
 	<meta charset="utf-8">
 	<title>Limbo</title>
+	<link rel="icon" type="image/png" href="./favicon.png">
 	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
 	<link rel="stylesheet" type="text/css" href="css/buttons.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
@@ -26,7 +28,7 @@
 	<main class="main">
 		<section class="s-home">
 			<div class="container">
-				<div id="primary" class="main-home  to-left">
+				<div id="primary" class="main-home  to-left"  data-aos="fade-down">
 					<div class="info-content">
 						<p class="news-text">
 							Aqui você terá acesso a noticias sobre tudo que rola no mundo dos games. Navegue por nossa
@@ -34,7 +36,7 @@
 						</p>
 					</div>
 				</div>
-				<div id="second" class="main-home to-right">
+				<div id="second" class="main-home to-right" data-aos="zoom-in-left">
 					<div class="info-content">
 						<p class="game-text">
 							Lançamentos? DLC? Eventos? Aqui temos! Aqui você irá encontrar atualizações e novos eventos
@@ -42,7 +44,7 @@
 						</p>
 					</div>
 				</div>
-				<div id="primary" class="main-home to-left">
+				<div id="primary" class="main-home to-left" >
 					<div class="info-content">
 						<p class="info-text">
 							Opa, aqui fica localizado as recomendações.
@@ -139,6 +141,13 @@
 		</div>
 	</footer>
 	<script type="text/javascript" src="js/script.js"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>
+		AOS.init({
+            duration: 2000,
+            once: true, //para a animação acontecer somente uma vez
+        });
+	  </script>
 </body>
 
 </html>

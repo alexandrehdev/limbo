@@ -50,7 +50,7 @@
     height: 20rem;
     display: flex;
     flex-direction: column;
-    transition: all .3s;
+    /* transition: all .3s; */
     box-shadow: -5px -5px 5px #333;
 }
 
@@ -85,7 +85,7 @@
 .s-cards-destaques .container .swiper{
     padding: 5rem 0rem;
     width: 100%;
-    max-width: 104rem; /* aumenta o tamanho dos cards do s-cards-destaques*/
+    max-width: 200rem; /* aumenta o tamanho dos cards do s-cards-destaques*/
 }
 
 .swiper-pagination .swiper-pagination-progressbar-fill{
@@ -94,7 +94,6 @@
 
 .s-cards-destaques .container .swiper-slide{
     width: 100%;
-    background-color: #fcf9f9;
     position: relative;
     background-size: cover;
     display: flex;
@@ -106,7 +105,7 @@
 .s-cards-destaques .container .swiper-slide img{
     width: 100%;
     border-radius: 2rem;
-    transition: all .3s;
+    transition: all .3s; 
 }
 
 .s-cards-destaques .container .swiper-slide img:hover{
@@ -167,13 +166,19 @@
 .s-cards-noticias .container .main-cards-noticias .card-noticias{
     width: 100%;
     border-radius: 1rem;
-    background-color: antiquewhite;
+    background-color: var(--color-cinza-escuro);
     max-width: 28rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding-bottom: 2rem;
+    cursor: pointer;
+}
+
+.s-cards-noticias .container .main-cards-noticias .card-noticias:hover{
+    transform: scale(1.1);
+    box-shadow: 10px 10px 10px rgb(0, 0, 0);
 }
 
 .s-cards-noticias .container .main-cards-noticias .card-noticias .img{
