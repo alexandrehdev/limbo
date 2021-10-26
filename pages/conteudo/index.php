@@ -18,9 +18,9 @@
 	<header class="main-header">
 		<h1 class="title-name">Limbo</h1>
 		<div class="navegation">
-			<a href="../../index.html">Home</a>	
-			<a href="index.html">Navegar</a>		
-			<a href="../apiFreeGames/index.html">Jogos Gratis</a>
+			<a href="../../index.php">Home</a>	
+			<a href="index.php">Navegar</a>		
+			<a href="../apiFreeGames/index.php">Jogos Gratis</a>
 			<a href="#">Informações</a>
 		</div>
 	</header>
