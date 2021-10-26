@@ -22,7 +22,7 @@
 			<a href="index.php">Home</a>
 			<a href="pages/conteudo/index.php">Navegar</a>
 			<a href="pages/apiFreeGames/index.php">Jogos Gratis</a>
-			<a href="#">Informações</a>
+			<a href="#">Info</a>
 		</div>
 	</header>
 

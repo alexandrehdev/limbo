@@ -21,7 +21,7 @@
 			<a href="../../index.php">Home</a>	
 			<a href="index.php">Navegar</a>		
 			<a href="../apiFreeGames/index.php">Jogos Gratis</a>
-			<a href="#">Informações</a>
+			<a href="#">Info</a>
 		</div>
 	</header>
 	<!-- SLIDER -->
