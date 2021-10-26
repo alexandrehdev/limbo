@@ -5,9 +5,10 @@
 	<meta charset="utf-8">
 	<title></title>
 </head>
-
+<link rel="icon" type="image/png" href="../../favicon.png">
 <link rel="stylesheet" href="../../css/footer.css"/>
 <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="../../css/style.css">
 <link rel="stylesheet" type="text/css" href="../../css/reset.css">
 <link rel="stylesheet" type="text/css" href="../../css/variables.css">
@@ -28,7 +29,7 @@
 		<div class="container">
 			<div class="swiper cards-destaques">
 				<div class="swiper-wrapper">
-					<div class="swiper-slide">
+					<div class="swiper-slide" data-aos="flip-up" >
 						<img src="../../img/farcry6.jpg" alt="">
 						<div class="card-left">
 							<span>Now avalaible</span>
@@ -77,7 +78,7 @@
 	<section class="s-cards-noticias">
 		<div class="container">
 			<div class="main-cards-noticias">
-				<div class="card-noticias">
+				<div class="card-noticias js-card-noticias" data-aos="fade-down-right">
 					<div class="img">
 						<img src="../../img/fortnite.jpg" alt="">
 					</div>
@@ -86,7 +87,34 @@
 						<span><a href="">Lorem, ipsum dolor sit amet consectetur adipisicing elit...</a></span>
 					</div>
 				</div>
-				<div class="card-noticias">
+				<div class="card-noticias" data-aos="fade-down">
+					<div class="img">
+						<img src="../../img/thewitcher-card.jpg" alt="">
+					</div>
+					<div class="text-card-noticias">
+						<h5>Noticia 3x3</h5>
+						<span><a href="">Lorem, ipsum dolor sit amet consectetur adipisicing elit...</a></span>
+					</div>
+				</div>
+				<div class="card-noticias" data-aos="fade-down-left">
+					<div class="img">
+						<img src="../../img/clash-royale.jpg" alt="">
+					</div>
+					<div class="text-card-noticias">
+						<h5>Noticia 3x3</h5>
+						<span><a href="">Lorem, ipsum dolor sit amet consectetur adipisicing elit...</a></span>
+					</div>
+				</div>
+				<div class="card-noticias" data-aos="fade-up-right">
+					<div class="img">
+						<img src="../../img/acvalhalla.jpg" alt="">
+					</div>
+					<div class="text-card-noticias">
+						<h5>Noticia 3x3</h5>
+						<span><a href="">Lorem, ipsum dolor sit amet consectetur adipisicing elit...</a></span>
+					</div>
+				</div>
+				<div class="card-noticias" data-aos="fade-up">
 					<div class="img">
 						<img src="../../img/fortnite.jpg" alt="">
 					</div>
@@ -95,34 +123,7 @@
 						<span><a href="">Lorem, ipsum dolor sit amet consectetur adipisicing elit...</a></span>
 					</div>
 				</div>
-				<div class="card-noticias">
-					<div class="img">
-						<img src="../../img/fortnite.jpg" alt="">
-					</div>
-					<div class="text-card-noticias">
-						<h5>Noticia 3x3</h5>
-						<span><a href="">Lorem, ipsum dolor sit amet consectetur adipisicing elit...</a></span>
-					</div>
-				</div>
-				<div class="card-noticias">
-					<div class="img">
-						<img src="../../img/fortnite.jpg" alt="">
-					</div>
-					<div class="text-card-noticias">
-						<h5>Noticia 3x3</h5>
-						<span><a href="">Lorem, ipsum dolor sit amet consectetur adipisicing elit...</a></span>
-					</div>
-				</div>
-				<div class="card-noticias">
-					<div class="img">
-						<img src="../../img/fortnite.jpg" alt="">
-					</div>
-					<div class="text-card-noticias">
-						<h5>Noticia 3x3</h5>
-						<span><a href="">Lorem, ipsum dolor sit amet consectetur adipisicing elit...</a></span>
-					</div>
-				</div>
-				<div class="card-noticias">
+				<div class="card-noticias" data-aos="fade-up-left">
 					<div class="img">
 						<img src="../../img/fortnite.jpg" alt="">
 					</div>
@@ -143,29 +144,29 @@
 			</div>
 			<div class="main-cards">
 				<div class="card-left">
-					<img src="../../img/fallout-img.jpg" alt="">
+					<img src="../../img/thewitcher.jpg" alt="">
 					<span>Fallout: New Vegas Ultimate Edition</span>
 				</div>
 				<div class="card-right">
-					<div class="card">
-						<img src="../../img/fallout3-img.jpg" alt="">
+					<div class="card" data-aos="flip-up">
+						<img src="../../img/thewitcher-mapa.jpg" alt="">
 						<div class="card-text">
-							<span>Card 01</span>
+							<span>Expansão confirmada</span>
 						</div>
 					</div>
-					<div class="card">
-						<img src="../../img/fallout3-img.jpg" alt="">
+					<div class="card" data-aos="flip-up">
+						<img src="../../img//thewitcher-batle.jpg" alt="">
 						<div class="card-text">
-							<span>Card 01</span>
+							<span>Novos monstros adicinados lore</span>
 						</div>
 					</div>
-					<div class="card">
-						<img src="../../img/fallout3-img.jpg" alt="">
+					<div class="card" data-aos="flip-down">
+						<img src="../../img/thewitcher-person.jpg" alt="">
 						<div class="card-text">
-							<span>Card 01</span>
+							<span>Nova personagem</span>
 						</div>
 					</div>
-					<div class="card">
+					<div class="card" data-aos="flip-down">
 						<img src="../../img/fallout3-img.jpg" alt="">
 						<div class="card-text">
 							<span>Card 01</span>
@@ -255,6 +256,7 @@
 		</div>
 	</footer>
 	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 	<script>
 		var swiper = new Swiper(".cards-destaques", {
 			slidesPerView: 1,
@@ -273,6 +275,10 @@
 				prevEl: ".s-cards-destaques .swiper-button-prev",
 			},
 		});
+		AOS.init({
+            duration: 1000,
+            once: true, //para a animação acontecer somente uma vez
+        });
 	</script>
 	<script type="text/javascript" src="js/script.js"></script>
 </body>
