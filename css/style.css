@@ -1,6 +1,7 @@
 body{
 	scroll-behavior: smooth;
 }
+
 .main-header{
 	position: fixed;
 	top: 0;
@@ -9,20 +10,21 @@ body{
 	height: 70px;
 	width: 100%;
 	z-index: 2021;
-	background: var(--color-black);
 }
 
 .main-header h1{
 	color: white;
-	font-size: 55px;
+	font-size: 50px;
 	text-align: left;
+	margin: 10px;
+	cursor: pointer;
 }
 
 .navegation{
 	display: flex;
 	justify-content: right;
 	color: white;
-	margin-top: -50px;
+	margin-top: -70px;
 }
 
 .navegation a{
@@ -91,8 +93,9 @@ body{
 }
 
 .info-text{
-	font-size: 30px;
+	font-size: 18px;
 	width: 40%;
+	color: white;
 }
 
 .to-left{

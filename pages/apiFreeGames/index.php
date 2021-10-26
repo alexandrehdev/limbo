@@ -17,7 +17,7 @@
 			<a href="../../index.php">Home</a>	
 			<a href="../conteudo/index.php">Navegar</a>		
 			<a href="index.php">Jogos Gratis</a>
-			<a href="#">Informações</a>
+			<a href="#">Info</a>
 		</div>
 	</header>
 	<main>
