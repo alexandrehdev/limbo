@@ -1,3 +1,7 @@
+<?php 
+	require "Class/LoadApi.php";
+	$apidata = new LoadApi();
+ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -23,116 +27,133 @@
 	<main>
 		<div>
 			<div class="freegames-table">	
-				<div>Card 1</div>
-				<div>Card 2</div>
-				<div>Card 3</div>
-				<div>Card 4</div>
-				<div>Card 5</div>
-				<div>Card 6</div>
-				<div>Card 7</div>
-				<div>Card 8</div>
-				<div>Card 9</div>
-				<div>Card 10</div>
-				<div>Card 11</div>
-				<div>Card 12</div>
-				<div>Card 13</div>
-				<div>Card 14</div>
-				<div>Card 15</div>
-				<div>Card 16</div>
+				<div class="image">
+					<img src=" <?php $apidata->getApiImage() ?> ">
+				</div>
+				<div class="title">
+					<p> <?php $apidata->getApiTitle(); ?> </p>
+				</div>
+				<div class="description">
+						<?php $apidata->getApishortDescription(); ?>
+				</div>
 			</div>
 
-			<div class="games-recommend">
-				<div>
-					<h2>Recomendados</h2>
+			<div class="freegames-table">	
+				<div class="image">
+					<img src=" <?php $apidata->getApiImage() ?> ">
 				</div>
-				<div>Card 1</div>
-				<div>Card 1</div>
-				<div>Card 1</div>
-				<div>Card 1</div>
-				<div>Card 1</div>
-				<div>Card 1</div>
-				<div>Card 1</div>
+				<div class="title">
+					<p> <?php $apidata->getApiTitle(); ?> </p>
+				</div>
+				<div class="description">
+						<?php $apidata->getApishortDescription(); ?>
+				</div>
 			</div>
-		</div>
-	</main>
-<footer class="m-footer" role="footer">
-	<div class="container">
-		<div id="area-logo">
-			<strong id="logo">
-				Limbo
-			</strong>
-			<span id="data">2021</span>
-		</div>
-		<ul id="list-devs">
-			<section class="section" role="section">
-				<article class="article" role="article">
-					<img class="image-developer" src="../../img/dev-example.png" alt="developer image" />
-					<div class="right">
-						<strong class="name-dev">Name Developer</strong>
-						<ul class="list-media-social">
-							<li class="item-media-social">
-								<img class="icon-dev" src="../../img/icon-facebook.svg" alt="icon facebook" />
-							</li>
-							<li class="item-media-social">
-								<img class="icon-dev" src="../../img/icon-github.svg" alt="icon github" />
-							</li>
-							<li class="item-media-social">
-								<img class="icon-dev" src="../../img/icon-instagram.svg" alt="icon instagram" />
-							</li>
-							<li class="item-media-social">
-								<img class="icon-dev" src="../../img/icon-linkedin.svg" alt="icon linkedin" />
-							</li>
-						</ul>
+			<div class="freegames-table">	
+				<div class="image">
+					<img src=" <?php $apidata->getApiImage() ?> ">
+				</div>
+				<div class="title">
+					<p> <?php $apidata->getApiTitle(); ?> </p>
+				</div>
+				<div class="description">
+						<?php $apidata->getApishortDescription(); ?>
+				</div>
+			</div>
+				
+				<div>
+					<div class="games-recommend">
+						<div>
+							<h2>Recomendados</h2>
+						</div>
+						<div>Card 1</div>
+						<div>Card 1</div>
+						<div>Card 1</div>
+						<div>Card 1</div>
+						<div>Card 1</div>
+						<div>Card 1</div>
+						<div>Card 1</div>
 					</div>
-				</article>
-			</section>
-			<section class="section" role="section">
-				<article class="article" role="article">
-					<img class="image-developer" src="../../img/dev-example.png" alt="developer image" />
-					<div class="right">
-						<strong class="name-dev">Name Developer</strong>
-						<ul class="list-media-social">
-							<li class="item-media-social">
-								<img class="icon-dev" src="../../img/icon-facebook.svg" alt="icon facebook" />
-							</li>
-							<li class="item-media-social">
-								<img class="icon-dev" src="../../img/icon-github.svg" alt="icon github" />
-							</li>
-							<li class="item-media-social">
-								<img class="icon-dev" src="../../img/icon-instagram.svg" alt="icon instagram" />
-							</li>
-							<li class="item-media-social">
-								<img class="icon-dev" src="../../img/icon-linkedin.svg" alt="icon linkedin" />
-							</li>
-						</ul>
+				</div>
+			</main>
+			<footer class="m-footer" role="footer">
+				<div class="container">
+					<div id="area-logo">
+						<strong id="logo">
+							Limbo
+						</strong>
+						<span id="data">2021</span>
 					</div>
-				</article>
-			</section>
-			<section class="section" role="section">
-				<article class="article" role="article">
-					<img class="image-developer" src="../../img/dev-example.png" alt="developer image" />
-					<div class="right">
-						<strong class="name-dev">Name Developer</strong>
-						<ul class="list-media-social">
-							<li class="item-media-social">
-								<img class="icon-dev" src="../../img/icon-facebook.svg" alt="icon facebook" />
-							</li>
-							<li class="item-media-social">
-								<img class="icon-dev" src="../../img/icon-github.svg" alt="icon github" />
-							</li>
-							<li class="item-media-social">
-								<img class="icon-dev" src="../../img/icon-instagram.svg" alt="icon instagram" />
-							</li>
-							<li class="item-media-social">
-								<img class="icon-dev" src="../../img/icon-linkedin.svg" alt="icon linkedin" />
-							</li>
-						</ul>
-					</div>
-				</article>
-			</section>
-		</ul>
-	</div>
-</footer>
-	<script type="text/javascript" src="js/script.js"></script>
-</body>
-</html>
+					<ul id="list-devs">
+						<section class="section" role="section">
+							<article class="article" role="article">
+								<img class="image-developer" src="../../img/dev-example.png" alt="developer image" />
+								<div class="right">
+									<strong class="name-dev">Name Developer</strong>
+									<ul class="list-media-social">
+										<li class="item-media-social">
+											<img class="icon-dev" src="../../img/icon-facebook.svg" alt="icon facebook" />
+										</li>
+										<li class="item-media-social">
+											<img class="icon-dev" src="../../img/icon-github.svg" alt="icon github" />
+										</li>
+										<li class="item-media-social">
+											<img class="icon-dev" src="../../img/icon-instagram.svg" alt="icon instagram" />
+										</li>
+										<li class="item-media-social">
+											<img class="icon-dev" src="../../img/icon-linkedin.svg" alt="icon linkedin" />
+										</li>
+									</ul>
+								</div>
+							</article>
+						</section>
+						<section class="section" role="section">
+							<article class="article" role="article">
+								<img class="image-developer" src="../../img/dev-example.png" alt="developer image" />
+								<div class="right">
+									<strong class="name-dev">Name Developer</strong>
+									<ul class="list-media-social">
+										<li class="item-media-social">
+											<img class="icon-dev" src="../../img/icon-facebook.svg" alt="icon facebook" />
+										</li>
+										<li class="item-media-social">
+											<img class="icon-dev" src="../../img/icon-github.svg" alt="icon github" />
+										</li>
+										<li class="item-media-social">
+											<img class="icon-dev" src="../../img/icon-instagram.svg" alt="icon instagram" />
+										</li>
+										<li class="item-media-social">
+											<img class="icon-dev" src="../../img/icon-linkedin.svg" alt="icon linkedin" />
+										</li>
+									</ul>
+								</div>
+							</article>
+						</section>
+						<section class="section" role="section">
+							<article class="article" role="article">
+								<img class="image-developer" src="../../img/dev-example.png" alt="developer image" />
+								<div class="right">
+									<strong class="name-dev">Name Developer</strong>
+									<ul class="list-media-social">
+										<li class="item-media-social">
+											<img class="icon-dev" src="../../img/icon-facebook.svg" alt="icon facebook" />
+										</li>
+										<li class="item-media-social">
+											<img class="icon-dev" src="../../img/icon-github.svg" alt="icon github" />
+										</li>
+										<li class="item-media-social">
+											<img class="icon-dev" src="../../img/icon-instagram.svg" alt="icon instagram" />
+										</li>
+										<li class="item-media-social">
+											<img class="icon-dev" src="../../img/icon-linkedin.svg" alt="icon linkedin" />
+										</li>
+									</ul>
+								</div>
+							</article>
+						</section>
+					</ul>
+				</div>
+			</footer>
+			<script type="text/javascript" src="js/script.js"></script>
+		</body>
+		</html>
