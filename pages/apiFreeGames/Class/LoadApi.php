@@ -1,5 +1,4 @@
 <?php 
-require_once("scriptsphp/scripts.php");
 
 session_start();
 
