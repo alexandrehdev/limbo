@@ -79,57 +79,69 @@
 		<div class="container">
 			<div class="main-cards-noticias">
 				<div class="card-noticias js-card-noticias" data-aos="fade-down-right">
-					<div class="img">
-						<img src="../../img/fortnite.jpg" alt="">
-					</div>
-					<div class="text-card-noticias">
-						<h5>Noticia 3x3</h5>
-						<span><a href="">Lorem, ipsum dolor sit amet consectetur adipisicing elit...</a></span>
+					<div class="efeito-noticias">
+						<div class="img">
+							<img src="https:\/\/www.freetogame.com\/g\/23\/thumbnail.jpg" alt="">
+						</div>
+						<div class="text-card-noticias">
+							<h5>Noticia 3x3</h5>
+							<span><a href="">Lorem, ipsum dolor sit amet consectetur adipisicing elit...</a></span>
+						</div>
 					</div>
 				</div>
 				<div class="card-noticias" data-aos="fade-down">
-					<div class="img">
-						<img src="../../img/thewitcher-card.jpg" alt="">
-					</div>
-					<div class="text-card-noticias">
-						<h5>Noticia 3x3</h5>
-						<span><a href="">Lorem, ipsum dolor sit amet consectetur adipisicing elit...</a></span>
+					<div class="efeito-noticias">
+						<div class="img">
+							<img src="https:\/\/www.freetogame.com\/g\/24\/thumbnail.jpg" alt="">
+						</div>
+						<div class="text-card-noticias">
+							<h5>Noticia 3x3</h5>
+							<span><a href="">Lorem, ipsum dolor sit amet consectetur adipisicing elit...</a></span>
+						</div>
 					</div>
 				</div>
 				<div class="card-noticias" data-aos="fade-down-left">
-					<div class="img">
-						<img src="../../img/clash-royale.jpg" alt="">
-					</div>
-					<div class="text-card-noticias">
-						<h5>Noticia 3x3</h5>
-						<span><a href="">Lorem, ipsum dolor sit amet consectetur adipisicing elit...</a></span>
+					<div class="efeito-noticias">
+						<div class="img">
+							<img src="https:\/\/www.freetogame.com\/g\/29\/thumbnail.jpg" alt="">
+						</div>
+						<div class="text-card-noticias">
+							<h5>Noticia 3x3</h5>
+							<span><a href="">Lorem, ipsum dolor sit amet consectetur adipisicing elit...</a></span>
+						</div>
 					</div>
 				</div>
 				<div class="card-noticias" data-aos="fade-up-right">
-					<div class="img">
-						<img src="../../img/acvalhalla.jpg" alt="">
-					</div>
-					<div class="text-card-noticias">
-						<h5>Noticia 3x3</h5>
-						<span><a href="">Lorem, ipsum dolor sit amet consectetur adipisicing elit...</a></span>
+					<div class="efeito-noticias">
+						<div class="img">
+							<img src="https:\/\/www.freetogame.com\/g\/32\/thumbnail.jpg" alt="">
+						</div>
+						<div class="text-card-noticias">
+							<h5>Noticia 3x3</h5>
+							<span><a href="">Lorem, ipsum dolor sit amet consectetur adipisicing elit...</a></span>
+						</div>
 					</div>
 				</div>
 				<div class="card-noticias" data-aos="fade-up">
-					<div class="img">
-						<img src="../../img/fortnite.jpg" alt="">
-					</div>
-					<div class="text-card-noticias">
-						<h5>Noticia 3x3</h5>
-						<span><a href="">Lorem, ipsum dolor sit amet consectetur adipisicing elit...</a></span>
+					<div class="efeito-noticias">
+						<div class="img">
+							<img src="https:\/\/www.freetogame.com\/g\/33\/thumbnail.jpg" alt="">
+						</div>
+						<div class="text-card-noticias">
+							<h5>Noticia 3x3</h5>
+							<span><a href="">Lorem, ipsum dolor sit amet consectetur adipisicing elit...</a></span>
+						</div>
 					</div>
 				</div>
 				<div class="card-noticias" data-aos="fade-up-left">
-					<div class="img">
-						<img src="../../img/fortnite.jpg" alt="">
-					</div>
-					<div class="text-card-noticias">
-						<h5>Noticia 3x3</h5>
-						<span><a href="">Lorem, ipsum dolor sit amet consectetur adipisicing elit...</a></span>
+					<div class="efeito-noticias">
+						<div class="img">
+							<img src="https:\/\/www.freetogame.com\/g\/33\/thumbnail.jpg" alt="">
+						</div>
+						<div class="text-card-noticias">
+							<h5>Noticia 3x3</h5>
+							<span><a href="">Lorem, ipsum dolor sit amet consectetur adipisicing elit...</a></span>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -177,6 +189,16 @@
 		</div>
 	</section>
 
+	<section class="noticias">
+		<div class="noticias-opacity"></div>
+		<div class="container">
+			<div class="noticias-text">
+				<h2>Streamer termina The Witcher 3 usando apenas um botão do controle</h2>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores cumque non dicta quisquam ratione similique omnis a voluptates. Veritatis fuga dicta ducimus minus consectetur accusamus illum modi placeat officia velit!</p>
+			</div>
+		</div>
+	</section>
+	
 	<footer class="m-footer" role="footer">
 		<div class="container">
 			<div id="area-logo">

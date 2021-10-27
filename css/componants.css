@@ -153,30 +153,37 @@
 /* CARDS-NOTICIAS */
 
 .s-cards-noticias{
-    padding: 10rem;
+    padding: 10rem 0rem;
 }
 .s-cards-noticias .container .main-cards-noticias{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 8rem;
+    gap: 3.3rem;
 }
 
 .s-cards-noticias .container .main-cards-noticias .card-noticias{
-    width: 100%;
-    border-radius: 1rem;
-    background-color: var(--color-cinza-escuro);
-    max-width: 28rem;
+    width: 100%; 
+    max-width: 37rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-bottom: 2rem;
     cursor: pointer;
 }
 
-.s-cards-noticias .container .main-cards-noticias .card-noticias:hover{
+
+
+.s-cards-noticias .container .main-cards-noticias .card-noticias .efeito-noticias{
+    width: inherit;
+    height: inherit;
+    border-radius: 1rem;
+    background-color: var(--color-principal-black);
+    padding-bottom: 2rem;
+    transition: all .3s;
+}
+.s-cards-noticias .container .main-cards-noticias .card-noticias .efeito-noticias:hover{
     transform: scale(1.1);
     box-shadow: 10px 10px 10px rgb(0, 0, 0);
 }
@@ -198,8 +205,46 @@
 }
 
 .s-cards-noticias .container .main-cards-noticias .card-noticias .text-card-noticias h5{
+    color: var(--wheat);
     font-size: 2.4rem;
 }
 .s-cards-noticias .container .main-cards-noticias .card-noticias .text-card-noticias span a{
+    color: var(--white);
     font-size: 1.5rem;
+}
+
+.noticias{
+    position: relative;
+    height: 70vh;
+}
+.noticias .noticias-opacity{
+    height: inherit;
+    width: inherit;
+    background: url("https:\/\/www.freetogame.com\/g\/26\/thumbnail.jpg") no-repeat center center;
+    background-size: cover;
+    filter: blur(2px);
+    opacity: 0.2;
+}
+
+.noticias .container{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.noticias .container .noticias-text{
+    position: absolute;
+    padding: 2rem;
+    top: 35%;
+}
+.noticias .container .noticias-text h2, .noticias .container .noticias-text p{
+    color: #fff;
+}
+.noticias .container .noticias-text h2{
+    font-size: 5rem;
+}
+.noticias .container .noticias-text p{
+    margin-top: 2rem;
+    font-size: 2rem;
 }
