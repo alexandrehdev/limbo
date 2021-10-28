@@ -220,6 +220,15 @@
     /* background: url("https:\/\/www.freetogame.com\/g\/26\/thumbnail.jpg") no-repeat center center; */
     
 }
+
+.noticias .container{
+    display: flex;
+    /* height: 100%; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .noticias .noticias-opacity{
     width: inherit;
     height: 100%;
@@ -228,17 +237,12 @@
     opacity: 0.2;
 }
 
-.noticias .container{
-    display: flex;
-    height: 100%;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.noticias .container .noticias-text {
+.noticias .container .noticias-text{
     position: absolute;
     padding: 2rem;
-    top: 35%;
+    top: 50%;
+    transform: translateY(-50%);
+    
 }
 .noticias .container .noticias-text h2, .noticias .container .noticias-text p{
     color: #fff;
