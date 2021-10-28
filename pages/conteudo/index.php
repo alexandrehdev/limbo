@@ -17,12 +17,26 @@
 <body>
 	<header class="main-header">
 		<h1 class="title-name">Limbo</h1>
-		<div class="navegation">
-			<a href="../../index.php">Home</a>	
-			<a href="index.php">Navegar</a>		
-			<a href="../apiFreeGames/index.php">Jogos Gratis</a>
-			<a href="#">Info</a>
-		</div>
+		<nav class="navigation">
+			<ul class="list-nav">
+				<li class="item-nav">
+					<a href="./index.php">Home</a>
+					<div class="line"></div>
+				</li>
+				<li class="item-nav">
+					<a href="./pages/conteudo/index.php">Navegar</a>
+					<div class="line"></div>
+				</li>
+				<li class="item-nav">
+					<a href="./pages/apiFreeGames/index.php">Jogos Gratis</a>
+					<div class="line"></div>
+				</li>
+				<li class="item-nav">
+					<a href="#">Info</a>
+					<div class="line"></div>
+				</li>
+			</ul>
+		</nav>
 	</header>
 	<!-- SLIDER -->
 	<section class="s-cards-destaques">
@@ -303,6 +317,7 @@
         });
 	</script>
 	<script type="text/javascript" src="js/script.js"></script>
+	<script type="text/javascript" src="../../js/header.js"></script>
 </body>
 
 </html>
