@@ -4,8 +4,9 @@
 <head>
 	<meta charset="utf-8">
 	<title>Limbo</title>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/icon.min.css">
 	<link rel="icon" type="image/png" href="./favicon.png">
-	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+	<!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" /> -->
 	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
 	<link rel="stylesheet" type="text/css" href="css/buttons.css">
@@ -18,27 +19,11 @@
 <body>
 	<header class="main-header">
 		<h1 class="title-name">Limbo</h1>
-		<nav class="navigation">
-			<ul class="list-nav">
-				<li class="item-nav">
-					<a href="./index.php">Home</a>
-					<div class="line"></div>
-				</li>
-				<li class="item-nav">
-					<a href="./pages/conteudo/index.php">Navegar</a>
-					<div class="line"></div>
-				</li>
-				<li class="item-nav">
-					<a href="./pages/apiFreeGames/index.php">Jogos Gratis</a>
-					<div class="line"></div>
-				</li>
-				<li class="item-nav">
-					<a href="#">Info</a>
-					<div class="line"></div>
-				</li>
-			</ul>
-		</nav>
 	</header>
+
+	<div class="user-area">
+		<button class="btn-account">Criar Conta</button>
+	</div>
 
 	<div class="container">
 		<div class="cards">

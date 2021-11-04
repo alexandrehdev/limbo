@@ -1,3 +1,16 @@
+.user-area{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: right;
+}
+
+.user-area .btn-account{
+    padding: 15px;
+    cursor: pointer;
+}
+
 .s-cards{
     padding: 10rem 0rem;
     background-color: #666262;
