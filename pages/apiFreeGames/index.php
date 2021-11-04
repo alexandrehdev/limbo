@@ -4,16 +4,18 @@
  ?>
 <!DOCTYPE html>
 <html>
+
 <head>
-	<meta charset="utf-8">
-	<title></title>
-	<link rel="stylesheet" type="text/css" href="../../css/footer.css"/>
-	<link rel="stylesheet" type="text/css" href="../../css/reset.css">
-	<link rel="stylesheet" type="text/css" href="../../css/buttons.css">
-	<link rel="stylesheet" type="text/css" href="../../css/style.css">
-	<link rel="stylesheet" type="text/css" href="../../css/variables.css">
-	<link rel="stylesheet" href="../../css/componants.css">
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="../../css/footer.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../../css/buttons.css">
+    <link rel="stylesheet" type="text/css" href="../../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../../css/variables.css">
+    <link rel="stylesheet" href="../../css/componants.css">
 </head>
+
 <body>
 	<header class="main-header">
 		<h1 class="title-name">Limbo</h1>
