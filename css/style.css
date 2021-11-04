@@ -3,13 +3,17 @@ body{
 }
 
 .main-header{
-	position: fixed;
+	position: sticky;
 	top: 0;
 	box-sizing: border-box;
 	padding: 5px 0px;
 	height: 70px;
 	width: 100%;
 	z-index: 2021;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 
 .main-header h1{
@@ -20,19 +24,46 @@ body{
 	cursor: pointer;
 }
 
-.navegation{
+.navigation{
 	display: flex;
 	justify-content: right;
 	color: white;
-	margin-top: -70px;
 }
 
-.navegation a{
-	margin-left: 60px;
+.navigation a{
+	/* margin-left: 60px; */
 	color: white;
 	text-decoration: none;
 	padding: 15px;
 	font-size: 16px;
+}
+
+ul.list-nav {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+li.item-nav {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	margin-left: 70px;
+}
+
+li.item-nav:first-of-type {
+	margin-left: 0;
+}
+
+div.line {
+	width: 0;
+	height: 5px;
+
+	background-color: var(--white);
+
+	transition: width 500ms;
 }
 
 /*elemento principal left side tela API*/
@@ -56,12 +87,6 @@ body{
 	padding: 2rem;
 } */
 
-
-
-.navegation a:hover{
-	border-bottom: solid 5px whitesmoke;
-	border-bottom-width: auto;
-}
 /*style conteudo restante*/
 
 .content{
