@@ -35,6 +35,10 @@
 					<a href="#">Info</a>
 					<div class="line"></div>
 				</li>
+				<li class="item-nav">
+					<p>Usuário</p>
+					<div class="line"></div>
+				</li>
 			</ul>
 		</nav>
 	</header>

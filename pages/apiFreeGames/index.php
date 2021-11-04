@@ -8,6 +8,7 @@
 <head>
     <meta charset="utf-8">
     <title></title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/icon.min.css">
     <link rel="stylesheet" type="text/css" href="../../css/footer.css" />
     <link rel="stylesheet" type="text/css" href="../../css/reset.css">
     <link rel="stylesheet" type="text/css" href="../../css/buttons.css">
@@ -35,6 +36,10 @@
 				</li>
 				<li class="item-nav">
 					<a href="#">Info</a>
+					<div class="line"></div>
+				</li>
+				<li class="item-nav">
+					<i class="user icon"></i>
 					<div class="line"></div>
 				</li>
 			</ul>
