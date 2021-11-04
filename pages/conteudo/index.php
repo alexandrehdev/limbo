@@ -20,15 +20,15 @@
 		<nav class="navigation">
 			<ul class="list-nav">
 				<li class="item-nav">
-					<a href="./index.php">Home</a>
+					<a href="../../index.php">Home</a>
 					<div class="line"></div>
 				</li>
 				<li class="item-nav">
-					<a href="./pages/conteudo/index.php">Navegar</a>
+					<a href="../../pages/conteudo/index.php">Navegar</a>
 					<div class="line"></div>
 				</li>
 				<li class="item-nav">
-					<a href="./pages/apiFreeGames/index.php">Jogos Gratis</a>
+					<a href="../../pages/apiFreeGames/index.php">Jogos Gratis</a>
 					<div class="line"></div>
 				</li>
 				<li class="item-nav">
