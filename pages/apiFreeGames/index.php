@@ -9,6 +9,10 @@
     <meta charset="utf-8">
     <title></title>
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/icon.min.css">
+	<link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" type="text/css" href="../../css/footer.css" />
     <link rel="stylesheet" type="text/css" href="../../css/reset.css">
     <link rel="stylesheet" type="text/css" href="../../css/buttons.css">
@@ -16,7 +20,8 @@
     <link rel="stylesheet" type="text/css" href="../../css/variables.css">
     <link rel="stylesheet" href="../../css/componants.css">
 </head>
-
+<style>
+</style>
 <body>
 	<header class="main-header">
 		<h1 class="title-name">Limbo</h1>
@@ -46,56 +51,42 @@
 		</nav>
 	</header>
 	<main>
-		<div>
-			<div class="freegames-table">	
-				<div class="image">
-					<img src=" <?php $apidata->getApiImage() ?> ">
+			<div class="swiper mySwiper">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide"><img src="https://www.freetogame.com//g//24//thumbnail.jpg" alt=""></div>
+					<div class="swiper-slide"><img src="https://www.freetogame.com//g//24//thumbnail.jpg" alt=""></div>
+					<div class="swiper-slide"><img src="https://www.freetogame.com//g//24//thumbnail.jpg" alt=""></div>
+					<div class="swiper-slide"><img src="https://www.freetogame.com//g//24//thumbnail.jpg" alt=""></div>
+					<div class="swiper-slide"><img src="https://www.freetogame.com//g//24//thumbnail.jpg" alt=""></div>
+					<div class="swiper-slide"><img src="https://www.freetogame.com//g//24//thumbnail.jpg" alt=""></div>
+					<div class="swiper-slide"><img src="https://www.freetogame.com//g//24//thumbnail.jpg" alt=""></div>
+					<div class="swiper-slide"><img src="https://www.freetogame.com//g//24//thumbnail.jpg" alt=""></div>
+					<div class="swiper-slide"><img src="https://www.freetogame.com//g//24//thumbnail.jpg" alt=""></div>
+					<div class="swiper-slide"><img src="https://www.freetogame.com//g//24//thumbnail.jpg" alt=""></div>
+					<div class="swiper-slide"><img src="https://www.freetogame.com//g//24//thumbnail.jpg" alt=""></div>
+					<div class="swiper-slide"><img src="https://www.freetogame.com//g//24//thumbnail.jpg" alt=""></div>
+					<div class="swiper-slide"><img src="https://www.freetogame.com//g//24//thumbnail.jpg" alt=""></div>
 				</div>
-				<div class="title">
-					<p> <?php $apidata->getApiTitle(); ?> </p>
-				</div>
-				<div class="description">
-						<?php $apidata->getApishortDescription(); ?>
-				</div>
+				<div class="swiper-pagination"></div>
 			</div>
-
-			<div class="freegames-table">	
-				<div class="image">
-					<img src=" <?php $apidata->getApiImage() ?> ">
-				</div>
-				<div class="title">
-					<p> <?php $apidata->getApiTitle(); ?> </p>
-				</div>
-				<div class="description">
-						<?php $apidata->getApishortDescription(); ?>
-				</div>
-			</div>
-			<div class="freegames-table">	
-				<div class="image">
-					<img src=" <?php $apidata->getApiImage() ?> ">
-				</div>
-				<div class="title">
-					<p> <?php $apidata->getApiTitle(); ?> </p>
-				</div>
-				<div class="description">
-						<?php $apidata->getApishortDescription(); ?>
-				</div>
-			</div>
-				
-				<div>
-					<div class="games-recommend">
-						<div>
-							<h2>Recomendados</h2>
-						</div>
-						<div>Card 1</div>
-						<div>Card 1</div>
-						<div>Card 1</div>
-						<div>Card 1</div>
-						<div>Card 1</div>
-						<div>Card 1</div>
-						<div>Card 1</div>
+			<div class="swiper leftSwiper">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide"><img src="https://www.freetogame.com//g//24//thumbnail.jpg" alt=""></div>
+						<div class="swiper-slide"><img src="https://www.freetogame.com//g//24//thumbnail.jpg" alt=""></div>
+						<div class="swiper-slide"><img src="https://www.freetogame.com//g//24//thumbnail.jpg" alt=""></div>
+						<div class="swiper-slide"><img src="https://www.freetogame.com//g//24//thumbnail.jpg" alt=""></div>
+						<div class="swiper-slide"><img src="https://www.freetogame.com//g//24//thumbnail.jpg" alt=""></div>
+						<div class="swiper-slide"><img src="https://www.freetogame.com//g//24//thumbnail.jpg" alt=""></div>
+						<div class="swiper-slide"><img src="https://www.freetogame.com//g//24//thumbnail.jpg" alt=""></div>
+						<div class="swiper-slide"><img src="https://www.freetogame.com//g//24//thumbnail.jpg" alt=""></div>
+						<div class="swiper-slide"><img src="https://www.freetogame.com//g//24//thumbnail.jpg" alt=""></div>
+						<div class="swiper-slide"><img src="https://www.freetogame.com//g//24//thumbnail.jpg" alt=""></div>
+						<div class="swiper-slide"><img src="https://www.freetogame.com//g//24//thumbnail.jpg" alt=""></div>
+						<div class="swiper-slide"><img src="https://www.freetogame.com//g//24//thumbnail.jpg" alt=""></div>
+						<div class="swiper-slide"><img src="https://www.freetogame.com//g//24//thumbnail.jpg" alt=""></div>
 					</div>
-				</div>
+					<div class="swiper-pagination"></div>
+			</div>
 			</main>
 			<footer class="m-footer" role="footer">
 				<div class="container">
@@ -177,5 +168,26 @@
 			</footer>
 			<script type="text/javascript" src="js/script.js"></script>
 			<script type="text/javascript" src="../../js/header.js"></script>
+			<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+			<!-- Initialize Swiper -->
+			<script>
+			var swiper = new Swiper(".mySwiper", {
+				direction: "vertical",
+				slidesPerView: 4,
+				pagination: {
+				el: ".swiper-pagination",
+				clickable: true,
+				},
+			});
+			var swiper = new Swiper(".leftSwiper", {
+				direction: "vertical",
+				slidesPerView: 4,
+				pagination: {
+				el: ".swiper-pagination",
+				clickable: true,
+				},
+			});
+			</script>
 		</body>
 		</html>
