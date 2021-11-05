@@ -314,3 +314,21 @@ filter: blur(1px);
 .main-freegames .container .freegames-table:hover .title, .main-freegames .container .freegames-table:hover .description{
     opacity: 1;
 }
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.mySwiper, .leftSwiper{
+    margin: 0 !important;
+    width: 100%;
+    max-width: 40rem;
+    overflow-y: hidden; 
+    height: 100rem;
+    padding: 2rem;
+}
+
+.swiper-pagination{
+    right: -10 !important;
+}
