@@ -1,9 +1,12 @@
+<?php 
+session_start();
+?>
 <!DOCTYPE html>
 <html>
 
 <head>
 	<meta charset="utf-8">
-	<title></title>
+	<title>Limbo</title>
 </head>
 <link rel="icon" type="image/png" href="../../favicon.png">
 <link rel="stylesheet" href="../../css/footer.css"/>
@@ -13,6 +16,7 @@
 <link rel="stylesheet" type="text/css" href="../../css/reset.css">
 <link rel="stylesheet" type="text/css" href="../../css/variables.css">
 <link rel="stylesheet" href="../../css/componants.css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/icon.min.css">
 
 <body>
 	<header class="main-header">
@@ -36,8 +40,12 @@
 					<div class="line"></div>
 				</li>
 				<li class="item-nav">
-					<p>Usuário</p>
-					<div class="line"></div>
+					<strong style="text-transform:uppercase;">
+						<i class="user icon"></i>
+						<?php 
+							echo strtoupper($_SESSION['login_user']);
+						?>
+					</strong>
 				</li>
 			</ul>
 		</nav>
@@ -316,12 +324,12 @@
 			},
 		});
 		AOS.init({
-            duration: 1000,
+			duration: 1000,
             once: true, //para a animação acontecer somente uma vez
         });
-	</script>
-	<script type="text/javascript" src="js/script.js"></script>
-	<script type="text/javascript" src="../../js/header.js"></script>
+    </script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="../../js/header.js"></script>
 </body>
 
 </html>
