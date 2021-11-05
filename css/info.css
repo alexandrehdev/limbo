@@ -1,0 +1,11 @@
+main#main {
+    display: grid;
+    grid-template: auto auto / auto auto;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    gap: 20px;
+
+    padding: 5rem;
+}
