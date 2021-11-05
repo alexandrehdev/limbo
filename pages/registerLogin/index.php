@@ -20,43 +20,79 @@
 	<link rel="stylesheet" type="text/css" href="../../css/variables.css">
 	<link rel="stylesheet" href="../../css/componants.css">
 	<link rel="stylesheet" href="../../css/footer.css">
+	<link rel="stylesheet" href="../../css/register.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
 </head>
 <body>
-	<header class="main-header">
+	<header class="main-header register-header">
 		<h1 class="title-name">Limbo</h1>
 	</header>
 
-	<main>
-		<div>
-			<div>
-				<form action="<?php $_SERVER['PHP_SELF']?>" method="POST">
-					<div>
-						<input type="text" placeholder="Nome de Usuario" name="username">
-					</div>
-					<div>
-						<input type="text" placeholder="Email" name="mail">
-					</div>
-					<div>
-						<input type="password" placeholder="Senha" name="pwd">
-					</div>
-					<div>
-						<input type="password" placeholder="Confirme sua senha" name="cpwd">
-					</div>
-					<button name="btn-register">Cadastrar</button>
-				</form>
-			</div>
+	<main class="main-register-user">
+		<section id="register-account" class="section-register">
+			<h1 class="title-register">Registrar</h1>
+			<form class="form-register-login" action="<?php $_SERVER['PHP_SELF']?>" method="POST">
+				<div class="area-inputs">
+					<i class="fas fa-user margin-right fa-2x"></i>
+					<input 
+						type="text" 
+						placeholder="Nome de Usuario"name="username"
+					>
+				</div>
+				<div class="area-inputs">
+					<i class="fas fa-envelope margin-right fa-2x"></i>
+					<input 
+						type="text" 
+						placeholder="Email" 
+						name="mail"
+					>
+				</div>
+				<div class="area-inputs">
+					<i class="fas fa-key margin-right fa-2x"></i>
+					<input 
+						type="password" 
+						placeholder="Senha" 
+						name="pwd"
+					>
+				</div>
+				<div class="area-inputs">
+					<i class="fas fa-key margin-right fa-2x"></i>
+					<input 
+						type="password" 
+						placeholder="Confirme sua senha" 
+						name="cpwd"
+					>
+				</div>
+				<button name="btn-register">
+					<i class="fas fa-pencil-alt fa-2x"></i>
+				</button>
+			</form>
+		</section>
 
-			<div>
-				<form>
-					<div>
-						<input type="" name="">
-					</div>
-					<div>
-						<input type="" name="">
-					</div>
-				</form>
-			</div>
-		</div>
+		<section id="login-account" class="section-register">
+			<h1 class="title-register">Login</h1>
+			<form class="form-register-login">
+				<div class="area-inputs">
+					<i class="fas fa-envelope margin-right fa-2x"></i>
+					<input 
+						type="email" 
+						placeholder="Email"
+						name=""
+					>
+				</div>
+				<div class="area-inputs">
+					<i class="fas fa-key margin-right fa-2x"></i>
+					<input 
+						type="password"
+						placeholder="Senha" 
+						name=""
+					>
+				</div>
+				<button type="submit">
+					<i class="fab fa-telegram-plane fa-2x"></i>
+				</button>
+			</form>
+		</section>
 	</main>
 
 </body>
