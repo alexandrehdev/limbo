@@ -54,33 +54,83 @@
 			<div class="swiper mySwiper">
 				<div class="swiper-wrapper">
 						<div class="swiper-slide">
-							<img src="<?php $apidata->getApiImage(0); ?>">
+							<div class="freegames-table">	
+								<div class="image">
+									<img src=" <?php $apidata->getApiImage(1) ?> ">
+								</div>
+								<div class="title">
+									<p> <?php $apidata->getApiTitle(1); ?> </p>
+								</div>
+								<div class="description">
+										<?php $apidata->getApishortDescription(1); ?>
+								</div>
+							</div>
 						</div>
-
 						<div class="swiper-slide">
-							<img src="<?php $apidata->getApiImage(1); ?>">
+							<div class="freegames-table">	
+								<div class="image">
+									<img src=" <?php $apidata->getApiImage(4) ?> ">
+								</div>
+								<div class="title">
+									<p> <?php $apidata->getApiTitle(4); ?> </p>
+								</div>
+								<div class="description">
+										<?php $apidata->getApishortDescription(4); ?>
+								</div>
+							</div>
 						</div>
-
 						<div class="swiper-slide">
-							<img src="<?php $apidata->getApiImage(2); ?>">
+							<div class="freegames-table">	
+								<div class="image">
+									<img src=" <?php $apidata->getApiImage(5) ?> ">
+								</div>
+								<div class="title">
+									<p> <?php $apidata->getApiTitle(5); ?> </p>
+								</div>
+								<div class="description">
+										<?php $apidata->getApishortDescription(5); ?>
+								</div>
+							</div>
 						</div>
-
 						<div class="swiper-slide">
-							<img src="<?php $apidata->getApiImage(3); ?>" alt="">
+							<div class="freegames-table">	
+								<div class="image">
+									<img src=" <?php $apidata->getApiImage(6) ?> ">
+								</div>
+								<div class="title">
+									<p> <?php $apidata->getApiTitle(6); ?> </p>
+								</div>
+								<div class="description">
+										<?php $apidata->getApishortDescription(6); ?>
+								</div>
+							</div>
 						</div>
-
 						<div class="swiper-slide">
-							<img src="<?php $apidata->getApiImage(4); ?>">
+							<div class="freegames-table">	
+								<div class="image">
+									<img src=" <?php $apidata->getApiImage(7) ?> ">
+								</div>
+								<div class="title">
+									<p> <?php $apidata->getApiTitle(7); ?> </p>
+								</div>
+								<div class="description">
+										<?php $apidata->getApishortDescription(7); ?>
+								</div>
+							</div>
 						</div>
-
 						<div class="swiper-slide">
-							<img src="<?php $apidata->getApiImage(5); ?>">
+							<div class="freegames-table">	
+								<div class="image">
+									<img src=" <?php $apidata->getApiImage(8) ?> ">
+								</div>
+								<div class="title">
+									<p> <?php $apidata->getApiTitle(8); ?> </p>
+								</div>
+								<div class="description">
+										<?php $apidata->getApishortDescription(8); ?>
+								</div>
+							</div>
 						</div>
-
-						<div class="swiper-slide">
-							<img src="<?php $apidata->getApiImage(6); ?>">
-						</div>
-						
 					</div>
 				<div class="swiper-pagination"></div>
 			</div>
