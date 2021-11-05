@@ -1,6 +1,8 @@
 <?php 
 	require "Class/LoadApi.php";
 	$apidata = new LoadApi();
+
+	session_start();
  ?>
 <!DOCTYPE html>
 <html>
@@ -44,8 +46,12 @@
 					<div class="line"></div>
 				</li>
 				<li class="item-nav">
-					<i class="user icon"></i>
-					<div class="line"></div>
+					<strong style="text-transform:uppercase;">
+						<i class="user icon"></i>
+						<?php 
+							echo strtoupper($_SESSION['login_user']);
+						?>
+					</strong>
 				</li>
 			</ul>
 		</nav>

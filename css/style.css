@@ -35,7 +35,9 @@ body{
 	color: white;
 }
 
-.navigation a{
+.navigation a,
+.navigation strong.user-account-text
+{
 	/* margin-left: 60px; */
 	color: white;
 	text-decoration: none;
@@ -56,6 +58,8 @@ li.item-nav {
 	align-items: center;
 
 	margin-left: 70px;
+
+	position: relative;
 }
 
 li.item-nav:first-of-type {
@@ -68,9 +72,25 @@ div.line {
 
 	background-color: var(--white);
 
-	transition: width 500ms;
+	position: absolute;
+	bottom: 0;
+
+	overflow: hidden;
 }
 
+div.line,
+.item-dropdown
+{
+	transition: all 500ms;
+}
+
+.item-dropdown {
+	color: var(--black);
+
+	font-size: 1rem;
+
+	opacity: 0;
+}
 
 /*DROPDOWN CONTEUDO USUARIO*/
 

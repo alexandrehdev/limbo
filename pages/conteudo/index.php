@@ -40,12 +40,16 @@ session_start();
 					<div class="line"></div>
 				</li>
 				<li class="item-nav">
-					<strong style="text-transform:uppercase;">
+					<strong class="user-account-text" style="text-transform:uppercase;">
 						<i class="user icon"></i>
 						<?php 
 							echo strtoupper($_SESSION['login_user']);
 						?>
 					</strong>
+					<div class="line dropdown">
+						<span class="item-dropdown">Informações</span>
+						<span class="item-dropdown">Sair</span>
+					</div>
 				</li>
 			</ul>
 		</nav>
