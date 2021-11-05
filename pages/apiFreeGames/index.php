@@ -36,7 +36,7 @@
 					<div class="line"></div>
 				</li>
 				<li class="item-nav">
-					<a href="../../pages/apiFreeGames/index.php">Jogos Gratis</a>
+					<a href="index.php">Jogos Gratis</a>
 					<div class="line"></div>
 				</li>
 				<li class="item-nav">
@@ -53,37 +53,63 @@
 	<main>
 			<div class="swiper mySwiper">
 				<div class="swiper-wrapper">
-					<div class="swiper-slide"><img src="https://www.freetogame.com//g//24//thumbnail.jpg" alt=""></div>
-					<div class="swiper-slide"><img src="https://www.freetogame.com//g//24//thumbnail.jpg" alt=""></div>
-					<div class="swiper-slide"><img src="https://www.freetogame.com//g//24//thumbnail.jpg" alt=""></div>
-					<div class="swiper-slide"><img src="https://www.freetogame.com//g//24//thumbnail.jpg" alt=""></div>
-					<div class="swiper-slide"><img src="https://www.freetogame.com//g//24//thumbnail.jpg" alt=""></div>
-					<div class="swiper-slide"><img src="https://www.freetogame.com//g//24//thumbnail.jpg" alt=""></div>
-					<div class="swiper-slide"><img src="https://www.freetogame.com//g//24//thumbnail.jpg" alt=""></div>
-					<div class="swiper-slide"><img src="https://www.freetogame.com//g//24//thumbnail.jpg" alt=""></div>
-					<div class="swiper-slide"><img src="https://www.freetogame.com//g//24//thumbnail.jpg" alt=""></div>
-					<div class="swiper-slide"><img src="https://www.freetogame.com//g//24//thumbnail.jpg" alt=""></div>
-					<div class="swiper-slide"><img src="https://www.freetogame.com//g//24//thumbnail.jpg" alt=""></div>
-					<div class="swiper-slide"><img src="https://www.freetogame.com//g//24//thumbnail.jpg" alt=""></div>
-					<div class="swiper-slide"><img src="https://www.freetogame.com//g//24//thumbnail.jpg" alt=""></div>
-				</div>
+						<div class="swiper-slide">
+							<img src="<?php $apidata->getApiImage(0); ?>">
+						</div>
+
+						<div class="swiper-slide">
+							<img src="<?php $apidata->getApiImage(1); ?>">
+						</div>
+
+						<div class="swiper-slide">
+							<img src="<?php $apidata->getApiImage(2); ?>">
+						</div>
+
+						<div class="swiper-slide">
+							<img src="<?php $apidata->getApiImage(3); ?>" alt="">
+						</div>
+
+						<div class="swiper-slide">
+							<img src="<?php $apidata->getApiImage(4); ?>">
+						</div>
+
+						<div class="swiper-slide">
+							<img src="<?php $apidata->getApiImage(5); ?>">
+						</div>
+
+						<div class="swiper-slide">
+							<img src="<?php $apidata->getApiImage(6); ?>">
+						</div>
+						
+					</div>
 				<div class="swiper-pagination"></div>
 			</div>
 			<div class="swiper leftSwiper">
 					<div class="swiper-wrapper">
-						<div class="swiper-slide"><img src="https://www.freetogame.com//g//24//thumbnail.jpg" alt=""></div>
-						<div class="swiper-slide"><img src="https://www.freetogame.com//g//24//thumbnail.jpg" alt=""></div>
-						<div class="swiper-slide"><img src="https://www.freetogame.com//g//24//thumbnail.jpg" alt=""></div>
-						<div class="swiper-slide"><img src="https://www.freetogame.com//g//24//thumbnail.jpg" alt=""></div>
-						<div class="swiper-slide"><img src="https://www.freetogame.com//g//24//thumbnail.jpg" alt=""></div>
-						<div class="swiper-slide"><img src="https://www.freetogame.com//g//24//thumbnail.jpg" alt=""></div>
-						<div class="swiper-slide"><img src="https://www.freetogame.com//g//24//thumbnail.jpg" alt=""></div>
-						<div class="swiper-slide"><img src="https://www.freetogame.com//g//24//thumbnail.jpg" alt=""></div>
-						<div class="swiper-slide"><img src="https://www.freetogame.com//g//24//thumbnail.jpg" alt=""></div>
-						<div class="swiper-slide"><img src="https://www.freetogame.com//g//24//thumbnail.jpg" alt=""></div>
-						<div class="swiper-slide"><img src="https://www.freetogame.com//g//24//thumbnail.jpg" alt=""></div>
-						<div class="swiper-slide"><img src="https://www.freetogame.com//g//24//thumbnail.jpg" alt=""></div>
-						<div class="swiper-slide"><img src="https://www.freetogame.com//g//24//thumbnail.jpg" alt=""></div>
+						<div class="swiper-slide">
+							<img src="<?php $apidata->getApiImage(7); ?>">
+						</div>
+
+						<div class="swiper-slide">
+							<img src="<?php $apidata->getApiImage(8); ?>">
+						</div>
+
+						<div class="swiper-slide">
+							<img src="<?php $apidata->getApiImage(9); ?>">
+						</div>
+
+						<div class="swiper-slide">
+							<img src="<?php $apidata->getApiImage(10); ?>">
+						</div>
+
+						<div class="swiper-slide">
+							<img src="<?php $apidata->getApiImage(11); ?>">
+						</div>
+
+						<div class="swiper-slide">
+							<img src="<?php $apidata->getApiImage(12); ?>">
+						</div>
+						
 					</div>
 					<div class="swiper-pagination"></div>
 			</div>

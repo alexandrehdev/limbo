@@ -28,7 +28,7 @@ session_start();
 					<div class="line"></div>
 				</li>
 				<li class="item-nav">
-					<a href="../../pages/conteudo/index.php">Navegar</a>
+					<a href="index.php">Navegar</a>
 					<div class="line"></div>
 				</li>
 				<li class="item-nav">

@@ -9,20 +9,20 @@ class LoadApi
 
 	function __construct()
 	{
-		$this->json_content = $_SESSION['api_link'];
+		$this->json_content = file_get_contents("https://www.freetogame.com/api/games");
 		$this->result = json_decode($this->json_content, true);
 	}
 
-	public function getApiImage(){
-		echo  $this->result[0]['thumbnail'];
+	public function getApiImage($num){
+		echo $this->result[$num]['thumbnail'];
 	}
 
-	public function getApiTitle(){
-		echo $this->result[0]['title'];
+	public function getApiTitle($num){
+		echo $this->result[$num]['title'];
 	}
 
-	public function getApishortDescription(){
-		echo $this->result[0]['short_description'];
+	public function getApishortDescription($num){
+		echo $this->result[$num]['short_description'];
 	}
 
 }
