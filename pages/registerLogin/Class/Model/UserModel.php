@@ -4,7 +4,6 @@
 	require_once("Connection/Connection.php");
 	require_once("Class/Controller/UserController.php");
 
-	
 
 	class UserModel extends UserController
 	{
@@ -39,7 +38,7 @@
 		}
 
 		public function insertDB(){
-			$query = $_SESSION['insert_register'];
+			$query = $_SESSION['query_register'];
 			$stmt = $this->con->prepare($query);
 			$stmt->bindValue(':name', $this->name);
 			$stmt->bindValue(':email',$this->email);

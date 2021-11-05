@@ -1,12 +1,22 @@
 <?php 
-	require_once("Class/Controller/UserDataController.php");
-	require_once("Class/Controller/UserController.php");
+$local = $_SERVER['PHP_SELF'];
 
-	if (isset($_POST['btn-register'])) {
-		(new UserController());
-		(new UserDataController())->registerUser();
-	}
- ?>
+require_once("Class/Controller/UserDataController.php");
+require_once("Class/Controller/UserController.php");
+
+require_once("Class/Controller/UserLoginData.php");
+require_once("Class/Controller/UserLoginController.php");
+
+if (isset($_POST['btn-register'])) {
+	(new UserController());
+	(new UserDataController())->registerUser();
+}
+
+if (isset($_POST['btn-login'])) {
+	(new UserLoginController());
+	(new UserLoginData())->loginUser();
+}
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -31,37 +41,22 @@
 	<main class="main-register-user">
 		<section id="register-account" class="section-register">
 			<h1 class="title-register">Registrar</h1>
-			<form class="form-register-login" action="<?php $_SERVER['PHP_SELF']?>" method="POST">
+			<form class="form-register-login" action="<?php $local ?>" method="POST">
 				<div class="area-inputs">
 					<i class="fas fa-user margin-right fa-2x"></i>
-					<input 
-						type="text" 
-						placeholder="Nome de Usuario"name="username"
-					>
+					<input type="text" placeholder="Usuario"name="username">
 				</div>
 				<div class="area-inputs">
 					<i class="fas fa-envelope margin-right fa-2x"></i>
-					<input 
-						type="text" 
-						placeholder="Email" 
-						name="mail"
-					>
+					<input type="text" placeholder="Email" name="mail">
 				</div>
 				<div class="area-inputs">
 					<i class="fas fa-key margin-right fa-2x"></i>
-					<input 
-						type="password" 
-						placeholder="Senha" 
-						name="pwd"
-					>
+					<input type="password" placeholder="Senha" name="pwd">
 				</div>
 				<div class="area-inputs">
 					<i class="fas fa-key margin-right fa-2x"></i>
-					<input 
-						type="password" 
-						placeholder="Confirme sua senha" 
-						name="cpwd"
-					>
+					<input type="password" placeholder="Confirme senha" name="cpwd">
 				</div>
 				<button name="btn-register">
 					<i class="fas fa-pencil-alt fa-2x"></i>
@@ -71,24 +66,19 @@
 
 		<section id="login-account" class="section-register">
 			<h1 class="title-register">Login</h1>
-			<form class="form-register-login">
+			<form class="form-register-login" method="POST" action="<?php $local ?>">
+
 				<div class="area-inputs">
 					<i class="fas fa-envelope margin-right fa-2x"></i>
-					<input 
-						type="email" 
-						placeholder="Email"
-						name=""
-					>
+					<input type="email" placeholder="Email" name="log-mail">
 				</div>
+
 				<div class="area-inputs">
 					<i class="fas fa-key margin-right fa-2x"></i>
-					<input 
-						type="password"
-						placeholder="Senha" 
-						name=""
-					>
+					<input type="password" placeholder="Senha" name="log-pass">
 				</div>
-				<button type="submit">
+
+				<button name="btn-login" type="submit">
 					<i class="fab fa-telegram-plane fa-2x"></i>
 				</button>
 			</form>
