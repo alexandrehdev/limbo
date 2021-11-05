@@ -29,8 +29,6 @@ class UserLoginModel extends UserLoginController
 		$stmt->execute();
 		$row = $stmt->fetch(PDO::FETCH_ASSOC);
 		return $row;
-
-		$_SESSION['login_user'] = $data['name'];
 	}
 
 }
