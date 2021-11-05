@@ -17,7 +17,7 @@ class UserDataController extends UserController
 		$this->pass = parent::getPassword();
 		$this->cpass = parent::getCPassword();
 	}
-
+	
 	public function registerUser()
 	{
 		if (isset($this->name) && isset($this->email) && isset($this->pass) && isset($this->cpass)) {

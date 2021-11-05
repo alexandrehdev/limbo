@@ -18,6 +18,7 @@ class UserLoginData extends UserLoginController
 		$data = (new UserLoginModel())->showData();	
 
 		if ($this->loginMail == $data['email'] && $this->loginPassw == $data['password'] ) {
+			$_SESSION['login_user'] = $this->loginMail;
 			header("Location: ../conteudo/index.php");	
 		}else{
 			echo "Dados não existem";
