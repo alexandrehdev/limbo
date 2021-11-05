@@ -167,6 +167,7 @@
 
 .s-cards-noticias{
     padding: 10rem 0rem;
+    overflow-x: hidden;
 }
 .s-cards-noticias .container .main-cards-noticias{
     display: flex;
