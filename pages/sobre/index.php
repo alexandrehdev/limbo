@@ -39,7 +39,7 @@ session_start();
 					<div class="line"></div>
 				</li>
 				<li class="item-nav">
-					<a href="#">Info</a>
+					<a href="index.php">Info</a>
 					<div class="line"></div>
 				</li>
 				<li class="item-nav">
