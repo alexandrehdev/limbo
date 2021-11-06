@@ -16,7 +16,6 @@ function applyLineAnimation({
         selector, 
         styleOpacity
     }) {
-        // const arrayElements = [ ...element.children ];
         const allItemsElementChildren = window.document.querySelectorAll(selector)
         allItemsElementChildren.forEach(item => {
             item.style.opacity = styleOpacity;
