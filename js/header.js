@@ -1,16 +1,24 @@
 const itemsAllHeader = window.document.querySelectorAll("li.item-nav");
+const itemsAllDropdown = window.document.querySelectorAll("li.item-list-dropdown");
 
-itemsAllHeader.forEach(item => {
+function applyLineAnimation({ 
+    itemsAllNav, 
+    colorLine = "#ffffff",
+    selector = ".item-dropdown",
+    haveChildrenElements = true
+}) {
+    itemsAllNav.forEach(item => {
     const line = item.children[1];
 
+    line.style.backgroundColor = colorLine;
+
     function elementChildrenApply({ 
-        element, 
-        // styleDisplay,
+        selector, 
         styleOpacity
     }) {
-        const arrayElements = [ ...element.children ];
-        arrayElements.forEach(item => {
-            // item.style.display = styleDisplay;
+        // const arrayElements = [ ...element.children ];
+        const allItemsElementChildren = window.document.querySelectorAll(selector)
+        allItemsElementChildren.forEach(item => {
             item.style.opacity = styleOpacity;
         })
     }
@@ -23,12 +31,14 @@ itemsAllHeader.forEach(item => {
                 line.style.height = "200px";
                 line.style.bottom = "-200px";
                 line.style.padding = "20px";
+                line.style.boxShadow = "0px 8px 16px 0px rgba(0,0,0,0.2)"
 
-                elementChildrenApply({
-                    element: line,
-                    // styleDisplay: "block",
-                    styleOpacity: "1"
-                });
+                if(haveChildrenElements) {
+                    elementChildrenApply({
+                        selector: selector,
+                        styleOpacity: "1"
+                    });
+                }
             }
         }
         , 500)
@@ -40,10 +50,22 @@ itemsAllHeader.forEach(item => {
         line.style.bottom = "0";
         line.style.padding = "0"
 
-        elementChildrenApply({
-            element: line,
-            // styleDisplay: "none",
-            styleOpacity: "0"
-        });
+        if(haveChildrenElements) {
+            elementChildrenApply({
+                selector: selector,
+                styleOpacity: "0"
+            });
+        }
     }, false);
+})
+}
+
+applyLineAnimation({
+    itemsAllNav: itemsAllHeader
+});
+
+applyLineAnimation({
+    itemsAllNav: itemsAllDropdown,
+    colorLine: "#000000",
+    haveChildrenElements: false
 })

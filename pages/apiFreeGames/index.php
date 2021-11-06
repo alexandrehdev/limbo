@@ -46,12 +46,24 @@
 					<div class="line"></div>
 				</li>
 				<li class="item-nav">
-					<strong style="text-transform:uppercase;">
+					<strong class="user-account-text" style="text-transform:uppercase;">
 						<i class="user icon"></i>
 						<?php 
 							echo strtoupper($_SESSION['login_user']);
 						?>
 					</strong>
+					<div class="line dropdown">
+						<ul class="list-dropdown">
+							<li class="item-list-dropdown">
+								<span class="item-dropdown">Informações</span>
+								<div class="line"></div>
+							</li>
+							<li class="item-list-dropdown">
+								<span class="item-dropdown">Sair</span>
+								<div class="line"></div>
+							</li>
+						</ul>
+					</div>
 				</li>
 			</ul>
 		</nav>

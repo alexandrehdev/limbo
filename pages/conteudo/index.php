@@ -47,8 +47,16 @@ session_start();
 						?>
 					</strong>
 					<div class="line dropdown">
-						<span class="item-dropdown">Informações</span>
-						<span class="item-dropdown">Sair</span>
+						<ul class="list-dropdown">
+							<li class="item-list-dropdown">
+								<span class="item-dropdown">Informações</span>
+								<div class="line"></div>
+							</li>
+							<li class="item-list-dropdown">
+								<span class="item-dropdown">Sair</span>
+								<div class="line"></div>
+							</li>
+						</ul>
 					</div>
 				</li>
 			</ul>
