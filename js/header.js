@@ -5,12 +5,15 @@ function applyLineAnimation({
     itemsAllNav, 
     colorLine = "#ffffff",
     selector = ".item-dropdown",
-    haveChildrenElements = true
+    haveChildrenElements = true,
+    opacity = true
 }) {
     itemsAllNav.forEach(item => {
     const line = item.children[1];
-
     line.style.backgroundColor = colorLine;
+    if(opacity) {
+        line.style.opacity = "0";
+    }
 
     function elementChildrenApply({ 
         selector, 
@@ -23,6 +26,10 @@ function applyLineAnimation({
     }
 
     item.addEventListener('mouseenter', () => {
+        if(opacity) {
+            line.style.opacity = "1";
+        }
+
         line.style.width = "100%";
 
         setTimeout(() => {
@@ -31,6 +38,8 @@ function applyLineAnimation({
                 line.style.bottom = "-200px";
                 line.style.padding = "20px";
                 line.style.boxShadow = "0px 8px 16px 0px rgba(0,0,0,0.2)"
+
+
 
                 if(haveChildrenElements) {
                     elementChildrenApply({
@@ -44,6 +53,10 @@ function applyLineAnimation({
     }, false);
 
     item.addEventListener('mouseleave', () => {
+        if(opacity) {
+            line.style.opacity = "0";
+        }
+
         line.style.width = "0%";
         line.style.height = "5px";
         line.style.bottom = "0";
