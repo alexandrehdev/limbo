@@ -45,7 +45,7 @@ session_start();
 					<div class="line dropdown">
 						<ul class="list-dropdown">
 							<li class="item-list-dropdown">
-								<span class="item-dropdown">
+								<span class="item-dropdown headProfile">
 									Perfil
 								</span>
 								<div class="line"></div>
@@ -231,7 +231,9 @@ session_start();
 		<div class="noticias-opacity"></div>
 		<div class="container">
 			<div class="noticias-text">
-				<h2>Streamer termina The Witcher 3 usando apenas um botão do controle</h2>
+				<h2>
+					Streamer termina The Witcher 3 usando apenas um botão do controle
+				</h2>
 				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores cumque non dicta quisquam ratione similique omnis a voluptates. Veritatis fuga dicta ducimus minus consectetur accusamus illum modi placeat officia velit!</p>
 			</div>
 		</div>

@@ -81,3 +81,10 @@ applyLineAnimation({
     colorLine: "#000000",
     haveChildrenElements: false
 })
+
+
+// redirect para área de perfil
+
+document.querySelector(".headProfile").addEventListener('click',function(){
+    window.location.href = " caminho_area_perfil ";
+}); 
