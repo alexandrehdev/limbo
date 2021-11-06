@@ -285,35 +285,39 @@
     justify-content: space-between;
 }
 
-.main-freegames .container .freegames-table{
+.freegames-table{
     position: relative;
 }
-.main-freegames .container .freegames-table:not(:first-child){
+.freegames-table:not(:first-child){
     margin-top: 10rem;
 }
-.main-freegames .container .freegames-table .description, .main-freegames .container .freegames-table .title{
+.freegames-table .description, .freegames-table .title{
     transition: all .5s;
     opacity: 0;
     position: absolute;
 }
 
-.main-freegames .container .freegames-table .title{
+.freegames-table .title{
     left: 1rem;
-    bottom: 5rem;
+    top: 2rem;
+    font-size: 1.8rem;
 }
 
-.main-freegames .container .freegames-table .description{
+.freegames-table .description{
     left: 1rem;
-    bottom: 0.5rem;
+    bottom: 2rem;
+    font-size: 1.6rem;
 }
-.main-freegames .container .freegames-table .image{
+.freegames-table .image{
     transition: all .3s;
 }
-.main-freegames .container .freegames-table:hover .image{
-filter: blur(1px);
+.freegames-table:hover .image{
+    opacity: 20%;
+    filter: blur(1px);
 }
-.main-freegames .container .freegames-table:hover .title, .main-freegames .container .freegames-table:hover .description{
+.freegames-table:hover .title, .freegames-table:hover .description{
     opacity: 1;
+    color: #fff;
 }
 
 main{
