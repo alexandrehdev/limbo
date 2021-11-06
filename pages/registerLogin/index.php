@@ -35,7 +35,9 @@ if (isset($_POST['btn-login'])) {
 </head>
 <body>
 	<header class="main-header register-header">
-		<h1 class="title-name">Limbo</h1>
+		<a href="../../index.php">
+			<h1 class="title-name">Limbo</h1>
+		</a>
 	</header>
 
 	<main class="main-register-user">
@@ -58,7 +60,10 @@ if (isset($_POST['btn-login'])) {
 					<i class="fas fa-key margin-right fa-2x"></i>
 					<input type="password" placeholder="Confirme senha" name="cpwd">
 				</div>
-				<button name="btn-register">
+				<button 
+					name="btn-register"
+					title="Registrar"
+				>
 					<i class="fas fa-pencil-alt fa-2x"></i>
 				</button>
 			</form>
@@ -78,7 +83,11 @@ if (isset($_POST['btn-login'])) {
 					<input type="password" placeholder="Senha" name="log-pass">
 				</div>
 
-				<button name="btn-login" type="submit">
+				<button 
+					name="btn-login" 
+					type="submit"
+					title="Logar"
+				>
 					<i class="fab fa-telegram-plane fa-2x"></i>
 				</button>
 			</form>
