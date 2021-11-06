@@ -1,9 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap');
 body{
+	overflow-x: hidden;
 	scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: "gameplay";
+    font-style: normal;
+    src: url(font/Gameplay.ttf); 
+}
+
+.info-text{
+	font-family: 'Mochiy Pop One', sans-serif;
 }
 
 .main-header{
 	justify-content: space-between;
+	font-family: "gameplay";
 }
 
 .main-header,

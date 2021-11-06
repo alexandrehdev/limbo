@@ -1,3 +1,9 @@
+@font-face {
+    font-family: "gameplay";
+    font-style: normal;
+    src: url(font/Gameplay.ttf); 
+}
+
 .user-area{
     position: -webkit-sticky;
     position: sticky;
@@ -9,6 +15,7 @@
 .user-area .btn-account{
     padding: 15px;
     cursor: pointer;
+    font-family: "gameplay";
 }
 
 .s-cards{

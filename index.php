@@ -6,7 +6,6 @@
 	<title>Limbo</title>
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/icon.min.css">
 	<link rel="icon" type="image/png" href="./favicon.png">
-	<!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" /> -->
 	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
 	<link rel="stylesheet" type="text/css" href="css/buttons.css">
@@ -26,30 +25,16 @@
 	</div>
 
 	<div class="container">
-		<div class="cards" data-aos="fade-left">
-			<div class="card-info to-left">
-				<div class="img-content img-left-side">
-					<img src="https://www.svgrepo.com/show/312832/person.svg">
-				</div>
-				<div class="info-text">
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-						consequat. Duis aute irure dolor in reprehenderit in 
-					</p>
-				</div>
-			</div>
-		</div>
 		<div class="cards" data-aos="fade-right">
 			<div class="card-info to-right">
 				<div class="img-content img-right-side">
-					<img src="https://www.svgrepo.com/show/312832/person.svg">
+					<img src="https://cdn-icons.flaticon.com/png/512/3025/premium/3025567.png?token=exp=1636226033~hmac=1aed09485b32ace0f778619b0bc3e32d">
 				</div>
 				<div class="info-text">
 					<p>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,eprehenderit in 
+						Oi, seja bem vindo(a) ao nosso sistema. Este projeto foi uma ideia e desenvolvimento colaborativo por fins de aprendizado e estudo.
+						Para iniciar, preciso que realize um cadastro... Fica tranquilo, nenhum dinheiro solicitado.
+						Em nosso sistema, tem um tema bem levado para o lado "nerd", onde vai encontrar:
 					</p>
 				</div>
 			</div>
@@ -57,13 +42,11 @@
 		<div class="cards" data-aos="fade-left">
 			<div class="card-info to-left">
 				<div class="img-content img-left-side">
-					<img src="https://www.svgrepo.com/show/312832/person.svg">
+					<img src="https://cdn-icons-png.flaticon.com/512/2965/2965879.png">
 				</div>
 				<div class="info-text">
 					<p>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						Noticias sobre jogos e lançamentos de diversos tipos... Onde os dados serão apresentado de forma objetiva
 					</p>
 				</div>
 			</div>
@@ -71,13 +54,35 @@
 		<div class="cards" data-aos="fade-right">
 			<div class="card-info to-right">
 				<div class="img-content img-right-side">
-					<img src="https://www.svgrepo.com/show/312832/person.svg">
+					<img src="https://cdn-icons.flaticon.com/png/512/1374/premium/1374723.png?token=exp=1636225567~hmac=217a190a4ba33c789dbb44d414355402">
 				</div>
 				<div class="info-text">
 					<p>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						quis nostrud exercitation ullamco laboris nisi ut aliquip 
+						Recomendações de jogos sendo gratis e pago... Ou seja, caso esteja procurando algum jogo para jogar e não queira gastar dinheiro, uma de nossas recomendações irá lhe servir... Há mais de 400 recomendações de jogos que podem ser de seu gosto.
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="cards" data-aos="fade-left">
+			<div class="card-info to-left">
+				<div class="img-content img-left-side">
+					<img src="https://cdn-icons.flaticon.com/png/512/2622/premium/2622923.png?token=exp=1636226296~hmac=01b4d606a66cb33a299846ee35eaf28b">
+				</div>
+				<div class="info-text">
+					<p>
+						Destaques, lançamentos e DLC's você tembem encontrará em nosso sistema. Você está aguardando alguma atualização, DLC? Podemos lhe informar sobre aquele jogo que você está tanto aguardando
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="cards" data-aos="fade-right">
+			<div class="card-info to-right">
+				<div class="img-content img-right-side">
+					<img src="https://cdn-icons-png.flaticon.com/512/2572/2572734.png">
+				</div>
+				<div class="info-text">
+					<p>
+						Conheça um pouco sobre os desenvolvedores do sistema... Deixamos uma aba especialmente para isso caso tenha a curiosidade de conhecer um pouco mais da historia de cada um dos desenvolvedores.
 					</p>
 				</div>
 			</div>

@@ -1,4 +1,6 @@
 <?php 
+session_start();
+
 $local = $_SERVER['PHP_SELF'];
 
 require_once("Class/Controller/UserDataController.php");
@@ -16,6 +18,8 @@ if (isset($_POST['btn-login'])) {
 	(new UserLoginController());
 	(new UserLoginData())->loginUser();
 }
+
+
 ?>
 <!DOCTYPE html>
 <html>
