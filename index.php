@@ -25,64 +25,66 @@
 		<button class="btn-account">Criar Conta</button>
 	</div>
 
-	<div class="container">
-		<div class="cards" data-aos="fade-left">
-			<div class="card-info to-left">
-				<div class="img-content img-left-side">
-					<img src="https://www.svgrepo.com/show/312832/person.svg">
+	<main class="main-home">
+		<div class="container">
+			<div class="cards" data-aos="fade-left">
+				<div class="card-info to-left">
+					<div class="img-content img-left-side">
+						<img src="https://www.svgrepo.com/show/312832/person.svg">
+					</div>
+					<div class="info-text">
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat. Duis aute irure dolor in reprehenderit in 
+						</p>
+					</div>
 				</div>
-				<div class="info-text">
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-						consequat. Duis aute irure dolor in reprehenderit in 
-					</p>
+			</div>
+			<div class="cards" data-aos="fade-right">
+				<div class="card-info to-right">
+					<div class="img-content img-right-side">
+						<img src="https://www.svgrepo.com/show/312832/person.svg">
+					</div>
+					<div class="info-text">
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,eprehenderit in 
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="cards" data-aos="fade-left">
+				<div class="card-info to-left">
+					<div class="img-content img-left-side">
+						<img src="https://www.svgrepo.com/show/312832/person.svg">
+					</div>
+					<div class="info-text">
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="cards" data-aos="fade-right">
+				<div class="card-info to-right">
+					<div class="img-content img-right-side">
+						<img src="https://www.svgrepo.com/show/312832/person.svg">
+					</div>
+					<div class="info-text">
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip 
+						</p>
+					</div>
 				</div>
 			</div>
 		</div>
-		<div class="cards" data-aos="fade-right">
-			<div class="card-info to-right">
-				<div class="img-content img-right-side">
-					<img src="https://www.svgrepo.com/show/312832/person.svg">
-				</div>
-				<div class="info-text">
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,eprehenderit in 
-					</p>
-				</div>
-			</div>
-		</div>
-		<div class="cards" data-aos="fade-left">
-			<div class="card-info to-left">
-				<div class="img-content img-left-side">
-					<img src="https://www.svgrepo.com/show/312832/person.svg">
-				</div>
-				<div class="info-text">
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					</p>
-				</div>
-			</div>
-		</div>
-		<div class="cards" data-aos="fade-right">
-			<div class="card-info to-right">
-				<div class="img-content img-right-side">
-					<img src="https://www.svgrepo.com/show/312832/person.svg">
-				</div>
-				<div class="info-text">
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						quis nostrud exercitation ullamco laboris nisi ut aliquip 
-					</p>
-				</div>
-			</div>
-		</div>
-	</div>
+	</main>
 
 	
 	<footer class="m-footer" role="footer">
