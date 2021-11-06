@@ -337,3 +337,58 @@ main{
 .swiper-pagination{
     right: -10 !important;
 }
+
+.s-profile{
+    padding: 10rem 0rem;
+    width: 100%;
+}
+
+.s-profile .container{
+    height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.s-profile .container .main-profile{
+    width: 100%;
+    max-width: 50rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem;
+    border-radius: 3rem;
+    background-color: #666262;
+    box-shadow: -10px 10px 10px rgb(0, 0, 0);
+}
+
+.s-profile .container .main-profile .img img{
+    width: 100%;
+    max-width: 50rem;
+    margin-bottom: 4rem;
+    border-radius: 10rem;
+}
+
+.s-profile .container .main-profile .text form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.s-profile .container .main-profile .text input{
+    background-color: transparent;
+    font-size: 4rem;
+}
+.s-profile .container .main-profile .text input{
+    color: #fff;
+    text-align: center;
+}
+.s-profile .container .main-profile .text textarea{
+    color: #fff;
+    margin-top: 2rem;
+    background-color: transparent;
+    text-align: justify;
+
+}

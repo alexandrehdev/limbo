@@ -49,13 +49,16 @@ session_start();
 					<div class="line dropdown">
 						<ul class="list-dropdown">
 							<li class="item-list-dropdown">
+								<a href="../../pages/profile/index.php">
 								<span class="item-dropdown" class="profile">Perfil</span>
+								</a>
 								<div class="line"></div>
 							</li>
 							<li class="item-list-dropdown">
-								<span class="item-dropdown" class="logout">
-									Logout
-								</span>
+									<span class="item-dropdown" class="logout">
+										Logout
+									</span>
+								
 								<div class="line"></div>
 							</li>
 						</ul>
