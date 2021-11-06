@@ -24,12 +24,11 @@
 	</header>
 
 	<main>
-		
 		<div class="container">
 			<div class="cards" data-aos="fade-right">
 				<div class="card-info to-right">
 					<div class="img-content img-right-side">
-						<img src="https://cdn-icons.flaticon.com/png/512/3025/premium/3025567.png?token=exp=1636226033~hmac=1aed09485b32ace0f778619b0bc3e32d">
+						<img src="./img/home/businessman.png">
 					</div>
 					<div class="info-text">
 						<p>
@@ -43,7 +42,7 @@
 			<div class="cards" data-aos="fade-left">
 				<div class="card-info to-left">
 					<div class="img-content img-left-side">
-						<img src="https://cdn-icons-png.flaticon.com/512/2965/2965879.png">
+						<img src="./img/home/newspaper.png">
 					</div>
 					<div class="info-text">
 						<p>
@@ -55,7 +54,7 @@
 			<div class="cards" data-aos="fade-right">
 				<div class="card-info to-right">
 					<div class="img-content img-right-side">
-						<img src="https://cdn-icons.flaticon.com/png/512/1374/premium/1374723.png?token=exp=1636225567~hmac=217a190a4ba33c789dbb44d414355402">
+						<img src="./img/home/console.png">
 					</div>
 					<div class="info-text">
 						<p>
@@ -67,7 +66,7 @@
 			<div class="cards" data-aos="fade-left">
 				<div class="card-info to-left">
 					<div class="img-content img-left-side">
-						<img src="https://cdn-icons.flaticon.com/png/512/2622/premium/2622923.png?token=exp=1636226296~hmac=01b4d606a66cb33a299846ee35eaf28b">
+						<img src="./img/home/rocket.png">
 					</div>
 					<div class="info-text">
 						<p>
@@ -79,7 +78,7 @@
 			<div class="cards" data-aos="fade-right">
 				<div class="card-info to-right">
 					<div class="img-content img-right-side">
-						<img src="https://cdn-icons-png.flaticon.com/512/2572/2572734.png">
+						<img src="./img/home/coding.png">
 					</div>
 					<div class="info-text">
 						<p>
