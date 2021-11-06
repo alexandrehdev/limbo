@@ -27,10 +27,6 @@ session_start();
 		<nav class="navigation">
 			<ul class="list-nav">
 				<li class="item-nav">
-					<a href="../../index.php">Home</a>
-					<div class="line"></div>
-				</li>
-				<li class="item-nav">
 					<a href="../../pages/conteudo/index.php">Navegar</a>
 					<div class="line"></div>
 				</li>
@@ -52,11 +48,13 @@ session_start();
 					<div class="line dropdown">
 						<ul class="list-dropdown">
 							<li class="item-list-dropdown">
-								<span class="item-dropdown">Informações</span>
+								<span class="item-dropdown headProfile">
+									Perfil
+								</span>
 								<div class="line"></div>
 							</li>
 							<li class="item-list-dropdown">
-								<span class="item-dropdown">Sair</span>
+								<span class="item-dropdown">Logout</span>
 								<div class="line"></div>
 							</li>
 						</ul>
