@@ -24,10 +24,6 @@ session_start();
 		<nav class="navigation">
 			<ul class="list-nav">
 				<li class="item-nav">
-					<a href="../../index.php">Home</a>
-					<div class="line"></div>
-				</li>
-				<li class="item-nav">
 					<a href="index.php">Navegar</a>
 					<div class="line"></div>
 				</li>
@@ -49,11 +45,13 @@ session_start();
 					<div class="line dropdown">
 						<ul class="list-dropdown">
 							<li class="item-list-dropdown">
-								<span class="item-dropdown" class="profile">Perfil</span>
+								<span class="item-dropdown">
+									Perfil
+								</span>
 								<div class="line"></div>
 							</li>
 							<li class="item-list-dropdown">
-								<span class="item-dropdown" class="logout">
+								<span class="item-dropdown">
 									Logout
 								</span>
 								<div class="line"></div>
@@ -221,7 +219,7 @@ session_start();
 					<div class="card" data-aos="flip-down">
 						<img src="../../img/fallout3-img.jpg" alt="">
 						<div class="card-text">
-							<span>Card 01</span>
+							<span>Muito Loko</span>
 						</div>
 					</div>
 				</div>
@@ -252,7 +250,9 @@ session_start();
 					<article class="article" role="article">
 						<img class="image-developer" src="../../img/dev-example.png" alt="developer image" />
 						<div class="right">
-							<strong class="name-dev">Name Developer</strong>
+							<strong class="name-dev">
+								Name Developer
+							</strong>
 							<ul class="list-media-social">
 								<li class="item-media-social">
 									<img class="icon-dev" src="../../img/icon-facebook.svg" alt="icon facebook" />
@@ -296,7 +296,9 @@ session_start();
 					<article class="article" role="article">
 						<img class="image-developer" src="../../img/dev-example.png" alt="developer image" />
 						<div class="right">
-							<strong class="name-dev">Name Developer</strong>
+							<strong class="name-dev">
+								Name Developer
+							</strong>
 							<ul class="list-media-social">
 								<li class="item-media-social">
 									<img class="icon-dev" src="../../img/icon-facebook.svg" alt="icon facebook" />

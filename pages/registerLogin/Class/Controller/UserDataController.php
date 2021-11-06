@@ -1,5 +1,4 @@
 <?php 
-require_once("../../config.php");
 require_once("Class/Model/UserModel.php");
 require_once("UserController.php");
 
