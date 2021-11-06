@@ -87,7 +87,7 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</main>
 
 	
 	<footer class="m-footer" role="footer">

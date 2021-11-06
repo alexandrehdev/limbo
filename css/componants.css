@@ -18,6 +18,10 @@
     font-family: "gameplay";
 }
 
+.main-home {
+    overflow: hidden;
+}
+
 .s-cards{
     padding: 10rem 0rem;
     background-color: #666262;
