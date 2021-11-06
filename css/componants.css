@@ -5,17 +5,19 @@
 }
 
 .user-area{
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-    display: flex;
-    justify-content: right;
+    margin-right: 10px;
 }
 
-.user-area .btn-account{
+.btn-account{
     padding: 15px;
     cursor: pointer;
     font-family: "gameplay";
+
+    transition: filter 500ms;
+}
+
+.btn-account:hover {
+    filter: brightness(0.8);
 }
 
 .main-home {
