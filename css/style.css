@@ -126,6 +126,9 @@ div.line,
 .dropdown {
   position: relative;
   display: inline-block;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  cursor: pointer;
 }
 
 .dropdown-content {
