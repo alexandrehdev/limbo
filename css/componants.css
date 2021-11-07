@@ -1,14 +1,28 @@
-.user-area{
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-    display: flex;
-    justify-content: right;
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap');
+
+@font-face {
+    font-family: "gameplay";
+    font-style: normal;
+    src: url(font/Gameplay.ttf); 
 }
 
-.user-area .btn-account{
+.user-area{
+    margin-right: 10px;
+}
+
+.btn-account{
     padding: 15px;
     cursor: pointer;
+    font-family: "gameplay";
+    transition: filter 500ms;
+}
+
+.btn-account:hover {
+    filter: brightness(0.8);
+}
+
+.main-home {
+    overflow: hidden;
 }
 
 .s-cards{
@@ -28,6 +42,7 @@
     display: flex;
     justify-content: center;
 }
+
 .s-cards .container .main-cards .card-left{
     display: flex;
     justify-content: flex-start;
@@ -258,6 +273,7 @@
     padding: 2rem;
     top: 50%;
     transform: translateY(-50%);
+    font-family: 'Mochiy Pop One', sans-serif;
     
 }
 .noticias .container .noticias-text h2, .noticias .container .noticias-text p{

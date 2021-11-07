@@ -6,7 +6,6 @@
 	<title>Limbo</title>
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/icon.min.css">
 	<link rel="icon" type="image/png" href="./favicon.png">
-	<!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" /> -->
 	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
 	<link rel="stylesheet" type="text/css" href="css/buttons.css">
@@ -19,70 +18,77 @@
 <body>
 	<header class="main-header">
 		<h1 class="title-name">Limbo</h1>
+		<div class="user-area">
+			<button class="btn-account">Criar Conta</button>
+		</div>
 	</header>
 
-	<div class="user-area">
-		<button class="btn-account">Criar Conta</button>
-	</div>
-
-	<div class="container">
-		<div class="cards" data-aos="fade-left">
-			<div class="card-info to-left">
-				<div class="img-content img-left-side">
-					<img src="https://www.svgrepo.com/show/312832/person.svg">
+	<main>
+		<div class="container">
+			<div class="cards" data-aos="fade-right">
+				<div class="card-info to-right">
+					<div class="img-content img-right-side">
+						<img src="./img/home/businessman.png">
+					</div>
+					<div class="info-text">
+						<p>
+							Oi, seja bem vindo(a) ao nosso sistema. Este projeto foi uma ideia e desenvolvimento colaborativo por fins de aprendizado e estudo.
+							Para iniciar, preciso que realize um cadastro... Fica tranquilo, nenhum dinheiro solicitado.
+							Em nosso sistema, tem um tema bem levado para o lado "nerd", onde vai encontrar:
+						</p>
+					</div>
 				</div>
-				<div class="info-text">
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-						consequat. Duis aute irure dolor in reprehenderit in 
-					</p>
+			</div>
+			<div class="cards" data-aos="fade-left">
+				<div class="card-info to-left">
+					<div class="img-content img-left-side">
+						<img src="./img/home/newspaper.png">
+					</div>
+					<div class="info-text">
+						<p>
+							Noticias sobre jogos e lançamentos de diversos tipos... Onde os dados serão apresentado de forma objetiva
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="cards" data-aos="fade-right">
+				<div class="card-info to-right">
+					<div class="img-content img-right-side">
+						<img src="./img/home/console.png">
+					</div>
+					<div class="info-text">
+						<p>
+							Recomendações de jogos sendo gratis e pago... Ou seja, caso esteja procurando algum jogo para jogar e não queira gastar dinheiro, uma de nossas recomendações irá lhe servir... Há mais de 400 recomendações de jogos que podem ser de seu gosto.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="cards" data-aos="fade-left">
+				<div class="card-info to-left">
+					<div class="img-content img-left-side">
+						<img src="./img/home/rocket.png">
+					</div>
+					<div class="info-text">
+						<p>
+							Destaques, lançamentos e DLC's você tembem encontrará em nosso sistema. Você está aguardando alguma atualização, DLC? Podemos lhe informar sobre aquele jogo que você está tanto aguardando
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="cards" data-aos="fade-right">
+				<div class="card-info to-right">
+					<div class="img-content img-right-side">
+						<img src="./img/home/coding.png">
+					</div>
+					<div class="info-text">
+						<p>
+							Conheça um pouco sobre os desenvolvedores do sistema... Deixamos uma aba especialmente para isso caso tenha a curiosidade de conhecer um pouco mais da historia de cada um dos desenvolvedores.
+						</p>
+					</div>
 				</div>
 			</div>
 		</div>
-		<div class="cards" data-aos="fade-right">
-			<div class="card-info to-right">
-				<div class="img-content img-right-side">
-					<img src="https://www.svgrepo.com/show/312832/person.svg">
-				</div>
-				<div class="info-text">
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,eprehenderit in 
-					</p>
-				</div>
-			</div>
-		</div>
-		<div class="cards" data-aos="fade-left">
-			<div class="card-info to-left">
-				<div class="img-content img-left-side">
-					<img src="https://www.svgrepo.com/show/312832/person.svg">
-				</div>
-				<div class="info-text">
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					</p>
-				</div>
-			</div>
-		</div>
-		<div class="cards" data-aos="fade-right">
-			<div class="card-info to-right">
-				<div class="img-content img-right-side">
-					<img src="https://www.svgrepo.com/show/312832/person.svg">
-				</div>
-				<div class="info-text">
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						quis nostrud exercitation ullamco laboris nisi ut aliquip 
-					</p>
-				</div>
-			</div>
-		</div>
-	</div>
+	</main>
 
 	
 	<footer class="m-footer" role="footer">
