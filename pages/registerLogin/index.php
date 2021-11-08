@@ -74,7 +74,10 @@ if (isset($_POST['btn-login'])) {
 		</section>
 
 		<section id="login-account" class="section-register">
-			<h1 class="title-register">Login</h1>
+			<h1 class="title-register" id="login">Login</h1>
+			<div class="msg-erro" id="msgerro">
+				<!-- <span>Login ou senha incorretos</span> -->
+			</div>
 			<form class="form-register-login" method="POST" action="<?php $local ?>">
 
 				<div class="area-inputs">
@@ -97,6 +100,8 @@ if (isset($_POST['btn-login'])) {
 			</form>
 		</section>
 	</main>
-
+	<script src="../../js/script.js"></script>
+	<script src="https://code.jquery.com/jquery-3.4.0.min.js"
+    integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>
 </body>
 </html>

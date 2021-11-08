@@ -61,7 +61,7 @@ function applyLineAnimation({
         line.style.height = "5px";
         line.style.bottom = "0";
         line.style.padding = "0"
-
+        
         if(haveChildrenElements) {
             elementChildrenApply({
                 selector: selector,
