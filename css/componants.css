@@ -406,5 +406,24 @@ main{
     margin-top: 2rem;
     background-color: transparent;
     text-align: justify;
+}
 
+.msg-erro{
+    display: none;
+}
+
+.msg-erro.active{
+    width: 100%;
+    border-radius: 1rem;
+    padding: 2rem;
+    max-width: 30rem;
+    background-color: rgb(145, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.msg-erro span{
+    font-size: 1.2rem;
+    color: #fff;
 }
