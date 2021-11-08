@@ -1,8 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap');
-body{
-	overflow-x: hidden;
-	scroll-behavior: smooth;
-}
 
 @font-face {
     font-family: "gameplay";

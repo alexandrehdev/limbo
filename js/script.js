@@ -7,11 +7,11 @@ document.querySelector('.btn-account').addEventListener('click',function(){
 	window.location.href = "../pages/registerLogin/index.php";
 });
 
-window.scroll({
-	top:20,
-	left:0,
-	behavior:'smooth'
-});
+// window.scroll({
+// 	top:20,
+// 	left:0,
+// 	behavior:'smooth'
+// });
 
 // window.addEventListener("scroll", function(){
 

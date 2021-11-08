@@ -6,6 +6,7 @@
     outline: none;
     list-style: none;
     text-decoration: none;
+    scroll-behavior: smooth;
 }
 
 html{
@@ -16,6 +17,8 @@ body {
     background-color: #272727;
     display: flex;
     flex-direction: column;
+
+    overflow-x: hidden;
 }
 
 .container{
