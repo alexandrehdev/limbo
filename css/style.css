@@ -6,12 +6,12 @@ body{
 
 @font-face {
     font-family: "gameplay";
-    font-style: normal;
     src: url(font/Gameplay.ttf); 
 }
 
-.info-text{
+.info-text p{
 	font-family: 'Mochiy Pop One', sans-serif;
+	font-size: 20.3px;
 }
 
 .main-header{

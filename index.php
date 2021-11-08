@@ -46,7 +46,8 @@
 					</div>
 					<div class="info-text">
 						<p>
-							Noticias sobre jogos e lançamentos de diversos tipos... Onde os dados serão apresentado de forma objetiva
+							Aqui você encontrará noticias, casos curiosos sobre jogos e lançamentos, onde os dados serão apresentado de forma clara e objetiva.
+							Se você deseja estar por dentro de todas essas informações, está é a sessão perfeita para você... Você está apenas a um click de distância. 
 						</p>
 					</div>
 				</div>

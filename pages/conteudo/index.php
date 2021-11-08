@@ -1,5 +1,7 @@
 <?php 
 session_start();
+require_once("Class/GetGeekContent.php");
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -122,8 +124,18 @@ session_start();
 							<img src="https:\/\/www.freetogame.com\/g\/23\/thumbnail.jpg" alt="">
 						</div>
 						<div class="text-card-noticias">
-							<h5>Noticia 3x3</h5>
-							<span><a href="">Lorem, ipsum dolor sit amet consectetur adipisicing elit...</a></span>
+							<h5> 
+							<?php 
+								(new GetGeekContent())->getName(1); 
+							?> 
+							</h5>
+							<span>
+							<a href="">
+							<?php 
+								(new GetGeekContent())->getDesc(1)
+							 ?>
+							 </a>
+							</span>
 						</div>
 					</div>
 				</div>
@@ -133,8 +145,18 @@ session_start();
 							<img src="https:\/\/www.freetogame.com\/g\/24\/thumbnail.jpg" alt="">
 						</div>
 						<div class="text-card-noticias">
-							<h5>Noticia 3x3</h5>
-							<span><a href="">Lorem, ipsum dolor sit amet consectetur adipisicing elit...</a></span>
+							<h5>
+								<?php 
+								(new GetGeekContent())->getName(2);
+								 ?>
+							</h5>
+							<span>
+								<a href="">
+								<?php 
+								(new GetGeekContent())->getDesc(2);
+								 ?>
+								</a>
+							</span>
 						</div>
 					</div>
 				</div>
@@ -144,8 +166,18 @@ session_start();
 							<img src="https:\/\/www.freetogame.com\/g\/29\/thumbnail.jpg" alt="">
 						</div>
 						<div class="text-card-noticias">
-							<h5>Noticia 3x3</h5>
-							<span><a href="">Lorem, ipsum dolor sit amet consectetur adipisicing elit...</a></span>
+							<h5>
+								<?php 
+								(new GetGeekContent())->getName(3);
+								 ?>
+							</h5>
+							<span>
+							<a href="">
+							<?php 
+								(new GetGeekContent())->getDesc(3);
+							 ?>
+							</a>
+						</span>
 						</div>
 					</div>
 				</div>
@@ -155,8 +187,18 @@ session_start();
 							<img src="https:\/\/www.freetogame.com\/g\/32\/thumbnail.jpg" alt="">
 						</div>
 						<div class="text-card-noticias">
-							<h5>Noticia 3x3</h5>
-							<span><a href="">Lorem, ipsum dolor sit amet consectetur adipisicing elit...</a></span>
+							<h5>
+								<?php 
+								(new GetGeekContent())->getName(4);
+								 ?>
+							</h5>
+							<span>
+								<a href="">
+								<?php 
+								(new GetGeekContent())->getDesc(4);
+								 ?>		
+								</a>
+							</span>
 						</div>
 					</div>
 				</div>
@@ -166,8 +208,18 @@ session_start();
 							<img src="https:\/\/www.freetogame.com\/g\/33\/thumbnail.jpg" alt="">
 						</div>
 						<div class="text-card-noticias">
-							<h5>Noticia 3x3</h5>
-							<span><a href="">Lorem, ipsum dolor sit amet consectetur adipisicing elit...</a></span>
+							<h5>
+								<?php 
+								(new GetGeekContent())->getName(5);
+								 ?>
+							</h5>
+							<span>
+							<a href="">
+							<?php 
+								(new GetGeekContent())->getDesc(5);
+							 ?>	
+							</a>
+						</span>
 						</div>
 					</div>
 				</div>
@@ -177,8 +229,18 @@ session_start();
 							<img src="https:\/\/www.freetogame.com\/g\/33\/thumbnail.jpg" alt="">
 						</div>
 						<div class="text-card-noticias">
-							<h5>Noticia 3x3</h5>
-							<span><a href="">Lorem, ipsum dolor sit amet consectetur adipisicing elit...</a></span>
+							<h5>
+								<?php 
+								(new GetGeekContent())->getName(6); 
+								?>
+							</h5>
+							<span>
+								<a href="">
+								<?php 
+								(new GetGeekContent())->getDesc(6); 
+								?>
+								</a>
+						</span>
 						</div>
 					</div>
 				</div>
