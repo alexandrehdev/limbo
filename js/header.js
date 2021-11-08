@@ -1,5 +1,6 @@
 const itemsAllHeader = window.document.querySelectorAll("li.item-nav");
 const itemsAllDropdown = window.document.querySelectorAll("li.item-list-dropdown");
+const btnPerfil = document.querySelector('.headProfile');
 
 function applyLineAnimation({ 
     itemsAllNav, 
@@ -84,7 +85,10 @@ applyLineAnimation({
 
 
 // redirect para área de perfil
+function addLinkPerfil(){
+    const baseURL = window.location.origin;
+    window.location.href = `${baseURL}/pages/profile/index.php`
+    console.log('adicionando o link');
+}
 
-document.querySelector(".headProfile").addEventListener('click',function(){
-    window.location.href = " caminho_area_perfil ";
-}); 
+btnPerfil.addEventListener('click', addLinkPerfil);
