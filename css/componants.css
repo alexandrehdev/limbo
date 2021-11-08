@@ -60,7 +60,7 @@
 
 .s-cards .container .main-cards .card-left span{
     font-size: 2rem;
-    font-family: 'Inter', sans-serif;
+     font-family: 'Mochiy Pop One', sans-serif;
     font-weight: 600;
     background-color: white;
     padding: 2rem;
@@ -78,7 +78,6 @@
     height: 20rem;
     display: flex;
     flex-direction: column;
-    /* transition: all .3s; */
     box-shadow: -5px -5px 5px #333;
 }
 
@@ -102,6 +101,7 @@
     font-family: 'Inter', sans-serif;
     font-weight: 300;
     font-size: 1.4rem;
+    font-family: 'Mochiy Pop One', sans-serif;
 }
 
 /* CARDS DESTAQUES DO DIA EM MOVIMENTO */
@@ -230,6 +230,7 @@
 }
 
 .s-cards-noticias .container .main-cards-noticias .card-noticias .text-card-noticias{
+    font-family: 'Mochiy Pop One', sans-serif;
     padding-left: 0.5rem;
 }
 
