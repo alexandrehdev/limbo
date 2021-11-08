@@ -411,6 +411,7 @@ main{
 .msg-erro{
     display: none;
 }
+
 .msg-erro.active{
     width: 100%;
     border-radius: 1rem;
@@ -421,6 +422,7 @@ main{
     align-items: center;
     justify-content: center;
 }
+
 .msg-erro span{
     font-size: 1.2rem;
     color: #fff;

@@ -90,7 +90,7 @@ if (isset($_POST['btn-login'])) {
 					<input type="password" placeholder="Senha" name="log-pass">
 				</div>
 
-				<button 
+				<button
 					name="btn-login" 
 					type="submit"
 					title="Logar"
@@ -100,7 +100,7 @@ if (isset($_POST['btn-login'])) {
 			</form>
 		</section>
 	</main>
-	<script src="../../js/script.js"></script>
+	<script src="./js/errorMessage.js"></script>
 	<script src="https://code.jquery.com/jquery-3.4.0.min.js"
     integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>
 </body>
