@@ -245,6 +245,27 @@ div.line,
 	margin-left: 20px;
 }
 
+@keyframes animation-circle-arrow {
+	0% {
+		transform: translateY(0px);
+	}
+
+	50% {
+		transform: translateY(-20px);
+	}
+
+	100% {
+		transform: translateY(0px);
+	}
+}
+
+.circle-arrow {
+	animation-name: animation-circle-arrow;
+	animation-duration: 1000ms;
+	animation-iteration-count: infinite;
+
+}
+
 ::-webkit-scrollbar {
 	width: 8px;
 }

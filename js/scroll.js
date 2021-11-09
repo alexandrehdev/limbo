@@ -49,32 +49,24 @@
 
 const sectionsPage = [
 	{
+		name: "businessman",
+		value: 0
+	},
+	{
 		name: "newspaper",
-		startLogic: window.scrollY > 500,
-		startNumber: 500,
-		endLogic: window.scrollY < 900,
-		endNumber: 900
+		
 	},
 	{
 		name: "console",
-		startLogic: window.scrollY > 1100,
-		startNumber: 1100,
-		endLogic: window.scrollY < 1600,
-		endNumber: 1600
+		
 	},
 	{
 		name: "rocket",
-		startLogic: window.scrollY > 1800,
-		startNumber: 1800,
-		endLogic: window.scrollY < 2200,
-		endNumber: 2200
+		
 	},
 	{
 		name: "coding",
-		startLogic: window.scrollY > 2400,
-		startNumber: 2400,
-		endLogic: window.scrollY < 2800,
-		endNumber: 2800
+		
 	},
 ]
 
@@ -84,15 +76,6 @@ class ElementArrow {
 		colorArrow = "#000000", 
 		opacity = 0.5,
 		velocityTransitionAllMiliseconds = 500,
-		animation = {
-			name: "",
-			duration: "",
-			direction: "",
-			delay: "",
-			iterationCount: "",
-			FillMode: "",
-			timingFunction: ""
-		},
 		positionElement = {
 			top: "",
 			right: "20px",
@@ -105,7 +88,6 @@ class ElementArrow {
 		this._opacity = opacity;
 		this._velocityTransitionAllMiliseconds = velocityTransitionAllMiliseconds;
 		this._element = window.document.createElement("div");
-		this._animation = animation;
 		this._positionElement = positionElement;
 	}
 
@@ -135,10 +117,6 @@ class ElementArrow {
 
 	get velocityTransitionAllMiliseconds() {
 		return this._velocityTransitionAllMiliseconds;
-	}
-
-	get animation() {
-		return this._animation;
 	}
 
 	get positionElement() {
@@ -189,7 +167,7 @@ class ElementArrow {
 			},
 			{
 				name: "transition",
-				value: `all ${this.velocityTransitionAllMiliseconds}`
+				value: `all ${this.velocityTransitionAllMiliseconds}ms`
 			},
 			{
 				name: "display",
@@ -204,32 +182,8 @@ class ElementArrow {
 				value: "center"
 			},
 			{
-				name: "animationName",
-				value: this.animation.name
-			},
-			{
-				name: "animationDuration",
-				value: this.animation.duration
-			},
-			{
-				name: "animationDelay",
-				value: this.animation.delay
-			},
-			{
-				name: "animationIterationCount",
-				value: this.animation.iterationCount
-			},
-			{
-				name: "animationTimingFunction",
-				value: this.animation.timingFunction
-			},
-			{
-				name: "animationDirection",
-				value: this.animation.direction
-			},
-			{
-				name: "animationFillMode",
-				value: this.animation.fillMode
+				name: "cursor",
+				value: "pointer"
 			}
 		]
 
@@ -246,9 +200,37 @@ class ElementArrow {
 
 		this.element.innerHTML = svgHTMLPure;
 		window.document.body.appendChild(this.element);
+
+		this.element.addEventListener('mouseenter', () => {
+			this.element.style.opacity = 0.8;
+		}, false);
+
+		this.element.addEventListener('mouseleave', () => {
+			this.element.style.opacity = this.opacity;
+		}, false);
+	}
+
+	click(event) {
+		this.element.addEventListener('click', event, false);
 	}
 }
 
-const circleArrow = new ElementArrow();
-circleArrow.render();
-console.log(circleArrow);
+// const circleArrow = new ElementArrow();
+// circleArrow.render();
+
+// circleArrow.click(() => {
+
+// })
+
+// window.document.addEventListener("scroll", () => {
+// 	console.log(window.scrollY);
+// })
+
+// console.log(window.innerHeight);
+
+function teste() {
+	const totalHeight = window.screen.height * 5 - 317;
+	console.log(totalHeight);
+}
+
+teste();
