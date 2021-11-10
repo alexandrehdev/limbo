@@ -47,29 +47,6 @@
 // 	});
 // });
 
-const sectionsPage = [
-	{
-		name: "businessman",
-		value: 0
-	},
-	{
-		name: "newspaper",
-		
-	},
-	{
-		name: "console",
-		
-	},
-	{
-		name: "rocket",
-		
-	},
-	{
-		name: "coding",
-		
-	},
-]
-
 class ElementArrow {
 	constructor({ 
 		backgroundColor = "#ffffff", 
@@ -89,6 +66,7 @@ class ElementArrow {
 		this._velocityTransitionAllMiliseconds = velocityTransitionAllMiliseconds;
 		this._element = window.document.createElement("div");
 		this._positionElement = positionElement;
+		this._svgHTML = null;
 	}
 
 	get backgroundColor() {
@@ -121,6 +99,14 @@ class ElementArrow {
 
 	get positionElement() {
 		return this._positionElement;
+	}
+
+	set svgHTML(value) {
+		this._svgHTML = value;
+	}
+
+	get svgHTML() {
+		return this._svgHTML;
 	}
 
 	render() {
@@ -187,11 +173,13 @@ class ElementArrow {
 			}
 		]
 
-		const svgHTMLPure = `
-			<svg width="60px" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+		const svgHTMLPure = ` 
+			<svg width="60px" style="transition: all 200ms" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
 				<polygon fill="${this.colorArrow}" points="2.38 7 14.38 7 8.38 14 2.38 7"/><rect x="6.38" y="2.11" width="4" height="6" transform="translate(16.75 10.22) rotate(-180)"/>
-			</svg>
+			</svg> 
 		`
+
+		this.svgHTML = svgHTMLPure;
 
 		this.element.classList.add("circle-arrow");
 		stylesCircle.forEach(item => {
@@ -203,34 +191,32 @@ class ElementArrow {
 
 		this.element.addEventListener('mouseenter', () => {
 			this.element.style.opacity = 0.8;
+			this.element.style.transform = "scale(1.2)";
 		}, false);
 
 		this.element.addEventListener('mouseleave', () => {
 			this.element.style.opacity = this.opacity;
+			this.element.style.transform = "scale(1)";
 		}, false);
 	}
 
 	click(event) {
 		this.element.addEventListener('click', event, false);
 	}
+
+	getElements() {
+		return [
+			this.svgHTML,
+			this.element
+		]
+	}
 }
-
-// const circleArrow = new ElementArrow();
-// circleArrow.render();
-
-// circleArrow.click(() => {
-
-// })
-
-// window.document.addEventListener("scroll", () => {
-// 	console.log(window.scrollY);
-// })
 
 // console.log(window.innerHeight);
 
-function teste() {
-	const totalHeight = window.screen.height * 5 - 317;
-	console.log(totalHeight);
-}
+// function teste() {
+// 	const totalHeight = window.screen.height * 5 - 317;
+// 	console.log(totalHeight);
+// }
 
-teste();
+// teste();
