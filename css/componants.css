@@ -355,7 +355,46 @@ main{
     right: -10 !important;
 }
 
-.s-profile{
+/*User content*/
+.user-block{
+    height: 70%;
+    width: 70%;
+    color: white;
+    position: relative;
+    background-color: #0c0c0c;
+    left: 15%;
+    top: 10vh;
+    font-family: "gameplay";
+    padding: 50px;
+}
+
+.user-block h1{
+    text-align: center;
+}
+
+.user-content p{
+    margin: 20px;   
+    line-height: 70px; 
+    font-size: 22px;
+    margin-left: 250px;
+}
+
+.user-info{
+    display: flex;
+    justify-content:left;
+    width: 100%;
+}
+
+.content .user-img{
+    margin-top: -200px;
+}
+
+.user-img img{
+    border-radius: 100px;
+}
+
+
+/*.s-profile{
     padding: 10rem 0rem;
     width: 100%;
 }
@@ -408,7 +447,7 @@ main{
     background-color: transparent;
     text-align: justify;
 }
-
+*/
 .msg-erro{
     display: none;
 }
