@@ -66,7 +66,7 @@ circleArrow.click(target => {
 		case "bottom":
 			id++;
 
-			if(id === 4 || window.scrollY === 2709) {
+			if(id === 4) {
 				direction = "top";
 
 				svg.style.transform = "rotate(180deg)";
@@ -75,7 +75,7 @@ circleArrow.click(target => {
 		case "top":
 			id--;
 
-			if(id === 0  || window.scrollY === 0) {
+			if(id === 0) {
 				direction = "bottom";
 
 				svg.style.transform = "rotate(0deg)";
@@ -83,13 +83,25 @@ circleArrow.click(target => {
 			break;
 	}
 
-	window.scroll(0, sectionsPage[id].value);
+	// window.scroll(0, sectionsPage[id].value);
+	window.location.href = `${window.location.origin}/#${sectionsPage[id].name}`;
 });
 
 // window.document.addEventListener("scroll", () => {
 // 	console.log(window.scrollY);
 // });
 
-const [ svg, circle ] = circleArrow.getElements();
+const elements = circleArrow.getElements();
+const circle = elements[1];
+const svg = circle.children[0];
 console.log(svg);
-console.log(circle);
+
+window.document.addEventListener("scroll", () => {
+	if(window.scrollY >= 2709) {
+		svg.style.transform = "rotate(180deg)";
+
+	} else if(window.scrollY === 0) {
+		svg.style.transform = "rotate(0deg)";
+
+	}
+})

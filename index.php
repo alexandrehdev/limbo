@@ -24,9 +24,9 @@
 	</header>
 
 	<main>
-		<div class="container">
-			<div class="cards" data-aos="fade-right">
-				<div class="card-info to-right">
+		<div id="home" class="container">
+			<section id="businessman" class="cards" data-aos="fade-right">
+				<article class="card-info to-right">
 					<div class="img-content img-right-side">
 						<img src="./img/home/businessman.png">
 					</div>
@@ -37,10 +37,10 @@
 							Em nosso sistema, tem um tema bem levado para o lado "nerd", onde vai encontrar:
 						</p>
 					</div>
-				</div>
-			</div>
-			<div class="cards" data-aos="fade-left">
-				<div class="card-info to-left">
+				</article>
+			</section>
+			<section id="newspaper" class="cards" data-aos="fade-left">
+				<article class="card-info to-left">
 					<div class="img-content img-left-side">
 						<img src="./img/home/newspaper.png">
 					</div>
@@ -50,10 +50,10 @@
 							Se você deseja estar por dentro de todas essas informações, está é a sessão perfeita para você... Você está apenas a um click de distância. 
 						</p>
 					</div>
-				</div>
-			</div>
-			<div class="cards" data-aos="fade-right">
-				<div class="card-info to-right">
+				</article>
+			</section>
+			<section id="console" class="cards" data-aos="fade-right">
+				<article class="card-info to-right">
 					<div class="img-content img-right-side">
 						<img src="./img/home/console.png">
 					</div>
@@ -62,10 +62,10 @@
 							Recomendações de jogos sendo gratis e pago... Ou seja, caso esteja procurando algum jogo para jogar e não queira gastar dinheiro, uma de nossas recomendações irá lhe servir... Há mais de 400 recomendações de jogos que podem ser de seu gosto.
 						</p>
 					</div>
-				</div>
-			</div>
-			<div class="cards" data-aos="fade-left">
-				<div class="card-info to-left">
+				</article>
+			</section>
+			<section id="rocket" class="cards" data-aos="fade-left">
+				<article class="card-info to-left">
 					<div class="img-content img-left-side">
 						<img src="./img/home/rocket.png">
 					</div>
@@ -74,10 +74,10 @@
 							Destaques, lançamentos e DLC's você tembem encontrará em nosso sistema. Você está aguardando alguma atualização, DLC? Podemos lhe informar sobre aquele jogo que você está tanto aguardando
 						</p>
 					</div>
-				</div>
-			</div>
-			<div class="cards" data-aos="fade-right">
-				<div class="card-info to-right">
+				</article>
+			</section>
+			<section id="coding" class="cards" data-aos="fade-right">
+				<article class="card-info to-right">
 					<div class="img-content img-right-side">
 						<img src="./img/home/coding.png">
 					</div>
@@ -86,8 +86,8 @@
 							Conheça um pouco sobre os desenvolvedores do sistema... Deixamos uma aba especialmente para isso caso tenha a curiosidade de conhecer um pouco mais da historia de cada um dos desenvolvedores.
 						</p>
 					</div>
-				</div>
-			</div>
+				</article>
+			</section>
 		</div>
 	</main>
 

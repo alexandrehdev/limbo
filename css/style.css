@@ -188,20 +188,15 @@ div.line,
 }
 
 /*Edição conteudo card home*/
-.container{
-	margin-top: 160px;
+div#home {
 	width: 100%;
 }
 
-.cards{
+.cards {
 	display: grid;
 	justify-content: center;
-	height: 100vh ;
-	margin-top: 10px;
-}
 
-.card-info{
-	height: 200px;
+	height: 600px;
 }
 
 .info-text{

@@ -49,14 +49,14 @@
 
 class ElementArrow {
 	constructor({ 
-		backgroundColor = "#ffffff", 
+		backgroundColor = "#ffffff",
 		colorArrow = "#000000", 
 		opacity = 0.5,
 		velocityTransitionAllMiliseconds = 500,
 		positionElement = {
 			top: "",
-			right: "20px",
-			bottom: "20px",
+			right: "30px",
+			bottom: "30px",
 			left: ""
 		}
 	} = {}) {
@@ -189,19 +189,29 @@ class ElementArrow {
 		this.element.innerHTML = svgHTMLPure;
 		window.document.body.appendChild(this.element);
 
-		this.element.addEventListener('mouseenter', () => {
-			this.element.style.opacity = 0.8;
-			this.element.style.transform = "scale(1.2)";
+		this.element.addEventListener('mouseenter', ({ target }) => {
+			target.style.opacity = 0.8;
+			target.style.transform = "scale(1.2)";
 		}, false);
 
-		this.element.addEventListener('mouseleave', () => {
-			this.element.style.opacity = this.opacity;
-			this.element.style.transform = "scale(1)";
+		this.element.addEventListener('mouseleave', ({ target }) => {
+			target.style.opacity = this.opacity;
+			target.style.transform = "scale(1)";
 		}, false);
 	}
 
 	click(event) {
-		this.element.addEventListener('click', event, false);
+		this.element.addEventListener('click', objectEvent => {
+			this.element.style.transform = "scale(1)";
+
+			let timer;
+			clearTimeout(timer);
+			timer = setTimeout(() => {
+				this.element.style.transform = "scale(1.2)";
+			}, 200);
+
+			event(objectEvent);
+		}, false);
 	}
 
 	getElements() {
