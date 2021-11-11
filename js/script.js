@@ -3,9 +3,9 @@
 // 	window.location.href = "index.php";
 // });
 
-document.querySelector('.btn-account').addEventListener('click',function(){
-	window.location.href = "../pages/registerLogin/index.php";
-});
+// document.querySelector('.btn-account').addEventListener('click',function(){
+// 	window.location.href = "../pages/registerLogin/index.php";
+// });
 
 // window.scroll({
 // 	top:20,
@@ -25,55 +25,3 @@ document.querySelector('.btn-account').addEventListener('click',function(){
 	// var scrollCard = document.querySelector(".card-info").offsetTop;
 	// window.scrollTo({ top: cards, behavior: 'smooth'});
 // });
-
-// Logo
-const logo = window.document.getElementsByClassName("title-name")[0];
-
-logo.onclick = () => {
-	window.scrollTo(0, 0);
-}
-
-// Botão exit
-const sectionsPage = [
-	"businessman",
-	"newspaper",
-	"console",
-	"rocket",
-	"coding"
-]
-
-const circleArrow = new ElementArrow();
-circleArrow.render();
-
-let id = 0;
-let direction = "bottom";
-
-const elements = circleArrow.getElements();
-const circle = elements[1];
-const svg = circle.children[0];
-
-circleArrow.click(target => {
-	switch(direction) {
-		case "bottom":
-			id++;
-
-			if(id === 4) {
-				direction = "top";
-
-				svg.style.transform = "rotate(180deg)";
-			}
-			break;
-		case "top":
-			id--;
-
-			if(id === 0) {
-				direction = "bottom";
-
-				svg.style.transform = "rotate(0deg)";
-			}
-			break;
-		default:
-	}
-	window.location.href = `${window.location.origin}/#${sectionsPage[id]}`;
-});
-

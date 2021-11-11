@@ -408,7 +408,8 @@ require_once("Class/GetGeekContent.php");
             once: true, //para a animação acontecer somente uma vez
         });
     </script>
-    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="../../js/script.js"></script>
+    <script type="text/javascript" src="../../js/title-scroll.js"></script>
     <script type="text/javascript" src="../../js/header.js"></script>
 </body>
 
