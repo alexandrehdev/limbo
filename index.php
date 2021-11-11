@@ -25,8 +25,9 @@
 
 	<main>
 		<div id="home" class="container">
-			<section id="businessman" class="cards" data-aos="fade-right">
-				<article class="card-info to-right">
+			<a></a>
+			<section id="businessman" class="cards">
+				<article class="card-info to-right" data-aos="fade-right">
 					<div class="img-content img-right-side">
 						<img src="./img/home/businessman.png">
 					</div>
@@ -39,8 +40,8 @@
 					</div>
 				</article>
 			</section>
-			<section id="newspaper" class="cards" data-aos="fade-left">
-				<article class="card-info to-left">
+			<section id="newspaper" class="cards">
+				<article class="card-info to-left" data-aos="fade-left">
 					<div class="img-content img-left-side">
 						<img src="./img/home/newspaper.png">
 					</div>
@@ -52,8 +53,8 @@
 					</div>
 				</article>
 			</section>
-			<section id="console" class="cards" data-aos="fade-right">
-				<article class="card-info to-right">
+			<section id="console" class="cards">
+				<article class="card-info to-right" data-aos="fade-right">
 					<div class="img-content img-right-side">
 						<img src="./img/home/console.png">
 					</div>
@@ -64,8 +65,8 @@
 					</div>
 				</article>
 			</section>
-			<section id="rocket" class="cards" data-aos="fade-left">
-				<article class="card-info to-left">
+			<section id="rocket" class="cards">
+				<article class="card-info to-left" data-aos="fade-left">
 					<div class="img-content img-left-side">
 						<img src="./img/home/rocket.png">
 					</div>
@@ -76,8 +77,8 @@
 					</div>
 				</article>
 			</section>
-			<section id="coding" class="cards" data-aos="fade-right">
-				<article class="card-info to-right">
+			<section id="coding" class="cards">
+				<article class="card-info to-right" data-aos="fade-right">
 					<div class="img-content img-right-side">
 						<img src="./img/home/coding.png">
 					</div>

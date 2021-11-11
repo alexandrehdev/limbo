@@ -85,6 +85,22 @@ circleArrow.click(target => {
 
 	// window.scroll(0, sectionsPage[id].value);
 	window.location.href = `${window.location.origin}/#${sectionsPage[id].name}`;
+
+	// const hrefArray = window.location.href.split("/");
+	// const hrefIdSection = hrefArray[3];
+	// switch(hrefIdSection) {
+	// 	case "#businessman":
+	// 	case "#newspaper":
+	// 	case "#console":
+	// 	case "#rocket":
+	// 		svg.style.transform = "rotate(0deg)";
+
+	// 	break;
+	// 	case "#coding":
+	// 		svg.style.transform = "rotate(180deg)";
+	// 	break;
+	// 	default:
+	// }
 });
 
 // window.document.addEventListener("scroll", () => {
@@ -96,12 +112,8 @@ const circle = elements[1];
 const svg = circle.children[0];
 console.log(svg);
 
-window.document.addEventListener("scroll", () => {
-	if(window.scrollY >= 2709) {
-		svg.style.transform = "rotate(180deg)";
 
-	} else if(window.scrollY === 0) {
-		svg.style.transform = "rotate(0deg)";
 
-	}
-})
+// window.document.addEventListener("scroll", () => {
+	
+// })
