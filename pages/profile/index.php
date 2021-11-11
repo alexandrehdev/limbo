@@ -85,6 +85,7 @@ session_start();
         </div>
     </section>
     <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="../../js/title-scroll.js"></script>
     <script type="text/javascript" src="../../js/header.js"></script>
 </body>
 

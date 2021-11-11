@@ -267,6 +267,7 @@ class ElementArrow {
 		this.svgHTML = svgHTMLPure;
 
 		this.element.classList.add("circle-arrow");
+
 		stylesCircle.forEach(item => {
 			this.element.style[item.name] = item.value;
 		});
@@ -275,7 +276,7 @@ class ElementArrow {
 		window.document.body.appendChild(this.element);
 
 		this.element.addEventListener('mouseenter', ({ target }) => {
-			target.style.opacity = 0.8;
+			target.style.opacity = 1;
 			target.style.transform = "scale(1.2)";
 		}, false);
 

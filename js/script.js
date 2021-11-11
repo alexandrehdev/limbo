@@ -3,9 +3,9 @@
 // 	window.location.href = "index.php";
 // });
 
-document.querySelector('.btn-account').addEventListener('click',function(){
-	window.location.href = "../pages/registerLogin/index.php";
-});
+// document.querySelector('.btn-account').addEventListener('click',function(){
+// 	window.location.href = "../pages/registerLogin/index.php";
+// });
 
 // window.scroll({
 // 	top:20,
@@ -25,66 +25,3 @@ document.querySelector('.btn-account').addEventListener('click',function(){
 	// var scrollCard = document.querySelector(".card-info").offsetTop;
 	// window.scrollTo({ top: cards, behavior: 'smooth'});
 // });
-
-
-const sectionsPage = [
-	{
-		name: "businessman",
-		value: 0
-	},
-	{
-		name: "newspaper",
-		value: 700
-	},
-	{
-		name: "console",
-		value: 1351
-	},
-	{
-		name: "rocket",
-		value: 2051
-	},
-	{
-		name: "coding",
-		value: 2709
-	},
-]
-
-const circleArrow = new ElementArrow();
-circleArrow.render();
-
-let id = 0;
-let direction = "bottom";
-
-const elements = circleArrow.getElements();
-const circle = elements[1];
-const svg = circle.children[0];
-console.log(svg);
-
-circleArrow.click(target => {
-	// const svg = target.path[1];
-
-	switch(direction) {
-		case "bottom":
-			id++;
-
-			if(id === 4) {
-				direction = "top";
-
-				svg.style.transform = "rotate(180deg)";
-			}
-			break;
-		case "top":
-			id--;
-
-			if(id === 0) {
-				direction = "bottom";
-
-				svg.style.transform = "rotate(0deg)";
-			}
-			break;
-		default:
-	}
-	window.location.href = `${window.location.origin}/#${sectionsPage[id].name}`;
-});
-
