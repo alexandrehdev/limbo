@@ -1,51 +1,136 @@
-// window.document.addEventListener('scroll', event => {
-// 	const sectionsPage = [
-// 		{
-// 			name: "newspaper",
-// 			startLogic: window.scrollY > 500,
-// 			startNumber: 500,
-// 			endLogic: window.scrollY < 900,
-// 			endNumber: 900
-// 		},
-// 		{
-// 			name: "console",
-// 			startLogic: window.scrollY > 1100,
-// 			startNumber: 1100,
-// 			endLogic: window.scrollY < 1600,
-// 			endNumber: 1600
-// 		},
-// 		{
-// 			name: "rocket",
-// 			startLogic: window.scrollY > 1800,
-// 			startNumber: 1800,
-// 			endLogic: window.scrollY < 2200,
-// 			endNumber: 2200
-// 		},
-// 		{
-// 			name: "coding",
-// 			startLogic: window.scrollY > 2400,
-// 			startNumber: 2400,
-// 			endLogic: window.scrollY < 2800,
-// 			endNumber: 2800
-// 		},
-// 	]
+/*
+	O objeto Foi feito para renderizar um botão na interface de forma mais independente
+	Recebe valores que automaticamente serão armazenado caso o objeto não recebe nenhum valor
+	Lhe mostrarei as configurações do objeto
 
-// 	// console.log(window.scrollY);
 
-// 	sectionsPage.forEach(item => {
-// 		const centerY = (item.startNumber + item.endNumber) / 2;
 
-// 		if(item.startLogic && item.endLogic) {
-// 			window.scroll(0, centerY);
-// 		}
+	* Propriedades do objeto
 
-// 		// setTimeout(() => {
-// 		// 	sectionsPage.forEach(item => {
-// 		// 		item.passed = false;
-// 		// 	})
-// 		// }, 2000);
-// 	});
-// });
+	**1 - Cores 
+
+	const elementArrow = new ElementArrow({
+		backgroundColor: "#00ff00",
+		colorArrow: "#0000ff"
+	});
+
+	- backgroundColor
+	TIPO: String
+	VALOR PADRÃO: "#ffffff" (Branco)
+	RECEBE: Pode receber em qualquer formato aceitado pela propriedade de cor do css
+	UTILIDADE: Usado para setar a cor de fundo do botão
+
+	- colorArrow
+	TIPO: String
+	VALOR PADRÃO: "#000000" (Preto)
+	RECEBE: Pode receber em qualquer formato aceitado pela propriedade de cor do css
+	UTILIDADE: Usado para setar a cor da seta
+
+	
+	**2 - Opacity
+	
+	const elementArrow = new ElementArrow({
+		opacity: 0.2
+	});
+
+	- opacity
+	TIPO: Number
+	VALOR PADRÃO: 0.5
+	RECEBE: Recebe um valor de 1 até 0, pode ser 0.1, 0.5, 0.8 e etc
+	UTILIDADE: Usado para setar a transparência do botão completamente
+
+	
+	**3 - Velocidade de transição global
+
+	const elementArrow = new ElementArrow({
+		velocityTransitionAllMiliseconds: 1000
+	});
+
+	- velocityTransitionAllMiliseconds
+	TIPO: Number
+	VALOR PADRÃO: 500
+	RECEBE: Valor em milisegundos
+	UTILIDADE: Usado para setar a velocidade de animação em todas as propriedades
+	
+
+	**4 - Posição do elemento no corpo da página
+
+	const elementArrow = new ElementArrow({
+		positionElement: {
+			top: "",
+			right: "50px",
+			bottom: "50px",
+			left: ""
+		}
+	});
+
+	- positionElement
+	TIPO: Object
+	VALOR PADRÃO: { top: "", right: "30px", bottom: "30px", left: "" }
+	RECEBE: Objeto de configuração de posição de elemento na interface
+	UTILIDADE: Usado para setar a posição no documento, ele está setado como posição
+			   fixa
+
+
+
+	* Funções 
+	
+
+	** new ElementArrow().render()
+
+	const elementArrow = new ElementArrow();
+	elementArrow.render();
+
+	- render()
+	RECEBE: Não recebe valor
+	UTILIDADE: Usado para renderizar o botão na página
+
+	
+	** new ElementArrow().click(callback);
+	
+	const elementArrow = new ElementArrow();
+	elementArrow.render();
+
+	elementArrow.click(() => {
+		console.log("Olá mundo");
+	})
+	
+	- click(callback)
+	RECEBE: Recebe uma callback(função de seta)
+	UTILIDADE: Faz uma ação ao clicar no botão
+	PARAMÊTRO CALLBACK: Pega exatamente o mesmo objeto do addEventListener para mouse
+						chamado MouseEvent, Segue esse link para conhecer o objeto
+						e saber manipula-lo: 
+						https://developer.mozilla.org/en-US/docs/Web/API/MouseEvent
+
+
+	** new ElementArrow().getElements()
+
+	const elementArrow = new ElementArrow();
+	elementArrow.render();
+
+	const elements = elementArrow.getElements();
+
+	const svg = elements[0];
+	const elementCircle = element[1];
+
+	console.log(svg);
+	console.log(elementCircle);
+
+	- getElements()
+	RECEBE: Não recebe valor
+	UTILIDADE: Retorna um array onde o primeiro dado é o svg
+			   e o segundo o circulo
+
+
+
+
+
+
+
+
+	feat: Astronauto
+*/
 
 class ElementArrow {
 	constructor({ 
@@ -221,12 +306,3 @@ class ElementArrow {
 		]
 	}
 }
-
-// console.log(window.innerHeight);
-
-// function teste() {
-// 	const totalHeight = window.screen.height * 5 - 317;
-// 	console.log(totalHeight);
-// }
-
-// teste();

@@ -72,7 +72,7 @@
 					</div>
 					<div class="info-text">
 						<p>
-							Destaques, lançamentos e DLC's você tembem encontrará em nosso sistema. Você está aguardando alguma atualização, DLC? Podemos lhe informar sobre aquele jogo que você está tanto aguardando
+							Destaques, lançamentos e DLC's você também encontrará em nosso sistema. Você está aguardando alguma atualização, DLC? Podemos lhe informar sobre aquele jogo que você está tanto aguardando
 						</p>
 					</div>
 				</article>
