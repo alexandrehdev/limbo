@@ -26,28 +26,20 @@ document.querySelector('.btn-account').addEventListener('click',function(){
 	// window.scrollTo({ top: cards, behavior: 'smooth'});
 // });
 
+// Logo
+const logo = window.document.getElementsByClassName("title-name")[0];
 
+logo.onclick = () => {
+	window.scrollTo(0, 0);
+}
+
+// Botão exit
 const sectionsPage = [
-	{
-		name: "businessman",
-		value: 0
-	},
-	{
-		name: "newspaper",
-		value: 700
-	},
-	{
-		name: "console",
-		value: 1351
-	},
-	{
-		name: "rocket",
-		value: 2051
-	},
-	{
-		name: "coding",
-		value: 2709
-	},
+	"businessman",
+	"newspaper",
+	"console",
+	"rocket",
+	"coding"
 ]
 
 const circleArrow = new ElementArrow();
@@ -59,11 +51,8 @@ let direction = "bottom";
 const elements = circleArrow.getElements();
 const circle = elements[1];
 const svg = circle.children[0];
-console.log(svg);
 
 circleArrow.click(target => {
-	// const svg = target.path[1];
-
 	switch(direction) {
 		case "bottom":
 			id++;
@@ -85,6 +74,6 @@ circleArrow.click(target => {
 			break;
 		default:
 	}
-	window.location.href = `${window.location.origin}/#${sectionsPage[id].name}`;
+	window.location.href = `${window.location.origin}/#${sectionsPage[id]}`;
 });
 
