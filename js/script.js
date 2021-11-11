@@ -3,9 +3,9 @@
 // 	window.location.href = "index.php";
 // });
 
-// document.querySelector('.btn-account').addEventListener('click',function(){
-// 	window.location.href = "../pages/registerLogin/index.php";
-// });
+document.querySelector('.btn-account').addEventListener('click',function(){
+	window.location.href = "../pages/registerLogin/index.php";
+});
 
 // window.scroll({
 // 	top:20,
