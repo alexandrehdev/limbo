@@ -260,6 +260,7 @@
 			</footer>
 			<script type="text/javascript" src="js/script.js"></script>
 			<script type="text/javascript" src="../../js/header.js"></script>
+			<script type="text/javascript" src="../../js/pages.js"></script>
 			<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
 			<!-- Initialize Swiper -->

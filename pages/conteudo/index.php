@@ -384,6 +384,7 @@ require_once("Class/GetGeekContent.php");
 		</div>
 	</footer>
 	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+	<script type="text/javascript" src="../../js/pages.js"></script>
 	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 	<script>
 		var swiper = new Swiper(".cards-destaques", {

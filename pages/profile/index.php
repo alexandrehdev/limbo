@@ -7,16 +7,18 @@ session_start();
 <head>
 	<meta charset="utf-8">
 	<title>Limbo</title>
+
+	<link rel="icon" type="image/png" href="../../favicon.png">
+	<link rel="stylesheet" href="../../css/footer.css"/>
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="../../css/style.css">
+	<link rel="stylesheet" type="text/css" href="../../css/reset.css">
+	<link rel="stylesheet" type="text/css" href="../../css/variables.css">
+	<link rel="stylesheet" href="../../css/componants.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/icon.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
 </head>
-<link rel="icon" type="image/png" href="../../favicon.png">
-<link rel="stylesheet" href="../../css/footer.css"/>
-<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-<link rel="stylesheet" type="text/css" href="../../css/style.css">
-<link rel="stylesheet" type="text/css" href="../../css/reset.css">
-<link rel="stylesheet" type="text/css" href="../../css/variables.css">
-<link rel="stylesheet" href="../../css/componants.css">
-<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/icon.min.css">
 
 <body>
 	<header class="main-header">
@@ -76,16 +78,39 @@ session_start();
     				<input type="file" value="Mudar foto" name="">
     			</div>
     			<div class="user-info">
-    				<div class="field">
-    					<p>Nome: <?php echo "Calma que ainda vai"; ?>  </p>
-    					<p>Email: <?php echo $_SESSION['login_user'] ?> </p>
-    					<p>Status: <?php echo "sei la.. sou gostoso"; ?></p>
+    				<div class="fields">
+    					<div class="field">
+    						<p>
+    							Nome: <?php echo "Calma que ainda vai"; ?>  
+    						</p>
+    						<button class="change-field">
+    							<i class="fas fa-pencil-alt fa-2x"></i>
+    						</button>
+    					</div>
+    					<div class="field">
+    						<p>
+    							Email: <?php echo $_SESSION['login_user'] ?> 
+    						</p>
+    						<button class="change-field">
+    							<i class="fas fa-pencil-alt fa-2x"></i>
+    						</button>
+    					</div>
+    					<div class="field">
+    						<p>
+    							Status: <?php echo "sei la.. sou gostoso"; ?>
+    						</p>
+    						<button class="change-field">
+    							<i class="fas fa-pencil-alt fa-2x"></i>
+    						</button>
+    					</div>
     				</div>
     			</div>
     		</div>
     	</div>
 
-    <script type="text/javascript" src="js/script.js"></script>
+    <!-- <script type="text/javascript" src="js/script.js"></script> -->
+    <script type="text/javascript" src="js/field.js"></script>
+    <script type="text/javascript" src="../../js/pages.js"></script>
     <script type="text/javascript" src="../../js/header.js"></script>
 </body>
 
