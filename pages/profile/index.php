@@ -69,14 +69,14 @@ session_start();
     	
     	<div class="user-block">
     		<h1>Player 1</h1>
-    		<div class="content">
-    			<div class="user-img">
+    		<div class="user-content">
+    			<div class="area-user-img">
     				<!-- foto do muito loko -->
     				<img src="https://i.pinimg.com/564x/ca/0b/e0/ca0be062b256c5c1afb277a8525a3ac9.jpg" height="200">
     				<input type="file" value="Mudar foto" name="">
     			</div>
     			<div class="user-info">
-    				<div class="user-content">
+    				<div class="field">
     					<p>Nome: <?php echo "Calma que ainda vai"; ?>  </p>
     					<p>Email: <?php echo $_SESSION['login_user'] ?> </p>
     					<p>Status: <?php echo "sei la.. sou gostoso"; ?></p>

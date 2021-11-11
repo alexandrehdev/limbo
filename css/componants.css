@@ -370,27 +370,40 @@ main{
 
 .user-block h1{
     text-align: center;
+
+    margin-bottom: 50px;
 }
 
-.user-content p{
-    margin: 20px;   
+.field p {
     line-height: 70px; 
     font-size: 22px;
-    margin-left: 250px;
+    margin: 20px 0;
 }
 
-.user-info{
+.user-info,
+.user-content,
+.area-user-img
+{
     display: flex;
-    justify-content:left;
-    width: 100%;
+    justify-content: center;
+    align-items: center;
 }
 
-.content .user-img{
-    margin-top: -200px;
+.user-info {
+    flex: 1;
 }
 
-.user-img img{
-    border-radius: 100px;
+.area-user-img {
+    flex-direction: column;
+}
+
+.area-user-img > img {
+    border-radius: 100%;
+
+    width: 200px;
+    height: 200px;
+
+    margin-bottom: 40px;
 }
 
 
