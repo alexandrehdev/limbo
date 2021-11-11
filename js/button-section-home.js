@@ -1,4 +1,4 @@
-// Botão exit
+// Botão section
 const sectionsPage = [
 	"businessman",
 	"newspaper",
