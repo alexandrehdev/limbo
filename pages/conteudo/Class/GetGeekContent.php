@@ -19,6 +19,10 @@ class GetGeekContent
 	public function getDesc($i){
 		echo $this->jsonNews[$i]["desc"];
 	}
+
+	public function getImg($i){
+		echo $this->jsonNews[$i]["img"];
+	}
 }
 
 ?>

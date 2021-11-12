@@ -121,7 +121,7 @@ require_once("Class/GetGeekContent.php");
 				<div class="card-noticias js-card-noticias" data-aos="fade-down-right">
 					<div class="efeito-noticias">
 						<div class="img">
-							<img src="https:\/\/www.freetogame.com\/g\/23\/thumbnail.jpg" alt="">
+							<img src="<?php (new GetGeekContent())->getImg(1) ?>">
 						</div>
 						<div class="text-card-noticias">
 							<h5> 
@@ -142,7 +142,7 @@ require_once("Class/GetGeekContent.php");
 				<div class="card-noticias" data-aos="fade-down">
 					<div class="efeito-noticias">
 						<div class="img">
-							<img src="https:\/\/www.freetogame.com\/g\/24\/thumbnail.jpg" alt="">
+							<img src="<?php (new GetGeekContent())->getImg(2) ?>">
 						</div>
 						<div class="text-card-noticias">
 							<h5>
@@ -163,7 +163,7 @@ require_once("Class/GetGeekContent.php");
 				<div class="card-noticias" data-aos="fade-down-left">
 					<div class="efeito-noticias">
 						<div class="img">
-							<img src="https:\/\/www.freetogame.com\/g\/29\/thumbnail.jpg" alt="">
+							<img src="<?php (new GetGeekContent())->getImg(3) ?>">
 						</div>
 						<div class="text-card-noticias">
 							<h5>
@@ -184,7 +184,7 @@ require_once("Class/GetGeekContent.php");
 				<div class="card-noticias" data-aos="fade-up-right">
 					<div class="efeito-noticias">
 						<div class="img">
-							<img src="https:\/\/www.freetogame.com\/g\/32\/thumbnail.jpg" alt="">
+							<img src="<?php (new GetGeekContent())->getImg(4) ?>">
 						</div>
 						<div class="text-card-noticias">
 							<h5>
@@ -205,7 +205,7 @@ require_once("Class/GetGeekContent.php");
 				<div class="card-noticias" data-aos="fade-up">
 					<div class="efeito-noticias">
 						<div class="img">
-							<img src="https:\/\/www.freetogame.com\/g\/33\/thumbnail.jpg" alt="">
+							<img src="<?php (new GetGeekContent())->getImg(5) ?>">
 						</div>
 						<div class="text-card-noticias">
 							<h5>
@@ -226,7 +226,7 @@ require_once("Class/GetGeekContent.php");
 				<div class="card-noticias" data-aos="fade-up-left">
 					<div class="efeito-noticias">
 						<div class="img">
-							<img src="https:\/\/www.freetogame.com\/g\/33\/thumbnail.jpg" alt="">
+							<img src="<?php (new GetGeekContent())->getImg(6) ?>">
 						</div>
 						<div class="text-card-noticias">
 							<h5>
