@@ -54,7 +54,9 @@ session_start();
 								<div class="line"></div>
 							</li>
 							<li class="item-list-dropdown">
-								<span class="item-dropdown">Logout</span>
+								<span class="item-dropdown logout">
+									Logout
+								</span>
 								<div class="line"></div>
 							</li>
 						</ul>

@@ -56,8 +56,10 @@
 								</span>
 								<div class="line"></div>
 							</li>
-							<li class="item-list-dropdown">
-								<span class="item-dropdown">Logout</span>
+							<li class="item-list-dropdown logout">
+								<span class="item-dropdown">
+									Sair
+								</span>
 								<div class="line"></div>
 							</li>
 						</ul>

@@ -1,6 +1,6 @@
 <?php 
 session_start();
-
+$_SESSION['modalMsgHtml'];
 $local = $_SERVER['PHP_SELF'];
 
 require_once("Class/Controller/UserDataController.php");
@@ -36,6 +36,7 @@ if (isset($_POST['btn-login'])) {
 	<link rel="stylesheet" href="../../css/footer.css">
 	<link rel="stylesheet" href="../../css/register.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
 </head>
 <body>
 	<header class="main-header register-header">
@@ -64,10 +65,7 @@ if (isset($_POST['btn-login'])) {
 					<i class="fas fa-key margin-right fa-2x"></i>
 					<input type="password" placeholder="Confirme senha" name="cpwd">
 				</div>
-				<button 
-					name="btn-register"
-					title="Registrar"
-				>
+				<button name="btn-register"title="Registrar">
 					<i class="fas fa-pencil-alt fa-2x"></i>
 				</button>
 			</form>
@@ -90,18 +88,15 @@ if (isset($_POST['btn-login'])) {
 					<input type="password" placeholder="Senha" name="log-pass">
 				</div>
 
-				<button
-					name="btn-login" 
-					type="submit"
-					title="Logar"
-				>
+				<button name="btn-login" type="submit"title="Logar">
 					<i class="fab fa-telegram-plane fa-2x"></i>
 				</button>
 			</form>
 		</section>
 	</main>
+
+	<script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
 	<script src="./js/errorMessage.js"></script>
-	<script src="https://code.jquery.com/jquery-3.4.0.min.js"
-    integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -53,8 +53,8 @@ require_once("Class/GetGeekContent.php");
 								<div class="line"></div>
 							</li>
 							<li class="item-list-dropdown">
-								<span class="item-dropdown">
-									Logout
+								<span class="item-dropdown logout">
+									Sair
 								</span>
 								<div class="line"></div>
 							</li>
@@ -409,6 +409,7 @@ require_once("Class/GetGeekContent.php");
             once: true, //para a animação acontecer somente uma vez
         });
     </script>
+    <script type="text/javascript" src="js/script.js"></script>
     <script type="text/javascript" src="../../js/script.js"></script>
     <script type="text/javascript" src="../../js/title-scroll.js"></script>
     <script type="text/javascript" src="../../js/header.js"></script>

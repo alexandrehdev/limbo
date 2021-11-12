@@ -1,5 +1,4 @@
 <?php 
-	session_start();
 	require_once("queryBase/script.php");
 	require_once("Connection/Connection.php");
 	require_once("Class/Controller/UserController.php");
