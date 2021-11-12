@@ -2,6 +2,7 @@
 require_once("Class/Model/UserModel.php");
 require_once("UserController.php");
 
+
 class UserDataController extends UserController
 {
 	public $name;
@@ -19,10 +20,8 @@ class UserDataController extends UserController
 	
 	public function registerUser()
 	{
-		if (isset($this->name) && isset($this->email) && isset($this->pass) && isset($this->cpass)) {
+		if (!empty($this->name) && !empty($this->email) && !empty($this->pass) && !empty($this->cpass)) {
 			(new UserModel())->verifyUser();
-		}else{
-			echo "Há campos vazios";
 		}
 		
 	}

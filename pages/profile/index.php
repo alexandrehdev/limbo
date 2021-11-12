@@ -56,7 +56,7 @@ session_start();
 							</li>
 							<li class="item-list-dropdown">
 									<span class="item-dropdown" class="logout">
-										Logout
+										Sair
 									</span>
 								<div class="line"></div>
 							</li>
