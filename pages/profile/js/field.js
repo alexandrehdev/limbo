@@ -1,21 +1,25 @@
 const buttonFieldAll = window.document.querySelectorAll("button.change-field");
+const TIMERMILISECONDS = 300;
 
 buttonFieldAll.forEach(button => {
-	button.addEventListener("mouseenter", ({ target }) => {
-		target.style.transform = "scale(1.2)";
-	})
+	button.style.transitionProperty = "transform";
+	button.style.transitionDuration = `${TIMERMILISECONDS}ms`;
 
-	button.addEventListener('click', ({ target }) => {
-		target.style.transform = "scale(1)";
+	button.addEventListener('click', () => {
+		button.style.transform = "scale(1)";
 
 		let timer
 		clearTimeout(timer);
 		timer = setTimeout(() => {
-			target.style.transform = "scale(1.2)";
-		}, 500);
+			button.style.transform = "scale(1.2)";
+		}, TIMERMILISECONDS);
 	}, false);
 
-	button.addEventListener("mouseenter", ({ target }) => {
-		target.style.transform = "scale(1)";
-	})
+	button.addEventListener("mouseenter", () => {
+		button.style.transform = "scale(1.2)";
+	}, false);
+
+	button.addEventListener("mouseleave", () => {
+		button.style.transform = "scale(1)";
+	}, false);
 })

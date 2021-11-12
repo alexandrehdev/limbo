@@ -411,13 +411,7 @@ button.change-field {
     padding: 10px;
 
     border-radius: 5px;
-
-    transition: transform 500ms;
 }
-
-/*button.change-field:hover {
-    transform: scale(1.2);
-}*/
 
 button.change-field > i {
     color: #000000;

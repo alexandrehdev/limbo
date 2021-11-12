@@ -110,7 +110,6 @@ session_start();
 
     <!-- <script type="text/javascript" src="js/script.js"></script> -->
     <script type="text/javascript" src="js/field.js"></script>
-    <script type="text/javascript" src="../../js/pages.js"></script>
     <script type="text/javascript" src="../../js/header.js"></script>
 </body>
 
