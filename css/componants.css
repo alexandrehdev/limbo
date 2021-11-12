@@ -356,14 +356,17 @@ main{
 }
 
 /*User content*/
+#main-profile {
+    justify-content: center;
+
+    margin: 100px 0;
+}
+
 .user-block{
     height: 70%;
     width: 70%;
     color: white;
-    position: relative;
     background-color: #0c0c0c;
-    left: 15%;
-    top: 10vh;
     font-family: "gameplay";
     padding: 50px;
 }
@@ -399,7 +402,8 @@ main{
 .user-info,
 .user-content,
 .area-user-img,
-.field
+.field,
+#main-profile
 {
     display: flex;
     align-items: center;

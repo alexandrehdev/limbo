@@ -20,7 +20,7 @@ session_start();
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
 </head>
 
-<body>
+<body id="body-profile">
 	<header class="main-header">
 		<h1 class="title-name">Limbo</h1>
 		<nav class="navigation">
@@ -68,7 +68,8 @@ session_start();
 			</ul>
 		</nav>
 	</header>
-    	
+    
+    <main id="main-profile">
     	<div class="user-block">
     		<h1>Player 1</h1>
     		<div class="user-content">
@@ -107,7 +108,90 @@ session_start();
     			</div>
     		</div>
     	</div>
+    </main>
 
+    <footer class="m-footer" role="footer">
+		<div class="container">
+			<div id="area-logo">
+				<strong id="logo">
+					Limbo
+				</strong>
+				<span id="data">2021</span>
+			</div>
+			<ul id="list-devs">
+				<section class="section" role="section">
+					<article class="article" role="article">
+						<img class="image-developer" src="../../img/dev-example.png" alt="developer image" />
+						<div class="right">
+							<strong class="name-dev">
+								Name Developer
+							</strong>
+							<ul class="list-media-social">
+								<li class="item-media-social">
+									<img class="icon-dev" src="../../img/icon-facebook.svg" alt="icon facebook" />
+								</li>
+								<li class="item-media-social">
+									<img class="icon-dev" src="../../img/icon-github.svg" alt="icon github" />
+								</li>
+								<li class="item-media-social">
+									<img class="icon-dev" src="../../img/icon-instagram.svg" alt="icon instagram" />
+								</li>
+								<li class="item-media-social">
+									<img class="icon-dev" src="../../img/icon-linkedin.svg" alt="icon linkedin" />
+								</li>
+							</ul>
+						</div>
+					</article>
+				</section>
+				<section class="section" role="section">
+					<article class="article" role="article">
+						<img class="image-developer" src="../../img/dev-example.png" alt="developer image" />
+						<div class="right">
+							<strong class="name-dev">Name Developer</strong>
+							<ul class="list-media-social">
+								<li class="item-media-social">
+									<img class="icon-dev" src="../../img/icon-facebook.svg" alt="icon facebook" />
+								</li>
+								<li class="item-media-social">
+									<img class="icon-dev" src="../../img/icon-github.svg" alt="icon github" />
+								</li>
+								<li class="item-media-social">
+									<img class="icon-dev" src="../../img/icon-instagram.svg" alt="icon instagram" />
+								</li>
+								<li class="item-media-social">
+									<img class="icon-dev" src="../../img/icon-linkedin.svg" alt="icon linkedin" />
+								</li>
+							</ul>
+						</div>
+					</article>
+				</section>
+				<section class="section" role="section">
+					<article class="article" role="article">
+						<img class="image-developer" src="../../img/dev-example.png" alt="developer image" />
+						<div class="right">
+							<strong class="name-dev">
+								Name Developer
+							</strong>
+							<ul class="list-media-social">
+								<li class="item-media-social">
+									<img class="icon-dev" src="../../img/icon-facebook.svg" alt="icon facebook" />
+								</li>
+								<li class="item-media-social">
+									<img class="icon-dev" src="../../img/icon-github.svg" alt="icon github" />
+								</li>
+								<li class="item-media-social">
+									<img class="icon-dev" src="../../img/icon-instagram.svg" alt="icon instagram" />
+								</li>
+								<li class="item-media-social">
+									<img class="icon-dev" src="../../img/icon-linkedin.svg" alt="icon linkedin" />
+								</li>
+							</ul>
+						</div>
+					</article>
+				</section>
+			</ul>
+		</div>
+	</footer>
     <!-- <script type="text/javascript" src="js/script.js"></script> -->
     <script type="text/javascript" src="js/field.js"></script>
     <script type="text/javascript" src="../../js/header.js"></script>
