@@ -355,7 +355,87 @@ main{
     right: -10 !important;
 }
 
-.s-profile{
+/*User content*/
+.user-block{
+    height: 70%;
+    width: 70%;
+    color: white;
+    position: relative;
+    background-color: #0c0c0c;
+    left: 15%;
+    top: 10vh;
+    font-family: "gameplay";
+    padding: 50px;
+}
+
+.user-block h1{
+    text-align: center;
+
+    margin-bottom: 50px;
+}
+
+
+.field {
+    justify-content: flex-start;
+}
+
+.field p {
+    line-height: 70px;
+
+    font-size: 22px;
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+
+.user-info,
+.user-content,
+.area-user-img
+{
+    justify-content: center;
+}
+
+.user-info,
+.user-content,
+.area-user-img,
+.field
+{
+    display: flex;
+    align-items: center;
+}
+
+button.change-field {
+    background-color: orange;
+
+    padding: 10px;
+
+    border-radius: 5px;
+}
+
+button.change-field > i {
+    color: #000000;
+}
+
+.user-info {
+    flex: 1;
+}
+
+.area-user-img {
+    flex-direction: column;
+}
+
+.area-user-img > img {
+    border-radius: 100%;
+
+    width: 200px;
+    height: 200px;
+
+    margin-bottom: 40px;
+}
+
+
+/*.s-profile{
     padding: 10rem 0rem;
     width: 100%;
 }
@@ -408,7 +488,7 @@ main{
     background-color: transparent;
     text-align: justify;
 }
-
+*/
 .msg-erro{
     display: none;
 }

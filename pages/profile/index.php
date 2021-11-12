@@ -7,16 +7,18 @@ session_start();
 <head>
 	<meta charset="utf-8">
 	<title>Limbo</title>
+
+	<link rel="icon" type="image/png" href="../../favicon.png">
+	<link rel="stylesheet" href="../../css/footer.css"/>
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="../../css/style.css">
+	<link rel="stylesheet" type="text/css" href="../../css/reset.css">
+	<link rel="stylesheet" type="text/css" href="../../css/variables.css">
+	<link rel="stylesheet" href="../../css/componants.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/icon.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
 </head>
-<link rel="icon" type="image/png" href="../../favicon.png">
-<link rel="stylesheet" href="../../css/footer.css"/>
-<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-<link rel="stylesheet" type="text/css" href="../../css/style.css">
-<link rel="stylesheet" type="text/css" href="../../css/reset.css">
-<link rel="stylesheet" type="text/css" href="../../css/variables.css">
-<link rel="stylesheet" href="../../css/componants.css">
-<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/icon.min.css">
 
 <body>
 	<header class="main-header">
@@ -66,26 +68,48 @@ session_start();
 			</ul>
 		</nav>
 	</header>
-    <section class="s-profile">
-        <div class="container">
-            <div class="main-profile">
-                <div class="img">
-                    <img src="../../img/thewitcher-person.jpg" alt="">
-                </div>
-                <div class="text">
-                    <form action="" method="POST"> 
-                        <input type="text" value="Cabeca azul" readonly>
-                        <textarea name="" id="" cols="30" rows="10" readonly>
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius, esse repellendus illum similique earum ab cumque fugit facilis? Maiores accusamus odio inventore incidunt labore omnis! Nam iste quaerat nihil doloremque?
-                        </textarea>
-                        <a href=""></a>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-    <script type="text/javascript" src="js/script.js"></script>
-    <script type="text/javascript" src="../../js/title-scroll.js"></script>
+    	
+    	<div class="user-block">
+    		<h1>Player 1</h1>
+    		<div class="user-content">
+    			<div class="area-user-img">
+    				<!-- foto do muito loko -->
+    				<img src="https://i.pinimg.com/564x/ca/0b/e0/ca0be062b256c5c1afb277a8525a3ac9.jpg" height="200">
+    				<input type="file" value="Mudar foto" name="">
+    			</div>
+    			<div class="user-info">
+    				<div class="fields">
+    					<div class="field">
+    						<p>
+    							Nome: <?php echo "Calma que ainda vai"; ?>  
+    						</p>
+    						<button class="change-field">
+    							<i class="fas fa-pencil-alt fa-2x"></i>
+    						</button>
+    					</div>
+    					<div class="field">
+    						<p>
+    							Email: <?php echo $_SESSION['login_user'] ?> 
+    						</p>
+    						<button class="change-field">
+    							<i class="fas fa-pencil-alt fa-2x"></i>
+    						</button>
+    					</div>
+    					<div class="field">
+    						<p>
+    							Status: <?php echo "sei la.. sou gostoso"; ?>
+    						</p>
+    						<button class="change-field">
+    							<i class="fas fa-pencil-alt fa-2x"></i>
+    						</button>
+    					</div>
+    				</div>
+    			</div>
+    		</div>
+    	</div>
+
+    <!-- <script type="text/javascript" src="js/script.js"></script> -->
+    <script type="text/javascript" src="js/field.js"></script>
     <script type="text/javascript" src="../../js/header.js"></script>
 </body>
 
