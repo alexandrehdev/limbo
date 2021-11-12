@@ -141,11 +141,11 @@ dataDevs.forEach(item => {
                     src="${item.sourceImage}"
                     alt="Web Developer Image"
                 />
-                <strong class="title-dev">${item.name}</strong>
-                <span class="description-dev">${item.description}</span>
                 <div class="social-media">
                     ${mediaSocialsRender}
                 </div>
+                <strong class="title-dev">${item.name}</strong>
+                <span class="description-dev">${item.description}</span>
             </div>
         </div>
     `
