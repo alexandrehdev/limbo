@@ -2,7 +2,9 @@ const main = window.document.querySelector("main#main");
 
 const dataDevs = [
     {
+        id: "dev1",
         backgroundColor: "#000000",
+        directionAOSCard: "fade-right",
         sourceImage: "./img/exampleDev.png",
         name: "Josefino Pimposo",
         description: "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum",
@@ -30,7 +32,9 @@ const dataDevs = [
         ]
     },
     {
+        id: "dev2",
         backgroundColor: "#000000",
+        directionAOSCard: "fade-left",
         sourceImage: "./img/exampleDev.png",
         name: "Josefino Pimposo",
         description: "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum",
@@ -58,7 +62,9 @@ const dataDevs = [
         ]
     },
     {
+        id: "dev3",
         backgroundColor: "#000000",
+        directionAOSCard: "fade-right",
         sourceImage: "./img/exampleDev.png",
         name: "Josefino Pimposo",
         description: "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum",
@@ -86,7 +92,9 @@ const dataDevs = [
         ]
     },
     {
+        id: "dev4",
         backgroundColor: "#000000",
+        directionAOSCard: "fade-left",
         sourceImage: "./img/exampleDev.png",
         name: "Josefino Pimposo",
         description: "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum",
@@ -130,22 +138,25 @@ dataDevs.forEach(item => {
     )
 
     main.innerHTML += `
-        <div class="card">
-            <div 
-                class="backgroundColor" 
-                style="background-color: ${item.backgroundColor}"
-            ></div>
-            <div class="dev-details">
-                <img
-                    class="image-user"
-                    src="${item.sourceImage}"
-                    alt="Web Developer Image"
-                />
-                <div class="social-media">
-                    ${mediaSocialsRender}
+        
+        <div id="${item.id}" class="area-cards">
+            <div class="card" data-aos="${item.directionAOSCard}">
+                <div 
+                    class="backgroundColor" 
+                    style="background-color: ${item.backgroundColor}"
+                ></div>
+                <div class="dev-details">
+                    <img
+                        class="image-user"
+                        src="${item.sourceImage}"
+                        alt="Web Developer Image"
+                    />
+                    <div class="social-media">
+                        ${mediaSocialsRender}
+                    </div>
+                    <strong class="title-dev">${item.name}</strong>
+                    <span class="description-dev">${item.description}</span>
                 </div>
-                <strong class="title-dev">${item.name}</strong>
-                <span class="description-dev">${item.description}</span>
             </div>
         </div>
     `

@@ -259,8 +259,8 @@ class ElementArrow {
 		]
 
 		const svgHTMLPure = ` 
-			<svg width="60px" style="transition: all 200ms" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
-				<polygon fill="${this.colorArrow}" points="2.38 7 14.38 7 8.38 14 2.38 7"/><rect x="6.38" y="2.11" width="4" height="6" transform="translate(16.75 10.22) rotate(-180)"/>
+			<svg width="60px" fill="${this.colorArrow}" style="transition: all 200ms" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+				<polygon points="2.38 7 14.38 7 8.38 14 2.38 7"/><rect x="6.38" y="2.11" width="4" height="6" transform="translate(16.75 10.22) rotate(-180)"/>
 			</svg> 
 		`
 
