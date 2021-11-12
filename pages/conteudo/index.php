@@ -120,7 +120,7 @@ require_once("Class/GetGeekContent.php");
 			<div class="main-cards-noticias">
 				<div class="card-noticias js-card-noticias" data-aos="fade-down-right">
 					<div class="efeito-noticias">
-						<div class="img">
+						<div class="area-img">
 							<img src="<?php (new GetGeekContent())->getImg(1) ?>">
 						</div>
 						<div class="text-card-noticias">
@@ -141,7 +141,7 @@ require_once("Class/GetGeekContent.php");
 				</div>
 				<div class="card-noticias" data-aos="fade-down">
 					<div class="efeito-noticias">
-						<div class="img">
+						<div class="area-img">
 							<img src="<?php (new GetGeekContent())->getImg(2) ?>">
 						</div>
 						<div class="text-card-noticias">
@@ -162,7 +162,7 @@ require_once("Class/GetGeekContent.php");
 				</div>
 				<div class="card-noticias" data-aos="fade-down-left">
 					<div class="efeito-noticias">
-						<div class="img">
+						<div class="area-img">
 							<img src="<?php (new GetGeekContent())->getImg(3) ?>">
 						</div>
 						<div class="text-card-noticias">
@@ -183,7 +183,7 @@ require_once("Class/GetGeekContent.php");
 				</div>
 				<div class="card-noticias" data-aos="fade-up-right">
 					<div class="efeito-noticias">
-						<div class="img">
+						<div class="area-img">
 							<img src="<?php (new GetGeekContent())->getImg(4) ?>">
 						</div>
 						<div class="text-card-noticias">
@@ -204,7 +204,7 @@ require_once("Class/GetGeekContent.php");
 				</div>
 				<div class="card-noticias" data-aos="fade-up">
 					<div class="efeito-noticias">
-						<div class="img">
+						<div class="area-img">
 							<img src="<?php (new GetGeekContent())->getImg(5) ?>">
 						</div>
 						<div class="text-card-noticias">
@@ -225,7 +225,7 @@ require_once("Class/GetGeekContent.php");
 				</div>
 				<div class="card-noticias" data-aos="fade-up-left">
 					<div class="efeito-noticias">
-						<div class="img">
+						<div class="area-img">
 							<img src="<?php (new GetGeekContent())->getImg(6) ?>">
 						</div>
 						<div class="text-card-noticias">
