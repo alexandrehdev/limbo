@@ -1,10 +1,18 @@
-div.card {
+div.area-cards {
+    margin: 50px;
+
+    padding: 100px 0;
+}
+
+div.area-cards,
+div.card
+{
     justify-content: center;
     align-items: center;
+}
 
+div.card {
     position: relative;
-
-    margin: 50px;
 }
 
 div.backgroundColor {
@@ -28,7 +36,8 @@ img.image-user {
 
 div.card,
 div.dev-details,
-div.social-media
+div.social-media,
+div.area-cards
 {
     display: flex;
 }
@@ -74,8 +83,6 @@ span.description-dev {
 }
 
 div.social-media {
-    width: 100%;
-
     justify-content: flex-start;
     align-items: center;
     
