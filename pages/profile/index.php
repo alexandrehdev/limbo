@@ -80,25 +80,59 @@ session_start();
     			<div class="user-info">
     				<div class="fields">
     					<div class="field">
-    						<p>
-    							Nome: <?php echo "Calma que ainda vai"; ?>  
-    						</p>
+    						<span>
+    							Nome:  
+    						</span>
+    						<div class="input-area">
+    							<span class="value">
+    								<?php echo "Calma que ainda vai"; ?> 
+    							</span>
+    							<div class="input">
+    								<input
+    									type="text"
+    									name="nome"
+    									value="Calma que ainda vai"
+    								/>
+    							</div>
+    						</div>
     						<button class="change-field">
     							<i class="fas fa-pencil-alt fa-2x"></i>
     						</button>
     					</div>
     					<div class="field">
-    						<p>
-    							Email: <?php echo $_SESSION['login_user'] ?> 
-    						</p>
+    						<span>
+    							Email:  
+    						</span>
+    						<div class="input-area">
+    							<span class="value">
+    								<?php echo $_SESSION['login_user'] ?>
+    							</span>
+    							<div class="input">
+    								<input
+    									type="text"
+    									name="nome"
+    								/>
+    							</div>
+    						</div>
     						<button class="change-field">
     							<i class="fas fa-pencil-alt fa-2x"></i>
     						</button>
     					</div>
     					<div class="field">
-    						<p>
-    							Status: <?php echo "sei la.. sou gostoso"; ?>
-    						</p>
+    						<span>
+    							Status: 
+    						</span>
+    						<div class="input-area">
+    							<span class="value">
+    								<?php echo "sei la.. sou gostoso"; ?>
+    							</span>
+    							<div class="input">
+    								<input
+    									type="text"
+    									name="nome"
+    								/>
+    							</div>
+    						</div>
     						<button class="change-field">
     							<i class="fas fa-pencil-alt fa-2x"></i>
     						</button>

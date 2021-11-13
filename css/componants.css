@@ -380,14 +380,36 @@ main{
     justify-content: flex-start;
 }
 
-.field p {
+.field > span, .value {
     line-height: 70px;
-
-    font-size: 22px;
 
     margin-top: 20px;
     margin-bottom: 20px;
+    
+}
+
+.field > span,
+.value,
+.input > input
+{
+    font-size: 22px;
     margin-right: 20px;
+}
+
+.change {
+    display: none;
+}
+
+.input > input {
+    display: none;
+
+    padding: 10px;
+
+    border: none;
+}
+
+.show-input > input {
+    display: block;
 }
 
 .user-info,
