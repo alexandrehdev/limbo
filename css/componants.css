@@ -359,14 +359,14 @@ main{
 /*User content*/
 .user-block{
     height: 70%;
-    width: 70%;
+    width: 75%;
     color: white;
-    position: relative;
     background-color: #0c0c0c;
-    left: 15%;
-    top: 10vh;
     font-family: "gameplay";
     padding: 50px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .user-block h1{
@@ -428,12 +428,23 @@ main{
     align-items: center;
 }
 
-button.change-field {
-    background-color: orange;
-
+.button-field {
     padding: 10px;
 
     border-radius: 5px;
+    margin-right: 10px;
+}
+
+.button-field:last-of-type {
+    margin-right: 0;
+}
+
+.apply-correct {
+    background-color: green;
+}
+
+.change-field {
+    background-color: orange;
 }
 
 button.change-field > i {

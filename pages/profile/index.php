@@ -95,8 +95,13 @@ session_start();
     								/>
     							</div>
     						</div>
-    						<button class="change-field">
+    						<button class=" button-field change-field">
     							<i class="fas fa-pencil-alt fa-2x"></i>
+    						</button>
+    						<button class="
+    						button-field
+    						apply-correct">
+    							<i class="fas fa-check fa-2x"></i>
     						</button>
     					</div>
     					<div class="field">
@@ -114,8 +119,13 @@ session_start();
     								/>
     							</div>
     						</div>
-    						<button class="change-field">
+    						<button class=" button-field change-field">
     							<i class="fas fa-pencil-alt fa-2x"></i>
+    						</button>
+    						<button class="
+    						button-field
+    						apply-correct">
+    							<i class="fas fa-check fa-2x"></i>
     						</button>
     					</div>
     					<div class="field">
@@ -133,8 +143,13 @@ session_start();
     								/>
     							</div>
     						</div>
-    						<button class="change-field">
+    						<button class=" button-field change-field">
     							<i class="fas fa-pencil-alt fa-2x"></i>
+    						</button>
+    						<button class="
+    						button-field
+    						apply-correct">
+    							<i class="fas fa-check fa-2x"></i>
     						</button>
     					</div>
     				</div>
