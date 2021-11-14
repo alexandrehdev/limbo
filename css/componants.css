@@ -359,7 +359,7 @@ main{
 /*User content*/
 .user-block{
     height: 70%;
-    width: 75%;
+    width: 80%;
     color: white;
     background-color: #0c0c0c;
     font-family: "gameplay";
@@ -390,7 +390,8 @@ main{
 
 .field > span,
 .value,
-.input > input
+.input > input,
+.input > textarea
 {
     font-size: 22px;
     margin-right: 20px;
@@ -400,7 +401,9 @@ main{
     display: none;
 }
 
-.input > input {
+.input > input, 
+.input > textarea 
+{
     display: none;
 
     padding: 10px;
@@ -408,7 +411,9 @@ main{
     border: none;
 }
 
-.show-input > input {
+.show-input > input, 
+.show-input > textarea 
+{
     display: block;
 }
 

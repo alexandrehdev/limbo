@@ -137,10 +137,9 @@ session_start();
     								<?php echo "sei la.. sou gostoso"; ?>
     							</span>
     							<div class="input">
-    								<input
-    									type="text"
-    									name="nome"
-    								/>
+    								<textarea name="status">
+    									
+    								</textarea>
     							</div>
     						</div>
     						<button class=" button-field change-field">
