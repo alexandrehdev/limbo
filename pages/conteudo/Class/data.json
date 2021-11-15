@@ -1,43 +1,55 @@
 {
     "1": {
     	"name": "The Last Of Us",
-    	"desc": "Primeira temporada de The Last Of Us na HBO terá 10 episódios. A série já esta sendo filmada e fontes revelam o número de episodios que serão gravados na primeira temporada."
+    	"desc": "Primeira temporada de The Last Of Us na HBO terá 10 episódios. A série já esta sendo filmada e fontes revelam o número de episodios que serão gravados na primeira temporada.",
+        "img": "https://cdn-thumbs.imagevenue.com/64/75/ac/ME141PN9_t.jpg"
     },
     "2": {
     	"name": "Playstation 5",
-    	"desc": "Novos testes mostram que novo PS5 aquece menos. Austin Evans deu inicio a testes para apresentar sua nova descoberta na qual mostra que o mais novo modelo da Playstation aquece menos."
+    	"desc": "Novos testes mostram que novo PS5 aquece menos. Austin Evans deu inicio a testes para apresentar sua nova descoberta na qual mostra que o mais novo modelo da Playstation aquece menos.",
+        "img": "https://cdn-thumbs.imagevenue.com/fd/aa/43/ME141S07_t.jpeg"
     },
     "3": {
     	"name": "Marvel",
-    	"desc": "A Marvel está anunciando cada vez mais informações sobre as próximas produções para o Universo Cinematográfico da Marvel. Nova é o nome de possiveis proximos filmes de super-herói da companhia e pode começar a ser deselvolvido em 2023"
+    	"desc": "A Marvel está anunciando cada vez mais informações sobre as próximas produções para o Universo Cinematográfico da Marvel. Nova é o nome de possiveis proximos filmes de super-herói da companhia e pode começar a ser deselvolvido em 2023",
+        "img": "https://cdn-thumbs.imagevenue.com/d2/f0/cb/ME141POE_t.jpg"
+
     },
     "4": {
     	"name": "A Hora do Pesadelo",
-    	"desc": "Caso nunca tenha assistido a saga de A Hora do Pesadelo, confira nesse artigo a ordem cronológica completa para começar a assistir."
+    	"desc": "Caso nunca tenha assistido a saga de A Hora do Pesadelo, confira nesse artigo a ordem cronológica completa para começar a assistir.",
+        "img": "https://cdn-thumbs.imagevenue.com/10/90/43/ME141PNK_t.jpg"
     },
     "5": {
     	"name": "Venom 2",
-    	"desc": "Venom 2, a continuação do primeiro filme Venom, a Sony divulgou que mais de US$400 milhões foram os ganhos em bilheteria em todo mundo." 
+    	"desc": "Venom 2, a continuação do primeiro filme Venom, a Sony divulgou que mais de US$400 milhões foram os ganhos em bilheteria em todo mundo." ,
+        "img": "https://cdn-thumbs.imagevenue.com/6f/e5/37/ME141PO1_t.jpg"
+
     },
     "6": {
     	"name": "Velozes e Furiosos",
-    	"desc": "Após alguns pequenos conflitos no set, Vin Diesel pede a volta do ator e lutador The Rock nas gravações de filmes. "
+    	"desc": "Após alguns pequenos conflitos no set, Vin Diesel pede a volta do ator e lutador The Rock nas gravações de filmes. ",
+        "img": "https://cdn-thumbs.imagevenue.com/f4/17/d2/ME141PNA_t.jpg"
     },
     "7": {
     	"name": "Mulher Maravilha 3",
-    	"desc": "A atriz Gal Gadot que faz o papel da mulher maravilha, afirma de que o roteiro já está sendo escrito."
+    	"desc": "A atriz Gal Gadot que faz o papel da mulher maravilha, afirma de que o roteiro já está sendo escrito.",
+        "img": "https://cdn-thumbs.imagevenue.com/6b/1e/92/ME141PN4_t.jpg"
     },
     "8": {
     	"name": "Homem Aranha: Sem volta para casa",
-    	"desc": "Novo filme do Homem Aranha, deverá ser o filme mais longo a saga homem aranha."
+    	"desc": "Novo filme do Homem Aranha, deverá ser o filme mais longo a saga homem aranha.",
+        "img": "https://cdn-thumbs.imagevenue.com/e9/f6/00/ME141PO2_t.jpg"
     },
     "9": {
     	"name": "Halloween",
-    	"desc": "Confira 8 recomendações de filmes para assistir no halloween sobre cultos e seitas bizarras... Vale dar uma olhada nessa lista.. Pode haver algum filme que não tenha assistido antes hein.."
+    	"desc": "Confira 8 recomendações de filmes para assistir no halloween sobre cultos e seitas bizarras... Vale dar uma olhada nessa lista.. Pode haver algum filme que não tenha assistido antes hein..",
+        "img": "https://cdn-thumbs.imagevenue.com/0e/85/84/ME141PNU_t.jpg"
     },
     "10": {
     	"name": "Ice Cube",
-    	"desc": "O Rapper Ice Cube, deixa de atuar em filme por não querer tomar a vacina de prevenção contra a covid-19"
+    	"desc": "O Rapper Ice Cube, deixa de atuar em filme por não querer tomar a vacina de prevenção contra a covid-19",
+        "img": "https://cdn-thumbs.imagevenue.com/22/ce/fa/ME141PO6_t.jpg"
     }
 
 }

@@ -1,25 +1,48 @@
-const buttonFieldAll = window.document.querySelectorAll("button.change-field");
-const TIMERMILISECONDS = 300;
+const buttonFieldAll = window.document.querySelectorAll(".change-field");
+const buttonCorrectAll = window.document.querySelectorAll(".apply-correct");
 
-buttonFieldAll.forEach(button => {
-	button.style.transitionProperty = "transform";
-	button.style.transitionDuration = `${TIMERMILISECONDS}ms`;
+console.log(buttonCorrectAll);
 
-	button.addEventListener('click', () => {
-		button.style.transform = "scale(1)";
+const divAreaInput = window.document.querySelectorAll(".input-area");
+const TIMERMILISECONDS = 500;
+
+buttonFieldAll.forEach((button, index) => {
+	const value = divAreaInput[index].children[0];
+	const divInput = divAreaInput[index].children[1];
+	const divButtonCorrect = buttonCorrectAll[index];
+
+	const arrayButtons = [
+		button,
+		divButtonCorrect
+	]
+
+	function setAnimationButton(button) {
+
+		button.style.animationName = "click-button";
+		button.style.animationDuration = `${TIMERMILISECONDS}ms`
 
 		let timer
 		clearTimeout(timer);
 		timer = setTimeout(() => {
-			button.style.transform = "scale(1.2)";
-		}, TIMERMILISECONDS);
+			button.style.animationName = "";
+		}, TIMERMILISECONDS + 50);
+	}
+
+	button.addEventListener('click', () => {
+		setAnimationButton(button);
+	
+		value.classList.toggle("change");
+		divInput.classList.toggle("show-input");
+
+		const verifyChangeField = value.classList.contains("change");
+		if(verifyChangeField) {
+			divButtonCorrect.style.display = "block";
+		} else {
+			divButtonCorrect.style.display = "none";
+		}
 	}, false);
 
-	button.addEventListener("mouseenter", () => {
-		button.style.transform = "scale(1.2)";
-	}, false);
-
-	button.addEventListener("mouseleave", () => {
-		button.style.transform = "scale(1)";
-	}, false);
-})
+	divButtonCorrect.addEventListener('click', () => {
+		setAnimationButton(divButtonCorrect);
+	})
+});

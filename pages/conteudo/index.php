@@ -120,8 +120,8 @@ require_once("Class/GetGeekContent.php");
 			<div class="main-cards-noticias">
 				<div class="card-noticias js-card-noticias" data-aos="fade-down-right">
 					<div class="efeito-noticias">
-						<div class="img">
-							<img src="https:\/\/www.freetogame.com\/g\/23\/thumbnail.jpg" alt="">
+						<div class="area-img">
+							<img src="<?php (new GetGeekContent())->getImg(1) ?>">
 						</div>
 						<div class="text-card-noticias">
 							<h5> 
@@ -130,103 +130,93 @@ require_once("Class/GetGeekContent.php");
 							?> 
 							</h5>
 							<span>
-							<a href="">
 							<?php 
 								(new GetGeekContent())->getDesc(1)
-							 ?>
-							 </a>
+							?>
 							</span>
 						</div>
 					</div>
 				</div>
 				<div class="card-noticias" data-aos="fade-down">
 					<div class="efeito-noticias">
-						<div class="img">
-							<img src="https:\/\/www.freetogame.com\/g\/24\/thumbnail.jpg" alt="">
+						<div class="area-img">
+							<img src="<?php (new GetGeekContent())->getImg(2) ?>">
 						</div>
 						<div class="text-card-noticias">
 							<h5>
 								<?php 
-								(new GetGeekContent())->getName(2);
-								 ?>
+									(new GetGeekContent())->getName(2);
+								?>
 							</h5>
 							<span>
-								<a href="">
 								<?php 
-								(new GetGeekContent())->getDesc(2);
-								 ?>
-								</a>
+									(new GetGeekContent())->getDesc(2);
+								?>
 							</span>
 						</div>
 					</div>
 				</div>
 				<div class="card-noticias" data-aos="fade-down-left">
 					<div class="efeito-noticias">
-						<div class="img">
-							<img src="https:\/\/www.freetogame.com\/g\/29\/thumbnail.jpg" alt="">
+						<div class="area-img">
+							<img src="<?php (new GetGeekContent())->getImg(3) ?>">
 						</div>
 						<div class="text-card-noticias">
 							<h5>
 								<?php 
 								(new GetGeekContent())->getName(3);
-								 ?>
+								?>
 							</h5>
 							<span>
-							<a href="">
-							<?php 
-								(new GetGeekContent())->getDesc(3);
-							 ?>
-							</a>
-						</span>
+								<?php 
+									(new GetGeekContent())->getDesc(3);
+								?>
+							</span>
 						</div>
 					</div>
 				</div>
 				<div class="card-noticias" data-aos="fade-up-right">
 					<div class="efeito-noticias">
-						<div class="img">
-							<img src="https:\/\/www.freetogame.com\/g\/32\/thumbnail.jpg" alt="">
+						<div class="area-img">
+							<img src="<?php (new GetGeekContent())->getImg(4) ?>">
 						</div>
 						<div class="text-card-noticias">
 							<h5>
 								<?php 
 								(new GetGeekContent())->getName(4);
-								 ?>
+								?>
 							</h5>
 							<span>
-								<a href="">
 								<?php 
-								(new GetGeekContent())->getDesc(4);
-								 ?>		
-								</a>
+									(new GetGeekContent())->getDesc(4);
+								?>		
 							</span>
 						</div>
 					</div>
 				</div>
 				<div class="card-noticias" data-aos="fade-up">
 					<div class="efeito-noticias">
-						<div class="img">
-							<img src="https:\/\/www.freetogame.com\/g\/33\/thumbnail.jpg" alt="">
+						<div class="area-img">
+							<img src="<?php (new GetGeekContent())->getImg(5) ?>">
 						</div>
 						<div class="text-card-noticias">
 							<h5>
 								<?php 
 								(new GetGeekContent())->getName(5);
-								 ?>
+								?>
 							</h5>
 							<span>
-							<a href="">
-							<?php 
-								(new GetGeekContent())->getDesc(5);
-							 ?>	
-							</a>
-						</span>
+								<?php 
+									(new GetGeekContent())->getDesc(5);
+								?>	
+							</span>
 						</div>
 					</div>
 				</div>
 				<div class="card-noticias" data-aos="fade-up-left">
 					<div class="efeito-noticias">
-						<div class="img">
-							<img src="https:\/\/www.freetogame.com\/g\/33\/thumbnail.jpg" alt="">
+						<div class="area-img">
+							<img src="<?php (new GetGeekContent())->getImg(6) ?>">
 						</div>
 						<div class="text-card-noticias">
 							<h5>
@@ -235,12 +225,10 @@ require_once("Class/GetGeekContent.php");
 								?>
 							</h5>
 							<span>
-								<a href="">
-								<?php 
+							<?php 
 								(new GetGeekContent())->getDesc(6); 
-								?>
-								</a>
-						</span>
+							?>
+							</span>
 						</div>
 					</div>
 				</div>
@@ -410,7 +398,7 @@ require_once("Class/GetGeekContent.php");
         });
     </script>
     <script type="text/javascript" src="js/script.js"></script>
-    <script type="text/javascript" src="../../js/script.js"></script>
+    <!-- <script type="text/javascript" src="../../js/script.js"></script> -->
     <script type="text/javascript" src="../../js/title-scroll.js"></script>
     <script type="text/javascript" src="../../js/header.js"></script>
 </body>

@@ -185,23 +185,23 @@
     overflow-x: hidden;
 }
 .s-cards-noticias .container .main-cards-noticias{
-    display: flex;
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 1fr 1fr;
+    justify-items: center;
     align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
     gap: 3.3rem;
 }
 
 .s-cards-noticias .container .main-cards-noticias .card-noticias{
-    width: 100%; 
+    /* width: 100%; 
     max-width: 37rem;
+    height: 
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    cursor: pointer;
+    cursor: pointer; */
 }
-
 
 
 .s-cards-noticias .container .main-cards-noticias .card-noticias .efeito-noticias{
@@ -209,7 +209,6 @@
     height: inherit;
     border-radius: 1rem;
     background-color: var(--color-principal-black);
-    padding-bottom: 2rem;
     transition: all .3s;
 }
 .s-cards-noticias .container .main-cards-noticias .card-noticias .efeito-noticias:hover{
@@ -217,31 +216,38 @@
     box-shadow: 10px 10px 10px rgb(0, 0, 0);
 }
 
-.s-cards-noticias .container .main-cards-noticias .card-noticias .img{
+.s-cards-noticias .container .main-cards-noticias .card-noticias .area-img{
     width: 100%;
 }
 
-.s-cards-noticias .container .main-cards-noticias .card-noticias .img img{
+.s-cards-noticias .container .main-cards-noticias .card-noticias .area-img img{
     border-top-left-radius: 1rem;
     border-top-right-radius: 1rem;
     width: 100%;
-    height: 100%;
-    max-height: 40rem;
+    height: 300px;
+    object-fit: cover;
 }
 
 .s-cards-noticias .container .main-cards-noticias .card-noticias .text-card-noticias{
     font-family: 'Mochiy Pop One', sans-serif;
-    padding-left: 0.5rem;
+    padding: 3rem;
+
+    display: flex;
+    flex-direction: column;
+
 }
 
 .s-cards-noticias .container .main-cards-noticias .card-noticias .text-card-noticias h5{
     color: var(--wheat);
     font-size: 2.4rem;
+
+    margin-bottom: 1.5rem;
 }
-.s-cards-noticias .container .main-cards-noticias .card-noticias .text-card-noticias span a{
+.s-cards-noticias .container .main-cards-noticias .card-noticias .text-card-noticias span {
     color: var(--white);
     font-size: 1.5rem;
 }
+
 
 /* CARD NOTICIAS */
 
@@ -364,11 +370,14 @@ main{
 
 .user-block{
     height: 70%;
-    width: 70%;
+    width: 80%;
     color: white;
     background-color: #0c0c0c;
     font-family: "gameplay";
     padding: 50px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .user-block h1{
@@ -382,14 +391,41 @@ main{
     justify-content: flex-start;
 }
 
-.field p {
+.field > span, .value {
     line-height: 70px;
-
-    font-size: 22px;
 
     margin-top: 20px;
     margin-bottom: 20px;
+    
+}
+
+.field > span,
+.value,
+.input > input,
+.input > textarea
+{
+    font-size: 22px;
     margin-right: 20px;
+}
+
+.change {
+    display: none;
+}
+
+.input > input, 
+.input > textarea 
+{
+    display: none;
+
+    padding: 10px;
+
+    border: none;
+}
+
+.show-input > input, 
+.show-input > textarea 
+{
+    display: block;
 }
 
 .user-info,
@@ -409,12 +445,27 @@ main{
     align-items: center;
 }
 
-button.change-field {
-    background-color: orange;
-
+.button-field {
     padding: 10px;
 
     border-radius: 5px;
+    margin-right: 10px;
+
+    cursor: pointer;
+}
+
+.button-field:last-of-type {
+    margin-right: 0;
+}
+
+.apply-correct {
+    background-color: green;
+
+    display: none;
+}
+
+.change-field {
+    background-color: orange;
 }
 
 button.change-field > i {
@@ -438,6 +489,20 @@ button.change-field > i {
     margin-bottom: 40px;
 }
 
+
+@keyframes click-button {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(0.8);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
 
 /*.s-profile{
     padding: 10rem 0rem;

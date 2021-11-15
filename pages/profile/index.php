@@ -81,27 +81,75 @@ session_start();
     			<div class="user-info">
     				<div class="fields">
     					<div class="field">
-    						<p>
-    							Nome: <?php echo "Calma que ainda vai"; ?>  
-    						</p>
-    						<button class="change-field">
+    						<span>
+    							Nome:  
+    						</span>
+    						<div class="input-area">
+    							<span class="value">
+    								<?php echo "Calma que ainda vai"; ?> 
+    							</span>
+    							<div class="input">
+    								<input
+    									type="text"
+    									name="nome"
+    									value="Calma que ainda vai"
+    								/>
+    							</div>
+    						</div>
+    						<button class=" button-field change-field">
     							<i class="fas fa-pencil-alt fa-2x"></i>
+    						</button>
+    						<button class="
+    						button-field
+    						apply-correct">
+    							<i class="fas fa-check fa-2x"></i>
     						</button>
     					</div>
     					<div class="field">
-    						<p>
-    							Email: <?php echo $_SESSION['login_user'] ?> 
-    						</p>
-    						<button class="change-field">
+    						<span>
+    							Email:  
+    						</span>
+    						<div class="input-area">
+    							<span class="value">
+    								<?php echo $_SESSION['login_user'] ?>
+    							</span>
+    							<div class="input">
+    								<input
+    									type="text"
+    									name="nome"
+    								/>
+    							</div>
+    						</div>
+    						<button class=" button-field change-field">
     							<i class="fas fa-pencil-alt fa-2x"></i>
+    						</button>
+    						<button class="
+    						button-field
+    						apply-correct">
+    							<i class="fas fa-check fa-2x"></i>
     						</button>
     					</div>
     					<div class="field">
-    						<p>
-    							Status: <?php echo "sei la.. sou gostoso"; ?>
-    						</p>
-    						<button class="change-field">
+    						<span>
+    							Status: 
+    						</span>
+    						<div class="input-area">
+    							<span class="value">
+    								<?php echo "sei la.. sou gostoso"; ?>
+    							</span>
+    							<div class="input">
+    								<textarea name="status">
+    									
+    								</textarea>
+    							</div>
+    						</div>
+    						<button class=" button-field change-field">
     							<i class="fas fa-pencil-alt fa-2x"></i>
+    						</button>
+    						<button class="
+    						button-field
+    						apply-correct">
+    							<i class="fas fa-check fa-2x"></i>
     						</button>
     					</div>
     				</div>

@@ -1,6 +1,6 @@
 <?php 
 session_start();
-$_SESSION['modalMsgHtml'];
+
 $local = $_SERVER['PHP_SELF'];
 
 require_once("Class/Controller/UserDataController.php");

@@ -179,7 +179,7 @@
 	<script>
 		AOS.init({
             duration: 2000,
-            once: true, //para a animação acontecer somente uma vez
+            once: true, // para a animação acontecer somente uma vez
         });
 	</script>
 </body>
