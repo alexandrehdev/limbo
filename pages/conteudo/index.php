@@ -119,118 +119,130 @@ require_once("Class/GetGeekContent.php");
 		<div class="container">
 			<div class="main-cards-noticias">
 				<div class="card-noticias js-card-noticias" data-aos="fade-down-right">
-					<div class="efeito-noticias">
-						<div class="area-img">
-							<img src="<?php (new GetGeekContent())->getImg(1) ?>">
+					<a href="#">
+						<div class="efeito-noticias">
+							<div class="area-img">
+								<img src="<?php (new GetGeekContent())->getImg(1) ?>">
+							</div>
+							<div class="text-card-noticias">
+								<h5> 
+								<?php 
+									(new GetGeekContent())->getName(1); 
+								?> 
+								</h5>
+								<span>
+								<?php 
+									(new GetGeekContent())->getDesc(1)
+								?>
+								</span>
+							</div>
 						</div>
-						<div class="text-card-noticias">
-							<h5> 
-							<?php 
-								(new GetGeekContent())->getName(1); 
-							?> 
-							</h5>
-							<span>
-							<?php 
-								(new GetGeekContent())->getDesc(1)
-							?>
-							</span>
-						</div>
-					</div>
+					</a>
 				</div>
 				<div class="card-noticias" data-aos="fade-down">
-					<div class="efeito-noticias">
-						<div class="area-img">
-							<img src="<?php (new GetGeekContent())->getImg(2) ?>">
+					<a href="#">
+						<div class="efeito-noticias">
+							<div class="area-img">
+								<img src="<?php (new GetGeekContent())->getImg(2) ?>">
+							</div>
+							<div class="text-card-noticias">
+								<h5>
+									<?php 
+										(new GetGeekContent())->getName(2);
+									?>
+								</h5>
+								<span>
+									<?php 
+										(new GetGeekContent())->getDesc(2);
+									?>
+								</span>
+							</div>
 						</div>
-						<div class="text-card-noticias">
-							<h5>
-								<?php 
-									(new GetGeekContent())->getName(2);
-								?>
-							</h5>
-							<span>
-								<?php 
-									(new GetGeekContent())->getDesc(2);
-								?>
-							</span>
-						</div>
-					</div>
+					</a>
 				</div>
 				<div class="card-noticias" data-aos="fade-down-left">
-					<div class="efeito-noticias">
-						<div class="area-img">
-							<img src="<?php (new GetGeekContent())->getImg(3) ?>">
+					<a href="#">
+						<div class="efeito-noticias">
+							<div class="area-img">
+								<img src="<?php (new GetGeekContent())->getImg(3) ?>">
+							</div>
+							<div class="text-card-noticias">
+								<h5>
+									<?php 
+									(new GetGeekContent())->getName(3);
+									?>
+								</h5>
+								<span>
+									<?php 
+										(new GetGeekContent())->getDesc(3);
+									?>
+								</span>
+							</div>
 						</div>
-						<div class="text-card-noticias">
-							<h5>
-								<?php 
-								(new GetGeekContent())->getName(3);
-								?>
-							</h5>
-							<span>
-								<?php 
-									(new GetGeekContent())->getDesc(3);
-								?>
-							</span>
-						</div>
-					</div>
+					</a>
 				</div>
 				<div class="card-noticias" data-aos="fade-up-right">
-					<div class="efeito-noticias">
-						<div class="area-img">
-							<img src="<?php (new GetGeekContent())->getImg(4) ?>">
+					<a href="#">
+						<div class="efeito-noticias">
+							<div class="area-img">
+								<img src="<?php (new GetGeekContent())->getImg(4) ?>">
+							</div>
+							<div class="text-card-noticias">
+								<h5>
+									<?php 
+									(new GetGeekContent())->getName(4);
+									?>
+								</h5>
+								<span>
+									<?php 
+										(new GetGeekContent())->getDesc(4);
+									?>		
+								</span>
+							</div>
 						</div>
-						<div class="text-card-noticias">
-							<h5>
-								<?php 
-								(new GetGeekContent())->getName(4);
-								?>
-							</h5>
-							<span>
-								<?php 
-									(new GetGeekContent())->getDesc(4);
-								?>		
-							</span>
-						</div>
-					</div>
+					</a>
 				</div>
 				<div class="card-noticias" data-aos="fade-up">
-					<div class="efeito-noticias">
-						<div class="area-img">
-							<img src="<?php (new GetGeekContent())->getImg(5) ?>">
+					<a href="#">
+						<div class="efeito-noticias">
+							<div class="area-img">
+								<img src="<?php (new GetGeekContent())->getImg(5) ?>">
+							</div>
+							<div class="text-card-noticias">
+								<h5>
+									<?php 
+									(new GetGeekContent())->getName(5);
+									?>
+								</h5>
+								<span>
+									<?php 
+										(new GetGeekContent())->getDesc(5);
+									?>	
+								</span>
+							</div>
 						</div>
-						<div class="text-card-noticias">
-							<h5>
-								<?php 
-								(new GetGeekContent())->getName(5);
-								?>
-							</h5>
-							<span>
-								<?php 
-									(new GetGeekContent())->getDesc(5);
-								?>	
-							</span>
-						</div>
-					</div>
+					</a>
 				</div>
 				<div class="card-noticias" data-aos="fade-up-left">
-					<div class="efeito-noticias">
-						<div class="area-img">
-							<img src="<?php (new GetGeekContent())->getImg(6) ?>">
-						</div>
-						<div class="text-card-noticias">
-							<h5>
+					<a href="#">
+						<div class="efeito-noticias">
+							<div class="area-img">
+								<img src="<?php (new GetGeekContent())->getImg(6) ?>">
+							</div>
+							<div class="text-card-noticias">
+								<h5>
+									<?php 
+									(new GetGeekContent())->getName(6); 
+									?>
+								</h5>
+								<span>
 								<?php 
-								(new GetGeekContent())->getName(6); 
+									(new GetGeekContent())->getDesc(6); 
 								?>
-							</h5>
-							<span>
-							<?php 
-								(new GetGeekContent())->getDesc(6); 
-							?>
-							</span>
+								</span>
+							</div>
 						</div>
-					</div>
+					</a>
 				</div>
 			</div>
 		</div>
