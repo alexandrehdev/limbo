@@ -1,8 +1,10 @@
 <?php 
-	
-	require_once("autoload.php");
+	require_once("vendor/autoload.php");
+	use MyApp\View\Route;
 
-	(new Flux())->showIntro();
+	// Visualizar as telas troque
+	// o nome da pasta aqui
+	Route::redirect("intro");
 
 
  ?>

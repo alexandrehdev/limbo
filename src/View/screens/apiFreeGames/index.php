@@ -1,9 +1,3 @@
-<?php 
-	require "Class/LoadApi.php";
-	$apidata = new LoadApi();
-
-	session_start();
- ?>
 <!DOCTYPE html>
 <html>
 
@@ -44,9 +38,6 @@
 				<li class="item-nav">
 					<strong class="user-account-text" style="text-transform:uppercase;">
 						<i class="user icon"></i>
-						<?php 
-							echo strtoupper($_SESSION['login_user']);
-						?>
 					</strong>
 					<div class="line dropdown">
 						<ul class="list-dropdown">
@@ -74,78 +65,78 @@
 						<div class="swiper-slide">
 							<div class="freegames-table">	
 								<div class="image">
-									<img src=" <?php $apidata->getApiImage(1) ?> ">
+									<img src=" ">
 								</div>
 								<div class="title">
-									<p> <?php $apidata->getApiTitle(1); ?> </p>
+									<p></p>
 								</div>
 								<div class="description">
-										<?php $apidata->getApishortDescription(1); ?>
+										
 								</div>
 							</div>
 						</div>
 						<div class="swiper-slide">
 							<div class="freegames-table">	
 								<div class="image">
-									<img src=" <?php $apidata->getApiImage(4) ?> ">
+									<img src=" ">
 								</div>
 								<div class="title">
-									<p> <?php $apidata->getApiTitle(4); ?> </p>
+									<p>  </p>
 								</div>
 								<div class="description">
-										<?php $apidata->getApishortDescription(4); ?>
+										
 								</div>
 							</div>
 						</div>
 						<div class="swiper-slide">
 							<div class="freegames-table">	
 								<div class="image">
-									<img src=" <?php $apidata->getApiImage(5) ?> ">
+									<img src="">
 								</div>
 								<div class="title">
-									<p> <?php $apidata->getApiTitle(5); ?> </p>
+									<p></p>
 								</div>
 								<div class="description">
-										<?php $apidata->getApishortDescription(5); ?>
+										
 								</div>
 							</div>
 						</div>
 						<div class="swiper-slide">
 							<div class="freegames-table">	
 								<div class="image">
-									<img src=" <?php $apidata->getApiImage(6) ?> ">
+									<img src="">
 								</div>
 								<div class="title">
-									<p> <?php $apidata->getApiTitle(6); ?> </p>
+									<p></p>
 								</div>
 								<div class="description">
-										<?php $apidata->getApishortDescription(6); ?>
+										
 								</div>
 							</div>
 						</div>
 						<div class="swiper-slide">
 							<div class="freegames-table">	
 								<div class="image">
-									<img src=" <?php $apidata->getApiImage(7) ?> ">
+									<img src=" ">
 								</div>
 								<div class="title">
-									<p> <?php $apidata->getApiTitle(7); ?> </p>
+									<p></p>
 								</div>
 								<div class="description">
-										<?php $apidata->getApishortDescription(7); ?>
+										
 								</div>
 							</div>
 						</div>
 						<div class="swiper-slide">
 							<div class="freegames-table">	
 								<div class="image">
-									<img src=" <?php $apidata->getApiImage(8) ?> ">
+									<img src="">
 								</div>
 								<div class="title">
-									<p> <?php $apidata->getApiTitle(8); ?> </p>
+									<p></p>
 								</div>
 								<div class="description">
-										<?php $apidata->getApishortDescription(8); ?>
+									
 								</div>
 							</div>
 						</div>
@@ -155,27 +146,27 @@
 			<div class="swiper leftSwiper">
 					<div class="swiper-wrapper">
 						<div class="swiper-slide">
-							<img src="<?php $apidata->getApiImage(7); ?>">
+							<img src="">
 						</div>
 
 						<div class="swiper-slide">
-							<img src="<?php $apidata->getApiImage(8); ?>">
+							<img src="">
 						</div>
 
 						<div class="swiper-slide">
-							<img src="<?php $apidata->getApiImage(9); ?>">
+							<img src="">
 						</div>
 
 						<div class="swiper-slide">
-							<img src="<?php $apidata->getApiImage(10); ?>">
+							<img src="">
 						</div>
 
 						<div class="swiper-slide">
-							<img src="<?php $apidata->getApiImage(11); ?>">
+							<img src="">
 						</div>
 
 						<div class="swiper-slide">
-							<img src="<?php $apidata->getApiImage(12); ?>">
+							<img src="">
 						</div>
 						
 					</div>

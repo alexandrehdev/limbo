@@ -1,24 +1,13 @@
 <?php 
-session_start();
+require_once("../../../../vendor/autoload.php");
 
-$local = $_SERVER['PHP_SELF'];
-
-require_once("Class/Controller/UserDataController.php");
-require_once("Class/Controller/UserController.php");
-
-require_once("Class/Controller/UserLoginData.php");
-require_once("Class/Controller/UserLoginController.php");
+use MyApp\Controller\User;
+use MyApp\Controller\GetData;
 
 if (isset($_POST['btn-register'])) {
-	(new UserController());
-	(new UserDataController())->registerUser();
+	(new GetData());
+	(new User())->validateData();
 }
-
-if (isset($_POST['btn-login'])) {
-	(new UserLoginController());
-	(new UserLoginData())->loginUser();
-}
-
 
 ?>
 <!DOCTYPE html>
@@ -48,14 +37,14 @@ if (isset($_POST['btn-login'])) {
 	<main class="main-register-user">
 		<section id="register-account" class="section-register">
 			<h1 class="title-register">Registrar</h1>
-			<form class="form-register-login" action="<?php $local ?>" method="POST">
+			<form class="form-register-login" action="<?php $_SERVER['PHP_SELF'] ?>" method="POST">
 				<div class="area-inputs">
 					<i class="fas fa-user margin-right fa-2x"></i>
-					<input type="text" placeholder="Usuario"name="username">
+					<input type="text" placeholder="Usuario"name="username" autocomplete="off">
 				</div>
 				<div class="area-inputs">
 					<i class="fas fa-envelope margin-right fa-2x"></i>
-					<input type="text" placeholder="Email" name="mail">
+					<input type="text" placeholder="Email" name="email">
 				</div>
 				<div class="area-inputs">
 					<i class="fas fa-key margin-right fa-2x"></i>
