@@ -1,6 +1,6 @@
 <?php 
 session_start();
-require_once("Class/GetGeekContent.php");
+require_once("../../../Controller/GetGeekContent.php");
 
 ?>
 <!DOCTYPE html>

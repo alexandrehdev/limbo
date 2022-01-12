@@ -9,7 +9,6 @@ logout.addEventListener('click',function(){
 })
 
 const descriptionCardNotice = window.document.querySelectorAll(".text-card-noticias > span");
-console.log(descriptionCardNotice);
 
 descriptionCardNotice.forEach(span => {
 

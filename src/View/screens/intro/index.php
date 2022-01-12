@@ -5,14 +5,14 @@
 	<meta charset="utf-8">
 	<title>Limbo</title>
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/icon.min.css">
-	<link rel="icon" type="image/png" href="./favicon.png">
+	<link rel="icon" type="image/png" href="../../../../favicon.png">
 	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-	<link rel="stylesheet" type="text/css" href="css/reset.css">
-	<link rel="stylesheet" type="text/css" href="css/buttons.css">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="stylesheet" type="text/css" href="css/variables.css">
-	<link rel="stylesheet" href="css/componants.css">
-	<link rel="stylesheet" href="css/footer.css">
+	<link rel="stylesheet" type="text/css" href="../../css/reset.css">
+	<link rel="stylesheet" type="text/css" href="../../css/buttons.css">
+	<link rel="stylesheet" type="text/css" href="../../css/style.css">
+	<link rel="stylesheet" type="text/css" href="../../css/variables.css">
+	<link rel="stylesheet" href="../../css/componants.css">
+	<link rel="stylesheet" href="../../css/footer.css">
 </head>
 
 <body>
@@ -29,7 +29,7 @@
 			<section id="businessman" class="cards">
 				<article class="card-info to-right" data-aos="fade-right">
 					<div class="img-content img-right-side">
-						<img src="./img/home/businessman.png">
+						<img src="../../img/home/businessman.png">
 					</div>
 					<div class="info-text">
 						<p>
@@ -43,7 +43,7 @@
 			<section id="newspaper" class="cards">
 				<article class="card-info to-left" data-aos="fade-left">
 					<div class="img-content img-left-side">
-						<img src="./img/home/newspaper.png">
+						<img src="../../img/home/newspaper.png">
 					</div>
 					<div class="info-text">
 						<p>
@@ -56,7 +56,7 @@
 			<section id="console" class="cards">
 				<article class="card-info to-right" data-aos="fade-right">
 					<div class="img-content img-right-side">
-						<img src="./img/home/console.png">
+						<img src="../../img/home/console.png">
 					</div>
 					<div class="info-text">
 						<p>
@@ -68,7 +68,7 @@
 			<section id="rocket" class="cards">
 				<article class="card-info to-left" data-aos="fade-left">
 					<div class="img-content img-left-side">
-						<img src="./img/home/rocket.png">
+						<img src="../../img/home/rocket.png">
 					</div>
 					<div class="info-text">
 						<p>
@@ -80,7 +80,7 @@
 			<section id="coding" class="cards">
 				<article class="card-info to-right" data-aos="fade-right">
 					<div class="img-content img-right-side">
-						<img src="./img/home/coding.png">
+						<img src="../../img/home/coding.png">
 					</div>
 					<div class="info-text">
 						<p>
@@ -104,21 +104,21 @@
 			<ul id="list-devs">
 				<section class="section" role="section">
 					<article class="article" role="article">
-						<img class="image-developer" src="./img/dev-example.png" alt="developer image" />
+						<img class="image-developer" src="../../img/dev-example.png" alt="developer image" />
 						<div class="right">
 							<strong class="name-dev">Name Developer</strong>
 							<ul class="list-media-social">
 								<li class="item-media-social">
-									<img class="icon-dev" src="img/icon-facebook.svg" alt="icon facebook" />
+									<img class="icon-dev" src="../../img/icon-facebook.svg" alt="icon facebook" />
 								</li>
 								<li class="item-media-social">
-									<img class="icon-dev" src="img/icon-github.svg" alt="icon github" />
+									<img class="icon-dev" src="../../img/icon-github.svg" alt="icon github" />
 								</li>
 								<li class="item-media-social">
-									<img class="icon-dev" src="img/icon-instagram.svg" alt="icon instagram" />
+									<img class="icon-dev" src="../../img/icon-instagram.svg" alt="icon instagram" />
 								</li>
 								<li class="item-media-social">
-									<img class="icon-dev" src="img/icon-linkedin.svg" alt="icon linkedin" />
+									<img class="icon-dev" src="../../img/icon-linkedin.svg" alt="icon linkedin" />
 								</li>
 							</ul>
 						</div>
@@ -126,21 +126,21 @@
 				</section>
 				<section class="section" role="section">
 					<article class="article" role="article">
-						<img class="image-developer" src="./img/dev-example.png" alt="developer image" />
+						<img class="image-developer" src="../../img/dev-example.png" alt="developer image" />
 						<div class="right">
 							<strong class="name-dev">Name Developer</strong>
 							<ul class="list-media-social">
 								<li class="item-media-social">
-									<img class="icon-dev" src="img/icon-facebook.svg" alt="icon facebook" />
+									<img class="icon-dev" src="../../img/icon-facebook.svg" alt="icon facebook" />
 								</li>
 								<li class="item-media-social">
-									<img class="icon-dev" src="img/icon-github.svg" alt="icon github" />
+									<img class="icon-dev" src="../../img/icon-github.svg" alt="icon github" />
 								</li>
 								<li class="item-media-social">
-									<img class="icon-dev" src="img/icon-instagram.svg" alt="icon instagram" />
+									<img class="icon-dev" src="../../img/icon-instagram.svg" alt="icon instagram" />
 								</li>
 								<li class="item-media-social">
-									<img class="icon-dev" src="img/icon-linkedin.svg" alt="icon linkedin" />
+									<img class="icon-dev" src="../../img/icon-linkedin.svg" alt="icon linkedin" />
 								</li>
 							</ul>
 						</div>
@@ -148,21 +148,21 @@
 				</section>
 				<section class="section" role="section">
 					<article class="article" role="article">
-						<img class="image-developer" src="./img/dev-example.png" alt="developer image" />
+						<img class="image-developer" src="../../img/dev-example.png" alt="developer image" />
 						<div class="right">
 							<strong class="name-dev">Name Developer</strong>
 							<ul class="list-media-social">
 								<li class="item-media-social">
-									<img class="icon-dev" src="img/icon-facebook.svg" alt="icon facebook" />
+									<img class="icon-dev" src="../../img/icon-facebook.svg" alt="icon facebook" />
 								</li>
 								<li class="item-media-social">
-									<img class="icon-dev" src="img/icon-github.svg" alt="icon github" />
+									<img class="icon-dev" src="../../img/icon-github.svg" alt="icon github" />
 								</li>
 								<li class="item-media-social">
-									<img class="icon-dev" src="img/icon-instagram.svg" alt="icon instagram" />
+									<img class="icon-dev" src="../../img/icon-instagram.svg" alt="icon instagram" />
 								</li>
 								<li class="item-media-social">
-									<img class="icon-dev" src="img/icon-linkedin.svg" alt="icon linkedin" />
+									<img class="icon-dev" src="../../img/icon-linkedin.svg" alt="icon linkedin" />
 								</li>
 							</ul>
 						</div>
@@ -171,10 +171,10 @@
 			</ul>
 		</div>
 	</footer>
-	<script type="text/javascript" src="js/scroll.js"></script>
-	<script type="text/javascript" src="js/button-section-home.js"></script>
-	<script type="text/javascript" src="js/script.js"></script>
-	<script type="text/javascript" src="js/title-scroll.js"></script>
+	<script type="text/javascript" src="../../js/scroll.js"></script>
+	<script type="text/javascript" src="../../js/button-section-home.js"></script>
+	<script type="text/javascript" src="../../js/script.js"></script>
+	<script type="text/javascript" src="../../js/title-scroll.js"></script>
 	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 	<script>
 		AOS.init({

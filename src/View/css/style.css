@@ -2,7 +2,7 @@
 
 @font-face {
     font-family: "gameplay";
-    src: url(font/Gameplay.ttf); 
+    src: url(../Gameplay.ttf); 
 }
 
 .info-text p{

@@ -3,7 +3,7 @@
 @font-face {
     font-family: "gameplay";
     font-style: normal;
-    src: url(font/Gameplay.ttf); 
+    src: url(../Gameplay.ttf); 
 }
 
 .user-area{
