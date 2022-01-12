@@ -2,5 +2,5 @@
 	session_start();
 	session_destroy();
 
-	header("Location: /pages/registerLogin/index.php");
+	header("Location: /src/View/screens/registerLogin/index.php");
  ?>

@@ -86,6 +86,6 @@ if (isset($_POST['btn-register'])) {
 
 	<script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
-	<script src="./js/errorMessage.js"></script>
+	<script src="../../js/errorMessage.js"></script>
 </body>
 </html>

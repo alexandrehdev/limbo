@@ -5,28 +5,28 @@ const dataDevs = [
         id: "dev1",
         backgroundColor: "#000000",
         directionAOSCard: "fade-right",
-        sourceImage: "./img/exampleDev.png",
+        sourceImage: "../../img/exampleDev.png",
         name: "Josefino Pimposo",
         description: "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum",
         mediaSocials: [
             {
                 name: "facebook",
-                source: "./img/icon-facebook-info.svg",
+                source: "../../img/icon-facebook-info.svg",
                 alt: "icon facebook icon"
             },
             {
                 name: "github",
-                source: "./img/icon-github-info.svg",
+                source: "../../img/icon-github-info.svg",
                 alt: "icon github icon"
             },
             {
                 name: "instagram",
-                source: "./img/icon-instagram-info.svg",
+                source: "../../img/icon-instagram-info.svg",
                 alt: "icon instagram icon"
             },
             {
                 name: "twitter",
-                source: "./img/icon-twitter-info.svg",
+                source: "../../img/icon-twitter-info.svg",
                 alt: "icon twitter icon"
             },
         ]
@@ -35,28 +35,28 @@ const dataDevs = [
         id: "dev2",
         backgroundColor: "#000000",
         directionAOSCard: "fade-left",
-        sourceImage: "./img/exampleDev.png",
+        sourceImage: "../../img/exampleDev.png",
         name: "Josefino Pimposo",
         description: "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum",
         mediaSocials: [
             {
                 name: "facebook",
-                source: "./img/icon-facebook-info.svg",
+                source: "../../img/icon-facebook-info.svg",
                 alt: "icon facebook icon"
             },
             {
                 name: "github",
-                source: "./img/icon-github-info.svg",
+                source: "../../img/icon-github-info.svg",
                 alt: "icon github icon"
             },
             {
                 name: "instagram",
-                source: "./img/icon-instagram-info.svg",
+                source: "../../img/icon-instagram-info.svg",
                 alt: "icon instagram icon"
             },
             {
                 name: "twitter",
-                source: "./img/icon-twitter-info.svg",
+                source: "../../img/icon-twitter-info.svg",
                 alt: "icon twitter icon"
             },
         ]
@@ -65,28 +65,28 @@ const dataDevs = [
         id: "dev3",
         backgroundColor: "#000000",
         directionAOSCard: "fade-right",
-        sourceImage: "./img/exampleDev.png",
+        sourceImage: "../../img/exampleDev.png",
         name: "Josefino Pimposo",
         description: "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum",
         mediaSocials: [
             {
                 name: "facebook",
-                source: "./img/icon-facebook-info.svg",
+                source: "../../img/icon-facebook-info.svg",
                 alt: "icon facebook icon"
             },
             {
                 name: "github",
-                source: "./img/icon-github-info.svg",
+                source: "../../img/icon-github-info.svg",
                 alt: "icon github icon"
             },
             {
                 name: "instagram",
-                source: "./img/icon-instagram-info.svg",
+                source: "../../img/icon-instagram-info.svg",
                 alt: "icon instagram icon"
             },
             {
                 name: "twitter",
-                source: "./img/icon-twitter-info.svg",
+                source: "../../img/icon-twitter-info.svg",
                 alt: "icon twitter icon"
             },
         ]
@@ -95,28 +95,28 @@ const dataDevs = [
         id: "dev4",
         backgroundColor: "#000000",
         directionAOSCard: "fade-left",
-        sourceImage: "./img/exampleDev.png",
+        sourceImage: "../../img/exampleDev.png",
         name: "Josefino Pimposo",
         description: "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum",
         mediaSocials: [
             {
                 name: "facebook",
-                source: "./img/icon-facebook-info.svg",
+                source: "../../img/icon-facebook-info.svg",
                 alt: "icon facebook icon"
             },
             {
                 name: "github",
-                source: "./img/icon-github-info.svg",
+                source: "../../img/icon-github-info.svg",
                 alt: "icon github icon"
             },
             {
                 name: "instagram",
-                source: "./img/icon-instagram-info.svg",
+                source: "../../img/icon-instagram-info.svg",
                 alt: "icon instagram icon"
             },
             {
                 name: "twitter",
-                source: "./img/icon-twitter-info.svg",
+                source: "../../img/icon-twitter-info.svg",
                 alt: "icon twitter icon"
             },
         ]

@@ -1,8 +1,6 @@
 const buttonFieldAll = window.document.querySelectorAll(".change-field");
 const buttonCorrectAll = window.document.querySelectorAll(".apply-correct");
 
-console.log(buttonCorrectAll);
-
 const divAreaInput = window.document.querySelectorAll(".input-area");
 const TIMERMILISECONDS = 500;
 

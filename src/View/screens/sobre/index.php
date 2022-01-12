@@ -17,7 +17,7 @@ session_start();
 	<link rel="stylesheet" type="text/css" href="../../css/componants.css">
 	<link rel="stylesheet" type="text/css" href="../../css/footer.css">
 	<link rel="stylesheet" type="text/css" href="../../css/info.css">
-	<link rel="stylesheet" type="text/css" href="./style/card.css">
+	<link rel="stylesheet" type="text/css" href="../../css/sobreCard.css">
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/icon.min.css">
 	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
@@ -153,9 +153,9 @@ session_start();
 	<script type="text/javascript" src="../../js/title-scroll.js"></script>
 	<script type="text/javascript" src="../../js/header.js"></script>
 	<script type="text/javascript" src="../../js/pages.js"></script>
-	<script type="text/javascript" src="js/card.js"></script>
-	<script type="text/javascript" src="js/script.js"></script>
-	<script type="text/javascript" src="js/sectionRedi.js"></script>
+	<script type="text/javascript" src="../../js/sobreCard.js"></script>
+	<script type="text/javascript" src="../../js/sobre.js"></script>
+	<script type="text/javascript" src="../../js/sobreSectionRedi.js"></script>
 	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 	<script>
 		AOS.init({

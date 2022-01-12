@@ -57,7 +57,7 @@ session_start();
 								<div class="line"></div>
 							</li>
 							<li class="item-list-dropdown">
-									<span class="item-dropdown" class="logout">
+									<span class="item-dropdown logout">
 										Sair
 									</span>
 								<div class="line"></div>
@@ -240,8 +240,8 @@ session_start();
 			</ul>
 		</div>
 	</footer>
-    <!-- <script type="text/javascript" src="js/script.js"></script> -->
-    <script type="text/javascript" src="js/field.js"></script>
+    <script type="text/javascript" src="../../js/profileLogout.js"></script>
+    <script type="text/javascript" src="../../js/profileField.js"></script>
     <script type="text/javascript" src="../../js/header.js"></script>
 </body>
 
