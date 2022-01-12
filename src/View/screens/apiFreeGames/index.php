@@ -24,7 +24,7 @@
 		<nav class="navigation">
 			<ul class="list-nav">
 				<li class="item-nav">
-					<a href="../../pages/conteudo/index.php">Navegar</a>
+					<a href="../conteudo/index.php">Navegar</a>
 					<div class="line"></div>
 				</li>
 				<li class="item-nav">
@@ -32,7 +32,7 @@
 					<div class="line"></div>
 				</li>
 				<li class="item-nav">
-					<a href="../../pages/sobre/index.php">Info</a>
+					<a href="../sobre/index.php">Info</a>
 					<div class="line"></div>
 				</li>
 				<li class="item-nav">

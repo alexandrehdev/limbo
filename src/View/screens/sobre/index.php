@@ -28,11 +28,11 @@ session_start();
 		<nav class="navigation">
 			<ul class="list-nav">
 				<li class="item-nav">
-					<a href="../../pages/conteudo/index.php">Navegar</a>
+					<a href="../conteudo/index.php">Navegar</a>
 					<div class="line"></div>
 				</li>
 				<li class="item-nav">
-					<a href="../../pages/apiFreeGames/index.php">Jogos Gratis</a>
+					<a href="../apiFreeGames/index.php">Jogos Gratis</a>
 					<div class="line"></div>
 				</li>
 				<li class="item-nav">

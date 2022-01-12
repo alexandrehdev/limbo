@@ -26,19 +26,19 @@ session_start();
 		<nav class="navigation">
 			<ul class="list-nav">
 				<li class="item-nav">
-					<a href="../../index.php">Home</a>
+					<a href="../intro/index.php">Home</a>
 					<div class="line"></div>
 				</li>
 				<li class="item-nav">
-					<a href="index.php">Navegar</a>
+					<a href="../conteudo/index.php">Navegar</a>
 					<div class="line"></div>
 				</li>
 				<li class="item-nav">
-					<a href="../../pages/apiFreeGames/index.php">Jogos Gratis</a>
+					<a href="../apiFreeGames/index.php">Jogos Gratis</a>
 					<div class="line"></div>
 				</li>
 				<li class="item-nav">
-					<a href="../../pages/sobre/index.php">Info</a>
+					<a href="../sobre/index.php">Info</a>
 					<div class="line"></div>
 				</li>
 				<li class="item-nav">

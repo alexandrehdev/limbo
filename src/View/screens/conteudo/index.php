@@ -30,11 +30,11 @@ require_once("../../../Controller/GetGeekContent.php");
 					<div class="line"></div>
 				</li>
 				<li class="item-nav">
-					<a href="../../pages/apiFreeGames/index.php">Jogos Gratis</a>
+					<a href="../apiFreeGames/index.php">Jogos Gratis</a>
 					<div class="line"></div>
 				</li>
 				<li class="item-nav">
-					<a href="../../pages/sobre/index.php">Info</a>
+					<a href="../sobre/index.php">Info</a>
 					<div class="line"></div>
 				</li>
 				<li class="item-nav">
