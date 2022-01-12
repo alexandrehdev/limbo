@@ -4,6 +4,6 @@
 
 	// Visualizar as telas troque
 	// o nome da pasta aqui
-	Route::redirect("conteudo");
+	Route::redirect("intro");
 
  ?>

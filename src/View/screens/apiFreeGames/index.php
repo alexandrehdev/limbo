@@ -251,7 +251,7 @@
 					</ul>
 				</div>
 			</footer>
-			<script type="text/javascript" src="js/script.js"></script>
+			<script type="text/javascript" src="../../js/apiFreeGames.js"></script>
 			<script type="text/javascript" src="../../js/title-scroll.js"></script>
 			<script type="text/javascript" src="../../js/header.js"></script>
 			<script type="text/javascript" src="../../js/pages.js"></script>
