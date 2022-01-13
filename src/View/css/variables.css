@@ -20,4 +20,10 @@
     --antiquewhite: #faebd7;
     --pink: #ffc0cb;
     --red: #b30000;
+
+    /* Colors for message */
+    --info: #3CDCFF;
+    --success: #51FF58;
+    --warning: #FBFF48;
+    --danger: #FF5151;
 }

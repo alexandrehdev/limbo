@@ -51,11 +51,22 @@ if (isset($_POST['btn-register'])) {
 			<form class="form-register-login" action="<?php $_SERVER['PHP_SELF'] ?>" method="POST">
 				<div class="area-inputs">
 					<i class="fas fa-user margin-right fa-2x"></i>
-					<input type="text" placeholder="Usuario"name="username" autocomplete="off">
+					<input
+						id="input-username-register"
+						type="text" 
+						placeholder="Usuario"
+						name="username" 
+						autocomplete="off"
+					>
 				</div>
 				<div class="area-inputs">
 					<i class="fas fa-envelope margin-right fa-2x"></i>
-					<input type="text" placeholder="Email" name="email">
+					<input
+						id="input-email-register"
+						type="text" 
+						placeholder="Email" 
+						name="email"
+					>
 				</div>
 				<div class="area-inputs">
 					<i class="fas fa-key margin-right fa-2x"></i>
@@ -65,12 +76,13 @@ if (isset($_POST['btn-register'])) {
 					<i class="fas fa-key margin-right fa-2x"></i>
 					<input type="password" placeholder="Confirme senha" name="cpwd">
 				</div>
+				<span id="message-capslock-warning" class="message-capslock color-warning">CAPSLOCK ATIVADO</span>
 				<button name="btn-register"title="Registrar">
 					<i class="fas fa-pencil-alt fa-2x"></i>
 				</button>
 			</form>
 		</section>
-
+		
 		<section id="login-account" class="section-register">
 			<h1 class="title-register" id="login">Login</h1>
 			<div class="msg-erro" id="msgerro">
@@ -80,23 +92,22 @@ if (isset($_POST['btn-register'])) {
 
 				<div class="area-inputs">
 					<i class="fas fa-envelope margin-right fa-2x"></i>
-					<input type="email" placeholder="Email" name="log-mail">
+					<input id="input-email-login" type="email" placeholder="Email" name="log-mail">
 				</div>
-
+				
 				<div class="area-inputs">
 					<i class="fas fa-key margin-right fa-2x"></i>
 					<input type="password" placeholder="Senha" name="log-pass">
 				</div>
-
+				<span id="message-capslock-danger" class="message-capslock color-danger">CAPSLOCK ATIVADO</span>
 				<button name="btn-login" type="submit"title="Logar">
 					<i class="fab fa-telegram-plane fa-2x"></i>
 				</button>
 			</form>
 		</section>
 	</main>
-
 	<script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
-	<script src="../../js/errorMessage.js"></script>
+	<script src="../../js/capslockMessage.js"></script>
 </body>
 </html>
