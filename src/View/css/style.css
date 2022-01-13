@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap');
+
+@font-face {
+    font-family: "gameplay";
+    src: url(../Gameplay.ttf); 
+}
+
+.info-text p{
+	font-family: 'Mochiy Pop One', sans-serif;
+	font-size: 20.3px;
+}
+
+.main-header{
+	justify-content: space-between;
+	font-family: "gameplay";
+}
+
+.main-header,
+.register-header
+{
+	position: sticky;
+	top: 0;
+	box-sizing: border-box;
+	padding: 5px 0px;
+	height: 70px;
+	width: 100%;
+	z-index: 2021;
+
+	display: flex;
+	align-items: center;
+}
+
+.main-header h1{
+	color: white;
+	font-size: 50px;
+	text-align: left;
+	margin: 10px;
+	cursor: pointer;
+}
+
+.navigation{
+	display: flex;
+	justify-content: right;
+	color: white;
+}
+
+.navigation a,
+.navigation strong.user-account-text
+{
+	/* margin-left: 60px; */
+	color: white;
+	text-decoration: none;
+	padding: 15px;
+	font-size: 16px;
+}
+
+ul.list-nav {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+li.item-nav {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	margin-left: 70px;
+
+	position: relative;
+}
+
+li.item-nav:first-of-type {
+	margin-left: 0;
+}
+
+div.line {
+	width: 0;
+	height: 5px;
+
+	background-color: var(--white);
+
+	position: absolute;
+	bottom: 0;
+
+	overflow: hidden;
+}
+
+.list-dropdown {
+	width: 100%;
+	height: 100%;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.list-dropdown {
+	list-style-type: none;
+}
+
+div.line,
+.item-dropdown
+{
+	transition: all 500ms;
+}
+
+.item-list-dropdown {
+	position: relative;
+
+	display: inline-block;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.item-dropdown {
+	color: var(--black);
+
+	font-size: 1.5rem;
+
+	opacity: 0;
+
+	text-align: center;
+
+	padding: 10px;
+}
+
+/*DROPDOWN CONTEUDO USUARIO*/
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+/*elemento principal left side tela API*/
+
+/* .freegames-table{
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+	grid-gap: 17rem;
+	justify-content: left;
+	margin: 10rem;
+}
+
+.games-recommend{
+	display: grid;
+	justify-content: right;
+	position: relative;
+	top: -60rem;
+}
+
+.games-recommend div{
+	padding: 2rem;
+} */
+
+/*style conteudo restante*/
+
+.content{
+	height: 100%;
+	width: 100%;
+	margin-top: 150px;
+	z-index: -1;
+}
+
+.info-content p{
+	font-size: 25px;
+}
+
+/*Edição conteudo card home*/
+div#home {
+	width: 100%;
+}
+
+.cards {
+	display: grid;
+	justify-content: center;
+
+	height: 600px;
+}
+
+.info-text{
+	font-size: 18px;
+	width: 40%;
+	color: white;
+}
+
+.to-left {
+	display: flex;
+	justify-content: left;
+	margin-left: 10px;
+}
+
+.to-left p {
+	text-align: left;
+}
+
+.to-right {
+	flex-direction: row-reverse;
+	display: flex;
+	justify-content: right;
+	margin-right: 10px;
+}
+
+.to-right p {
+	text-align: right;
+}
+
+.to-left,
+.to-right
+{
+	align-items: center;
+}
+
+.img-left-side{
+	margin-right: 20px;
+}
+
+.img-right-side{
+	margin-left: 20px;
+}
+
+::-webkit-scrollbar {
+	width: 8px;
+}
+
+::-webkit-scrollbar-track {
+	box-shadow: inset 0 0 5px grey; 
+}
+
+
+::-webkit-scrollbar-thumb {
+	background: grey; 
+	border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: pink; 
+}
