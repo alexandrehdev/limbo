@@ -40,7 +40,7 @@ if (isset($_POST['btn-register'])) {
 </head>
 <body>
 	<header class="main-header register-header">
-		<a href="../../index.php">
+		<a href="../intro/index.php">
 			<h1 class="title-name">Limbo</h1>
 		</a>
 	</header>
