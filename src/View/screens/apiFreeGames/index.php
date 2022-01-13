@@ -1,3 +1,10 @@
+<?php 
+	require_once("../../../../vendor/autoload.php");
+	use MyApp\Controller\LoadApi;
+	$api = new LoadApi();
+	$response = $api->getResult();
+	session_start();
+ ?>
 <!DOCTYPE html>
 <html>
 
@@ -38,6 +45,9 @@
 				<li class="item-nav">
 					<strong class="user-account-text" style="text-transform:uppercase;">
 						<i class="user icon"></i>
+						<?php 
+							echo strtoupper($_SESSION['user']['username']);
+						?>
 					</strong>
 					<div class="line dropdown">
 						<ul class="list-dropdown">
@@ -60,89 +70,91 @@
 		</nav>
 	</header>
 	<main>
+		<?php for ($i=1; $i <= 10; $i++) { ?>
 			<div class="swiper mySwiper">
 				<div class="swiper-wrapper">
 						<div class="swiper-slide">
 							<div class="freegames-table">	
 								<div class="image">
-									<img src=" ">
+									<img src="<?php echo $response[$i]['thumbnail']; ?>">
 								</div>
 								<div class="title">
-									<p></p>
+									<p><?php echo $response[$i]['title']; ?></p>
 								</div>
 								<div class="description">
-										
+									<?php echo $response[$i]['short_description']; ?>	
 								</div>
 							</div>
 						</div>
 						<div class="swiper-slide">
 							<div class="freegames-table">	
 								<div class="image">
-									<img src=" ">
+									<img src="<?php echo $response[$i]['thumbnail']; ?>">
 								</div>
 								<div class="title">
-									<p>  </p>
+									<p><?php echo $response[$i]['title']; ?></p>
 								</div>
 								<div class="description">
-										
+									<?php echo $response[$i]['short_description']; ?>	
 								</div>
 							</div>
 						</div>
 						<div class="swiper-slide">
 							<div class="freegames-table">	
 								<div class="image">
-									<img src="">
+									<img src="<?php echo $response[$i]['thumbnail']; ?>">
 								</div>
 								<div class="title">
-									<p></p>
+									<p><?php echo $response[$i]['title']; ?></p>
 								</div>
 								<div class="description">
-										
+									<?php echo $response[$i]['short_description']; ?>	
 								</div>
 							</div>
 						</div>
 						<div class="swiper-slide">
 							<div class="freegames-table">	
 								<div class="image">
-									<img src="">
+									<img src="<?php echo $response[$i]['thumbnail']; ?>">
 								</div>
 								<div class="title">
-									<p></p>
+									<p><?php echo $response[$i]['title']; ?></p>
 								</div>
 								<div class="description">
-										
+									<?php echo $response[$i]['short_description']; ?>	
 								</div>
 							</div>
 						</div>
 						<div class="swiper-slide">
 							<div class="freegames-table">	
 								<div class="image">
-									<img src=" ">
+									<img src="<?php echo $response[$i]['thumbnail']; ?>">
 								</div>
 								<div class="title">
-									<p></p>
+									<p><?php echo $response[$i]['title']; ?></p>
 								</div>
 								<div class="description">
-										
+									<?php echo $response[$i]['short_description']; ?>	
 								</div>
 							</div>
 						</div>
 						<div class="swiper-slide">
 							<div class="freegames-table">	
 								<div class="image">
-									<img src="">
+									<img src="<?php echo $response[$i]['thumbnail']; ?>">
 								</div>
 								<div class="title">
-									<p></p>
+									<p><?php echo $response[$i]['title']; ?></p>
 								</div>
 								<div class="description">
-									
+									<?php echo $response[$i]['short_description']; ?>	
 								</div>
 							</div>
 						</div>
 					</div>
 				<div class="swiper-pagination"></div>
 			</div>
+		<?php } ?>
 			<div class="swiper leftSwiper">
 					<div class="swiper-wrapper">
 						<div class="swiper-slide">

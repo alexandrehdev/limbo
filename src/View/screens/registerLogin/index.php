@@ -76,7 +76,7 @@ if (isset($_POST['btn-register'])) {
 			<div class="msg-erro" id="msgerro">
 				<!-- <span>Login ou senha incorretos</span> -->
 			</div>
-			<form class="form-register-login" method="POST" action="<?php $local ?>">
+			<form class="form-register-login" method="POST" action="<?php $_SERVER['PHP_SELF'] ?>">
 
 				<div class="area-inputs">
 					<i class="fas fa-envelope margin-right fa-2x"></i>

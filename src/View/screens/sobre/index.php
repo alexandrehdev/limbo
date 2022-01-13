@@ -43,7 +43,7 @@ session_start();
 					<strong class="user-account-text" style="text-transform:uppercase;">
 						<i class="user icon"></i>
 						<?php 
-							echo strtoupper($_SESSION['login_user']);
+							echo strtoupper($_SESSION['user']['username']);
 						?>
 					</strong>
 					<div class="line dropdown">
