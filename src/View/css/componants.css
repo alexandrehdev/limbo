@@ -51,7 +51,7 @@
 
 .s-cards .container .main-cards .card-left span{
     font-size: 2rem;
-     font-family: 'Mochiy Pop One', sans-serif;
+    font-family: 'Mochiy Pop One', sans-serif;
     font-weight: 600;
     background-color: white;
     padding: 2rem;
@@ -183,16 +183,16 @@
     gap: 3.3rem;
 }
 
-.s-cards-noticias .container .main-cards-noticias .card-noticias{
-    /* width: 100%; 
+/* .s-cards-noticias .container .main-cards-noticias .card-noticias{
+    width: 100%; 
     max-width: 37rem;
     height: 
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    cursor: pointer; */
-}
+    cursor: pointer;
+} */
 
 
 .s-cards-noticias .container .main-cards-noticias .card-noticias .efeito-noticias{
