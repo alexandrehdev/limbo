@@ -1,28 +1,27 @@
 <?php 
-
-session_start();
+namespace MyApp\Controller;
 
 class LoadApi
 {
-	public $json_content;
-	public $result;
+	private $json_content;
+	private $result;
 
 	function __construct()
 	{
-		$this->json_content = file_get_contents("https://www.freetogame.com/api/games");
-		$this->result = json_decode($this->json_content, true);
+		$this->setjsonContent(file_get_contents("https://www.freetogame.com/api/games"));
+		$this->setResult(json_decode($this->getjsonContent(), true));
 	}
-
-	public function getApiImage($num){
-		echo $this->result[$num]['thumbnail'];
+	public function getjsonContent(){
+		return $this->json_content;
 	}
-
-	public function getApiTitle($num){
-		echo $this->result[$num]['title'];
+	public function setjsonContent($json){
+		$this->json_content = $json;
 	}
-
-	public function getApishortDescription($num){
-		echo $this->result[$num]['short_description'];
+	public function getResult(){
+		return $this->result;
+	}	
+	public function setResult($result){
+		$this->result = $result;
 	}
 
 }

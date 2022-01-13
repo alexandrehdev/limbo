@@ -1,6 +1,10 @@
 <?php 
+require_once("../../../../vendor/autoload.php");
+use MyApp\Controller\GeekContent;
+$geek = new GeekContent();
+$data = $geek->getResponse();
+
 session_start();
-require_once("../../../Controller/GetGeekContent.php");
 
 ?>
 <!DOCTYPE html>
@@ -122,18 +126,14 @@ require_once("../../../Controller/GetGeekContent.php");
 					<a href="#">
 						<div class="efeito-noticias">
 							<div class="area-img">
-								<img src="<?php (new GetGeekContent())->getImg(1) ?>">
+								<img src="<?php echo $data[1]["img"]; ?>">
 							</div>
 							<div class="text-card-noticias">
 								<h5> 
-								<?php 
-									(new GetGeekContent())->getName(1); 
-								?> 
+								 	<?php echo $data[1]["name"];?>
 								</h5>
 								<span>
-								<?php 
-									(new GetGeekContent())->getDesc(1)
-								?>
+								<?php echo $data[1]["desc"];?>
 								</span>
 							</div>
 						</div>
@@ -143,18 +143,14 @@ require_once("../../../Controller/GetGeekContent.php");
 					<a href="#">
 						<div class="efeito-noticias">
 							<div class="area-img">
-								<img src="<?php (new GetGeekContent())->getImg(2) ?>">
+								<img src="<?php echo $data[2]["img"]; ?>">
 							</div>
 							<div class="text-card-noticias">
-								<h5>
-									<?php 
-										(new GetGeekContent())->getName(2);
-									?>
+								<h5> 
+									<?php echo $data[2]["name"]; ?> 
 								</h5>
 								<span>
-									<?php 
-										(new GetGeekContent())->getDesc(2);
-									?>
+									<?php echo $data[2]["desc"];?>
 								</span>
 							</div>
 						</div>
@@ -164,18 +160,14 @@ require_once("../../../Controller/GetGeekContent.php");
 					<a href="#">
 						<div class="efeito-noticias">
 							<div class="area-img">
-								<img src="<?php (new GetGeekContent())->getImg(3) ?>">
+								<img src="<?php echo $data[3]["img"]; ?>">
 							</div>
 							<div class="text-card-noticias">
-								<h5>
-									<?php 
-									(new GetGeekContent())->getName(3);
-									?>
+								<h5> 
+									<?php echo $data[3]["name"]; ?> 
 								</h5>
 								<span>
-									<?php 
-										(new GetGeekContent())->getDesc(3);
-									?>
+									<?php echo $data[3]["desc"];?>
 								</span>
 							</div>
 						</div>
@@ -185,18 +177,14 @@ require_once("../../../Controller/GetGeekContent.php");
 					<a href="#">
 						<div class="efeito-noticias">
 							<div class="area-img">
-								<img src="<?php (new GetGeekContent())->getImg(4) ?>">
+								<img src="<?php echo $data[4]["img"]; ?>">
 							</div>
 							<div class="text-card-noticias">
-								<h5>
-									<?php 
-									(new GetGeekContent())->getName(4);
-									?>
+								<h5> 
+									<?php echo $data[4]["name"]; ?> 
 								</h5>
 								<span>
-									<?php 
-										(new GetGeekContent())->getDesc(4);
-									?>		
+									<?php echo $data[4]["desc"];?>
 								</span>
 							</div>
 						</div>
@@ -206,18 +194,14 @@ require_once("../../../Controller/GetGeekContent.php");
 					<a href="#">
 						<div class="efeito-noticias">
 							<div class="area-img">
-								<img src="<?php (new GetGeekContent())->getImg(5) ?>">
+								<img src="<?php echo $data[1]["img"]; ?>">
 							</div>
 							<div class="text-card-noticias">
-								<h5>
-									<?php 
-									(new GetGeekContent())->getName(5);
-									?>
+								<h5> 
+									<?php echo $data[4]["name"]; ?> 
 								</h5>
 								<span>
-									<?php 
-										(new GetGeekContent())->getDesc(5);
-									?>	
+									<?php echo $data[4]["desc"];?>
 								</span>
 							</div>
 						</div>
@@ -227,18 +211,14 @@ require_once("../../../Controller/GetGeekContent.php");
 					<a href="#">
 						<div class="efeito-noticias">
 							<div class="area-img">
-								<img src="<?php (new GetGeekContent())->getImg(6) ?>">
+								<img src="<?php echo $data[4]["img"]; ?>">
 							</div>
 							<div class="text-card-noticias">
-								<h5>
-									<?php 
-									(new GetGeekContent())->getName(6); 
-									?>
+								<h5> 
+									<?php echo $data[4]["name"]; ?> 
 								</h5>
 								<span>
-								<?php 
-									(new GetGeekContent())->getDesc(6); 
-								?>
+									<?php echo $data[4]["desc"];?>
 								</span>
 							</div>
 						</div>
