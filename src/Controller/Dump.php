@@ -23,8 +23,7 @@ class Dump
 	}
 
 	public function selectQuery($email,$pwd){
-		$sql = "SELECT * FROM limbo.userdata WHERE email = '$email' AND password = '$pwd'";
-		
+		$sql = "SELECT * FROM limbo.userdata WHERE email = '$email' AND password = '$pwd'";		
 		return $sql;
 	}
 
