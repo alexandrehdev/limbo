@@ -22,8 +22,8 @@ class Dump
 		$this->insertQuery = $query;
 	}
 
-	public function selectQuery($user,$pwd){
-		$sql = "SELECT username,password FROM limbo.userdata WHERE username = '$user' AND password = '$pwd'";
+	public function selectQuery($email,$pwd){
+		$sql = "SELECT * FROM limbo.userdata WHERE email = '$email' AND password = '$pwd'";
 		
 		return $sql;
 	}

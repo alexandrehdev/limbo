@@ -5,13 +5,19 @@ use MyApp\Controller\User;
 use MyApp\Controller\GetDataRegister;
 use MyApp\Controller\GetDataLogin;
 
+session_start();
+
+$user = new User();
+
 if (isset($_POST['btn-register'])) {
 	(new GetDataRegister());
-	(new User())->validateData();
+	$user->validateData();
 	
 }elseif(isset($_POST['btn-login'])){
 	(new GetDataLogin());
-	(new User())->validateLogin();
+	$user->validateLogin();
+	$_SESSION['user'] = $user->showUser();
+	
 }
 
 ?>
