@@ -2,11 +2,16 @@
 require_once("../../../../vendor/autoload.php");
 
 use MyApp\Controller\User;
-use MyApp\Controller\GetData;
+use MyApp\Controller\GetDataRegister;
+use MyApp\Controller\GetDataLogin;
 
 if (isset($_POST['btn-register'])) {
-	(new GetData());
+	(new GetDataRegister());
 	(new User())->validateData();
+	
+}elseif(isset($_POST['btn-login'])){
+	(new GetDataLogin());
+	(new User())->validateLogin();
 }
 
 ?>

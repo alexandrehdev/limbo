@@ -1,7 +1,7 @@
 <?php 
 namespace MyApp\Controller;
 
-class GetData
+class GetDataRegister extends GetDataLogin
 {
 	private $username;
 	private $email;
@@ -10,6 +10,8 @@ class GetData
 
 	function __construct()
 	{
+		parent::__construct();
+		
 		$this->setUsername($_POST['username']);
 		$this->setEmail($_POST['email']);
 		$this->setPassword($_POST['pwd']);

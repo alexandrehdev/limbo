@@ -3,6 +3,7 @@ namespace MyApp\Model;
 use MyApp\Controller\User as UserController;
 use MyApp\Controller\Dump;
 use MyApp\Controller\Connection;
+use PDO;
 
 class User extends UserController
 {	
@@ -23,7 +24,8 @@ class User extends UserController
 	}
 
 	public function showUser(){
-		$stmt = $this->pdo->prepare((new Dump())->getSelectQuery());
+		$sql = (new Dump())->selectQuery($this->getMailLogin(),$this->getPasswordLogin());
+		$stmt = $this->pdo->prepare($sql);
 		$stmt->execute();
 		$row = $stmt->fetch(PDO::FETCH_ASSOC);
 		return $row;
