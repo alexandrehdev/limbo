@@ -1,16 +1,9 @@
-@font-face {
-    font-family: "gameplay";
-    font-style: normal;
-    src: url(../Gameplay.ttf); 
-}
-
 footer.m-footer {
     width: 100%;
     background-color: var(--color-black);
     justify-content: center;
     align-items: center;
     padding: 4rem 0;
-    font-family: "gameplay";
 }
 
 footer.m-footer,
