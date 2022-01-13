@@ -23,11 +23,12 @@ class User extends UserController
 		$stmt->execute();
 	}
 
-	public function showUser(){
+	public function selectUser(){
 		$sql = (new Dump())->selectQuery($this->getMailLogin(),$this->getPasswordLogin());
 		$stmt = $this->pdo->prepare($sql);
 		$stmt->execute();
 		$row = $stmt->fetch(PDO::FETCH_ASSOC);
+
 		return $row;
 	}
 }

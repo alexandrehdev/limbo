@@ -15,12 +15,14 @@ class User extends GetDataRegister
 		}
 	}
 
+	public function showUser(){
+		return (new UserModel())->selectUser();
+	}
+
 	public function validateLogin(){
-		$row = (new UserModel())->showUser();
-		var_dump($row);
-		die();
+		$row = $this->showUser();
 		if ($this->getMailLogin() == $row['email'] && $this->getPasswordLogin() == $row['password']) {
-			Route::redirect("conteudo");
+			Route::redirectPage("conteudo");
 		}else{
 			echo "Conta não existe ou dados incorretos";
 		}
