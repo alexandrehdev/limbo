@@ -308,8 +308,8 @@
     height: 200px;
 }
 
-.freegames-table:not(:first-child){
-     /* margin-top: 10rem; */
+.freegames-table:nth-child(2){
+    margin: 10rem 0rem;
 }
 
 .freegames-table .description-card-games, 
