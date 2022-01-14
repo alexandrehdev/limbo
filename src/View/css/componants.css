@@ -288,10 +288,6 @@
 
 /* CARD JOGOS GRATIS */
 
-.main-freegames{
-    padding: 10rem 20rem;
-}
-
 .main-freegames .container{
     display: flex;
     flex-direction: row;
@@ -299,40 +295,80 @@
     justify-content: space-between;
 }
 
-.freegames-table{
-    position: relative;
+.freegames-table {
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
 }
+
+.card-games {
+    position: relative;
+
+    width: 120px;
+    height: 90px;
+}
+
 .freegames-table:not(:first-child){
     margin-top: 10rem;
 }
-.freegames-table .description, .freegames-table .title{
+
+.freegames-table .description-card-games, 
+.freegames-table .title-card-games
+{
     transition: all .5s;
     opacity: 0;
+}
+
+.background-card-games {
+    width: inherit;
+    height: inherit;
+
+    transition-property: filter, opacity;
+    transition-duration: 500ms;
+
+    object-fit: cover;
+}
+
+.area-text-card-games {
+    display: flex;
+    flex-direction: column;
+
     position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    padding: 0 20px 20px;
 }
 
-.freegames-table .title{
-    left: 1rem;
-    top: 2rem;
+.title-card-games {
     font-size: 1.8rem;
+    font-weight: bold;
 }
 
-.freegames-table .description{
-    left: 1rem;
-    bottom: 2rem;
+.title-card-games,
+.description-card-games
+{
+    width: 100%;
+}
+
+.description-card-games {
     font-size: 1.6rem;
 }
-.freegames-table .image{
-    transition: all .3s;
-}
-.freegames-table:hover .image{
-    opacity: 20%;
+
+.card-games:hover .background-card-games{
+    opacity: 50%;
     filter: blur(1px);
 }
-.freegames-table:hover .title, .freegames-table:hover .description{
+
+.card-games:hover .title-card-games,
+.card-games:hover .description-card-games
+{
     opacity: 1;
     color: #fff;
 }
+
+
 
 main{
     display: flex;
