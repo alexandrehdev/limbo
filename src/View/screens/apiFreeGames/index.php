@@ -90,6 +90,23 @@ session_start();
 				</div>
 			<?php } ?>
 		</div>
+		
+		<div class="freegames-table">
+			<?php for ($i = 11; $i <= 21; $i++) { ?>
+				<div class="card-games">
+					<img class="background-card-games" src="<?php echo $response[$i]['thumbnail']; ?>">
+					<div class="area-text-card-games">
+						<span class="title-card-games">
+							<?php echo $response[$i]['title']; ?>
+						</span>
+						<span class="description-card-games">
+							<?php echo $response[$i]['short_description']; ?>
+						</span>
+					</div>
+				</div>
+			<?php } ?>
+		</div>
+
 	</main>
 	<footer class="m-footer" role="footer">
 		<div class="container">

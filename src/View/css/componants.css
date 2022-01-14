@@ -297,7 +297,6 @@
 
 .freegames-table {
     display: flex;
-
     overflow-x: scroll;
     overflow-y: hidden;
 }
@@ -305,8 +304,8 @@
 .card-games {
     position: relative;
 
-    width: 450px;
-    height: 250px;
+    width: 120px;
+    height: 90px;
 }
 
 .freegames-table:not(:first-child){
