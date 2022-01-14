@@ -75,6 +75,7 @@ session_start();
 		</nav>
 	</header>
 	<main>
+		<div class="container">
 		<div class="freegames-table">
 			<?php for ($i = 0; $i <= 10; $i++) { ?>
 				<div class="card-games">
@@ -106,7 +107,7 @@ session_start();
 				</div>
 			<?php } ?>
 		</div>
-
+		</div>
 	</main>
 	<footer class="m-footer" role="footer">
 		<div class="container">
@@ -191,12 +192,14 @@ session_start();
 	<script type="text/javascript" src="../../js/header.js"></script>
 	<script type="text/javascript" src="../../js/pages.js"></script>
 	<script type="text/javascript">
-		const scrollContainer = document.querySelector(".freegames-table");
-
-		scrollContainer.addEventListener("wheel", (evt) => {
+		const scrollContainer = document.querySelectorAll(".freegames-table");
+		console.log(scrollContainer);
+		scrollContainer.forEach((item) => {
+			item.addEventListener("wheel", (evt) => {
 			evt.preventDefault();
-			scrollContainer.scrollLeft += evt.deltaY;
-		});
+			item.scrollLeft += evt.deltaY;
+			});
+		})
 	</script>
 </body>
 

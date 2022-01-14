@@ -303,13 +303,13 @@
 
 .card-games {
     position: relative;
-
-    width: 120px;
-    height: 90px;
+    cursor: pointer;
+    width: 200px;
+    height: 200px;
 }
 
 .freegames-table:not(:first-child){
-    margin-top: 10rem;
+     /* margin-top: 10rem; */
 }
 
 .freegames-table .description-card-games, 
@@ -371,9 +371,9 @@
 
 
 main{
-    display: flex;
+    /* display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-between; */
 }
 .mySwiper, .leftSwiper{
     margin: 0 !important;
