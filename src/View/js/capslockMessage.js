@@ -17,6 +17,21 @@ let isCapslockActive = false;
 let quantityPressCapslock = 0;
 const buttonTest = window.document.querySelector("#button-test");
 
+// Arrays
+const inputsRegister = [
+    inputUsernameRegister,
+    inputEmailRegister,
+    inputPasswordRegister,
+    inputConfirmPasswordRegister
+];
+
+const inputsLogin = [
+    inputEmailLogin,
+    inputPasswordLogin
+];
+
+// Functions
+
 function captureKeyCapslockLogin({ key }) {
     if(key === "CapsLock") {
         messageCapslockLogin.style.display = "block"
@@ -24,7 +39,6 @@ function captureKeyCapslockLogin({ key }) {
         isCapslockActive = true;
         quantityPressCapslock += 1;
     }
-
 
     if(quantityPressCapslock === 2) {
         messageCapslockLogin.style.display = "none";
@@ -43,7 +57,6 @@ function captureKeyCapslockRegister({ key }) {
         quantityPressCapslock += 1;
     }
 
-
     if(quantityPressCapslock === 2) {
         messageCapslockRegister.style.display = "none";
 
@@ -52,62 +65,67 @@ function captureKeyCapslockRegister({ key }) {
     }
 }
 
-sectionRegister.addEventListener("mousemove", () => {
-    window.document.addEventListener("keyup", captureKeyCapslockRegister);
+function activeEventsSectionRegister() {
+    sectionRegister.addEventListener("mousemove", () => {
+        window.document.addEventListener("keyup", captureKeyCapslockRegister);
 
-    messageCapslockLogin.style.display = "none";
-
-    if(isCapslockActive) {
-        messageCapslockRegister.style.display = "block";
-    } else {
-        messageCapslockRegister.style.display = "none";
-    }
-})
-
-sectionRegister.addEventListener("mouseout", () => {
-    window.document.removeEventListener("keyup", captureKeyCapslockRegister);
-
-    messageCapslockRegister.style.display = "none";
-});
-
-sectionLogin.addEventListener("mousemove", () => {
-    window.document.addEventListener("keyup", captureKeyCapslockLogin);
-
-    messageCapslockRegister.style.display = "none";
-
-    if(isCapslockActive) {
-        messageCapslockLogin.style.display = "block";
-    } else {
         messageCapslockLogin.style.display = "none";
-    }
-});
 
-sectionLogin.addEventListener("mouseout", () => {
-    window.document.removeEventListener("keyup", captureKeyCapslockLogin);
+        if(isCapslockActive) {
+            messageCapslockRegister.style.display = "block";
+        } else {
+            messageCapslockRegister.style.display = "none";
+        }
+    })
 
-    messageCapslockLogin.style.display = "none";
-});
+    sectionRegister.addEventListener("mouseout", () => {
+        window.document.removeEventListener("keyup", captureKeyCapslockRegister);
 
-inputUsernameRegister.addEventListener("focus", () => {
+        messageCapslockRegister.style.display = "none";
+    });
+}
+
+function activeEventsSectionLogin() {
+    sectionLogin.addEventListener("mousemove", () => {
+        window.document.addEventListener("keyup", captureKeyCapslockLogin);
+
+        messageCapslockRegister.style.display = "none";
+
+        if(isCapslockActive) {
+            messageCapslockLogin.style.display = "block";
+        } else {
+            messageCapslockLogin.style.display = "none";
+        }
+    });
+
+    sectionLogin.addEventListener("mouseout", () => {
+        window.document.removeEventListener("keyup", captureKeyCapslockLogin);
+
+        messageCapslockLogin.style.display = "none";
+    });
+}
+
+function addCaptureCapslockOfRegister() {
     window.document.addEventListener("keyup", captureKeyCapslockRegister);
-});
+}
 
-inputEmailRegister.addEventListener("focus", () => {
-    window.document.addEventListener("keyup", captureKeyCapslockRegister);
-});
-
-inputPasswordRegister.addEventListener("focus", () => {
-    window.document.addEventListener("keyup", captureKeyCapslockRegister);
-});
-
-inputConfirmPasswordRegister.addEventListener("focus", () => {
-    window.document.addEventListener("keyup", captureKeyCapslockRegister);
-});
-
-inputEmailLogin.addEventListener("focus", () => {
+function addCaptureCapslockOfLogin() {
     window.document.addEventListener("keyup", captureKeyCapslockLogin);
-});
+}
 
-inputPasswordLogin.addEventListener("focus", () => {
-    window.document.addEventListener("keyup", captureKeyCapslockLogin);
-});
+// Execute Functions
+
+activeEventsSectionRegister();
+activeEventsSectionLogin();
+
+for(let input of inputsRegister) {
+    input.addEventListener("focus", () => {
+        addCaptureCapslockOfRegister();
+    })
+}
+
+for(let input of inputsLogin) {
+    input.addEventListener("focus", () => {
+        addCaptureCapslockOfLogin();
+    })
+}
