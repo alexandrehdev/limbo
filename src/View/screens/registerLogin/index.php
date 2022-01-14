@@ -70,11 +70,21 @@ if (isset($_POST['btn-register'])) {
 				</div>
 				<div class="area-inputs">
 					<i class="fas fa-key margin-right fa-2x"></i>
-					<input type="password" placeholder="Senha" name="pwd">
+					<input
+						id="input-password-register"
+						type="password" 
+						placeholder="Senha" 
+						name="pwd"
+					>
 				</div>
 				<div class="area-inputs">
 					<i class="fas fa-key margin-right fa-2x"></i>
-					<input type="password" placeholder="Confirme senha" name="cpwd">
+					<input
+						id="input-confirm-password-register"
+						type="password" 
+						placeholder="Confirme senha" 
+						name="cpwd"
+					>
 				</div>
 				<span id="message-capslock-warning" class="message-capslock color-warning">CAPSLOCK ATIVADO</span>
 				<button name="btn-register"title="Registrar">
@@ -97,7 +107,12 @@ if (isset($_POST['btn-register'])) {
 				
 				<div class="area-inputs">
 					<i class="fas fa-key margin-right fa-2x"></i>
-					<input type="password" placeholder="Senha" name="log-pass">
+					<input 
+						id="input-password-login"
+						type="password" 
+						placeholder="Senha" 
+						name="log-pass"
+					>
 				</div>
 				<span id="message-capslock-danger" class="message-capslock color-danger">CAPSLOCK ATIVADO</span>
 				<button name="btn-login" type="submit"title="Logar">
