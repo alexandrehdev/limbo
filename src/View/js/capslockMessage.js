@@ -3,11 +3,14 @@ const inputUsernameRegister = window.document.querySelector("#input-username-reg
 const inputEmailRegister = window.document.querySelector("#input-email-register");
 const messageCapslockRegister = window.document.querySelector("#message-capslock-warning");
 const sectionRegister = window.document.querySelector("#register-account");
+const inputPasswordRegister = window.document.querySelector("#input-password-register");
+const inputConfirmPasswordRegister = window.document.querySelector("#input-confirm-password-register");
 
 // Login
-const inputEmailLogin = window.document.querySelector("#input-email-login");
 const messageCapslockLogin = window.document.querySelector("#message-capslock-danger");
 const sectionLogin = window.document.querySelector("#login-account");
+const inputEmailLogin = window.document.querySelector("#input-email-login");
+const inputPasswordLogin = window.document.querySelector("#input-password-login");
 
 // Others
 let isCapslockActive = false;
@@ -77,7 +80,7 @@ sectionLogin.addEventListener("mousemove", () => {
     } else {
         messageCapslockLogin.style.display = "none";
     }
-})
+});
 
 sectionLogin.addEventListener("mouseout", () => {
     window.document.removeEventListener("keyup", captureKeyCapslockLogin);
@@ -85,14 +88,26 @@ sectionLogin.addEventListener("mouseout", () => {
     messageCapslockLogin.style.display = "none";
 });
 
-inputEmailLogin.addEventListener("focus", () => {
-    window.document.addEventListener("keyup", captureKeyCapslockLogin);
-})
-
 inputUsernameRegister.addEventListener("focus", () => {
     window.document.addEventListener("keyup", captureKeyCapslockRegister);
-})
+});
 
 inputEmailRegister.addEventListener("focus", () => {
     window.document.addEventListener("keyup", captureKeyCapslockRegister);
-})
+});
+
+inputPasswordRegister.addEventListener("focus", () => {
+    window.document.addEventListener("keyup", captureKeyCapslockRegister);
+});
+
+inputConfirmPasswordRegister.addEventListener("focus", () => {
+    window.document.addEventListener("keyup", captureKeyCapslockRegister);
+});
+
+inputEmailLogin.addEventListener("focus", () => {
+    window.document.addEventListener("keyup", captureKeyCapslockLogin);
+});
+
+inputPasswordLogin.addEventListener("focus", () => {
+    window.document.addEventListener("keyup", captureKeyCapslockLogin);
+});
