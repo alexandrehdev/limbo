@@ -1,5 +1,5 @@
 <?php 
-	session_start();
+session_start();
 ?>
 <!DOCTYPE html>
 <html>
@@ -17,7 +17,7 @@
 	<link rel="stylesheet" type="text/css" href="../../css/variables.css">
 	<link rel="stylesheet" href="../../css/componants.css">
 	<link rel="stylesheet" type="text/css"
-		href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/icon.min.css">
+	href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/icon.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
 </head>
 
@@ -46,13 +46,13 @@
 					<strong class="user-account-text" style="text-transform:uppercase;">
 						<i class="user icon"></i>
 						<?php 
-							echo strtoupper($_SESSION['user']['username']);
+						echo strtoupper($_SESSION['user']['username']);
 						?>
 					</strong>
 					<div class="line dropdown">
 						<ul class="list-dropdown">
 							<li class="item-list-dropdown">
-								<a href="../../pages/profile/index.php">
+								<a href="index.php">
 									<span class="item-dropdown" class="profile">Perfil</span>
 								</a>
 								<div class="line"></div>
@@ -70,79 +70,10 @@
 		</nav>
 	</header>
 
-	<main id="main-profile">
-		<div class="user-block">
-			<h1>Player 1</h1>
-			<div class="user-content">
-				<div class="area-user-img">
-					<!-- foto do muito loko -->
-					<img src="https://i.pinimg.com/564x/ca/0b/e0/ca0be062b256c5c1afb277a8525a3ac9.jpg" height="200">
-					<input type="file" value="Mudar foto" name="">
-				</div>
-				<div class="user-info">
-					<div class="fields">
-						<div class="field">
-							<span>
-								Nome:
-							</span>
-							<div class="input-area">
-								<span class="value">
-									<?php echo "Calma que ainda vai"; ?>
-								</span>
-								<div class="input">
-									<input type="text" name="nome" value="Calma que ainda vai" />
-								</div>
-							</div>
-							<button class=" button-field change-field">
-								<i class="fas fa-pencil-alt fa-2x"></i>
-							</button>
-							<button class="button-field apply-correct">
-								<i class="fas fa-check fa-2x"></i>
-							</button>
-						</div>
-						<div class="field">
-							<span>
-								Email:
-							</span>
-							<div class="input-area">
-								<span class="value">
-									<?php echo $_SESSION['login_user'] ?>
-								</span>
-								<div class="input">
-									<input type="text" name="nome" />
-								</div>
-							</div>
-							<button class=" button-field change-field">
-								<i class="fas fa-pencil-alt fa-2x"></i>
-							</button>
-							<button class="button-field apply-correct">
-								<i class="fas fa-check fa-2x"></i>
-							</button>
-						</div>
-						<div class="field">
-							<span>
-								Status:
-							</span>
-							<div class="input-area">
-								<span class="value">
-									<?php echo "sei la.. sou gostoso"; ?>
-								</span>
-								<div class="input">
-									<textarea name="status"></textarea>
-								</div>
-							</div>
-							<button class=" button-field change-field">
-								<i class="fas fa-pencil-alt fa-2x"></i>
-							</button>
-							<button class="button-field apply-correct">
-								<i class="fas fa-check fa-2x"></i>
-							</button>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</main>
+	<!-- área de informações do usuário -->
+
+
+
 
 	<footer class="m-footer" role="footer">
 		<div class="container">
