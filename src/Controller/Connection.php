@@ -17,7 +17,7 @@ class Connection{
 			$servidor = "localhost";
 			$user = "root";
 			$bd = "limbo";
-			$pwd = "";
+			$pwd = "123";
 			$this->setCon(new PDO("mysql:host=$servidor;dbname=$bd",$user,$pwd));
 			$this->con->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);// Erros em exceções
 		}catch(PDOException $ex){
