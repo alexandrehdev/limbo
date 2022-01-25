@@ -69,7 +69,7 @@
 	VALOR PADRÃO: { top: "", right: "30px", bottom: "30px", left: "" }
 	RECEBE: Objeto de configuração de posição de elemento na interface
 	UTILIDADE: Usado para setar a posição no documento, ele está setado como posição
-			   fixa
+	fixa
 
 
 
@@ -119,8 +119,7 @@
 
 	- getElements()
 	RECEBE: Não recebe valor
-	UTILIDADE: Retorna um array onde o primeiro dado é o svg
-			   e o segundo o circulo
+	UTILIDADE: Retorna um array onde o primeiro dado é o svg e o segundo o circulo
 
 
 
