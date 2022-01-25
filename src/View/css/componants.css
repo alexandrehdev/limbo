@@ -438,6 +438,15 @@
 .profile{
     display: flex;
     justify-content: space-around;
+
+    padding: 100px 0;
+}
+
+.profile-image {
+    position: relative;
+
+    width: 150px;
+    height: 150px;
 }
 
 .profile-image img{
@@ -445,23 +454,50 @@
     transition: filter 2s;
 }
 .profile-image img:hover{
-   filter: blur(3px);
-   cursor: pointer;
+    cursor: pointer;
 }
 
+.change-image {
+    display: none;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    background-color: var(--white);
+
+    padding: 8px 24px;
+
+    cursor: pointer;
+}
+
+#file {
+    display: none;
+}
+
+.nickname {
+    margin-top: 32px;
+}
 
 .nickname span{
     font-size: 30px;
-    margin-left: 25px;
+    /* margin-left: 25px; */
 }
+
+.status
+{
+    margin-top: 16px;
+}
+
 .status span{
     font-size: 15px;
-    margin: 25px;
-    background-color: green; /*Definição de cor mudar*/
-    line-height: 100px;
+    /* margin-left: 25px; */
+    background-color: var(--success); /*Definição de cor mudar*/
     padding: 5px;
     border-radius: 25px;
 }
+
 .user-info > .info{
     font-size: 25px;
     color: white;

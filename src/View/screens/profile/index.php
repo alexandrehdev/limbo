@@ -76,18 +76,30 @@ session_start();
 		<div class="profile">
 			<div class="user-content">	
 				<div class="profile-image">
-					<img src="../../img/dev-example.png" height="150px">
+					<img 
+						id="image"
+						src="../../img/dev-example.png" 
+						height="150px"
+					>
 					
-					<!-- <div class="change-image">
-						<span>Mudar Perfil</span>
-					</div> -->
-
-					<div class="nickname">
-						<span><?php echo strtoupper($_SESSION['user']['username']);?></span>
-					</div>
-					<div class="status">
-						<span>Online</span>
-					</div>
+					<label 
+						for="file"
+						id="button-change-image"
+						class="change-image"
+					>
+						Alterar Image
+					</label>
+					<input
+						id="file"
+						
+						type="file"
+					/>
+				</div>
+				<div class="nickname">
+					<span><?php echo strtoupper($_SESSION['user']['username']);?></span>
+				</div>
+				<div class="status">
+					<span>Online</span>
 				</div>
 			</div>
 
@@ -196,6 +208,7 @@ session_start();
 <script type="text/javascript" src="../../js/profileLogout.js"></script>
 <script type="text/javascript" src="../../js/profileField.js"></script>
 <script type="text/javascript" src="../../js/header.js"></script>
+<script type="text/javascript" src="../../js/profile.js"></script>
 </body>
 
 </html>
