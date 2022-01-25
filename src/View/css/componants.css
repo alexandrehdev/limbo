@@ -434,82 +434,49 @@
     display: none;
 }
 
-.area-user-img > img {
-    border-radius: 100%;
-
-    width: 200px;
-    height: 200px;
-
-    margin-bottom: 40px;
-}
-
 /* Profile */
-
-#main-profile {
+.profile{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0 20px;
-    height: 100vh;
+    justify-content: space-around;
 }
 
-#main-profile .container .main-user{
-    display: flex;
-    border-radius: 0.5rem;
-    padding: 10rem;
-    align-items: flex-start;
-    justify-content: space-between;
-    background-color: rgba(51, 51, 51, 0.623);
-    box-shadow: 0rem 0rem 2rem var(--black);
+.profile-image img{
+    border-radius: 100px;
+    transition: filter 2s;
+}
+.profile-image img:hover{
+   filter: blur(3px);
+   cursor: pointer;
 }
 
 
-#main-profile .container .area-user{
-    margin-right: 2rem;
-    width: 100%;
-    max-width: 50%;
+.nickname span{
+    font-size: 30px;
+    margin-left: 25px;
 }
-#main-profile .container .area-user .img{
-    position: relative;
+.status span{
+    font-size: 15px;
+    margin: 25px;
+    background-color: green; /*Definição de cor mudar*/
+    line-height: 100px;
+    padding: 5px;
+    border-radius: 25px;
 }
-#main-profile .container .area-user .img #icon-edit{
-    position: absolute;
-    max-width: 4rem;
-    top: -1.3rem;
-    right: -1.3rem;
-    cursor: pointer;
-    transition: transform .3s;
-}
-#main-profile .container .area-user .img #icon-edit:hover{
-    transform: scale(1.2);
+.user-info > .info{
+    font-size: 25px;
+    color: white;
+    line-height: 100px;
+    margin: 10px;
 }
 
-.area-user {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
+
 
 #image-user {
     margin-bottom: 32px;
 }
 
-.field-user {
-    margin-bottom: 16px;
 
-    align-self: flex-start;
-}
 
-.field-user:last-of-type {
-    margin-bottom: 0;
-}
-
-.field-user > span {
-    font-size: 1.8rem;
-
-    color: var(--color-branco);
-}
 
 .type-field {
     font-weight: bold;
@@ -533,60 +500,6 @@
     }
 }
 
-/*.s-profile{
-    padding: 10rem 0rem;
-    width: 100%;
-}
-
-.s-profile .container{
-    height: inherit;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.s-profile .container .main-profile{
-    width: 100%;
-    max-width: 50rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 4rem;
-    border-radius: 3rem;
-    background-color: #666262;
-    box-shadow: -10px 10px 10px rgb(0, 0, 0);
-}
-
-.s-profile .container .main-profile .img img{
-    width: 100%;
-    max-width: 50rem;
-    margin-bottom: 4rem;
-    border-radius: 10rem;
-}
-
-.s-profile .container .main-profile .text form{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.s-profile .container .main-profile .text input{
-    background-color: transparent;
-    font-size: 4rem;
-}
-.s-profile .container .main-profile .text input{
-    color: #fff;
-    text-align: center;
-}
-.s-profile .container .main-profile .text textarea{
-    color: #fff;
-    margin-top: 2rem;
-    background-color: transparent;
-    text-align: justify;
-}
-*/
 .msg-erro{
     display: none;
 }
