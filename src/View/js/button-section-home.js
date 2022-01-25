@@ -17,10 +17,13 @@ const elements = circleArrow.getElements();
 const circle = elements[1];
 const svg = circle.children[0];
 
-circleArrow.click(target => {
+circleArrow.click(() => {
+	console.log(id);
+
 	switch(direction) {
 		case "bottom":
 			id++;
+
 
 			if(id === 4) {
 				direction = "top";
@@ -39,6 +42,7 @@ circleArrow.click(target => {
 			break;
 		default:
 	}
-	window.location.href = `${window.location.origin}/#${sectionsPage[id]}`;
+
+	window.location.hash = sectionsPage[id];
 });
 
