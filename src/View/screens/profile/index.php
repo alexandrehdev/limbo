@@ -51,10 +51,24 @@ session_start();
 					</strong>
 					<div class="line dropdown">
 						<ul class="list-dropdown">
-							<li class="item-list-dropdown">
+							<!-- <li class="item-list-dropdown">
 								<a href="index.php">
 									<span class="item-dropdown" class="profile">Perfil</span>
 								</a>
+								<div class="line"></div>
+							</li> -->
+							
+							
+							<li class="item-list-dropdown">
+								<span class="item-dropdown">
+									Definição de conta
+								</span>
+								<div class="line"></div>
+							</li>
+							<li class="item-list-dropdown">
+								<span class="item-dropdown">
+									Configuração de conta
+								</span>
 								<div class="line"></div>
 							</li>
 							<li class="item-list-dropdown">
@@ -71,9 +85,33 @@ session_start();
 	</header>
 
 	<!-- área de informações do usuário -->
+	<main id="main-profile">
+		<div class="area-user">
+			<img
+				id="image-user"
+				src="../../img/exampleDev.png"
+				alt="image-user"
+			/>
+			<div id="nickname" class="field-user">
+				<span class="type-field">
+					Nickname:
+				</span>
+				<span>
+					JorjinDoRojão
+				</span>
 
-
-
+			</div>
+			<div id="status" class="field-user">
+				<span class="type-field">
+					Status:
+				</span>
+				<span>
+					Sou um cara que solta rojão das boas, sou vida louca, pulo o muro da escola, solto rojão na cadeira do professor e dou uma voadora nos nerdões, me chama de senhor mau ha ha ha
+				</span>
+			</div>
+			
+		</div>
+	</main>
 
 	<footer class="m-footer" role="footer">
 		<div class="container">
