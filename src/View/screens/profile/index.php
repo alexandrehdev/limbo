@@ -86,30 +86,43 @@ session_start();
 
 	<!-- área de informações do usuário -->
 	<main id="main-profile">
-		<div class="area-user">
-			<img
-				id="image-user"
-				src="../../img/exampleDev.png"
-				alt="image-user"
-			/>
-			<div id="nickname" class="field-user">
-				<span class="type-field">
-					Nickname:
-				</span>
-				<span>
-					JorjinDoRojão
-				</span>
+		<div class="container">
+			<div class="main-user">
+				<div class="area-user">
+					<div class="img">
+						<img
+							id="image-user"
+							src="../../img/exampleDev.png"
+							alt="image-user"
+						/>
+						<img src="../../img/icon-edit.svg" alt="" id="icon-edit">
+					</div>
+					<div id="nickname" class="field-user">
+						<span class="type-field">
+							Nickname:
+						</span>
+						<span>
+							JorjinDoRojão
+						</span>
 
+					</div>
+					<div id="status" class="field-user">
+						<span class="type-field">
+							Status:
+						</span>
+						<span>
+							Sou um cara que solta rojão das boas, sou vida louca, pulo o muro da escola, solto rojão na cadeira do professor e dou uma voadora nos nerdões, me chama de senhor mau ha ha ha
+						</span>
+					</div>
+					
+				</div>
+				<div class="area-edit">
+					<div class="buttons">
+						<a href="#" class="btn btn-detalhes">Detalhes da conta</a>
+						<a href="#" class="btn btn-editar">Editar Usuário</a>
+					</div>
+				</div>
 			</div>
-			<div id="status" class="field-user">
-				<span class="type-field">
-					Status:
-				</span>
-				<span>
-					Sou um cara que solta rojão das boas, sou vida louca, pulo o muro da escola, solto rojão na cadeira do professor e dou uma voadora nos nerdões, me chama de senhor mau ha ha ha
-				</span>
-			</div>
-			
 		</div>
 	</main>
 
