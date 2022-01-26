@@ -472,6 +472,10 @@
     cursor: pointer;
 }
 
+.info-account {
+    color: var(--white);
+}
+
 #file {
     display: none;
 }
@@ -482,17 +486,16 @@
 
 .nickname span{
     font-size: 30px;
-    /* margin-left: 25px; */
+
+    color: var(--white);
 }
 
-.status
-{
+.status {
     margin-top: 16px;
 }
 
 .status span{
     font-size: 15px;
-    /* margin-left: 25px; */
     background-color: var(--success); /*Definição de cor mudar*/
     padding: 5px;
     border-radius: 25px;
@@ -505,14 +508,9 @@
     margin: 10px;
 }
 
-
-
 #image-user {
     margin-bottom: 32px;
 }
-
-
-
 
 .type-field {
     font-weight: bold;
@@ -520,6 +518,58 @@
 
 .text-red {
     color: var(--danger);
+}
+
+.accordion {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    margin-bottom: 48px;
+}
+
+.accordion:last-of-type {
+    margin-bottom: 0;
+}
+
+.button-info-account {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-arrow {
+    margin-right: 16px;
+}
+
+.text-accordion {
+    font-size: 1.8rem;
+}
+
+.content-info-account {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    padding-top: 32px;
+
+    overflow: hidden;
+
+    height: 0;
+
+    transition: height 500ms;
+}
+
+.content-info-account > span {
+    font-size: 1.2rem;
+
+    margin-bottom: 16px;
+}
+
+.content-info-account > span:last-of-type {
+    margin-bottom: 0;
 }
 
 @keyframes click-button {

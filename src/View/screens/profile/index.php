@@ -104,7 +104,21 @@ session_start();
 			</div>
 
 			<div class="info-account"> <!--  DROPDOWN -->
-				<div>DROPDOWN1</div>
+				<div class="accordion">
+					<div class="button-info-account">
+						<img
+							class="image-arrow"
+							src="../../img/arrow.svg"
+							alt="arrow"
+						/>
+						<span class="text-accordion">Informação de Conta</span>
+					</div>
+					<div class="content-info-account">
+						<span><strong>Quando a conta foi criada:</strong> 22/09/2001</span>
+
+						<span><strong>Descrição:</strong> Esse é somente um perfil para teste</span>
+					</div>
+				</div>
 				<!-- Informações de conta -->
 				<!-- Quando a conta foi criada -->
 				<!-- Descrição -->
