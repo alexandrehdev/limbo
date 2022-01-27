@@ -12,6 +12,22 @@
     filter: brightness(0.8);
 }
 
+.btn {
+    padding: 1rem 2rem;
+    /* line-height: 4.8rem; */
+    border-radius: 0.4rem;
+    font-size: 1.6rem;
+}
+
+.btn-detalhes{
+    background-color: var(--warning);
+    color: var(--black);
+}
+
+.btn-editar {
+    background-color: var(--info);
+    color: var(--black);
+}
 .main-home {
     overflow: hidden;
 }
@@ -368,13 +384,12 @@
     color: #fff;
 }
 
-
-
-main{
-    /* display: flex;
+/* main{
+    display: flex;
     align-items: center;
-    justify-content: space-between; */
-}
+    justify-content: space-between;
+} */
+
 .mySwiper, .leftSwiper{
     margin: 0 !important;
     width: 100%;
@@ -389,48 +404,9 @@ main{
 }
 
 /*User content*/
-#main-profile {
-    justify-content: center;
-    margin: 100px 0;
-}
-
-.user-block{
-    height: 70%;
-    width: 80%;
-    color: white;
-    background-color: #0c0c0c;
-    padding: 50px;
-    margin-top: 30px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.user-block h1{
-    text-align: center;
-    margin-bottom: 50px;
-}
 
 
-.field {
-    justify-content: flex-start;
-}
 
-.field > span, .value {
-    line-height: 70px;
-
-    margin-top: 20px;
-    margin-bottom: 20px;
-    
-}
-
-.field > span,
-.value,
-.input > input,
-.input > textarea
-{
-    font-size: 22px;
-    margin-right: 20px;
-}
 
 .change {
     display: none;
@@ -452,67 +428,208 @@ main{
     display: block;
 }
 
-.user-info,
-.user-content,
-.area-user-img
-{
-    justify-content: center;
-}
-
-.user-info,
-.user-content,
-.area-user-img,
-.field,
-#main-profile
-{
-    display: flex;
-    align-items: center;
-}
-
-.button-field {
-    padding: 10px;
-
-    border-radius: 5px;
-    margin-right: 10px;
-
-    cursor: pointer;
-}
-
-.button-field:last-of-type {
-    margin-right: 0;
-}
-
 .apply-correct {
     background-color: green;
 
     display: none;
 }
 
-.change-field {
-    background-color: orange;
+/* Profile */
+.profile{
+    display: flex;
+    justify-content: space-around;
+
+    padding: 100px 0;
 }
 
-button.change-field > i {
-    color: #000000;
+.profile-image {
+    position: relative;
+
+    width: 150px;
+    height: 150px;
 }
 
-.user-info {
-    flex: 1;
+.profile-image img{
+    border-radius: 100px;
+    transition: filter 2s;
+}
+.profile-image img:hover{
+    cursor: pointer;
 }
 
-.area-user-img {
+.change-image {
+    display: none;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    background-color: var(--white);
+
+    padding: 8px 24px;
+
+    cursor: pointer;
+}
+
+.info-account {
+    color: var(--white);
+}
+
+#file {
+    display: none;
+}
+
+.nickname {
+    margin-top: 32px;
+}
+
+.nickname span{
+    font-size: 30px;
+
+    color: var(--white);
+}
+
+.status {
+    margin-top: 16px;
+}
+
+.status span{
+    font-size: 15px;
+    background-color: var(--success); /*Definição de cor mudar*/
+    padding: 5px;
+    border-radius: 25px;
+}
+
+.user-info > .info{
+    font-size: 25px;
+    color: white;
+    line-height: 100px;
+    margin: 10px;
+}
+
+#image-user {
+    margin-bottom: 32px;
+}
+
+.type-field {
+    font-weight: bold;
+}
+
+.text-red {
+    color: var(--danger);
+}
+
+.accordion {
+    display: flex;
     flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    margin-bottom: 48px;
 }
 
-.area-user-img > img {
-    border-radius: 100%;
-
-    width: 200px;
-    height: 200px;
-
-    margin-bottom: 40px;
+.accordion:last-of-type {
+    margin-bottom: 0;
 }
 
+.button-info-account {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+}
+
+.image-arrow {
+    margin-right: 16px;
+
+    transition: transform 500ms;
+}
+
+.text-accordion {
+    font-size: 1.8rem;
+
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.content-info-account {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    padding-top: 32px;
+
+    overflow: hidden;
+
+    height: 0;
+
+    transition: height 500ms;
+}
+
+.content-info-account > span {
+    font-size: 1.2rem;
+
+    margin-bottom: 16px;
+}
+
+.content-info-account > button {
+    margin-bottom: 16px;
+
+    cursor: pointer;
+}
+
+.content-info-account > span:last-of-type,
+.content-info-account > button:last-of-type
+{
+    margin-bottom: 0;
+}
+
+.button-update-status {
+    color: var(--white);
+
+    background-color: transparent;
+
+    border: 1px solid var(--white);
+}
+
+.button-update-status,
+.button-delete-accound
+{
+    padding: 10px 20px;
+    
+    border-radius: 10px;
+}
+
+.button-delete-accound {
+    background-color: var(--danger);
+
+    color: var(--white);
+}
+
+.align-items-center {
+    align-items: center !important;
+}
+
+#modal-change-status {
+    display: none;
+    opacity: 0;
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 80%;
+    height: 80vh;
+
+    background-color: var(--white);
+
+    border-radius: 10px;
+}
 
 @keyframes click-button {
     0% {
@@ -528,60 +645,6 @@ button.change-field > i {
     }
 }
 
-/*.s-profile{
-    padding: 10rem 0rem;
-    width: 100%;
-}
-
-.s-profile .container{
-    height: inherit;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.s-profile .container .main-profile{
-    width: 100%;
-    max-width: 50rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 4rem;
-    border-radius: 3rem;
-    background-color: #666262;
-    box-shadow: -10px 10px 10px rgb(0, 0, 0);
-}
-
-.s-profile .container .main-profile .img img{
-    width: 100%;
-    max-width: 50rem;
-    margin-bottom: 4rem;
-    border-radius: 10rem;
-}
-
-.s-profile .container .main-profile .text form{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.s-profile .container .main-profile .text input{
-    background-color: transparent;
-    font-size: 4rem;
-}
-.s-profile .container .main-profile .text input{
-    color: #fff;
-    text-align: center;
-}
-.s-profile .container .main-profile .text textarea{
-    color: #fff;
-    margin-top: 2rem;
-    background-color: transparent;
-    text-align: justify;
-}
-*/
 .msg-erro{
     display: none;
 }
@@ -607,7 +670,6 @@ button.change-field > i {
 
     font-size: 16px;
     font-weight: bold;
-
 }
 
 .color-warning {
