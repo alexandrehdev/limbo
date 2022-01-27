@@ -28,6 +28,11 @@ class User extends GetDataRegister
 		}
 	}
 
+	public function changeUserProfile()
+	{
+		
+	}
+
 }
 
 ?>

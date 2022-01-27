@@ -11,10 +11,11 @@ session_start();
 <html>
 
 <head>
+	<link rel="icon" href="../../../../favicon.png">
 	<meta charset="utf-8">
 	<title>Limbo</title>
 </head>
-<link rel="icon" type="image/png" href="../../favicon.png">
+
 <link rel="stylesheet" href="../../css/footer.css"/>
 <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -23,10 +24,11 @@ session_start();
 <link rel="stylesheet" type="text/css" href="../../css/variables.css">
 <link rel="stylesheet" href="../../css/componants.css">
 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/icon.min.css">
-
 <body>
 	<header class="main-header">
-		<h1 class="title-name">Limbo</h1>
+		<h1 class="title-name">
+			<img src="../../../../logolimb.png" height="65" style="margin-top: 15px;">
+		</h1>
 		<nav class="navigation">
 			<ul class="list-nav">
 				<li class="item-nav">
@@ -73,7 +75,7 @@ session_start();
 		<div class="container">
 			<div class="swiper cards-destaques">
 				<div class="swiper-wrapper">
-					<div class="swiper-slide" data-aos="flip-up" >
+					<div class="swiper-slide"><!-- data-aos="flip-up" -->
 						<img src="../../img/farcry6.jpg" alt="">
 						<div class="card-left">
 							<span>Now avalaible</span>
@@ -119,121 +121,291 @@ session_start();
 
 
 	<!-- CARDS -->
-	<section class="s-cards-noticias">
-		<div class="container">
-			<div class="main-cards-noticias">
-				<div class="card-noticias js-card-noticias" data-aos="fade-down-right">
-					<a href="#">
-						<div class="efeito-noticias">
-							<div class="area-img">
-								<img src="<?php echo $data[1]["img"]; ?>">
-							</div>
-							<div class="text-card-noticias">
-								<h5> 
-								 	<?php echo $data[1]["name"];?>
-								</h5>
-								<span>
-								<?php echo $data[1]["desc"];?>
-								</span>
-							</div>
+	<section>
+
+		<div class="swiper horizontalBlock">
+			<h2>Ultimas Noticias</h2>
+			<div class="swiper-wrapper">
+
+				<div class="swiper-slide org-box">
+					<div class="card">
+						<div class="card-img">
+							<!-- medida imagem 304 x 170.63 -->
+							<img src="<?php echo $data[1]["img"] ?>	">
 						</div>
-					</a>
+						<div class="card-title">
+							<?php echo $data[1]["name"];?>
+						</div>
+						<div class="card-desc">
+							<?php echo $data[1]["desc"]?>
+						</div>
+					</div>
 				</div>
-				<div class="card-noticias" data-aos="fade-down">
-					<a href="#">
-						<div class="efeito-noticias">
-							<div class="area-img">
-								<img src="<?php echo $data[2]["img"]; ?>">
-							</div>
-							<div class="text-card-noticias">
-								<h5> 
-									<?php echo $data[2]["name"]; ?> 
-								</h5>
-								<span>
-									<?php echo $data[2]["desc"];?>
-								</span>
-							</div>
+
+				<div class="swiper-slide org-box">
+					<div class="card">
+						<div class="card-img">
+							<img src="<?php echo $data[2]["img"] ?>">
 						</div>
-					</a>
+						<div class="card-title">
+							<?php echo $data[2]["name"];?>
+						</div>
+						<div class="card-desc">
+							<?php echo $data[2]["desc"]?>
+						</div>
+					</div>
 				</div>
-				<div class="card-noticias" data-aos="fade-down-left">
-					<a href="#">
-						<div class="efeito-noticias">
-							<div class="area-img">
-								<img src="<?php echo $data[3]["img"]; ?>">
-							</div>
-							<div class="text-card-noticias">
-								<h5> 
-									<?php echo $data[3]["name"]; ?> 
-								</h5>
-								<span>
-									<?php echo $data[3]["desc"];?>
-								</span>
-							</div>
+
+				<div class="swiper-slide org-box">
+					<div class="card">
+						<div class="card-img">
+							<img src="<?php echo $data[3]["img"] ?>">
 						</div>
-					</a>
+						<div class="card-title">
+							<?php echo $data[3]["name"];?>
+						</div>
+						<div class="card-desc">
+							<?php echo $data[3]["desc"]?>
+						</div>
+					</div>
 				</div>
-				<div class="card-noticias" data-aos="fade-up-right">
-					<a href="#">
-						<div class="efeito-noticias">
-							<div class="area-img">
-								<img src="<?php echo $data[4]["img"]; ?>">
-							</div>
-							<div class="text-card-noticias">
-								<h5> 
-									<?php echo $data[4]["name"]; ?> 
-								</h5>
-								<span>
-									<?php echo $data[4]["desc"];?>
-								</span>
-							</div>
+
+				<div class="swiper-slide org-box">
+					<div class="card">
+						<div class="card-img">
+							<img src="<?php echo $data[4]["img"] ?>">
 						</div>
-					</a>
+						<div class="card-title">
+							<?php echo $data[4]["name"];?>
+						</div>
+						<div class="card-desc">
+							<?php echo $data[4]["desc"]?>
+						</div>
+					</div>
 				</div>
-				<div class="card-noticias" data-aos="fade-up">
-					<a href="#">
-						<div class="efeito-noticias">
-							<div class="area-img">
-								<img src="<?php echo $data[1]["img"]; ?>">
-							</div>
-							<div class="text-card-noticias">
-								<h5> 
-									<?php echo $data[4]["name"]; ?> 
-								</h5>
-								<span>
-									<?php echo $data[4]["desc"];?>
-								</span>
-							</div>
+
+				<div class="swiper-slide org-box">
+					<div class="card">
+						<div class="card-img">
+							<img src="<?php echo $data[5]["img"] ?>">
 						</div>
-					</a>
+						<div class="card-title">
+							<?php echo $data[5]["name"];?>
+						</div>
+						<div class="card-desc">
+							<?php echo $data[5]["desc"]?>
+						</div>
+					</div>
 				</div>
-				<div class="card-noticias" data-aos="fade-up-left">
-					<a href="#">
-						<div class="efeito-noticias">
-							<div class="area-img">
-								<img src="<?php echo $data[4]["img"]; ?>">
-							</div>
-							<div class="text-card-noticias">
-								<h5> 
-									<?php echo $data[4]["name"]; ?> 
-								</h5>
-								<span>
-									<?php echo $data[4]["desc"];?>
-								</span>
-							</div>
+
+				<div class="swiper-slide org-box">
+					<div class="card">
+						<div class="card-img">
+							<img src="<?php echo $data[6]["img"] ?>">
 						</div>
-					</a>
+						<div class="card-title">
+							<?php echo $data[6]["name"];?>
+						</div>
+						<div class="card-desc">
+							<?php echo $data[6]["desc"]?>
+						</div>
+					</div>
+				</div>
+
+				<div class="swiper-slide org-box">
+					<div class="card">
+						<div class="card-img">
+							<img src="<?php echo $data[7]["img"] ?>">
+						</div>
+						<div class="card-title">
+							<?php echo $data[7]["name"];?>
+						</div>
+						<div class="card-desc">
+							<?php echo $data[7]["desc"]?>
+						</div>
+					</div>
+				</div>
+
+				<div class="swiper-slide org-box">
+					<div class="card">
+						<div class="card-img">
+							<img src="<?php echo $data[8]["img"] ?>">
+						</div>
+						<div class="card-title">
+							<?php echo $data[8]["name"];?>
+						</div>
+						<div class="card-desc">
+							<?php echo $data[8]["desc"]?>
+						</div>
+					</div>
+				</div>
+
+				<div class="swiper-slide org-box">
+					<div class="card">
+						<div class="card-img">
+							<img src="<?php echo $data[9]["img"] ?>">
+						</div>
+						<div class="card-title">
+							<?php echo $data[9]["name"];?>
+						</div>
+						<div class="card-desc">
+							<?php echo $data[9]["desc"]?>
+						</div>
+					</div>
 				</div>
 			</div>
+			<div class="swiper-button-next"></div>
+			<div class="swiper-button-prev"></div>
+			<!-- <div class="swiper-pagination"></div> -->
 		</div>
+
+
+
+		<div class="swiper horizontalBlock">
+			<h2>Novidades Geek</h2>
+			<div class="swiper-wrapper">
+
+				<div class="swiper-slide org-box">
+					<div class="card">
+						<div class="card-img">
+							<!-- medida imagem 304 x 170.63 -->
+							<img src="<?php echo $data[1]["img"] ?>	">
+						</div>
+						<div class="card-title">
+							<?php echo $data[1]["name"];?>
+						</div>
+						<div class="card-desc">
+							<?php echo $data[1]["desc"]?>
+						</div>
+					</div>
+				</div>
+
+				<div class="swiper-slide org-box">
+					<div class="card">
+						<div class="card-img">
+							<img src="<?php echo $data[2]["img"] ?>">
+						</div>
+						<div class="card-title">
+							<?php echo $data[2]["name"];?>
+						</div>
+						<div class="card-desc">
+							<?php echo $data[2]["desc"]?>
+						</div>
+					</div>
+				</div>
+
+				<div class="swiper-slide org-box">
+					<div class="card">
+						<div class="card-img">
+							<img src="<?php echo $data[3]["img"] ?>">
+						</div>
+						<div class="card-title">
+							<?php echo $data[3]["name"];?>
+						</div>
+						<div class="card-desc">
+							<?php echo $data[3]["desc"]?>
+						</div>
+					</div>
+				</div>
+
+				<div class="swiper-slide org-box">
+					<div class="card">
+						<div class="card-img">
+							<img src="<?php echo $data[4]["img"] ?>">
+						</div>
+						<div class="card-title">
+							<?php echo $data[4]["name"];?>
+						</div>
+						<div class="card-desc">
+							<?php echo $data[4]["desc"]?>
+						</div>
+					</div>
+				</div>
+
+				<div class="swiper-slide org-box">
+					<div class="card">
+						<div class="card-img">
+							<img src="<?php echo $data[5]["img"] ?>">
+						</div>
+						<div class="card-title">
+							<?php echo $data[5]["name"];?>
+						</div>
+						<div class="card-desc">
+							<?php echo $data[5]["desc"]?>
+						</div>
+					</div>
+				</div>
+
+				<div class="swiper-slide org-box">
+					<div class="card">
+						<div class="card-img">
+							<img src="<?php echo $data[6]["img"] ?>">
+						</div>
+						<div class="card-title">
+							<?php echo $data[6]["name"];?>
+						</div>
+						<div class="card-desc">
+							<?php echo $data[6]["desc"]?>
+						</div>
+					</div>
+				</div>
+
+				<div class="swiper-slide org-box">
+					<div class="card">
+						<div class="card-img">
+							<img src="<?php echo $data[7]["img"] ?>">
+						</div>
+						<div class="card-title">
+							<?php echo $data[7]["name"];?>
+						</div>
+						<div class="card-desc">
+							<?php echo $data[7]["desc"]?>
+						</div>
+					</div>
+				</div>
+
+				<div class="swiper-slide org-box">
+					<div class="card">
+						<div class="card-img">
+							<img src="<?php echo $data[8]["img"] ?>">
+						</div>
+						<div class="card-title">
+							<?php echo $data[8]["name"];?>
+						</div>
+						<div class="card-desc">
+							<?php echo $data[8]["desc"]?>
+						</div>
+					</div>
+				</div>
+
+				<div class="swiper-slide org-box">
+					<div class="card">
+						<div class="card-img">
+							<img src="<?php echo $data[9]["img"] ?>">
+						</div>
+						<div class="card-title">
+							<?php echo $data[9]["name"];?>
+						</div>
+						<div class="card-desc">
+							<?php echo $data[9]["desc"]?>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="swiper-button-next"></div>
+			<div class="swiper-button-prev"></div>
+			<!-- <div class="swiper-pagination"></div> -->
+		</div>
+
+
 	</section>
 
 	<!-- DESTAQUE -->
 	<section class="s-cards">
 		<div class="container">
-			<div class="titulo-section">
+			<!-- <div class="titulo-section">
 				<span>What's good?</span>
-			</div>
+			</div> -->
 			<div class="main-cards">
 				<div class="card-left">
 					<img src="../../img/thewitcher.jpg" alt="">
@@ -284,9 +456,9 @@ session_start();
 	<footer class="m-footer" role="footer">
 		<div class="container">
 			<div id="area-logo">
-				<strong id="logo">
+				<!-- <strong id="logo">
 					Limbo
-				</strong>
+				</strong> -->
 				<span id="data">2021</span>
 			</div>
 			<ul id="list-devs">
@@ -377,7 +549,7 @@ session_start();
 			},
 			pagination: {
 				el: ".s-cards-destaques .container .swiper-pagination",
-				type: "progressbar",
+				dynamicBullets: true,
 			},
 			navigation: {
 				nextEl: ".s-cards-destaques .swiper-button-next",
@@ -392,6 +564,7 @@ session_start();
     <script type="text/javascript" src="../../js/conteudo.js"></script>
     <!-- <script type="text/javascript" src="../../js/script.js"></script> -->
     <script type="text/javascript" src="../../js/title-scroll.js"></script>
+    <script type="text/javascript" src="../../js/loader.js"></script>
     <script type="text/javascript" src="../../js/header.js"></script>
 </body>
 

@@ -1,3 +1,7 @@
+#preloader{
+    overflow-x: hidden;
+}
+
 .user-area{
     margin-right: 10px;
 }
@@ -112,14 +116,16 @@
 }
 
 /* CARDS DESTAQUES DO DIA EM MOVIMENTO */
-
 .s-cards-destaques{
-    margin-top: 20px;
+    margin: 0;
+    padding: 0;
 }
-
-.s-cards-destaques .container .swiper{
-    padding: 5rem 0rem;
+.s-cards-destaques .container{
     width: 100%;
+}
+.s-cards-destaques .container .swiper{
+    /*padding: 5rem 0rem;*/
+    width: auto;
     max-width: 200rem; /* aumenta o tamanho dos cards do s-cards-destaques*/
 }
 
@@ -129,17 +135,17 @@
 
 .s-cards-destaques .container .swiper-slide{
     width: 100%;
-    position: relative;
+    /*position: relative;*/
     background-size: cover;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    /*justify-content: space-between;*/
     cursor: pointer;
 }
 
 .s-cards-destaques .container .swiper-slide img{
-    width: 100%;
-    border-radius: 2rem;
+    height: 80vh;
+    width: 1400px;
     transition: all .3s; 
 }
 
@@ -184,31 +190,46 @@
     top: auto !important;
     bottom: 1rem !important;
 }
-
-/* CARDS-NOTICIAS */
-
-.s-cards-noticias{
-    padding: 10rem 0rem;
-    overflow-x: hidden;
-}
-.s-cards-noticias .container .main-cards-noticias{
-    display: grid;
-    grid-template: 1fr 1fr / 1fr 1fr 1fr;
-    justify-items: center;
-    align-items: center;
-    gap: 3.3rem;
+.org-box{
+    margin: 40px;
 }
 
-/* .s-cards-noticias .container .main-cards-noticias .card-noticias{
-    width: 100%; 
-    max-width: 37rem;
-    height: 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-} */
+.swiper-button-prev{
+    background-color: #0c0c0c;
+    padding: 25px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    color: #FFF; 
+}
+
+.swiper-button-next {
+    background-color: #0c0c0c;
+    padding: 25px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: #FFF;   
+}
+
+.card .card-title{
+    font-size: 20px;
+}
+.card .card-title,.card-desc{
+    color: white;
+}
+.card-img img{
+    height: 153.28px;
+    width: 272px;
+}
+
+.horizontalBlock{
+    margin:65px;
+}
+
+.horizontalBlock h2{
+    font-size: 30px;
+    color: whitesmoke;
+    margin-bottom: 35px;
+}
 
 
 .s-cards-noticias .container .main-cards-noticias .card-noticias .efeito-noticias{

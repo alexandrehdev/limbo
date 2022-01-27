@@ -140,6 +140,13 @@ session_start();
 			</div>
 			<div id="modal-change-status">
 
+	<footer class="m-footer" role="footer">
+		<div class="container">
+			<div id="area-logo">
+				<!-- <strong id="logo">
+					Limbo
+				</strong> -->
+				<span id="data">2021</span>
 			</div>
 		</div>
 </main>	
