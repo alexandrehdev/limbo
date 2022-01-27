@@ -21,7 +21,10 @@
     --pink: #ffc0cb;
     --red: #b30000;
 
-    /* Colors for message */
+    /* 
+        Cores para mensagens e botões para
+        transmitir mensagens
+    */
     --info: #3CDCFF;
     --success: #51FF58;
     --warning: #FBFF48;

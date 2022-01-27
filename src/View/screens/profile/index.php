@@ -139,7 +139,11 @@ session_start();
 				</div>
 			</div>
 			<div id="modal-change-status">
-
+				<img
+					id="icon-leave-modal"
+					src="../../img/icon-leave.svg"
+					alt="button icon leave modal"
+				/>
 			</div>
 		</div>
 </main>	

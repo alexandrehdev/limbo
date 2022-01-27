@@ -129,4 +129,63 @@ setAccordion({
 // * Modal Change Status
 const buttonUpdateStatus = window.document.querySelector(".button-update-status");
 const modalChangeStatus = window.document.querySelector("#modal-change-status");
-// Code...
+const buttonLeaveModal = window.document.querySelector("#icon-leave-modal");
+
+let showModal = true;
+
+function setElementBehavior({ 
+    mode, 
+    element,
+    displayDefault = "block"
+} = {}) {
+    let timer;
+
+    switch(mode) {
+        default:
+        case "show":
+            element.style.display = displayDefault;
+
+            clearTimeout(timer);
+            timer = setTimeout(() => {
+                element.style.opacity = 1;
+            }, 200);
+            
+            break;
+        case "hidden":
+            element.style.opacity = 0;
+            
+            clearTimeout(timer);
+            timer = setTimeout(() => {
+                element.style.display = "none";
+            }, 200);
+
+            break;
+    }
+}
+
+function alternatorModalConditional() {
+    if(showModal) {
+        setElementBehavior({
+            element: modalChangeStatus,
+            mode: "show",
+        });
+        
+        showModal = false;
+    } else {
+        setElementBehavior({
+            element: modalChangeStatus,
+            mode: "hidden",
+        });
+    
+        showModal = true;
+    }
+}
+
+buttonUpdateStatus.addEventListener("click", () => {
+    alternatorModalConditional();
+});
+
+buttonLeaveModal.addEventListener("click", () => {
+    showModal = false;
+    alternatorModalConditional();
+});
