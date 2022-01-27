@@ -26,4 +26,10 @@
     --success: #51FF58;
     --warning: #FBFF48;
     --danger: #FF5151;
+
+    /* Paleta de cores Limbo */
+    --BACKGROUND: #000000;
+    --DETALHE-ELEMENTOS: #F58840;
+    --DESTAQUE:#B85252;
+    --COMPLEMENTO: #EADEDE;
 }

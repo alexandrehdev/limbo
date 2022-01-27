@@ -3,14 +3,14 @@ const itemsAllDropdown = window.document.querySelectorAll("li.item-list-dropdown
 
 function applyLineAnimation({ 
     itemsAllNav, 
-    colorLine = "#ffffff",
+    colorLineGlobals = "#ffffff",
     selector = ".item-dropdown",
     haveChildrenElements = true,
     opacity = true
 }) {
     itemsAllNav.forEach(item => {
     const line = item.children[1];
-    line.style.backgroundColor = colorLine;
+    line.style.backgroundColor = colorLineGlobals;
     if(opacity) {
         line.style.opacity = "0";
     }
@@ -78,6 +78,6 @@ applyLineAnimation({
 
 applyLineAnimation({
     itemsAllNav: itemsAllDropdown,
-    colorLine: "#000000",
+    colorLineGlobals: "#000000",
     haveChildrenElements: false
 })

@@ -1,5 +1,5 @@
 <?php 
-	session_start();
+session_start();
 ?>
 <!DOCTYPE html>
 <html>
@@ -17,7 +17,7 @@
 	<link rel="stylesheet" type="text/css" href="../../css/variables.css">
 	<link rel="stylesheet" href="../../css/componants.css">
 	<link rel="stylesheet" type="text/css"
-		href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/icon.min.css">
+	href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/icon.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
 </head>
 
@@ -46,17 +46,18 @@
 					<strong class="user-account-text" style="text-transform:uppercase;">
 						<i class="user icon"></i>
 						<?php 
-							echo strtoupper($_SESSION['user']['username']);
+						echo strtoupper($_SESSION['user']['username']);
 						?>
 					</strong>
 					<div class="line dropdown">
 						<ul class="list-dropdown">
-							<li class="item-list-dropdown">
-								<a href="../../pages/profile/index.php">
+							<!-- <li class="item-list-dropdown">
+								<a href="index.php">
 									<span class="item-dropdown" class="profile">Perfil</span>
 								</a>
 								<div class="line"></div>
-							</li>
+							</li> -->
+							
 							<li class="item-list-dropdown">
 								<span class="item-dropdown logout">
 									Sair
@@ -70,79 +71,74 @@
 		</nav>
 	</header>
 
-	<main id="main-profile">
-		<div class="user-block">
-			<h1>Player 1</h1>
-			<div class="user-content">
-				<div class="area-user-img">
-					<!-- foto do muito loko -->
-					<img src="https://i.pinimg.com/564x/ca/0b/e0/ca0be062b256c5c1afb277a8525a3ac9.jpg" height="200">
-					<input type="file" value="Mudar foto" name="">
+	<!-- área de informações do usuário -->
+	<main>
+		<div class="profile">
+			<div class="user-content">	
+				<div class="profile-image">
+					<img 
+						id="image"
+						src="../../img/dev-example.png" 
+						height="150px"
+					>
+					
+					<label 
+						for="file"
+						id="button-change-image"
+						class="change-image"
+					>
+						Alterar Image
+					</label>
+					<input
+						id="file"
+						
+						type="file"
+					/>
 				</div>
-				<div class="user-info">
-					<div class="fields">
-						<div class="field">
-							<span>
-								Nome:
-							</span>
-							<div class="input-area">
-								<span class="value">
-									<?php echo "Calma que ainda vai"; ?>
-								</span>
-								<div class="input">
-									<input type="text" name="nome" value="Calma que ainda vai" />
-								</div>
-							</div>
-							<button class=" button-field change-field">
-								<i class="fas fa-pencil-alt fa-2x"></i>
-							</button>
-							<button class="button-field apply-correct">
-								<i class="fas fa-check fa-2x"></i>
-							</button>
-						</div>
-						<div class="field">
-							<span>
-								Email:
-							</span>
-							<div class="input-area">
-								<span class="value">
-									<?php echo $_SESSION['login_user'] ?>
-								</span>
-								<div class="input">
-									<input type="text" name="nome" />
-								</div>
-							</div>
-							<button class=" button-field change-field">
-								<i class="fas fa-pencil-alt fa-2x"></i>
-							</button>
-							<button class="button-field apply-correct">
-								<i class="fas fa-check fa-2x"></i>
-							</button>
-						</div>
-						<div class="field">
-							<span>
-								Status:
-							</span>
-							<div class="input-area">
-								<span class="value">
-									<?php echo "sei la.. sou gostoso"; ?>
-								</span>
-								<div class="input">
-									<textarea name="status"></textarea>
-								</div>
-							</div>
-							<button class=" button-field change-field">
-								<i class="fas fa-pencil-alt fa-2x"></i>
-							</button>
-							<button class="button-field apply-correct">
-								<i class="fas fa-check fa-2x"></i>
-							</button>
-						</div>
+				<div class="nickname">
+					<span><?php echo strtoupper($_SESSION['user']['username']);?></span>
+				</div>
+				<div class="status">
+					<span>Online</span>
+				</div>
+			</div>
+
+			<div class="info-account"> <!--  DROPDOWN -->
+				<div class="accordion">
+					<div class="button-info-account">
+						<img
+							class="image-arrow"
+							src="../../img/arrow.svg"
+							alt="arrow"
+						/>
+						<span class="text-accordion">Informação de Conta</span>
+					</div>
+					<div class="content-info-account">
+						<span><strong>Quando a conta foi criada:</strong> 22/09/2001</span>
+
+						<span><strong>Descrição:</strong> Esse é somente um perfil para teste</span>
+					</div>
+				</div>
+
+				<div class="accordion">
+					<div class="button-info-account">
+						<img
+							class="image-arrow"
+							src="../../img/arrow.svg"
+							alt="arrow"
+						/>
+						<span class="text-accordion">Configuração de Conta</span>
+					</div>
+					<div class="content-info-account align-items-center">
+						<button class="button-update-status">
+							Atualizar Status da conta
+						</button>
+
+						<button class="button-delete-accound">Apagar</button>
 					</div>
 				</div>
 			</div>
-		</div>
-	</main>
+			<div id="modal-change-status">
 
 	<footer class="m-footer" role="footer">
 		<div class="container">
@@ -152,83 +148,95 @@
 				</strong> -->
 				<span id="data">2021</span>
 			</div>
-			<ul id="list-devs">
-				<section class="section" role="section">
-					<article class="article" role="article">
-						<img class="image-developer" src="../../img/dev-example.png" alt="developer image" />
-						<div class="right">
-							<strong class="name-dev">
-								Name Developer
-							</strong>
-							<ul class="list-media-social">
-								<li class="item-media-social">
-									<img class="icon-dev" src="../../img/icon-facebook.svg" alt="icon facebook" />
-								</li>
-								<li class="item-media-social">
-									<img class="icon-dev" src="../../img/icon-github.svg" alt="icon github" />
-								</li>
-								<li class="item-media-social">
-									<img class="icon-dev" src="../../img/icon-instagram.svg" alt="icon instagram" />
-								</li>
-								<li class="item-media-social">
-									<img class="icon-dev" src="../../img/icon-linkedin.svg" alt="icon linkedin" />
-								</li>
-							</ul>
-						</div>
-					</article>
-				</section>
-				<section class="section" role="section">
-					<article class="article" role="article">
-						<img class="image-developer" src="../../img/dev-example.png" alt="developer image" />
-						<div class="right">
-							<strong class="name-dev">Name Developer</strong>
-							<ul class="list-media-social">
-								<li class="item-media-social">
-									<img class="icon-dev" src="../../img/icon-facebook.svg" alt="icon facebook" />
-								</li>
-								<li class="item-media-social">
-									<img class="icon-dev" src="../../img/icon-github.svg" alt="icon github" />
-								</li>
-								<li class="item-media-social">
-									<img class="icon-dev" src="../../img/icon-instagram.svg" alt="icon instagram" />
-								</li>
-								<li class="item-media-social">
-									<img class="icon-dev" src="../../img/icon-linkedin.svg" alt="icon linkedin" />
-								</li>
-							</ul>
-						</div>
-					</article>
-				</section>
-				<section class="section" role="section">
-					<article class="article" role="article">
-						<img class="image-developer" src="../../img/dev-example.png" alt="developer image" />
-						<div class="right">
-							<strong class="name-dev">
-								Name Developer
-							</strong>
-							<ul class="list-media-social">
-								<li class="item-media-social">
-									<img class="icon-dev" src="../../img/icon-facebook.svg" alt="icon facebook" />
-								</li>
-								<li class="item-media-social">
-									<img class="icon-dev" src="../../img/icon-github.svg" alt="icon github" />
-								</li>
-								<li class="item-media-social">
-									<img class="icon-dev" src="../../img/icon-instagram.svg" alt="icon instagram" />
-								</li>
-								<li class="item-media-social">
-									<img class="icon-dev" src="../../img/icon-linkedin.svg" alt="icon linkedin" />
-								</li>
-							</ul>
-						</div>
-					</article>
-				</section>
-			</ul>
 		</div>
-	</footer>
-	<script type="text/javascript" src="../../js/profileLogout.js"></script>
-	<script type="text/javascript" src="../../js/profileField.js"></script>
-	<script type="text/javascript" src="../../js/header.js"></script>
+</main>	
+
+<footer class="m-footer" role="footer">
+	<div class="container">
+		<div id="area-logo">
+			<strong id="logo">
+				Limbo
+			</strong>
+			<span id="data">2021</span>
+		</div>
+		<ul id="list-devs">
+			<section class="section" role="section">
+				<article class="article" role="article">
+					<img class="image-developer" src="../../img/dev-example.png" alt="developer image" />
+					<div class="right">
+						<strong class="name-dev">
+							Name Developer
+						</strong>
+						<ul class="list-media-social">
+							<li class="item-media-social">
+								<img class="icon-dev" src="../../img/icon-facebook.svg" alt="icon facebook" />
+							</li>
+							<li class="item-media-social">
+								<img class="icon-dev" src="../../img/icon-github.svg" alt="icon github" />
+							</li>
+							<li class="item-media-social">
+								<img class="icon-dev" src="../../img/icon-instagram.svg" alt="icon instagram" />
+							</li>
+							<li class="item-media-social">
+								<img class="icon-dev" src="../../img/icon-linkedin.svg" alt="icon linkedin" />
+							</li>
+						</ul>
+					</div>
+				</article>
+			</section>
+			<section class="section" role="section">
+				<article class="article" role="article">
+					<img class="image-developer" src="../../img/dev-example.png" alt="developer image" />
+					<div class="right">
+						<strong class="name-dev">Name Developer</strong>
+						<ul class="list-media-social">
+							<li class="item-media-social">
+								<img class="icon-dev" src="../../img/icon-facebook.svg" alt="icon facebook" />
+							</li>
+							<li class="item-media-social">
+								<img class="icon-dev" src="../../img/icon-github.svg" alt="icon github" />
+							</li>
+							<li class="item-media-social">
+								<img class="icon-dev" src="../../img/icon-instagram.svg" alt="icon instagram" />
+							</li>
+							<li class="item-media-social">
+								<img class="icon-dev" src="../../img/icon-linkedin.svg" alt="icon linkedin" />
+							</li>
+						</ul>
+					</div>
+				</article>
+			</section>
+			<section class="section" role="section">
+				<article class="article" role="article">
+					<img class="image-developer" src="../../img/dev-example.png" alt="developer image" />
+					<div class="right">
+						<strong class="name-dev">
+							Name Developer
+						</strong>
+						<ul class="list-media-social">
+							<li class="item-media-social">
+								<img class="icon-dev" src="../../img/icon-facebook.svg" alt="icon facebook" />
+							</li>
+							<li class="item-media-social">
+								<img class="icon-dev" src="../../img/icon-github.svg" alt="icon github" />
+							</li>
+							<li class="item-media-social">
+								<img class="icon-dev" src="../../img/icon-instagram.svg" alt="icon instagram" />
+							</li>
+							<li class="item-media-social">
+								<img class="icon-dev" src="../../img/icon-linkedin.svg" alt="icon linkedin" />
+							</li>
+						</ul>
+					</div>
+				</article>
+			</section>
+		</ul>
+	</div>
+</footer>
+<script type="text/javascript" src="../../js/profileLogout.js"></script>
+<script type="text/javascript" src="../../js/profileField.js"></script>
+<script type="text/javascript" src="../../js/header.js"></script>
+<script type="text/javascript" src="../../js/profile.js"></script>
 </body>
 
 </html>
