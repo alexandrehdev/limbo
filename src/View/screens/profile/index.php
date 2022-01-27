@@ -119,15 +119,24 @@ session_start();
 						<span><strong>Descrição:</strong> Esse é somente um perfil para teste</span>
 					</div>
 				</div>
-				<!-- Informações de conta -->
-				<!-- Quando a conta foi criada -->
-				<!-- Descrição -->
 
+				<div class="accordion">
+					<div class="button-info-account">
+						<img
+							class="image-arrow"
+							src="../../img/arrow.svg"
+							alt="arrow"
+						/>
+						<span class="text-accordion">Configuração de Conta</span>
+					</div>
+					<div class="content-info-account align-items-center">
+						<button class="button-update-status">
+							Atualizar Status da conta
+						</button>
 
-				<div>DROPDOWN2</div>
-				<!-- Ações de conta -->
-				<!-- Atualizar -->
-				<!-- Apagar -->
+						<button class="button-delete-accound">Apagar</button>
+					</div>
+				</div>
 			</div>
 
 		</div>

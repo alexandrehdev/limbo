@@ -537,14 +537,22 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    cursor: pointer;
 }
 
 .image-arrow {
     margin-right: 16px;
+
+    transition: transform 500ms;
 }
 
 .text-accordion {
     font-size: 1.8rem;
+
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .content-info-account {
@@ -568,8 +576,42 @@
     margin-bottom: 16px;
 }
 
-.content-info-account > span:last-of-type {
+.content-info-account > button {
+    margin-bottom: 16px;
+
+    cursor: pointer;
+}
+
+.content-info-account > span:last-of-type,
+.content-info-account > button:last-of-type
+{
     margin-bottom: 0;
+}
+
+.button-update-status {
+    color: var(--white);
+
+    background-color: transparent;
+
+    border: 1px solid var(--white);
+}
+
+.button-update-status,
+.button-delete-accound
+{
+    padding: 10px 20px;
+    
+    border-radius: 10px;
+}
+
+.button-delete-accound {
+    background-color: var(--danger);
+
+    color: var(--white);
+}
+
+.align-items-center {
+    align-items: center !important;
 }
 
 @keyframes click-button {
@@ -611,7 +653,6 @@
 
     font-size: 16px;
     font-weight: bold;
-
 }
 
 .color-warning {
