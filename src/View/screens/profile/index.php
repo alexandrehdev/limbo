@@ -138,13 +138,11 @@ session_start();
 					</div>
 				</div>
 			</div>
+			<div id="modal-change-status">
 
+			</div>
 		</div>
 </main>	
-
-
-
-
 
 <footer class="m-footer" role="footer">
 	<div class="container">

@@ -125,3 +125,8 @@ setAccordion({
     element: configuracaoContaAccordion.children,
     contentHeight: 200
 });
+
+// * Modal Change Status
+const buttonUpdateStatus = window.document.querySelector(".button-update-status");
+const modalChangeStatus = window.document.querySelector("#modal-change-status");
+// Code...
