@@ -2,9 +2,23 @@
 namespace MyApp\Controller;
 use MyApp\Model\User as UserModel;
 use MyApp\View\Route;
+use MyApp\Controller\Picture;
+
+session_start();
 
 class User extends GetDataRegister
 {
+	public $picture;
+
+	function __construct()
+	{
+		parent::__construct();
+		$this->picture = (new Picture())->getProfilePicture();
+
+		$_SESSION['login_mail'] = $this->getMailLogin();
+	}
+
+
 	public function validateData(){
 		if (!filter_var($this->getEmail(), FILTER_VALIDATE_EMAIL)) {
 			echo "Email inválido";
@@ -28,9 +42,8 @@ class User extends GetDataRegister
 		}
 	}
 
-	public function changeUserProfile()
-	{
-		
+	public function userProfile(){
+		var_dump((new UserModel())->profileSetImg($this->picture, $_SESSION['login_mail']));
 	}
 
 }

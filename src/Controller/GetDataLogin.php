@@ -1,5 +1,6 @@
 <?php 
 namespace MyApp\Controller;
+session_start();
 
 class GetDataLogin
 {
