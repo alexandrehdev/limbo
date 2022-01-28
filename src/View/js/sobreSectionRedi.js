@@ -42,5 +42,5 @@ buttonSection.click(target => {
 			break;
 		default:
 	}
-	window.location.href = `${window.location.origin}/pages/sobre/#${sectionsDev[id]}`;
+	window.location.hash = sectionsDev[id];
 });
