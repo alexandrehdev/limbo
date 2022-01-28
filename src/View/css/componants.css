@@ -494,11 +494,28 @@
     margin-top: 16px;
 }
 
-.status span{
+.status > span {
     font-size: 15px;
-    background-color: var(--success); /*Definição de cor mudar*/
-    padding: 5px;
+    
+    padding: 2.5px 7.5px;
+    
     border-radius: 25px;
+}
+
+#status-online > span{
+    background-color: var(--success);
+}
+
+#status-absent > span {
+    background-color: var(--warning);
+}
+
+#status-occupied > span {
+    background-color: var(--danger);
+}
+
+#status-offline > span {
+    background-color: var(--gray-2);
 }
 
 .user-info > .info{
@@ -616,6 +633,10 @@
 
 #modal-change-status {
     display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
     opacity: 0;
 
     position: fixed;
@@ -623,10 +644,12 @@
     left: 50%;
     transform: translate(-50%, -50%);
 
-    width: 80%;
-    height: 80vh;
+    width: 60%;
+    height: 60vh;
 
-    background-color: var(--white);
+    background-color: var(--black);
+
+    box-shadow: 0px 0px 10px 5px var(--black);
 
     border-radius: 10px;
 
@@ -641,6 +664,84 @@
     width: 25px;
 
     cursor: pointer;
+}
+
+#current-status {
+    margin-bottom: 48px;
+}
+
+.current-status-title {
+    color: var(--white);
+
+    font-size: 40px;
+}
+
+#interface-control-status,
+#current-status
+{
+    display: flex;
+    align-items: center;
+}
+
+.current-status-title,
+.control-status-title
+{
+    margin-right: 24px;
+}
+
+.control-status-title {
+    color: var(--white);
+
+    font-size: 24px;
+}
+
+.status-medium > span {
+    font-size: 24px;
+}
+
+.status-big > span {
+    font-size: 40px;
+}
+
+.no-margin-top {
+    margin-top: 0;
+}
+
+.status-item {
+    margin-right: 8px;
+}
+
+.status.item:last-of-type {
+    margin-right: 0;
+}
+
+#apply-status {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+
+    border: none;
+    outline: none;
+
+    background-color: var(--white);
+
+    border-radius: 3px;
+
+    padding: 5px 10px;
+}
+
+.status-current > span,
+.status-save > span
+{
+    transition: background-color 500ms;
+}
+
+.status-clickable {
+    cursor: pointer;
+}
+
+.status-clickable > span {
+    user-select: none;
 }
 
 @keyframes click-button {

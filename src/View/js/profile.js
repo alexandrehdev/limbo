@@ -127,12 +127,28 @@ setAccordion({
 });
 
 // * Modal Change Status
+
+/*
+    Selecionado todos o elementos necessários 
+    para a interação do modal
+*/
 const buttonUpdateStatus = window.document.querySelector(".button-update-status");
 const modalChangeStatus = window.document.querySelector("#modal-change-status");
 const buttonLeaveModal = window.document.querySelector("#icon-leave-modal");
+const buttonApplyStatus = window.document.querySelector("#apply-status");
+const statusOptions = window.document.querySelectorAll(".status-clickable");
+const currentStatus = window.document.querySelector(".status-current");
+const statusSaveProfile = window.document.querySelector(".status-save");
+
+const [ textStatus ] = currentStatus.children;
 
 let showModal = true;
 
+/**
+ * Esse é a função responsavel por seta
+ * o comportamento de desaparecer e aparecer
+ * de qualquer elemento de forma mais lenta
+ */
 function setElementBehavior({ 
     mode, 
     element,
@@ -163,11 +179,22 @@ function setElementBehavior({
     }
 }
 
+/**
+ * Esse é a função de alternador do modal,
+ * Ao chamar ele, se a variável "showModal" for
+ * positiva o modal irá aparecer e 
+ * automaticamente a variável irá ficar 
+ * negativa, ao contrário, o modal irá 
+ * desaparecer e a variável ficará positiva, irá 
+ * alternar a cada vez que chama a função
+ */
+
 function alternatorModalConditional() {
     if(showModal) {
         setElementBehavior({
             element: modalChangeStatus,
             mode: "show",
+            displayDefault: "flex"
         });
         
         showModal = false;
@@ -181,11 +208,121 @@ function alternatorModalConditional() {
     }
 }
 
+/**
+ * Adiciona uma interação no botão de atualizar o 
+ * status que irá abrir o modal, clicar novamente
+ * irá fechar o modal
+ */
 buttonUpdateStatus.addEventListener("click", () => {
     alternatorModalConditional();
 });
 
+/**
+ * Adiciona uma interação no botão de sair do 
+ * modal que como o nome já diz ele irá fechar o 
+ * modal
+ */
 buttonLeaveModal.addEventListener("click", () => {
     showModal = false;
     alternatorModalConditional();
+});
+
+/**
+ * Esse seleciona o tipo de status e executa uma 
+ * ação para os 4 tipos
+ * 
+ * online: Online
+ * absent: Ausente
+ * occupied: Ocupado
+ * offline: Offline
+ */
+function addInteractionButtonStatus(type, action) {
+    switch(type) {
+        case "online":
+            return action.online();
+        
+        case "absent":
+            return action.absent();
+
+        case "occupied":
+            return action.occupied();
+
+        case "offline":
+            return action.offline();
+        default:
+    }
+}
+
+/**
+ * Seta o modo do status atual
+ * 
+ * Basicamente essa função modifica o 
+ * identificador e o texto do elemento
+ */
+function setModeCurrentStatus({ 
+    mode, 
+    text
+}) {
+    currentStatus.setAttribute("id", mode);
+    textStatus.innerText = text;
+}
+
+/**
+ * Seleciona cada botão de status no modal e 
+ * adiciona um evento de clique
+ * 
+ * selecionei o atributo "data-type" de cada um
+ * e adicionei a interação a cada botão de 
+ * acordo com esse atributo, então se eu clicar
+ * no botão de status offline, automaticamente o 
+ * status atual muda para status offline
+ */
+for(let statusOption of statusOptions) {
+    statusOption.addEventListener("click", () => {
+        const type = statusOption.dataset.type;
+
+        addInteractionButtonStatus(type, {
+            online() {
+                setModeCurrentStatus({
+                    mode: "status-online",
+                    text: "Online"
+                });
+            },
+            absent() {
+                setModeCurrentStatus({
+                    mode: "status-absent",
+                    text: "Ausente"
+                });
+            },
+            occupied() {
+                setModeCurrentStatus({
+                    mode: "status-occupied",
+                    text: "Ocupado"
+                });
+            },
+            offline() {
+                setModeCurrentStatus({
+                    mode: "status-offline",
+                    text: "Offline"
+                });
+            }
+        });
+    });
+}
+
+/**
+ * Esse é o código para aplicar o status do 
+ * usuário que basicamente ele só faz mudar a
+ * cor do plano de fundo e o texto do elemento 
+ * de status na tela de perfil do usuário
+ */
+buttonApplyStatus.addEventListener("click", () => {
+    const [ textStatusSave ] = statusSaveProfile.children;
+    
+    const modeStatusCurrent = currentStatus.getAttribute("id");
+    const textStatusCurrent = textStatus.innerText;
+
+    statusSaveProfile.setAttribute("id", modeStatusCurrent);
+    
+    textStatusSave.innerText = textStatusCurrent;
 });
