@@ -98,7 +98,7 @@ session_start();
 				<div class="nickname">
 					<span><?php echo strtoupper($_SESSION['user']['username']);?></span>
 				</div>
-				<div class="status">
+				<div id="status-online" class="status status-save">
 					<span>Online</span>
 				</div>
 			</div>
@@ -139,14 +139,51 @@ session_start();
 				</div>
 			</div>
 			<div id="modal-change-status">
-
-	<footer class="m-footer" role="footer">
-		<div class="container">
-			<div id="area-logo">
-				<!-- <strong id="logo">
-					Limbo
-				</strong> -->
-				<span id="data">2021</span>
+				<img
+					id="icon-leave-modal"
+					src="../../img/icon-leave.svg"
+					alt="button icon leave modal"
+				/>
+				<div id="current-status">
+					<span class="current-status-title">Status Atual: </span>
+					<div id="status-online" class="status status-current status-big no-margin-top">
+						<span>Online</span>
+					</div>
+				</div>
+				<div id="interface-control-status">
+					<span class="control-status-title">Escolha seu novo status: </span>
+					<div 
+						id="status-online" 
+						class="status status-medium no-margin-top status-item status-clickable"
+						data-type="online"
+					>
+						<span>Online</span>
+					</div>
+					<div 
+						id="status-absent" 
+						class="status status-medium no-margin-top status-item status-clickable"
+						data-type="absent"
+					>
+						<span>Ausente</span>
+					</div>
+					<div 
+						id="status-occupied" 
+						class="status status-medium no-margin-top status-item status-clickable"
+						data-type="occupied"
+					>
+						<span>Ocupado</span>
+					</div>
+					<div 
+						id="status-offline" 
+						class="status status-medium no-margin-top status-item status-clickable"
+						data-type="offline"
+					>
+						<span>Offline</span>
+					</div>
+				</div>
+				<button id="apply-status">
+					Aplicar
+				</button>
 			</div>
 		</div>
 </main>	
