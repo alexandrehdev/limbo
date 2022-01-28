@@ -74,9 +74,9 @@ session_start();
 	<footer class="m-footer" role="footer">
 		<div class="container">
 			<div id="area-logo">
-				<strong id="logo">
+				<!-- <strong id="logo">
 					Limbo
-				</strong>
+				</strong> -->
 				<span id="data">2021</span>
 			</div>
 			<ul id="list-devs">

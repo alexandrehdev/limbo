@@ -1,8 +1,14 @@
+html,body{
+	margin: 0;
+	padding: 0;
+}
+
 .info-text p{
 	font-size: 20.3px;
 }
 
 .main-header{
+	background: #0c0c0c;
 	justify-content: space-between;
 }
 
@@ -21,12 +27,9 @@
 	align-items: center;
 }
 
-.main-header h1{
-	color: white;
-	font-size: 50px;
-	text-align: left;
-	margin: 10px;
-	cursor: pointer;
+.main-header .title-name img{
+	height: 120px;
+	margin: 5px;
 }
 
 .navigation{
@@ -42,7 +45,7 @@
 	color: white;
 	text-decoration: none;
 	padding: 15px;
-	font-size: 16px;
+	font-size: 13px;
 }
 
 ul.list-nav {
@@ -57,7 +60,7 @@ li.item-nav {
 	justify-content: center;
 	align-items: center;
 
-	margin-left: 70px;
+	margin-left: 45px;
 
 	position: relative;
 }

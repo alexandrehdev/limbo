@@ -8,6 +8,29 @@ logout.addEventListener('click',function(){
 	window.location.href = "../../../../logout.php";
 })
 
+// HORIZONTAL SCROLL
+var swiper = new Swiper(".horizontalBlock", {
+	slidesPerView: 4,
+	spaceBetween: 30,
+	centeredSlides: false,
+	pagination: {
+		// el: ".swiper-pagination",
+		clickable: true,
+	},
+	navigation: {
+		nextEl: ".horizontalBlock .swiper-button-next",
+		prevEl: ".horizontalBlock .swiper-button-prev",
+	}
+});
+// const scrollContainer = document.querySelector(".horizontalBlock");
+
+// scrollContainer.addEventListener("wheel", (evt) => {
+// 	evt.preventDefault();
+// 	scrollContainer.scrollLeft += evt.deltaY;
+// });
+// HORIZONTAL SCROLL
+
+
 const descriptionCardNotice = window.document.querySelectorAll(".text-card-noticias > span");
 
 descriptionCardNotice.forEach(span => {
