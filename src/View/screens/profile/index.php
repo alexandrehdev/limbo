@@ -93,7 +93,12 @@ if (isset($_POST['profile-btn'])) {
 						</label>
 						<input id="file" name="userprofile" type="file"/>
 					</div>
-					<button type="submit" name="profile-btn">Enviar Perfil</button>
+					<button 
+						id="submit-image-user"
+						type="submit" 
+						name="profile-btn" 
+						disabled
+					>Enviar Perfil</button>
 				</form>
 				<div class="nickname">
 					<span><?php echo strtoupper($_SESSION['user']['username']);?></span>

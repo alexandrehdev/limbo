@@ -4,6 +4,8 @@
 // Selecionar os elementos que compõem a área da imagem
 const profileImage = window.document.querySelector(".profile-image");
 const buttonChangeImage = window.document.querySelector("#button-change-image");
+const fileInput = window.document.querySelector("#file");
+const buttonSubmitImageUser = window.document.querySelector("#submit-image-user");
 
 /**
  * Os dois eventos abaixo fazem o efeito de blur
@@ -41,6 +43,20 @@ profileImage.addEventListener("mouseout", () => {
     buttonChangeImage.style.display = "none";
 }, true);
 
+/**
+ * Aqui ele monitora o input que armazena o 
+ * arquivo de imagem e se o valor dele for
+ * alterado automaticamente ele captura um evento
+ * e faz a interação de desativar o botão de
+ * botão de enviar a imagem do usuário
+ */
+fileInput.addEventListener("change", ({ target }) => {
+    if(target.value) {
+        buttonSubmitImageUser.removeAttribute("disabled");
+    } else {
+        buttonSubmitImageUser.setAttribute("disabled", "");
+    }
+});
 
 // * Accordion
 
