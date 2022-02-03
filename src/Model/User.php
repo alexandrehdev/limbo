@@ -11,6 +11,7 @@ class User extends UserController
 
 	function __construct(){
 		parent::__construct();
+
 		$this->pdo = (new Connection())->getCon();
 	}
 
@@ -30,6 +31,32 @@ class User extends UserController
 		$row = $stmt->fetch(PDO::FETCH_ASSOC);
 
 		return $row;
+	}
+	// mover
+	// capturar a imagem
+	// atualizar
+
+	public function profileCapture($email){
+		$sql = (new Dump())->selectImage($email);
+		$stmt = $this->pdo->prepare($sql);
+		$stmt->execute();
+	}
+
+	public function profileMovePicture($file){
+		$target = "../../img/userprofile/{$file['name']}";
+		move_uploaded_file($file['tmp_name'], $target);
+	}
+
+	public function updateImage($file,$email){
+		$sql = (new Dump())->updateProfilePicture($file['name'],$email);
+		$stmt = $this->pdo->prepare($sql);
+		$stmt->execute();
+	}
+
+	public function profileSetImg($file,$email){
+		$this->profileMovePicture($file);
+		$this->profileCapture($email);
+		$this->updateImage($file,$email);
 	}
 }
 ?>

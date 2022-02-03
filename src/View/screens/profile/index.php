@@ -1,5 +1,15 @@
 <?php 
+require_once("../../../../vendor/autoload.php");
+use MyApp\Controller\GetDataLogin;
+use MyApp\Controller\Picture;
+use MyApp\Controller\User as UserController;
 session_start();
+
+
+if (isset($_POST['profile-btn'])) {
+	(new Picture());
+	(new UserController())->userProfile();
+}
 ?>
 <!DOCTYPE html>
 <html>
@@ -75,26 +85,21 @@ session_start();
 	<main>
 		<div class="profile">
 			<div class="user-content">	
-				<div class="profile-image">
-					<img 
-						id="image"
-						src="../../img/dev-example.png" 
-						height="150px"
-					>
-					
-					<label 
-						for="file"
-						id="button-change-image"
-						class="change-image"
-					>
-						Alterar Image
-					</label>
-					<input
-						id="file"
-						
-						type="file"
-					/>
-				</div>
+				<form action="<?php $_SERVER['PHP_SELF'] ?>" method="POST" enctype="multipart/form-data">
+					<div class="profile-image">
+						<img id="image"src="../../img/dev-example.png" height="150px">
+						<label for="file" id="button-change-image" class="change-image">
+							Alterar Image
+						</label>
+						<input id="file" name="userprofile" type="file"/>
+					</div>
+					<button 
+						id="submit-image-user"
+						type="submit" 
+						name="profile-btn" 
+						disabled
+					>Enviar Perfil</button>
+				</form>
 				<div class="nickname">
 					<span><?php echo strtoupper($_SESSION['user']['username']);?></span>
 				</div>
