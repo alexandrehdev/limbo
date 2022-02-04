@@ -39,9 +39,11 @@ if (isset($_POST['btn-register'])) {
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
 </head>
 <body>
-	<header class="main-header register-header">
+	<header class="main-header">
 		<a href="../intro/index.php">
-			<h1 class="title-name">Limbo</h1>
+			<h1 class="title-name">
+				<img src="../../../../favicon.png" style="margin-top: 15px; height: 60px;">
+			</h1>
 		</a>
 	</header>
 

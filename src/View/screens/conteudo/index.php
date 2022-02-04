@@ -27,7 +27,7 @@ session_start();
 <body>
 	<header class="main-header">
 		<h1 class="title-name">
-			<img src="../../../../logolimb.png" height="65" style="margin-top: 15px;">
+			<img src="../../../../favicon.png" height="65" style="margin-top: 15px; height: 60px;">
 		</h1>
 		<nav class="navigation">
 			<ul class="list-nav">
