@@ -14,7 +14,8 @@ html,body{
 	/*background: #483D8B;*/
 	justify-content: space-between;
 	/*height: 70px;*/
-	/*width: 100%;*/
+	width: 100%;
+	position: fixed;
 }
 
 .main-header,

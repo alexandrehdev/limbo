@@ -7,7 +7,6 @@
 }
 
 body {
-
   background: #0C0C0C;
   font-family: sans-serif;
   /*height: 50%;*/
@@ -449,7 +448,7 @@ body {
   font-size: 80px;
   text-align: center;
   letter-spacing: 20px;
- font-family: 'Baloo Bhaijaan 2', cursive;
+  font-family: 'Baloo Bhaijaan 2', cursive;
 }
 
 .text::before,.text::after{
@@ -493,23 +492,22 @@ body {
   }
 
   40%{
-   left: 4px;
-   top: -6px;
- }
+    left: 4px;
+    top: -6px;
+  }
 
- 50%{
-  left: 1px;
-  top: -1px;
-}
+  50%{
+    left: 1px;
+    top: -1px;
+  }
 
-75%{
-  left: -1px;
-  top: 1px;
-}
+  75%{
+    left: -1px;
+    top: 1px;
+  }
 
-100%{
-  left: 3px;
-  top: -2px;
-}
-
+  100%{
+    left: 3px;
+    top: -2px;
+  }
 }
