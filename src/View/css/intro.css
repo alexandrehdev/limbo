@@ -434,10 +434,22 @@ body {
 
 /*CSS GLITCH*/
 
+.text-description{
+  position: absolute;
+  top: 95%;
+  left: 49%;
+  transform: translate(-50%, -50%);
+}
 
+.text-description span{
+  font-size: 20px;
+  color: white;
+  font-family: 'Baloo Bhaijaan 2', cursive;
+  letter-spacing: 15px;
+}
 .middle{
   position: absolute;
-  top: 50%;
+  top: 15%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -445,7 +457,7 @@ body {
 .text{
   color: #DC143C;
   text-transform: uppercase;
-  font-size: 80px;
+  font-size: 120px;
   text-align: center;
   letter-spacing: 20px;
   font-family: 'Baloo Bhaijaan 2', cursive;

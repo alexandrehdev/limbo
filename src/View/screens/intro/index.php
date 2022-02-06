@@ -19,7 +19,7 @@
 <body id="particles-js">
 	<header class="main-header">
 		<h1 class="title-name">
-			<img src="../../../../favicon.png" style="margin-top: 5px; height: 60px;">
+			<!-- <img src="../../../../favicon.png" style="margin-top: 5px; height: 60px;"> -->
 		</h1>
 		<div class="user-area">
 			<button class="btn-account">Criar Conta</button>
@@ -29,6 +29,9 @@
 	<main>
 		<div class="text middle" data-text="LIMBO">
 			LIMBO
+		</div>
+		<div class="text-description">
+			<span>Gaming Club</span>
 		</div>
 	</main>
 
