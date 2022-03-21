@@ -14,8 +14,8 @@ class GetDataRegister extends GetDataLogin
 		
 		$this->setUsername($_POST['username']);
 		$this->setEmail($_POST['email']);
-		$this->setPassword($_POST['pwd']);
-		$this->setCPassword($_POST['cpwd']);
+		$this->setPassword($_POST['pwd']); 
+		$this->setCPassword($_POST['cpwd']); 
 	}
 
 	public function getUsername(){

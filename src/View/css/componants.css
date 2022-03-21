@@ -1,13 +1,10 @@
-#preloader{
-    overflow-x: hidden;
-}
-
 .user-area{
-    margin-right: 10px;
+    margin: 10px;
 }
 
 .btn-account{
     padding: 15px;
+    border-radius: 100px;
     cursor: pointer;
     transition: filter 500ms;
 }
