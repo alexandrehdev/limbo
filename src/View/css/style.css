@@ -10,11 +10,12 @@ html,body{
 }
 
 .main-header{
-	/*background: #0c0c0c;*/
+	background: ;
 	/*background: #483D8B;*/
 	justify-content: space-between;
 	/*height: 70px;*/
 	width: 100%;
+	z-index: 999;
 	position: fixed;
 }
 
@@ -26,7 +27,7 @@ html,body{
 	box-sizing: border-box;
 	padding: 5px 0px;
 	/*height: 70px;*/
-	
+
 	/*z-index: 2021;*/
 
 	display: flex;
@@ -245,14 +246,14 @@ div#home {
 }
 
 ::-webkit-scrollbar-track {
-	box-shadow: inset 0 0 5px grey; 
+	box-shadow: inset 0 0 5px grey;
 }
 
 ::-webkit-scrollbar-thumb {
-	background: grey; 
+	background: grey;
 	border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-	background: pink; 
+	background: pink;
 }

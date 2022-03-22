@@ -143,7 +143,7 @@
 .s-cards-destaques .container .swiper-slide img{
     height: 80vh;
     width: 1400px;
-    transition: all .3s; 
+    transition: all .3s;
 }
 
 .s-cards-destaques .container .swiper-slide img:hover{
@@ -196,7 +196,7 @@
     padding: 25px;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
-    color: #FFF; 
+    color: #FFF;
 }
 
 .swiper-button-next {
@@ -204,7 +204,7 @@
     padding: 25px;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
-    color: #FFF;   
+    color: #FFF;
 }
 
 .card .card-title{
@@ -281,7 +281,7 @@
     height: 70vh;
     position: relative;
     /* background: url("https:\/\/www.freetogame.com\/g\/26\/thumbnail.jpg") no-repeat center center; */
-    
+
 }
 
 .noticias .container{
@@ -306,7 +306,7 @@
     top: 50%;
     transform: translateY(-50%);
     font-family: 'Mochiy Pop One', sans-serif;
-    
+
 }
 .noticias .container .noticias-text h2, .noticias .container .noticias-text p{
     color: #fff;
@@ -346,7 +346,7 @@
     margin: 10rem 0rem;
 }
 
-.freegames-table .description-card-games, 
+.freegames-table .description-card-games,
 .freegames-table .title-card-games
 {
     transition: all .5s;
@@ -412,7 +412,7 @@
     margin: 0 !important;
     width: 100%;
     max-width: 40rem;
-    overflow-y: hidden; 
+    overflow-y: hidden;
     height: 100rem;
     padding: 2rem;
 }
@@ -427,8 +427,8 @@
     display: none;
 }
 
-.input > input, 
-.input > textarea 
+.input > input,
+.input > textarea
 {
     display: none;
 
@@ -437,8 +437,8 @@
     border: none;
 }
 
-.show-input > input, 
-.show-input > textarea 
+.show-input > input,
+.show-input > textarea
 {
     display: block;
 }
@@ -511,9 +511,9 @@
 
 .status > span {
     font-size: 15px;
-    
+
     padding: 2.5px 7.5px;
-    
+
     border-radius: 25px;
 }
 
@@ -632,7 +632,7 @@
 .button-delete-accound
 {
     padding: 10px 20px;
-    
+
     border-radius: 10px;
 }
 
