@@ -1,14 +1,15 @@
-<?php 
+<?php
 require_once("../../../../vendor/autoload.php");
 use MyApp\Controller\GetDataLogin;
 use MyApp\Controller\Picture;
 use MyApp\Controller\User as UserController;
 session_start();
 
-
-if (isset($_POST['profile-btn'])) {
+if ($_SERVER['REQUEST_METHOD'] == "POST") {
 	(new Picture());
-	(new UserController())->userProfile();
+	$profile = (new UserController())->userProfile();
+
+
 }
 ?>
 <!DOCTYPE html>
@@ -55,7 +56,7 @@ if (isset($_POST['profile-btn'])) {
 				<li class="item-nav">
 					<strong class="user-account-text" style="text-transform:uppercase;">
 						<i class="user icon"></i>
-						<?php 
+						<?php
 						echo strtoupper($_SESSION['user']['username']);
 						?>
 					</strong>
@@ -67,7 +68,7 @@ if (isset($_POST['profile-btn'])) {
 								</a>
 								<div class="line"></div>
 							</li> -->
-							
+
 							<li class="item-list-dropdown">
 								<span class="item-dropdown logout">
 									Sair
@@ -84,21 +85,16 @@ if (isset($_POST['profile-btn'])) {
 	<!-- área de informações do usuário -->
 	<main>
 		<div class="profile">
-			<div class="user-content">	
+			<div class="user-content">
 				<form action="<?php $_SERVER['PHP_SELF'] ?>" method="POST" enctype="multipart/form-data">
 					<div class="profile-image">
-						<img id="image"src="../../img/dev-example.png" height="150px">
+						<img id="image" src="../../img/userprofile/<?php echo $profile ?>" height="150px">
 						<label for="file" id="button-change-image" class="change-image">
 							Alterar Image
 						</label>
 						<input id="file" name="userprofile" type="file"/>
 					</div>
-					<button 
-						id="submit-image-user"
-						type="submit" 
-						name="profile-btn" 
-						disabled
-					>Enviar Perfil</button>
+					<button id="submit-image-user"type="submit" name="profile-btn" disabled>Enviar Perfil</button>
 				</form>
 				<div class="nickname">
 					<span><?php echo strtoupper($_SESSION['user']['username']);?></span>
@@ -157,29 +153,29 @@ if (isset($_POST['profile-btn'])) {
 				</div>
 				<div id="interface-control-status">
 					<span class="control-status-title">Escolha seu novo status: </span>
-					<div 
-						id="status-online" 
+					<div
+						id="status-online"
 						class="status status-medium no-margin-top status-item status-clickable"
 						data-type="online"
 					>
 						<span>Online</span>
 					</div>
-					<div 
-						id="status-absent" 
+					<div
+						id="status-absent"
 						class="status status-medium no-margin-top status-item status-clickable"
 						data-type="absent"
 					>
 						<span>Ausente</span>
 					</div>
-					<div 
-						id="status-occupied" 
+					<div
+						id="status-occupied"
 						class="status status-medium no-margin-top status-item status-clickable"
 						data-type="occupied"
 					>
 						<span>Ocupado</span>
 					</div>
-					<div 
-						id="status-offline" 
+					<div
+						id="status-offline"
 						class="status status-medium no-margin-top status-item status-clickable"
 						data-type="offline"
 					>
@@ -191,7 +187,7 @@ if (isset($_POST['profile-btn'])) {
 				</button>
 			</div>
 		</div>
-</main>	
+</main>
 
 <footer class="m-footer" role="footer">
 	<div class="container">

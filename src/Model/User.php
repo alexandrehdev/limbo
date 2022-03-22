@@ -1,12 +1,12 @@
-<?php 
+<?php
 namespace MyApp\Model;
 use MyApp\Controller\User as UserController;
 use MyApp\Controller\Dump;
 use MyApp\Controller\Connection;
 use PDO;
-
+session_start();
 class User extends UserController
-{	
+{
 	public $pdo;
 
 	function __construct(){
@@ -16,30 +16,32 @@ class User extends UserController
 	}
 
 	public function registerUser(){
+		$_SESSION['current_email'] = self::getEmail();
+
 		$stmt = $this->pdo->prepare((new Dump())->getInsertQuery());
-		$stmt->bindValue(':username',$this->getUsername());
-		$stmt->bindValue(':email',$this->getEmail());
-		$stmt->bindValue(':password',$this->getPassword());
-		$stmt->bindValue(':cpassword',$this->getCPassword());
+		$stmt->bindValue(':username',self::getUsername());
+		$stmt->bindValue(':email',self::getEmail());
+		$stmt->bindValue(':password',self::getPassword());
+		$stmt->bindValue(':cpassword',self::getCPassword());
 		$stmt->execute();
+
 	}
 
 	public function selectUser(){
-		$sql = (new Dump())->selectQuery($this->getMailLogin(),$this->getPasswordLogin());
+		$sql = (new Dump())->selectQuery(self::getMailLogin(),self::getPasswordLogin());
 		$stmt = $this->pdo->prepare($sql);
 		$stmt->execute();
 		$row = $stmt->fetch(PDO::FETCH_ASSOC);
 
 		return $row;
 	}
-	// mover
-	// capturar a imagem
-	// atualizar
 
 	public function profileCapture($email){
 		$sql = (new Dump())->selectImage($email);
 		$stmt = $this->pdo->prepare($sql);
 		$stmt->execute();
+		$row = $stmt->fetch(PDO::FETCH_ASSOC);
+		return $row;
 	}
 
 	public function profileMovePicture($file){
@@ -53,10 +55,9 @@ class User extends UserController
 		$stmt->execute();
 	}
 
-	public function profileSetImg($file,$email){
-		$this->profileMovePicture($file);
-		$this->profileCapture($email);
-		$this->updateImage($file,$email);
+	public function currentEmailSession(){
+		return $_SESSION['current_email'];
 	}
+
 }
 ?>

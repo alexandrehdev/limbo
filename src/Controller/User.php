@@ -1,10 +1,8 @@
-<?php 
+<?php
 namespace MyApp\Controller;
 use MyApp\Model\User as UserModel;
 use MyApp\View\Route;
 use MyApp\Controller\Picture;
-
-session_start();
 
 class User extends GetDataRegister
 {
@@ -14,15 +12,12 @@ class User extends GetDataRegister
 	{
 		parent::__construct();
 		$this->picture = (new Picture())->getProfilePicture();
-
-		$_SESSION['login_mail'] = $this->getMailLogin();
 	}
 
-
 	public function validateData(){
-		if (!filter_var($this->getEmail(), FILTER_VALIDATE_EMAIL)) {
+		if (!filter_var(self::getEmail(), FILTER_VALIDATE_EMAIL)) {
 			echo "Email inválido";
-		}elseif($this->getPassword() != $this->getCPassword()){
+		}elseif(self::getPassword() != self::getCPassword()){
 			echo "As senhas não se conferem";
 		}else{
 			(new UserModel())->registerUser();
@@ -35,7 +30,7 @@ class User extends GetDataRegister
 
 	public function validateLogin(){
 		$row = $this->showUser();
-		if ($this->getMailLogin() == $row['email'] && $this->getPasswordLogin() == $row['password']) {
+		if (self::getMailLogin() == $row['email'] && self::getPasswordLogin() == $row['password']) {
 			Route::redirectPage("conteudo");
 		}else{
 			echo "Conta não existe ou dados incorretos";
@@ -43,7 +38,11 @@ class User extends GetDataRegister
 	}
 
 	public function userProfile(){
-		var_dump((new UserModel())->profileSetImg($this->picture, $_SESSION['login_mail']));
+		$usermodel = new UserModel();
+		$usermodel->profileMovePicture($this->picture);
+		$usermodel->updateImage($this->picture, $usermodel->currentEmailSession());
+		$profile = $usermodel->profileCapture($usermodel->currentEmailSession());
+		return $profile['profileimg'];
 	}
 
 }

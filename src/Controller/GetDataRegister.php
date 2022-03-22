@@ -1,53 +1,53 @@
-<?php 
+<?php
 namespace MyApp\Controller;
 
 class GetDataRegister extends GetDataLogin
 {
-	private $username;
-	private $email;
-	private $password;
-	private $cpassword;
+	private static $username;
+	private static $email;
+	private static $password;
+	private static $cpassword;
 
 	function __construct()
 	{
 		parent::__construct();
-		
-		$this->setUsername($_POST['username']);
-		$this->setEmail($_POST['email']);
-		$this->setPassword($_POST['pwd']); 
-		$this->setCPassword($_POST['cpwd']); 
+
+		self::setUsername($_REQUEST['username']);
+		self::setEmail($_REQUEST['email']);
+		self::setPassword($_REQUEST['pwd']);
+		self::setCPassword($_REQUEST['cpwd']);
 	}
 
-	public function getUsername(){
-		return $this->username;
+	public static function getUsername(){
+		return self::$username;
 	}
 
 	public function setUsername($user){
-		$this->username = $user;
+		self::$username = $user;
 	}
 
 	public function getEmail(){
-		return $this->email;
+		return self::$email;
 	}
 
 	public function setEmail($email){
-		$this->email = $email;
+		self::$email = $email;
 	}
 
 	public function getPassword(){
-		return $this->password;
+		return self::$password;
 	}
 
 	public function setPassword($pwd){
-		$this->password = $pwd;
+		self::$password = $pwd;
 	}
 
 	public function getCPassword(){
-		return $this->cpassword;
+		return self::$cpassword;
 	}
 
 	public function setCPassword($cpwd){
-		$this->cpassword = $cpwd;
+		self::$cpassword = $cpwd;
 	}
 
 }

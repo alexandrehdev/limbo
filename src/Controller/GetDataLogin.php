@@ -1,33 +1,31 @@
-<?php 
+<?php
 namespace MyApp\Controller;
-session_start();
 
 class GetDataLogin
 {
-	private $email;
-
-	private $password;
+	private static $email;
+	private static $password;
 
 	function __construct()
 	{
-		$this->setMailLogin($_POST['log-mail']);
-		$this->setPasswordLogin($_POST['log-pass']);
+		self::setMailLogin($_POST['log-mail']);
+		self::setPasswordLogin($_POST['log-pass']);
 	}
 
-	public function getMailLogin(){
-		return $this->email;
+	public static function getMailLogin(){
+		return self::$email;
 	}
 
-	public function setMailLogin($mail){
-		$this->email = $mail;
+	public static function setMailLogin($mail){
+		self::$email = $mail;
 	}
 
-	public function getPasswordLogin(){
-		return $this->password;
+	public static function getPasswordLogin(){
+		return self::$password;
 	}
 
-	public function setPasswordLogin($pwd){
-		$this->password = $pwd;
+	public static function setPasswordLogin($pwd){
+		self::$password = $pwd;
 	}
 }
 ?>

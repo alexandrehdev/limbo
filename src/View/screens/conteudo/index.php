@@ -1,4 +1,4 @@
-<?php 
+<?php
 require_once("../../../../vendor/autoload.php");
 use MyApp\Controller\GeekContent;
 $geek = new GeekContent();
@@ -46,7 +46,7 @@ session_start();
 				<li class="item-nav">
 					<strong class="user-account-text" style="text-transform:uppercase;">
 						<i class="user icon"></i>
-						<?php 
+						<?php
 							echo strtoupper($_SESSION['user']['username']);
 						?>
 					</strong>
@@ -452,7 +452,7 @@ session_start();
 			</div>
 		</div>
 	</section>
-	
+
 	<footer class="m-footer" role="footer">
 		<div class="container">
 			<div id="area-logo">
