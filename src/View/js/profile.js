@@ -375,3 +375,32 @@ buttonApplyStatus.addEventListener("click", () => {
     
     textStatusSave.innerText = textStatusCurrent;
 });
+
+// Imagem de usuário - Adicionar imagem padrão
+
+function getFullDirectorySrcImage({
+    image,
+    directoryName
+}) {
+    const directoryString = `${directoryName}/`;
+    const indexOfDirectoryInSrcImage = image.src.indexOf(directoryString);
+    
+    const directorySrc = image.src.substring(0, indexOfDirectoryInSrcImage + directoryString.length);
+
+    return directorySrc;
+}
+
+window.addEventListener("load", () => {
+    const [ image ] = profileImage.children;
+    
+    const srcUserProfileEmpty = getFullDirectorySrcImage({
+        image,
+        directoryName: "userprofile"
+    });
+
+    if(srcUserProfileEmpty === image.src) {
+        console.log("Diretório está vázio");
+
+        image.src += "systemProfileImageDefault/no-image-profile.png";
+    }
+});
