@@ -8,7 +8,7 @@ $response = $api->getResult();
 session_start();
 ?>
 <!DOCTYPE html>
-<html>
+<html lang="pt">
 
 <head>
 	<meta charset="utf-8">

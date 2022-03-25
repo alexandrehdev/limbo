@@ -11,7 +11,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 }
 ?>
 <!DOCTYPE html>
-<html>
+<html lang="pt">
 
 <head>
 	<meta charset="utf-8">
@@ -81,10 +81,11 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 	</header>
 
 	<!-- área de informações do usuário -->
+	<!---->
 	<main>
 		<div class="profile">
 			<div class="user-content">
-				<form action="<?php $_SERVER['PHP_SELF'] ?>" method="POST" enctype="multipart/form-data">
+				<form id="form-change-image-profile" action="<?php $_SERVER['PHP_SELF'] ?>" method="POST" enctype="multipart/form-data">
 					<div class="profile-image">
 						<img id="image" src="../../img/userprofile/<?php echo $_SESSION['profile_usr']?>" height="150px">
 						<label for="file" id="button-change-image" class="change-image">
@@ -92,7 +93,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 						</label>
 						<input id="file" name="userprofile" type="file"/>
 					</div>
-					<button id="submit-image-user"type="submit" name="profile-btn" disabled>Enviar Perfil</button>
+					<button id="submit-image-user"type="submit" name="profile-btn" disabled>Enviar Image para o Perfil</button>
 				</form>
 				<div class="nickname">
 					<span><?php echo strtoupper($_SESSION['username']);?></span>

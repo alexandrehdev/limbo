@@ -7,6 +7,9 @@
     border-radius: 100px;
     cursor: pointer;
     transition: filter 500ms;
+    background-color: var(--DETALHE-ELEMENTOS);
+    font-size: 1.6rem;
+    font-weight: bold;
 }
 
 .btn-account:hover {
@@ -454,14 +457,14 @@
     display: flex;
     justify-content: space-around;
 
-    padding: 100px 0;
+    padding: 200px 0;
 }
 
 .profile-image {
     position: relative;
 
-    width: 150px;
-    height: 150px;
+    /* width: 150px;
+    height: 150px; */
 }
 
 .profile-image img{
@@ -485,6 +488,10 @@
     padding: 8px 24px;
 
     cursor: pointer;
+    
+    opacity: 0;
+
+    transition: opacity 500ms;
 }
 
 .info-account {
@@ -493,6 +500,36 @@
 
 #file {
     display: none;
+}
+
+#submit-image-user {
+    padding: 8px;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    background-color: var(--DETALHE-ELEMENTOS);
+
+    color: var(--color-principal-black);
+
+    transition: opacity 500ms;
+
+    margin-top: 24px;
+
+    cursor: pointer;
+}
+
+#submit-image-user:disabled {
+    /* opacity: 0.2; */
+
+    display: none;
+}
+
+#form-change-image-profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .nickname {

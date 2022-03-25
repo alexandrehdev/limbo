@@ -12,7 +12,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 }
 ?>
 <!DOCTYPE html>
-<html>
+<html lang="pt">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -30,10 +30,8 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 </head>
 <body>
 	<header class="main-header">
-		<a href="../intro/index.php">
-			<h1 class="title-name">
-				<img src="../../../../favicon.png" style="margin-top: 15px; height: 60px;">
-			</h1>
+		<a id="logo-link" href="../intro/index.php">
+			<img src="../../../../favicon.png" style="">
 		</a>
 	</header>
 
@@ -50,8 +48,8 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 					<i class="fas fa-envelope margin-right fa-2x"></i>
 					<input
 						id="input-email-register"
-						type="text"
-						placeholder="Email"
+						type="email" 
+						placeholder="Email" 
 						name="email"
 					>
 				</div>
@@ -76,6 +74,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 				<span id="message-capslock-warning" class="message-capslock color-warning">CAPSLOCK ATIVADO</span>
 				<button name="btn-register"title="Registrar">
 					<i class="fas fa-pencil-alt fa-2x"></i>
+					Cadastrar
 				</button>
 			</form>
 		</section>
@@ -98,6 +97,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 				<span id="message-capslock-danger" class="message-capslock color-danger">CAPSLOCK ATIVADO</span>
 				<button name="btn-login" type="submit"title="Logar">
 					<i class="fab fa-telegram-plane fa-2x"></i>
+					Logar
 				</button>
 			</form>
 		</section>
