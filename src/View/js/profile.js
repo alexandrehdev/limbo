@@ -7,12 +7,36 @@ const buttonChangeImage = window.document.querySelector("#button-change-image");
 const fileInput = window.document.querySelector("#file");
 const buttonSubmitImageUser = window.document.querySelector("#submit-image-user");
 
+function applyFadeElement({ element, type }) {
+    if(!element) {
+        throw new Error("Elemento inexistente ou indefinido");
+    }
+
+    switch(type) {
+        default:
+        case "out":
+            element.style.display = "block";
+            element.style.opacity = 1;
+
+            break;
+        case "in":
+            element.style.opacity = 0;
+            let timer;
+            timer = setTimeout(() => {
+            element.style.display = "none";
+            }, 520);
+            clearTimeout(timer);
+
+            break;
+    }
+}
+
 /**
  * Os dois eventos abaixo fazem o efeito de blur
  * na imagem e também faz com que apareça o 
  * botão de selecionar imagem
  */
-profileImage.addEventListener("mousemove", ({ target }) => {
+profileImage.addEventListener("mousemove", () => {
     /**
      * Extrai o primeiro dado do array de 
      * elementos filhos da área da imagem de 
@@ -28,7 +52,12 @@ profileImage.addEventListener("mousemove", ({ target }) => {
      * imagem
      */
     image.style.filter = "blur(3px)";
-    buttonChangeImage.style.display = "block";
+
+
+    applyFadeElement({
+        element: buttonChangeImage,
+        type: "out"
+    });
 }, true);
 
 
@@ -40,7 +69,11 @@ profileImage.addEventListener("mouseout", () => {
     const [ image ] = profileImage.children;
     
     image.style.filter = "blur(0px)";
-    buttonChangeImage.style.display = "none";
+
+    applyFadeElement({
+        element: buttonChangeImage,
+        type: "in"
+    });
 }, true);
 
 /**
@@ -107,7 +140,7 @@ function setAccordion({
      */
     let isActiveAccordion = true;
 
-    buttonInfoAccount.addEventListener("click",eventButton => {
+    buttonInfoAccount.addEventListener("click",() => {
 
         if(isActiveAccordion) {
             contentInfoAccount.style.height = `${contentHeight}px`;
