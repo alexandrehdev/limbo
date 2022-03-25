@@ -7,9 +7,7 @@ session_start();
 
 if ($_SERVER['REQUEST_METHOD'] == "POST") {
 	(new Picture());
-	$profile = (new UserController())->userProfile();
-
-
+	(new UserController())->userProfile();
 }
 ?>
 <!DOCTYPE html>
@@ -57,7 +55,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 					<strong class="user-account-text" style="text-transform:uppercase;">
 						<i class="user icon"></i>
 						<?php
-						echo strtoupper($_SESSION['user']['username']);
+						echo strtoupper($_SESSION['username']);
 						?>
 					</strong>
 					<div class="line dropdown">
@@ -88,7 +86,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 			<div class="user-content">
 				<form action="<?php $_SERVER['PHP_SELF'] ?>" method="POST" enctype="multipart/form-data">
 					<div class="profile-image">
-						<img id="image" src="../../img/userprofile/<?php echo $profile ?>" height="150px">
+						<img id="image" src="../../img/userprofile/<?php echo $_SESSION['profile_usr']?>" height="150px">
 						<label for="file" id="button-change-image" class="change-image">
 							Alterar Image
 						</label>
@@ -97,7 +95,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 					<button id="submit-image-user"type="submit" name="profile-btn" disabled>Enviar Perfil</button>
 				</form>
 				<div class="nickname">
-					<span><?php echo strtoupper($_SESSION['user']['username']);?></span>
+					<span><?php echo strtoupper($_SESSION['username']);?></span>
 				</div>
 				<div id="status-online" class="status status-save">
 					<span>Online</span>

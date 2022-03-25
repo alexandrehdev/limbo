@@ -14,11 +14,11 @@ session_start();
 	<meta charset="utf-8">
 	<title></title>
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/icon.min.css">
-	<!-- 
+	<!--
 		<link
     		rel="stylesheet"
     		href="https://unpkg.com/swiper/swiper-bundle.min.css"
-    	/> 
+    	/>
 	-->
 	<link rel="stylesheet" type="text/css" href="../../css/footer.css" />
 	<link rel="stylesheet" type="text/css" href="../../css/reset.css">
@@ -51,7 +51,7 @@ session_start();
 					<strong class="user-account-text" style="text-transform:uppercase;">
 						<i class="user icon"></i>
 						<?php
-						echo strtoupper($_SESSION['user']['username']);
+						echo strtoupper($_SESSION['username']);
 						?>
 					</strong>
 					<div class="line dropdown">
@@ -75,7 +75,7 @@ session_start();
 		</nav>
 	</header>
 	<main>
-		
+
 	</main>
 	<footer class="m-footer" role="footer">
 		<div class="container">
