@@ -1,4 +1,3 @@
 vendor/
 src/Controller/Connection.php
-src/View/img/userprofile/
-src/View/img/userprofile/systemProfileImageDefault/
+src/View/img/userprofile/selectedImages/

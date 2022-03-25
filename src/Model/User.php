@@ -55,7 +55,7 @@ class User extends UserController
 	}
 
 	public function profileMovePicture($file){
-		$target = "../../img/userprofile/{$file['name']}";
+		$target = "../../img/userprofile/selectedImages/{$file['name']}";
 		move_uploaded_file($file['tmp_name'], $target);
 	}
 
