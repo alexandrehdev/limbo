@@ -2,6 +2,14 @@
 	justify-content: left;
 }
 
+#logo-link {
+	margin: 16px;
+}
+
+#logo-link > img {
+	height: 60px;
+}
+
 .main-register-user {
 	width: 100%;
 	height: 100vh;
@@ -67,11 +75,20 @@
 .form-register-login > button {
 	width: 100%;
 
-	background-color: var(--red);
+	background-color: var(--DETALHE-ELEMENTOS);
 
 	transition: filter 500ms;
 
 	cursor: pointer;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	color: var(--black);
+
+	font-size: 1.4rem;
+	font-weight: bold;
 }
 
 .form-register-login > button:hover {
@@ -81,6 +98,13 @@
 i.fas, i.fab {
 	color: var(--white);
 
+	margin-right: 16px;
+}
+
+button[name="btn-register"] > i.fas,
+button[name="btn-login"] > i.fab
+{
+	color: var(--black);
 }
 
 i.margin-right

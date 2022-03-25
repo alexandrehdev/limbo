@@ -13,7 +13,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 }
 ?>
 <!DOCTYPE html>
-<html>
+<html lang="pt">
 
 <head>
 	<meta charset="utf-8">
@@ -83,6 +83,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 	</header>
 
 	<!-- área de informações do usuário -->
+	<!---->
 	<main>
 		<div class="profile">
 			<div class="user-content">
