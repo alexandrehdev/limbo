@@ -1,4 +1,4 @@
-<?php 
+<?php
 require_once("../../../../vendor/autoload.php");
 
 use MyApp\Controller\User;
@@ -7,19 +7,9 @@ use MyApp\Controller\GetDataLogin;
 
 session_start();
 
-$user = new User();
-
-if (isset($_POST['btn-register'])) {
-	(new GetDataRegister());
-	$user->validateData();
-	
-}elseif(isset($_POST['btn-login'])){
-	(new GetDataLogin());
-	$user->validateLogin();
-	$_SESSION['user'] = $user->showUser();
-	
+if ($_SERVER['REQUEST_METHOD'] == "POST") {
+	(new User())->validateData();
 }
-
 ?>
 <!DOCTYPE html>
 <html lang="pt">
@@ -51,13 +41,8 @@ if (isset($_POST['btn-register'])) {
 			<form class="form-register-login" action="<?php $_SERVER['PHP_SELF'] ?>" method="POST">
 				<div class="area-inputs">
 					<i class="fas fa-user margin-right fa-2x"></i>
-					<input
-						id="input-username-register"
-						type="text" 
-						placeholder="Usuario"
-						name="username" 
-						autocomplete="off"
-					>
+					<input id="input-username-register" type="text" placeholder="Usuario" name="username"
+						autocomplete="off">
 				</div>
 				<div class="area-inputs">
 					<i class="fas fa-envelope margin-right fa-2x"></i>
@@ -72,8 +57,8 @@ if (isset($_POST['btn-register'])) {
 					<i class="fas fa-key margin-right fa-2x"></i>
 					<input
 						id="input-password-register"
-						type="password" 
-						placeholder="Senha" 
+						type="password"
+						placeholder="Senha"
 						name="pwd"
 					>
 				</div>
@@ -81,8 +66,8 @@ if (isset($_POST['btn-register'])) {
 					<i class="fas fa-key margin-right fa-2x"></i>
 					<input
 						id="input-confirm-password-register"
-						type="password" 
-						placeholder="Confirme senha" 
+						type="password"
+						placeholder="Confirme senha"
 						name="cpwd"
 					>
 				</div>
@@ -93,7 +78,7 @@ if (isset($_POST['btn-register'])) {
 				</button>
 			</form>
 		</section>
-		
+
 		<section id="login-account" class="section-register">
 			<h1 class="title-register" id="login">Login</h1>
 			<div class="msg-erro" id="msgerro">
@@ -103,17 +88,11 @@ if (isset($_POST['btn-register'])) {
 
 				<div class="area-inputs">
 					<i class="fas fa-envelope margin-right fa-2x"></i>
-					<input id="input-email-login" type="email" placeholder="Email" name="log-mail">
+					<input id="input-email-login" required type="email" placeholder="Email" name="log-mail">
 				</div>
-				
 				<div class="area-inputs">
 					<i class="fas fa-key margin-right fa-2x"></i>
-					<input 
-						id="input-password-login"
-						type="password" 
-						placeholder="Senha" 
-						name="log-pass"
-					>
+					<input id="input-password-login" required type="password"placeholder="Senha"name="log-pass">
 				</div>
 				<span id="message-capslock-danger" class="message-capslock color-danger">CAPSLOCK ATIVADO</span>
 				<button name="btn-login" type="submit"title="Logar">

@@ -8,8 +8,8 @@ class GetDataLogin
 
 	function __construct()
 	{
-		self::setMailLogin($_POST['log-mail']);
-		self::setPasswordLogin($_POST['log-pass']);
+		self::setMailLogin($_REQUEST['log-mail']);
+		self::setPasswordLogin($_REQUEST['log-pass']);
 	}
 
 	public static function getMailLogin(){

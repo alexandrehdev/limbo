@@ -30,20 +30,6 @@
 		<div class="text middle" data-text="LIMBO">
 			LIMBO
 		</div>
-		<div class="mini-card-contents">
-			<div class="mini-card">
-				asd
-			</div>
-			<div class="mini-card">
-				asd
-			</div>
-			<div class="mini-card">
-				asd
-			</div>
-			<div class="mini-card">
-				asd
-			</div>
-		</div>
 		<div class="text-description">
 			<span>Gaming Club</span>
 		</div>

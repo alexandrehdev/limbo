@@ -1,15 +1,15 @@
-<?php 
+<?php
 namespace MyApp\Controller;
 
 class Dump
 {
 	private $insertQuery;
-	
+
 	function __construct(){
 		$this->setInsertQuery(
-			"INSERT INTO limbo.userdata 
-				(username,email,password,cpassword) 
-					VALUES 
+			"INSERT INTO limbo.userdata
+				(username,email,password,cpassword)
+					VALUES
 				(:username,:email,:password,:cpassword)
 			");
 	}
@@ -50,7 +50,7 @@ class Dump
 		return $sql;
 	}
 
-	
+
 }
 
 ?>

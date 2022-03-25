@@ -1,4 +1,4 @@
-<?php 
+<?php
 session_start();
 ?>
 
@@ -42,8 +42,8 @@ session_start();
 				<li class="item-nav">
 					<strong class="user-account-text" style="text-transform:uppercase;">
 						<i class="user icon"></i>
-						<?php 
-							echo strtoupper($_SESSION['user']['username']);
+						<?php
+							echo strtoupper($_SESSION['username']);
 						?>
 					</strong>
 					<div class="line dropdown">
@@ -68,9 +68,9 @@ session_start();
 	</header>
 
 	<main id="main" role="main">
-		
+
     </main>
-	
+
 	<footer class="m-footer" role="footer">
 		<div class="container">
 			<div id="area-logo">
