@@ -74,7 +74,129 @@ session_start();
 			</ul>
 		</nav>
 	</header>
+	<div class="background-header">
+		<h1>Receba jogos gratis toda semana</h1>
+	</div>
 	<main>
+	<section class='content-games'>
+		<?php
+		for($i=10;$i <= 12; $i++):
+			echo "
+
+				<div class='card'>
+					<div class='card-img-header'>
+						<img src=". $response[$i]['thumbnail'] .">
+					</div>
+					<div class='box-text'>
+					<div class='title-game'>
+						". $response[$i]['title'] ."
+					</div>
+					<div class='game-tag'>
+					". $response[$i]['platform'] ." "."
+					". $response[$i]['genre'] ."
+					</div>
+					</div>
+				</div>
+		";
+		endfor;
+		 ?>
+	 </section>
+
+	 <section class='content-games'>
+	 <?php
+	 for($i=13;$i <= 15; $i++):
+		 echo "
+
+		 <div class='card'>
+			 <div class='card-img-header'>
+				 <img src=". $response[$i]['thumbnail'] .">
+			 </div>
+			 <div class='box-text'>
+			 <div class='title-game'>
+				 ". $response[$i]['title'] ."
+			 </div>
+			 <div class='game-tag'>
+			 ". $response[$i]['platform'] ." "."
+			 ". $response[$i]['genre'] ."
+			 </div>
+			 </div>
+		 </div>
+	 ";
+	 endfor;
+		?>
+	</section>
+
+	<section class='content-games'>
+	<?php
+	for($i=16;$i <= 18; $i++):
+		echo "
+
+		<div class='card'>
+			<div class='card-img-header'>
+				<img src=". $response[$i]['thumbnail'] .">
+			</div>
+			<div class='box-text'>
+			<div class='title-game'>
+				". $response[$i]['title'] ."
+			</div>
+			<div class='game-tag'>
+			". $response[$i]['platform'] ." "."
+			". $response[$i]['genre'] ."
+			</div>
+			</div>
+		</div>
+	";
+	endfor;
+	 ?>
+ </section>
+
+ <section class='content-games'>
+ 	<?php
+ 		for($i=19;$i <= 21; $i++):
+ 		echo "
+
+		<div class='card'>
+			<div class='card-img-header'>
+				<img src=". $response[$i]['thumbnail'] .">
+			</div>
+			<div class='box-text'>
+			<div class='title-game'>
+				". $response[$i]['title'] ."
+			</div>
+			<div class='game-tag'>
+			". $response[$i]['platform'] ." "."
+			". $response[$i]['genre'] ."
+			</div>
+			</div>
+		</div>
+ ";
+ endfor;
+  ?>
+ </section>
+
+ <section class='content-games'>
+ <?php
+ for($i=27;$i <= 29; $i++):
+	 echo "
+
+	 <div class='card'>
+		 <div class='card-img-header'>
+			 <img src=". $response[$i]['thumbnail'] .">
+		 </div>
+		 <div class='box-text'>
+		 <div class='title-game'>
+			 ". $response[$i]['title'] ."
+		 </div>
+		 <div class='game-tag'>
+		 ". $response[$i]['platform'] ." "."
+		 ". $response[$i]['genre'] ."
+		 </div>
+		 </div>
+	 </div>
+ ";
+ endfor;
+	?>
+</section>
 
 	</main>
 	<footer class="m-footer" role="footer">
