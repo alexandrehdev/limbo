@@ -31,7 +31,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 <body>
 	<header class="main-header">
 		<a id="logo-link" href="../intro/index.php">
-			<img src="../../../../favicon.png" style="">
+			<img src="../../../../favicon.png">
 		</a>
 	</header>
 
