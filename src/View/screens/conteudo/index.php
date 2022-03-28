@@ -46,14 +46,11 @@ session_start();
 					<a href="../sobre/index.php">Info</a>
 					<div class="line"></div>
 				</li>
-				
+
 			</ul>
 		</nav>
 
-		<div 
-			class="user-account-item"
-			data-type-element="dropdown"
-		>
+		<div class="user-account-item" data-type-element="dropdown">
 			<strong class="user-account-text" style="text-transform:uppercase;">
 				<!-- <i class="user icon"></i> -->
 				<!-- pequeno elemento de imagem que -->
