@@ -67,22 +67,19 @@
   border-radius: 0 0 10px 10px;
 }
 
-.content-games .title-game{
-  font-size: 25px;
-  font-weight: 700;
-}
-
 
 .s-cards{
     padding: 10rem 0rem;
-    background-color: #666262;
+    background-color: var(--black-most-light);
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .s-cards .container{
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    margin-left: 100px;
+    /* flex-direction: column; */
 }
 
 .s-cards .container .main-cards{
@@ -154,7 +151,7 @@
 
 /* CARDS DESTAQUES DO DIA EM MOVIMENTO */
 .s-cards-destaques{
-    margin: 0;
+    margin: 60px 0px 0px 0px;
     padding: 0;
 }
 .s-cards-destaques .container{

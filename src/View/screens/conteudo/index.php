@@ -27,7 +27,7 @@ session_start();
 <body>
 	<header class="main-header">
 		<h1 class="title-name">
-			<img src="../../../../favicon.png" height="65" style="margin-top: 15px; height: 60px;">
+			<img src="https://img.icons8.com/office/344/superman.png" height="65" style="margin-top: 15px; height: 60px;">
 		</h1>
 		<nav class="navigation">
 			<ul class="list-nav">
@@ -45,7 +45,10 @@ session_start();
 				</li>
 				<li class="item-nav">
 					<strong class="user-account-text" style="text-transform:uppercase;">
-						<i class="user icon"></i>
+						<!-- <i class="user icon"></i> -->
+						<!-- pequeno elemento de imagem que -->
+						<!-- carrega a foto do perfil de usuario -->
+
 						<?php
 							echo strtoupper($_SESSION['username']);
 						?>
@@ -131,13 +134,13 @@ session_start();
 					<div class="card">
 						<div class="card-img">
 							<!-- medida imagem 304 x 170.63 -->
-							<img src="<?php echo $data[1]["img"] ?>	">
+							<img src="<?= $data[1]["img"] ?>	">
 						</div>
 						<div class="card-title">
-							<?php echo $data[1]["name"];?>
+							<?= $data[1]["name"];?>
 						</div>
 						<div class="card-desc">
-							<?php echo $data[1]["desc"]?>
+							<?= $data[1]["desc"];?>
 						</div>
 					</div>
 				</div>
@@ -145,13 +148,13 @@ session_start();
 				<div class="swiper-slide org-box">
 					<div class="card">
 						<div class="card-img">
-							<img src="<?php echo $data[2]["img"] ?>">
+							<img src="<?= $data[2]["img"] ?>">
 						</div>
 						<div class="card-title">
-							<?php echo $data[2]["name"];?>
+							<?= $data[2]["name"];?>
 						</div>
 						<div class="card-desc">
-							<?php echo $data[2]["desc"]?>
+							<?= $data[2]["desc"]?>
 						</div>
 					</div>
 				</div>
@@ -159,13 +162,13 @@ session_start();
 				<div class="swiper-slide org-box">
 					<div class="card">
 						<div class="card-img">
-							<img src="<?php echo $data[3]["img"] ?>">
+							<img src="<?= $data[3]["img"] ?>">
 						</div>
 						<div class="card-title">
-							<?php echo $data[3]["name"];?>
+							<?= $data[3]["name"];?>
 						</div>
 						<div class="card-desc">
-							<?php echo $data[3]["desc"]?>
+							<?= $data[3]["desc"]?>
 						</div>
 					</div>
 				</div>
@@ -173,13 +176,13 @@ session_start();
 				<div class="swiper-slide org-box">
 					<div class="card">
 						<div class="card-img">
-							<img src="<?php echo $data[4]["img"] ?>">
+							<img src="<?=$data[4]["img"] ?>">
 						</div>
 						<div class="card-title">
-							<?php echo $data[4]["name"];?>
+							<?=$data[4]["name"];?>
 						</div>
 						<div class="card-desc">
-							<?php echo $data[4]["desc"]?>
+							<?=$data[4]["desc"]?>
 						</div>
 					</div>
 				</div>
@@ -187,13 +190,13 @@ session_start();
 				<div class="swiper-slide org-box">
 					<div class="card">
 						<div class="card-img">
-							<img src="<?php echo $data[5]["img"] ?>">
+							<img src="<?=$data[5]["img"]?>">
 						</div>
 						<div class="card-title">
-							<?php echo $data[5]["name"];?>
+							<?=$data[5]["name"];?>
 						</div>
 						<div class="card-desc">
-							<?php echo $data[5]["desc"]?>
+							<?=$data[5]["desc"];?>
 						</div>
 					</div>
 				</div>
@@ -201,13 +204,13 @@ session_start();
 				<div class="swiper-slide org-box">
 					<div class="card">
 						<div class="card-img">
-							<img src="<?php echo $data[6]["img"] ?>">
+							<img src="<?=$data[6]["img"]?>">
 						</div>
 						<div class="card-title">
-							<?php echo $data[6]["name"];?>
+							<?=$data[6]["name"];?>
 						</div>
 						<div class="card-desc">
-							<?php echo $data[6]["desc"]?>
+							<?=$data[6]["desc"];?>
 						</div>
 					</div>
 				</div>
@@ -215,13 +218,13 @@ session_start();
 				<div class="swiper-slide org-box">
 					<div class="card">
 						<div class="card-img">
-							<img src="<?php echo $data[7]["img"] ?>">
+							<img src="<?=$data[7]["img"] ?>">
 						</div>
 						<div class="card-title">
-							<?php echo $data[7]["name"];?>
+							<?=$data[7]["name"];?>
 						</div>
 						<div class="card-desc">
-							<?php echo $data[7]["desc"]?>
+							<?=$data[7]["desc"]?>
 						</div>
 					</div>
 				</div>
@@ -229,13 +232,13 @@ session_start();
 				<div class="swiper-slide org-box">
 					<div class="card">
 						<div class="card-img">
-							<img src="<?php echo $data[8]["img"] ?>">
+							<img src="<?=$data[8]["img"] ?>">
 						</div>
 						<div class="card-title">
-							<?php echo $data[8]["name"];?>
+							<?=$data[8]["name"];?>
 						</div>
 						<div class="card-desc">
-							<?php echo $data[8]["desc"]?>
+							<?=$data[8]["desc"]?>
 						</div>
 					</div>
 				</div>
@@ -243,13 +246,13 @@ session_start();
 				<div class="swiper-slide org-box">
 					<div class="card">
 						<div class="card-img">
-							<img src="<?php echo $data[9]["img"] ?>">
+							<img src="<?=$data[9]["img"] ?>">
 						</div>
 						<div class="card-title">
-							<?php echo $data[9]["name"];?>
+							<?=$data[9]["name"];?>
 						</div>
 						<div class="card-desc">
-							<?php echo $data[9]["desc"]?>
+							<?=$data[9]["desc"]?>
 						</div>
 					</div>
 				</div>
@@ -269,13 +272,13 @@ session_start();
 					<div class="card">
 						<div class="card-img">
 							<!-- medida imagem 304 x 170.63 -->
-							<img src="<?php echo $data[1]["img"] ?>	">
+							<img src="<?=$data[1]["img"] ?>	">
 						</div>
 						<div class="card-title">
-							<?php echo $data[1]["name"];?>
+							<?=$data[1]["name"];?>
 						</div>
 						<div class="card-desc">
-							<?php echo $data[1]["desc"]?>
+							<?=$data[1]["desc"]?>
 						</div>
 					</div>
 				</div>
@@ -283,13 +286,13 @@ session_start();
 				<div class="swiper-slide org-box">
 					<div class="card">
 						<div class="card-img">
-							<img src="<?php echo $data[2]["img"] ?>">
+							<img src="<?=$data[2]["img"] ?>">
 						</div>
 						<div class="card-title">
-							<?php echo $data[2]["name"];?>
+							<?=$data[2]["name"];?>
 						</div>
 						<div class="card-desc">
-							<?php echo $data[2]["desc"]?>
+							<?=$data[2]["desc"]?>
 						</div>
 					</div>
 				</div>
@@ -297,13 +300,13 @@ session_start();
 				<div class="swiper-slide org-box">
 					<div class="card">
 						<div class="card-img">
-							<img src="<?php echo $data[3]["img"] ?>">
+							<img src="<?=$data[3]["img"] ?>">
 						</div>
 						<div class="card-title">
-							<?php echo $data[3]["name"];?>
+							<?=$data[3]["name"];?>
 						</div>
 						<div class="card-desc">
-							<?php echo $data[3]["desc"]?>
+							<?=$data[3]["desc"]?>
 						</div>
 					</div>
 				</div>
@@ -311,13 +314,13 @@ session_start();
 				<div class="swiper-slide org-box">
 					<div class="card">
 						<div class="card-img">
-							<img src="<?php echo $data[4]["img"] ?>">
+							<img src="<?=$data[4]["img"] ?>">
 						</div>
 						<div class="card-title">
-							<?php echo $data[4]["name"];?>
+							<?=$data[4]["name"];?>
 						</div>
 						<div class="card-desc">
-							<?php echo $data[4]["desc"]?>
+							<?=$data[4]["desc"]?>
 						</div>
 					</div>
 				</div>
@@ -325,13 +328,13 @@ session_start();
 				<div class="swiper-slide org-box">
 					<div class="card">
 						<div class="card-img">
-							<img src="<?php echo $data[5]["img"] ?>">
+							<img src="<?=$data[5]["img"] ?>">
 						</div>
 						<div class="card-title">
-							<?php echo $data[5]["name"];?>
+							<?=$data[5]["name"];?>
 						</div>
 						<div class="card-desc">
-							<?php echo $data[5]["desc"]?>
+							<?=$data[5]["desc"]?>
 						</div>
 					</div>
 				</div>
@@ -339,13 +342,13 @@ session_start();
 				<div class="swiper-slide org-box">
 					<div class="card">
 						<div class="card-img">
-							<img src="<?php echo $data[6]["img"] ?>">
+							<img src="<?=$data[6]["img"] ?>">
 						</div>
 						<div class="card-title">
-							<?php echo $data[6]["name"];?>
+							<?=$data[6]["name"];?>
 						</div>
 						<div class="card-desc">
-							<?php echo $data[6]["desc"]?>
+							<?=$data[6]["desc"]?>
 						</div>
 					</div>
 				</div>
@@ -353,13 +356,13 @@ session_start();
 				<div class="swiper-slide org-box">
 					<div class="card">
 						<div class="card-img">
-							<img src="<?php echo $data[7]["img"] ?>">
+							<img src="<?=$data[7]["img"] ?>">
 						</div>
 						<div class="card-title">
-							<?php echo $data[7]["name"];?>
+							<?=$data[7]["name"];?>
 						</div>
 						<div class="card-desc">
-							<?php echo $data[7]["desc"]?>
+							<?=$data[7]["desc"]?>
 						</div>
 					</div>
 				</div>
@@ -367,13 +370,13 @@ session_start();
 				<div class="swiper-slide org-box">
 					<div class="card">
 						<div class="card-img">
-							<img src="<?php echo $data[8]["img"] ?>">
+							<img src="<?=$data[8]["img"] ?>">
 						</div>
 						<div class="card-title">
-							<?php echo $data[8]["name"];?>
+							<?=$data[8]["name"];?>
 						</div>
 						<div class="card-desc">
-							<?php echo $data[8]["desc"]?>
+							<?=$data[8]["desc"]?>
 						</div>
 					</div>
 				</div>
@@ -381,13 +384,13 @@ session_start();
 				<div class="swiper-slide org-box">
 					<div class="card">
 						<div class="card-img">
-							<img src="<?php echo $data[9]["img"] ?>">
+							<img src="<?=$data[9]["img"] ?>">
 						</div>
 						<div class="card-title">
-							<?php echo $data[9]["name"];?>
+							<?=$data[9]["name"];?>
 						</div>
 						<div class="card-desc">
-							<?php echo $data[9]["desc"]?>
+							<?=$data[9]["desc"]?>
 						</div>
 					</div>
 				</div>
@@ -441,17 +444,143 @@ session_start();
 		</div>
 	</section>
 
-	<section class="noticias">
-		<div class="noticias-opacity"></div>
-		<div class="container">
-			<div class="noticias-text">
-				<h2>
-					Streamer termina The Witcher 3 usando apenas um botão do controle
-				</h2>
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores cumque non dicta quisquam ratione similique omnis a voluptates. Veritatis fuga dicta ducimus minus consectetur accusamus illum modi placeat officia velit!</p>
+	<div class="swiper horizontalBlock">
+		<h2>Recomendações</h2>
+		<div class="swiper-wrapper">
+
+			<div class="swiper-slide org-box">
+				<div class="card">
+					<div class="card-img">
+						<!-- medida imagem 304 x 170.63 -->
+						<img src="<?=$data[1]["img"] ?>	">
+					</div>
+					<div class="card-title">
+						<?=$data[1]["name"];?>
+					</div>
+					<div class="card-desc">
+						<?=$data[1]["desc"]?>
+					</div>
+				</div>
+			</div>
+
+			<div class="swiper-slide org-box">
+				<div class="card">
+					<div class="card-img">
+						<img src="<?=$data[2]["img"] ?>">
+					</div>
+					<div class="card-title">
+						<?=$data[2]["name"];?>
+					</div>
+					<div class="card-desc">
+						<?=$data[2]["desc"]?>
+					</div>
+				</div>
+			</div>
+
+			<div class="swiper-slide org-box">
+				<div class="card">
+					<div class="card-img">
+						<img src="<?=$data[3]["img"] ?>">
+					</div>
+					<div class="card-title">
+						<?=$data[3]["name"];?>
+					</div>
+					<div class="card-desc">
+						<?=$data[3]["desc"]?>
+					</div>
+				</div>
+			</div>
+
+			<div class="swiper-slide org-box">
+				<div class="card">
+					<div class="card-img">
+						<img src="<?=$data[4]["img"] ?>">
+					</div>
+					<div class="card-title">
+						<?=$data[4]["name"];?>
+					</div>
+					<div class="card-desc">
+						<?=$data[4]["desc"]?>
+					</div>
+				</div>
+			</div>
+
+			<div class="swiper-slide org-box">
+				<div class="card">
+					<div class="card-img">
+						<img src="<?=$data[5]["img"] ?>">
+					</div>
+					<div class="card-title">
+						<?=$data[5]["name"];?>
+					</div>
+					<div class="card-desc">
+						<?=$data[5]["desc"]?>
+					</div>
+				</div>
+			</div>
+
+			<div class="swiper-slide org-box">
+				<div class="card">
+					<div class="card-img">
+						<img src="<?=$data[6]["img"] ?>">
+					</div>
+					<div class="card-title">
+						<?=$data[6]["name"];?>
+					</div>
+					<div class="card-desc">
+						<?=$data[6]["desc"]?>
+					</div>
+				</div>
+			</div>
+
+			<div class="swiper-slide org-box">
+				<div class="card">
+					<div class="card-img">
+						<img src="<?=$data[7]["img"] ?>">
+					</div>
+					<div class="card-title">
+						<?=$data[7]["name"];?>
+					</div>
+					<div class="card-desc">
+						<?=$data[7]["desc"]?>
+					</div>
+				</div>
+			</div>
+
+			<div class="swiper-slide org-box">
+				<div class="card">
+					<div class="card-img">
+						<img src="<?=$data[8]["img"] ?>">
+					</div>
+					<div class="card-title">
+						<?=$data[8]["name"];?>
+					</div>
+					<div class="card-desc">
+						<?=$data[8]["desc"]?>
+					</div>
+				</div>
+			</div>
+
+			<div class="swiper-slide org-box">
+				<div class="card">
+					<div class="card-img">
+						<img src="<?=$data[9]["img"] ?>">
+					</div>
+					<div class="card-title">
+						<?=$data[9]["name"];?>
+					</div>
+					<div class="card-desc">
+						<?=$data[9]["desc"]?>
+					</div>
+				</div>
 			</div>
 		</div>
-	</section>
+		<div class="swiper-button-next"></div>
+		<div class="swiper-button-prev"></div>
+		<!-- <div class="swiper-pagination"></div> -->
+	</div>
+
+
 
 	<footer class="m-footer" role="footer">
 		<div class="container">

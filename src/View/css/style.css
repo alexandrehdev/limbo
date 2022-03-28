@@ -1,8 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap');
 
 html,body{
 	margin: 0;
 	padding: 0;
+	font-family: 'Lato', sans-serif;
 }
 
 .info-text p{
@@ -10,10 +11,10 @@ html,body{
 }
 
 .main-header{
-	background: transparent;
-	/* background: #483D8B; */
-	justify-content: space-between;
-	/*height: 70px;*/
+
+	background: var(--color-black);
+	/* justify-content: space-between; */
+	height: 69px;
 	width: 100%;
 	z-index: 999;
 	position: fixed;
@@ -35,16 +36,9 @@ html,body{
 }
 
 .main-header .title-name img{
-	height: 120px;
+	/* height: 110px; */
 	margin: 5px;
 }
-
-.navigation{
-	display: flex;
-	justify-content: right;
-	color: white;
-}
-
 .navigation a,
 .navigation strong.user-account-text
 {
@@ -55,22 +49,28 @@ html,body{
 	font-size: 13px;
 }
 
-ul.list-nav {
+ ul.list-nav { /*elemento pai */
 	display: flex;
-	justify-content: center;
-	align-items: center;
+	justify-content: left;
+	align-items: left;
+	text-align: left;
 }
 
-li.item-nav {
+li.item-nav { /*elemento filho */
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-
-	margin-left: 45px;
-
+	justify-content: right;
+	align-items: right;
 	position: relative;
 }
+li.item-nav a{
+	font-size: 16px;
+
+}
+li.item-nav:last-child{
+	float: right;
+}
+
 
 li.item-nav:first-of-type {
 	margin-left: 0;
@@ -155,26 +155,6 @@ div.line,
 	display: block;
 }
 /*elemento principal left side tela API*/
-
-/* .freegames-table{
-	display: grid;
-	grid-template-columns: auto auto auto auto;
-	grid-gap: 17rem;
-	justify-content: left;
-	margin: 10rem;
-}
-
-.games-recommend{
-	display: grid;
-	justify-content: right;
-	position: relative;
-	top: -60rem;
-}
-
-.games-recommend div{
-	padding: 2rem;
-} */
-
 /*style conteudo restante*/
 
 .content{
@@ -250,10 +230,10 @@ div#home {
 }
 
 ::-webkit-scrollbar-thumb {
-	background: grey;
+	background: var(--white);
 	border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-	background: pink;
+	background: grey;
 }
