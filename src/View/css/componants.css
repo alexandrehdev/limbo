@@ -35,6 +35,43 @@
 .main-home {
     overflow: hidden;
 }
+.background-header{
+  height: 55vh;
+  width: 100%;
+  background: url("https://wallpaperbat.com/img/612888-gamer-wallpaper-top-free-gamer-background.jpg");
+}
+.background-header h1{
+  text-align: center;
+  line-height: 300px;
+  font-size: 30px;
+  color: white;
+}
+.content-games{
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0 0 12px 0;
+  margin-top: -84px;
+}
+.content-games .card{
+  margin:30px;
+  padding: 15px;
+}
+
+.content-games .card .box-text{
+  background: whitesmoke;
+  width: auto;
+  padding: 5px;
+  border-radius: 0 0 10px 10px;
+}
+
+.content-games .title-game{
+  font-size: 25px;
+  font-weight: 700;
+}
+
 
 .s-cards{
     padding: 10rem 0rem;
@@ -488,7 +525,7 @@
     padding: 8px 24px;
 
     cursor: pointer;
-    
+
     opacity: 0;
 
     transition: opacity 500ms;
