@@ -50,7 +50,10 @@ session_start();
 			</ul>
 		</nav>
 
-		<div class="user-account-item">
+		<div 
+			class="user-account-item"
+			data-type-element="dropdown"
+		>
 			<strong class="user-account-text" style="text-transform:uppercase;">
 				<!-- <i class="user icon"></i> -->
 				<!-- pequeno elemento de imagem que -->
@@ -694,9 +697,9 @@ session_start();
 			once: true, //para a animação acontecer somente uma vez
 		});
 	</script>
-	<script type="text/javascript" src="../../js/conteudo.js"></script>
+	<!-- <script type="text/javascript" src="../../js/conteudo.js"></script> -->
 	<!-- <script type="text/javascript" src="../../js/script.js"></script> -->
-	<script type="text/javascript" src="../../js/title-scroll.js"></script>
+	<!-- <script type="text/javascript" src="../../js/title-scroll.js"></script> -->
 	<script type="text/javascript" src="../../js/header.js"></script>
 </body>
 

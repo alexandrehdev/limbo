@@ -40,6 +40,10 @@ body {
 	margin: 5px;
 }
 
+.navigation {
+	margin-left: 80px;
+}
+
 .navigation a,
 .user-account-text {
 	/* margin-left: 60px; */
@@ -80,9 +84,10 @@ li.item-nav:first-of-type {
 	margin-left: 0;
 }
 
-/* .user-account-item {
-	nome do usuário
-} */
+.user-account-item {
+	width: 200px;
+	margin-right: 24px;
+}
 
 .user-account-text {
 	color: var(--white);
@@ -135,11 +140,11 @@ div.line,
 
 	font-size: 1.5rem;
 
-	opacity: 0;
-
 	text-align: center;
 
 	padding-bottom: 10px;
+	padding-left: 16px;
+	padding-right: 16px;
 }
 
 /*DROPDOWN CONTEUDO USUARIO*/
