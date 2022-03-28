@@ -4,16 +4,14 @@
 <head>
 	<meta charset="utf-8">
 	<title>Limbo</title>
-	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/icon.min.css">
 	<link rel="icon" type="image/png" href="../../../../favicon.png">
 	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+	<link rel="stylesheet" type="text/css" href="../../css/colors.css">
 	<link rel="stylesheet" type="text/css" href="../../css/reset.css">
-	<link rel="stylesheet" type="text/css" href="../../css/buttons.css">
 	<link rel="stylesheet" type="text/css" href="../../css/style.css">
-	<link rel="stylesheet" type="text/css" href="../../css/variables.css">
 	<link rel="stylesheet" type="text/css" href="../../css/intro.css">
-	<link rel="stylesheet" href="../../css/componants.css">
-	<link rel="stylesheet" href="../../css/footer.css">
+	<link rel="stylesheet" type="text/css" href="../../css/componants.css">
+	<link rel="stylesheet" type="text/css" href="../../css/footer.css">
 </head>
 
 <body id="particles-js">
