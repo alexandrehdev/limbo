@@ -17,7 +17,6 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title></title>
-	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="../../css/reset.css">
 	<link rel="stylesheet" type="text/css" href="../../css/buttons.css">
 	<link rel="stylesheet" type="text/css" href="../../css/style.css">
@@ -26,7 +25,6 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 	<link rel="stylesheet" href="../../css/footer.css">
 	<link rel="stylesheet" href="../../css/register.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
 </head>
 <body>
 	<header class="main-header">
@@ -102,8 +100,6 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 			</form>
 		</section>
 	</main>
-	<script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
-	<script src="../../js/capslockMessage.js"></script>
+	<script src="../../js/registerLogin.js"></script>
 </body>
 </html>

@@ -161,14 +161,6 @@ class ElementArrow {
 		return this._colorArrow;
 	}
 
-	get x() {
-		return this._x;
-	}
-
-	get y() {
-		return this._y;
-	}
-
 	get element() {
 		return this._element;
 	}

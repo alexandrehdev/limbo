@@ -149,20 +149,13 @@ session_start();
 			</ul>
 		</div>
 	</footer>
-	<script type="text/javascript" src="../../js/scroll.js"></script>
-	<script type="text/javascript" src="../../js/title-scroll.js"></script>
-	<script type="text/javascript" src="../../js/header.js"></script>
-	<script type="text/javascript" src="../../js/pages.js"></script>
-	<script type="text/javascript" src="../../js/sobreCard.js"></script>
-	<script type="text/javascript" src="../../js/sobre.js"></script>
-	<script type="text/javascript" src="../../js/sobreSectionRedi.js"></script>
 	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-	<script>
-		AOS.init({
-            duration: 2000,
-            once: true, //para a animação acontecer somente uma vez
-        });
-  	</script>
+	<script type="text/javascript" src="../../js/aosConfig.js"></script>
+	<script type="text/javascript" src="../../js/pages.js"></script>
+	<script type="text/javascript" src="../../js/scroll.js"></script>
+	<script type="text/javascript" src="../../js/header.js"></script>
+	<script type="text/javascript" src="../../js/sobreCard.js"></script>
+	<script type="text/javascript" src="../../js/sobreSectionRedi.js"></script>
 </body>
 
 </html>

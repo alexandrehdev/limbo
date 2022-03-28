@@ -155,20 +155,8 @@ session_start();
 			</ul>
 		</div>
 	</footer>
-	<script type="text/javascript" src="../../js/apiFreeGames.js"></script>
-	<script type="text/javascript" src="../../js/title-scroll.js"></script>
 	<script type="text/javascript" src="../../js/header.js"></script>
 	<script type="text/javascript" src="../../js/pages.js"></script>
-	<script type="text/javascript">
-		const scrollContainer = document.querySelectorAll(".freegames-table");
-		console.log(scrollContainer);
-		scrollContainer.forEach((item) => {
-			item.addEventListener("wheel", (evt) => {
-			evt.preventDefault();
-			item.scrollLeft += evt.deltaY;
-			});
-		})
-	</script>
 </body>
 
 </html>

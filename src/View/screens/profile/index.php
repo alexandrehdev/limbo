@@ -271,8 +271,8 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 		</ul>
 	</div>
 </footer>
-<script type="text/javascript" src="../../js/profileLogout.js"></script>
-<script type="text/javascript" src="../../js/profileField.js"></script>
+
+<script type="text/javascript" src="../../js/pages.js"></script>
 <script type="text/javascript" src="../../js/header.js"></script>
 <script type="text/javascript" src="../../js/profile.js"></script>
 </body>
