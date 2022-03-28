@@ -395,12 +395,11 @@ window.addEventListener("load", () => {
     
     const srcUserProfileEmpty = getFullDirectorySrcImage({
         image,
-        directoryName: "userprofile"
+        directoryName: "selectedImages"
     });
 
     if(srcUserProfileEmpty === image.src) {
-        console.log("Diretório está vázio");
-
-        image.src += "systemProfileImageDefault/no-image-profile.png";
+        image.src = "../../img/userprofile/systemProfileImageDefault/no-image-profile.png";
     }
 });
+

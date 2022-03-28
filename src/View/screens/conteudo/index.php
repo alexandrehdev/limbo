@@ -23,7 +23,7 @@ session_start();
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="../../css/style.css">
 <link rel="stylesheet" type="text/css" href="../../css/reset.css">
-<link rel="stylesheet" type="text/css" href="../../css/variables.css">
+<link rel="stylesheet" type="text/css" href="../../css/colors.css">
 <link rel="stylesheet" href="../../css/componants.css">
 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/icon.min.css">
 
@@ -669,35 +669,11 @@ session_start();
 		</div>
 	</footer>
 	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-	<script type="text/javascript" src="../../js/pages.js"></script>
 	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-	<script>
-		var swiper = new Swiper(".cards-destaques", {
-			slidesPerView: 1,
-			spaceBetween: 32,
-			autoplay: {
-				delay: 3000,
-				disableOnInteraction: false,
-				pauseOnMouseEnter: true,
-			},
-			pagination: {
-				el: ".s-cards-destaques .container .swiper-pagination",
-				dynamicBullets: true,
-			},
-			navigation: {
-				nextEl: ".s-cards-destaques .swiper-button-next",
-				prevEl: ".s-cards-destaques .swiper-button-prev",
-			},
-		});
-		AOS.init({
-			duration: 1000,
-			once: true, //para a animação acontecer somente uma vez
-		});
-	</script>
-	<!-- <script type="text/javascript" src="../../js/conteudo.js"></script> -->
-	<!-- <script type="text/javascript" src="../../js/script.js"></script> -->
-	<!-- <script type="text/javascript" src="../../js/title-scroll.js"></script> -->
-	<script type="text/javascript" src="../../js/header.js"></script>
+	<script type="text/javascript" src="../../js/aosConfig.js"></script>
+	<script type="text/javascript" src="../../js/pages.js"></script>
+    <script type="text/javascript" src="../../js/conteudo.js"></script>
+    <script type="text/javascript" src="../../js/header.js"></script>
 </body>
 
 </html>

@@ -13,7 +13,7 @@ session_start();
 	<link rel="stylesheet" type="text/css" href="../../css/reset.css">
 	<link rel="stylesheet" type="text/css" href="../../css/buttons.css">
 	<link rel="stylesheet" type="text/css" href="../../css/style.css">
-	<link rel="stylesheet" type="text/css" href="../../css/variables.css">
+	<link rel="stylesheet" type="text/css" href="../../css/colors.css">
 	<link rel="stylesheet" type="text/css" href="../../css/componants.css">
 	<link rel="stylesheet" type="text/css" href="../../css/footer.css">
 	<link rel="stylesheet" type="text/css" href="../../css/info.css">
@@ -154,20 +154,13 @@ session_start();
 			</ul>
 		</div>
 	</footer>
-	<script type="text/javascript" src="../../js/scroll.js"></script>
-	<script type="text/javascript" src="../../js/title-scroll.js"></script>
-	<script type="text/javascript" src="../../js/header.js"></script>
-	<script type="text/javascript" src="../../js/pages.js"></script>
-	<script type="text/javascript" src="../../js/sobreCard.js"></script>
-	<script type="text/javascript" src="../../js/sobre.js"></script>
-	<script type="text/javascript" src="../../js/sobreSectionRedi.js"></script>
 	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-	<script>
-		AOS.init({
-			duration: 2000,
-			once: true, //para a animação acontecer somente uma vez
-		});
-	</script>
+	<script type="text/javascript" src="../../js/aosConfig.js"></script>
+	<script type="text/javascript" src="../../js/pages.js"></script>
+	<script type="text/javascript" src="../../js/scroll.js"></script>
+	<script type="text/javascript" src="../../js/header.js"></script>
+	<script type="text/javascript" src="../../js/sobreCard.js"></script>
+	<script type="text/javascript" src="../../js/sobreSectionRedi.js"></script>
 </body>
 
 </html>
