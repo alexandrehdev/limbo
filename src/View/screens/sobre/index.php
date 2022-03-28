@@ -24,11 +24,13 @@ session_start();
 
 <body>
 	<header class="main-header">
-		<h1 class="title-name">Limbo</h1>
+		<!-- <h1 class="title-name">
+			<img src="https://img.icons8.com/office/344/superman.png" height="65" style="margin-top: 15px; height: 60px;">
+		</h1> -->
 		<nav class="navigation">
 			<ul class="list-nav">
 				<li class="item-nav">
-					<a href="../conteudo/index.php">Navegar</a>
+					<a href="index.php">Navegar</a>
 					<div class="line"></div>
 				</li>
 				<li class="item-nav">
@@ -36,40 +38,43 @@ session_start();
 					<div class="line"></div>
 				</li>
 				<li class="item-nav">
-					<a href="index.php">Info</a>
+					<a href="../sobre/index.php">Info</a>
 					<div class="line"></div>
 				</li>
-				<li class="item-nav">
-					<strong class="user-account-text" style="text-transform:uppercase;">
-						<i class="user icon"></i>
-						<?php
-							echo strtoupper($_SESSION['username']);
-						?>
-					</strong>
-					<div class="line dropdown">
-						<ul class="list-dropdown">
-							<li class="item-list-dropdown">
-								<span class="item-dropdown headProfile">
-									Perfil
-								</span>
-								<div class="line"></div>
-							</li>
-							<li class="item-list-dropdown">
-								<span class="item-dropdown logout">
-									Sair
-								</span>
-								<div class="line"></div>
-							</li>
-						</ul>
-					</div>
-				</li>
+
 			</ul>
 		</nav>
+
+		<div class="user-account-item" data-type-element="dropdown">
+			<strong class="user-account-text" style="text-transform:uppercase;">
+				<!-- <i class="user icon"></i> -->
+				<!-- pequeno elemento de imagem que -->
+				<!-- carrega a foto do perfil de usuario -->
+
+				<?= strtoupper($_SESSION['username']); ?>
+			</strong>
+			<div class="line dropdown">
+				<ul class="list-dropdown">
+					<li class="item-list-dropdown">
+						<span class="item-dropdown headProfile">
+							Perfil
+						</span>
+						<div class="line"></div>
+					</li>
+					<li class="item-list-dropdown">
+						<span class="item-dropdown logout">
+							Sair
+						</span>
+						<div class="line"></div>
+					</li>
+				</ul>
+			</div>
+		</div>
 	</header>
 
 	<main id="main" role="main">
 
-    </main>
+	</main>
 
 	<footer class="m-footer" role="footer">
 		<div class="container">

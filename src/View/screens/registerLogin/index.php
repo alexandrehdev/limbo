@@ -13,6 +13,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 ?>
 <!DOCTYPE html>
 <html lang="pt">
+
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -26,10 +27,11 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 	<link rel="stylesheet" href="../../css/register.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
 </head>
+
 <body>
 	<header class="main-header">
 		<a id="logo-link" href="../intro/index.php">
-			<img src="../../../../favicon.png" style="">
+			<img src="../../../../favicon.png">
 		</a>
 	</header>
 
@@ -39,38 +41,22 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 			<form class="form-register-login" action="<?php $_SERVER['PHP_SELF'] ?>" method="POST">
 				<div class="area-inputs">
 					<i class="fas fa-user margin-right fa-2x"></i>
-					<input id="input-username-register" type="text" placeholder="Usuario" name="username"
-						autocomplete="off">
+					<input id="input-username-register" type="text" placeholder="Usuario" name="username" autocomplete="off">
 				</div>
 				<div class="area-inputs">
 					<i class="fas fa-envelope margin-right fa-2x"></i>
-					<input
-						id="input-email-register"
-						type="email" 
-						placeholder="Email" 
-						name="email"
-					>
+					<input id="input-email-register" type="email" placeholder="Email" name="email">
 				</div>
 				<div class="area-inputs">
 					<i class="fas fa-key margin-right fa-2x"></i>
-					<input
-						id="input-password-register"
-						type="password"
-						placeholder="Senha"
-						name="pwd"
-					>
+					<input id="input-password-register" type="password" placeholder="Senha" name="pwd">
 				</div>
 				<div class="area-inputs">
 					<i class="fas fa-key margin-right fa-2x"></i>
-					<input
-						id="input-confirm-password-register"
-						type="password"
-						placeholder="Confirme senha"
-						name="cpwd"
-					>
+					<input id="input-confirm-password-register" type="password" placeholder="Confirme senha" name="cpwd">
 				</div>
 				<span id="message-capslock-warning" class="message-capslock color-warning">CAPSLOCK ATIVADO</span>
-				<button name="btn-register"title="Registrar">
+				<button name="btn-register" title="Registrar">
 					<i class="fas fa-pencil-alt fa-2x"></i>
 					Cadastrar
 				</button>
@@ -90,10 +76,10 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 				</div>
 				<div class="area-inputs">
 					<i class="fas fa-key margin-right fa-2x"></i>
-					<input id="input-password-login" required type="password"placeholder="Senha"name="log-pass">
+					<input id="input-password-login" required type="password" placeholder="Senha" name="log-pass">
 				</div>
 				<span id="message-capslock-danger" class="message-capslock color-danger">CAPSLOCK ATIVADO</span>
-				<button name="btn-login" type="submit"title="Logar">
+				<button name="btn-login" type="submit" title="Logar">
 					<i class="fab fa-telegram-plane fa-2x"></i>
 					Logar
 				</button>
@@ -102,4 +88,5 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 	</main>
 	<script src="../../js/registerLogin.js"></script>
 </body>
+
 </html>

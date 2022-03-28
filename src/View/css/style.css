@@ -1,27 +1,28 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap');
 
-html,body{
+html,
+body {
 	margin: 0;
 	padding: 0;
+	font-family: 'Lato', sans-serif;
 }
 
-.info-text p{
+.info-text p {
 	font-size: 20.3px;
 }
 
-.main-header{
-	background: transparent;
-	/* background: #483D8B; */
+.main-header {
+
+	background: var(--color-black);
 	justify-content: space-between;
-	/*height: 70px;*/
+	height: 69px;
 	width: 100%;
 	z-index: 999;
 	position: fixed;
 }
 
 .main-header,
-.register-header
-{
+.register-header {
 	/*position: sticky;*/
 	top: 0;
 	box-sizing: border-box;
@@ -34,20 +35,17 @@ html,body{
 	align-items: center;
 }
 
-.main-header .title-name img{
-	height: 120px;
+.main-header .title-name img {
+	/* height: 110px; */
 	margin: 5px;
 }
 
-.navigation{
-	display: flex;
-	justify-content: right;
-	color: white;
+.navigation {
+	margin-left: 80px;
 }
 
 .navigation a,
-.navigation strong.user-account-text
-{
+.user-account-text {
 	/* margin-left: 60px; */
 	color: white;
 	text-decoration: none;
@@ -56,24 +54,43 @@ html,body{
 }
 
 ul.list-nav {
+	/*elemento pai */
 	display: flex;
-	justify-content: center;
-	align-items: center;
+	justify-content: left;
+	align-items: left;
+	text-align: left;
 }
 
 li.item-nav {
+	/*elemento filho */
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-
-	margin-left: 45px;
-
 	position: relative;
 }
 
+li.item-nav a {
+	font-size: 16px;
+
+}
+
+li.item-nav:last-child {
+	float: right;
+}
+
+
 li.item-nav:first-of-type {
 	margin-left: 0;
+}
+
+.user-account-item {
+	width: 200px;
+	margin-right: 24px;
+}
+
+.user-account-text {
+	color: var(--white);
 }
 
 div.line {
@@ -103,8 +120,7 @@ div.line {
 }
 
 div.line,
-.item-dropdown
-{
+.item-dropdown {
 	transition: all 500ms;
 }
 
@@ -124,11 +140,11 @@ div.line,
 
 	font-size: 1.5rem;
 
-	opacity: 0;
-
 	text-align: center;
 
 	padding-bottom: 10px;
+	padding-left: 16px;
+	padding-right: 16px;
 }
 
 /*DROPDOWN CONTEUDO USUARIO*/
@@ -146,7 +162,7 @@ div.line,
 	position: absolute;
 	background-color: #f9f9f9;
 	min-width: 160px;
-	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 	padding: 12px 16px;
 	z-index: 1;
 }
@@ -154,37 +170,18 @@ div.line,
 .dropdown:hover .dropdown-content {
 	display: block;
 }
+
 /*elemento principal left side tela API*/
-
-/* .freegames-table{
-	display: grid;
-	grid-template-columns: auto auto auto auto;
-	grid-gap: 17rem;
-	justify-content: left;
-	margin: 10rem;
-}
-
-.games-recommend{
-	display: grid;
-	justify-content: right;
-	position: relative;
-	top: -60rem;
-}
-
-.games-recommend div{
-	padding: 2rem;
-} */
-
 /*style conteudo restante*/
 
-.content{
+.content {
 	height: 100%;
 	width: 100%;
 	margin-top: 150px;
 	z-index: -1;
 }
 
-.info-content p{
+.info-content p {
 	font-size: 25px;
 }
 
@@ -200,7 +197,7 @@ div#home {
 	height: 600px;
 }
 
-.info-text{
+.info-text {
 	font-size: 18px;
 	width: 40%;
 	color: white;
@@ -228,16 +225,15 @@ div#home {
 }
 
 .to-left,
-.to-right
-{
+.to-right {
 	align-items: center;
 }
 
-.img-left-side{
+.img-left-side {
 	margin-right: 20px;
 }
 
-.img-right-side{
+.img-right-side {
 	margin-left: 20px;
 }
 
@@ -250,10 +246,10 @@ div#home {
 }
 
 ::-webkit-scrollbar-thumb {
-	background: grey;
+	background: var(--white);
 	border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-	background: pink;
+	background: grey;
 }
