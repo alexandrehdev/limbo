@@ -1,8 +1,10 @@
 <?php
 require_once("../../../../vendor/autoload.php");
+
 use MyApp\Controller\GetDataLogin;
 use MyApp\Controller\Picture;
 use MyApp\Controller\User as UserController;
+
 session_start();
 
 if ($_SERVER['REQUEST_METHOD'] == "POST") {
@@ -25,22 +27,19 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 	<link rel="stylesheet" type="text/css" href="../../css/reset.css">
 	<link rel="stylesheet" type="text/css" href="../../css/variables.css">
 	<link rel="stylesheet" href="../../css/componants.css">
-	<link rel="stylesheet" type="text/css"
-	href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/icon.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/icon.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
 </head>
 
 <body id="body-profile">
 	<header class="main-header">
-		<h1 class="title-name">Limbo</h1>
+		<!-- <h1 class="title-name">
+			<img src="https://img.icons8.com/office/344/superman.png" height="65" style="margin-top: 15px; height: 60px;">
+		</h1> -->
 		<nav class="navigation">
 			<ul class="list-nav">
 				<li class="item-nav">
-					<a href="../intro/index.php">Home</a>
-					<div class="line"></div>
-				</li>
-				<li class="item-nav">
-					<a href="../conteudo/index.php">Navegar</a>
+					<a href="index.php">Navegar</a>
 					<div class="line"></div>
 				</li>
 				<li class="item-nav">
@@ -51,33 +50,35 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 					<a href="../sobre/index.php">Info</a>
 					<div class="line"></div>
 				</li>
-				<li class="item-nav">
-					<strong class="user-account-text" style="text-transform:uppercase;">
-						<i class="user icon"></i>
-						<?php
-						echo strtoupper($_SESSION['username']);
-						?>
-					</strong>
-					<div class="line dropdown">
-						<ul class="list-dropdown">
-							<!-- <li class="item-list-dropdown">
-								<a href="index.php">
-									<span class="item-dropdown" class="profile">Perfil</span>
-								</a>
-								<div class="line"></div>
-							</li> -->
 
-							<li class="item-list-dropdown">
-								<span class="item-dropdown logout">
-									Sair
-								</span>
-								<div class="line"></div>
-							</li>
-						</ul>
-					</div>
-				</li>
 			</ul>
 		</nav>
+
+		<div class="user-account-item" data-type-element="dropdown">
+			<strong class="user-account-text" style="text-transform:uppercase;">
+				<!-- <i class="user icon"></i> -->
+				<!-- pequeno elemento de imagem que -->
+				<!-- carrega a foto do perfil de usuario -->
+
+				<?= strtoupper($_SESSION['username']); ?>
+			</strong>
+			<div class="line dropdown">
+				<ul class="list-dropdown">
+					<li class="item-list-dropdown">
+						<span class="item-dropdown headProfile">
+							Perfil
+						</span>
+						<div class="line"></div>
+					</li>
+					<li class="item-list-dropdown">
+						<span class="item-dropdown logout">
+							Sair
+						</span>
+						<div class="line"></div>
+					</li>
+				</ul>
+			</div>
+		</div>
 	</header>
 
 	<!-- área de informações do usuário -->
@@ -87,30 +88,27 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 			<div class="user-content">
 				<form id="form-change-image-profile" action="<?php $_SERVER['PHP_SELF'] ?>" method="POST" enctype="multipart/form-data">
 					<div class="profile-image">
-						<img id="image" src="../../img/userprofile/<?php echo $_SESSION['profile_usr']?>" height="150px">
+						<img id="image" src="../../img/userprofile/<?php echo $_SESSION['profile_usr'] ?>" height="150px">
 						<label for="file" id="button-change-image" class="change-image">
 							Alterar Image
 						</label>
-						<input id="file" name="userprofile" type="file"/>
+						<input id="file" name="userprofile" type="file" />
 					</div>
-					<button id="submit-image-user"type="submit" name="profile-btn" disabled>Enviar Image para o Perfil</button>
+					<button id="submit-image-user" type="submit" name="profile-btn" disabled>Enviar Image para o Perfil</button>
 				</form>
 				<div class="nickname">
-					<span><?php echo strtoupper($_SESSION['username']);?></span>
+					<span><?php echo strtoupper($_SESSION['username']); ?></span>
 				</div>
 				<div id="status-online" class="status status-save">
 					<span>Online</span>
 				</div>
 			</div>
 
-			<div class="info-account"> <!--  DROPDOWN -->
+			<div class="info-account">
+				<!--  DROPDOWN -->
 				<div class="accordion">
 					<div class="button-info-account">
-						<img
-							class="image-arrow"
-							src="../../img/arrow.svg"
-							alt="arrow"
-						/>
+						<img class="image-arrow" src="../../img/arrow.svg" alt="arrow" />
 						<span class="text-accordion">Informação de Conta</span>
 					</div>
 					<div class="content-info-account">
@@ -122,11 +120,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 
 				<div class="accordion">
 					<div class="button-info-account">
-						<img
-							class="image-arrow"
-							src="../../img/arrow.svg"
-							alt="arrow"
-						/>
+						<img class="image-arrow" src="../../img/arrow.svg" alt="arrow" />
 						<span class="text-accordion">Configuração de Conta</span>
 					</div>
 					<div class="content-info-account align-items-center">
@@ -139,11 +133,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 				</div>
 			</div>
 			<div id="modal-change-status">
-				<img
-					id="icon-leave-modal"
-					src="../../img/icon-leave.svg"
-					alt="button icon leave modal"
-				/>
+				<img id="icon-leave-modal" src="../../img/icon-leave.svg" alt="button icon leave modal" />
 				<div id="current-status">
 					<span class="current-status-title">Status Atual: </span>
 					<div id="status-online" class="status status-current status-big no-margin-top">
@@ -152,32 +142,16 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 				</div>
 				<div id="interface-control-status">
 					<span class="control-status-title">Escolha seu novo status: </span>
-					<div
-						id="status-online"
-						class="status status-medium no-margin-top status-item status-clickable"
-						data-type="online"
-					>
+					<div id="status-online" class="status status-medium no-margin-top status-item status-clickable" data-type="online">
 						<span>Online</span>
 					</div>
-					<div
-						id="status-absent"
-						class="status status-medium no-margin-top status-item status-clickable"
-						data-type="absent"
-					>
+					<div id="status-absent" class="status status-medium no-margin-top status-item status-clickable" data-type="absent">
 						<span>Ausente</span>
 					</div>
-					<div
-						id="status-occupied"
-						class="status status-medium no-margin-top status-item status-clickable"
-						data-type="occupied"
-					>
+					<div id="status-occupied" class="status status-medium no-margin-top status-item status-clickable" data-type="occupied">
 						<span>Ocupado</span>
 					</div>
-					<div
-						id="status-offline"
-						class="status status-medium no-margin-top status-item status-clickable"
-						data-type="offline"
-					>
+					<div id="status-offline" class="status status-medium no-margin-top status-item status-clickable" data-type="offline">
 						<span>Offline</span>
 					</div>
 				</div>
@@ -186,94 +160,94 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 				</button>
 			</div>
 		</div>
-</main>
+	</main>
 
-<footer class="m-footer" role="footer">
-	<div class="container">
-		<div id="area-logo">
-			<strong id="logo">
-				Limbo
-			</strong>
-			<span id="data">2021</span>
+	<footer class="m-footer" role="footer">
+		<div class="container">
+			<div id="area-logo">
+				<strong id="logo">
+					Limbo
+				</strong>
+				<span id="data">2021</span>
+			</div>
+			<ul id="list-devs">
+				<section class="section" role="section">
+					<article class="article" role="article">
+						<img class="image-developer" src="../../img/dev-example.png" alt="developer image" />
+						<div class="right">
+							<strong class="name-dev">
+								Name Developer
+							</strong>
+							<ul class="list-media-social">
+								<li class="item-media-social">
+									<img class="icon-dev" src="../../img/icon-facebook.svg" alt="icon facebook" />
+								</li>
+								<li class="item-media-social">
+									<img class="icon-dev" src="../../img/icon-github.svg" alt="icon github" />
+								</li>
+								<li class="item-media-social">
+									<img class="icon-dev" src="../../img/icon-instagram.svg" alt="icon instagram" />
+								</li>
+								<li class="item-media-social">
+									<img class="icon-dev" src="../../img/icon-linkedin.svg" alt="icon linkedin" />
+								</li>
+							</ul>
+						</div>
+					</article>
+				</section>
+				<section class="section" role="section">
+					<article class="article" role="article">
+						<img class="image-developer" src="../../img/dev-example.png" alt="developer image" />
+						<div class="right">
+							<strong class="name-dev">Name Developer</strong>
+							<ul class="list-media-social">
+								<li class="item-media-social">
+									<img class="icon-dev" src="../../img/icon-facebook.svg" alt="icon facebook" />
+								</li>
+								<li class="item-media-social">
+									<img class="icon-dev" src="../../img/icon-github.svg" alt="icon github" />
+								</li>
+								<li class="item-media-social">
+									<img class="icon-dev" src="../../img/icon-instagram.svg" alt="icon instagram" />
+								</li>
+								<li class="item-media-social">
+									<img class="icon-dev" src="../../img/icon-linkedin.svg" alt="icon linkedin" />
+								</li>
+							</ul>
+						</div>
+					</article>
+				</section>
+				<section class="section" role="section">
+					<article class="article" role="article">
+						<img class="image-developer" src="../../img/dev-example.png" alt="developer image" />
+						<div class="right">
+							<strong class="name-dev">
+								Name Developer
+							</strong>
+							<ul class="list-media-social">
+								<li class="item-media-social">
+									<img class="icon-dev" src="../../img/icon-facebook.svg" alt="icon facebook" />
+								</li>
+								<li class="item-media-social">
+									<img class="icon-dev" src="../../img/icon-github.svg" alt="icon github" />
+								</li>
+								<li class="item-media-social">
+									<img class="icon-dev" src="../../img/icon-instagram.svg" alt="icon instagram" />
+								</li>
+								<li class="item-media-social">
+									<img class="icon-dev" src="../../img/icon-linkedin.svg" alt="icon linkedin" />
+								</li>
+							</ul>
+						</div>
+					</article>
+				</section>
+			</ul>
 		</div>
-		<ul id="list-devs">
-			<section class="section" role="section">
-				<article class="article" role="article">
-					<img class="image-developer" src="../../img/dev-example.png" alt="developer image" />
-					<div class="right">
-						<strong class="name-dev">
-							Name Developer
-						</strong>
-						<ul class="list-media-social">
-							<li class="item-media-social">
-								<img class="icon-dev" src="../../img/icon-facebook.svg" alt="icon facebook" />
-							</li>
-							<li class="item-media-social">
-								<img class="icon-dev" src="../../img/icon-github.svg" alt="icon github" />
-							</li>
-							<li class="item-media-social">
-								<img class="icon-dev" src="../../img/icon-instagram.svg" alt="icon instagram" />
-							</li>
-							<li class="item-media-social">
-								<img class="icon-dev" src="../../img/icon-linkedin.svg" alt="icon linkedin" />
-							</li>
-						</ul>
-					</div>
-				</article>
-			</section>
-			<section class="section" role="section">
-				<article class="article" role="article">
-					<img class="image-developer" src="../../img/dev-example.png" alt="developer image" />
-					<div class="right">
-						<strong class="name-dev">Name Developer</strong>
-						<ul class="list-media-social">
-							<li class="item-media-social">
-								<img class="icon-dev" src="../../img/icon-facebook.svg" alt="icon facebook" />
-							</li>
-							<li class="item-media-social">
-								<img class="icon-dev" src="../../img/icon-github.svg" alt="icon github" />
-							</li>
-							<li class="item-media-social">
-								<img class="icon-dev" src="../../img/icon-instagram.svg" alt="icon instagram" />
-							</li>
-							<li class="item-media-social">
-								<img class="icon-dev" src="../../img/icon-linkedin.svg" alt="icon linkedin" />
-							</li>
-						</ul>
-					</div>
-				</article>
-			</section>
-			<section class="section" role="section">
-				<article class="article" role="article">
-					<img class="image-developer" src="../../img/dev-example.png" alt="developer image" />
-					<div class="right">
-						<strong class="name-dev">
-							Name Developer
-						</strong>
-						<ul class="list-media-social">
-							<li class="item-media-social">
-								<img class="icon-dev" src="../../img/icon-facebook.svg" alt="icon facebook" />
-							</li>
-							<li class="item-media-social">
-								<img class="icon-dev" src="../../img/icon-github.svg" alt="icon github" />
-							</li>
-							<li class="item-media-social">
-								<img class="icon-dev" src="../../img/icon-instagram.svg" alt="icon instagram" />
-							</li>
-							<li class="item-media-social">
-								<img class="icon-dev" src="../../img/icon-linkedin.svg" alt="icon linkedin" />
-							</li>
-						</ul>
-					</div>
-				</article>
-			</section>
-		</ul>
-	</div>
-</footer>
-<script type="text/javascript" src="../../js/profileLogout.js"></script>
-<script type="text/javascript" src="../../js/profileField.js"></script>
-<script type="text/javascript" src="../../js/header.js"></script>
-<script type="text/javascript" src="../../js/profile.js"></script>
+	</footer>
+	<script type="text/javascript" src="../../js/profileLogout.js"></script>
+	<script type="text/javascript" src="../../js/profileField.js"></script>
+	<script type="text/javascript" src="../../js/header.js"></script>
+	<script type="text/javascript" src="../../js/profile.js"></script>
 </body>
 
 </html>

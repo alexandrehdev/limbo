@@ -11,10 +11,10 @@
 
 html{
     font-size: 62.5%;
-}   
+}
 
 body {
-    background-color: #272727;
+    background-color: var(--color-black);
     display: flex;
     flex-direction: column;
 

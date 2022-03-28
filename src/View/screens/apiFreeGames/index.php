@@ -32,171 +32,188 @@ session_start();
 
 <body>
 	<header class="main-header">
-		<h1 class="title-name">Limbo</h1>
+		<!-- <h1 class="title-name">
+			<img src="https://img.icons8.com/office/344/superman.png" height="65" style="margin-top: 15px; height: 60px;">
+		</h1> -->
 		<nav class="navigation">
 			<ul class="list-nav">
 				<li class="item-nav">
-					<a href="../conteudo/index.php">Navegar</a>
+					<a href="index.php">Navegar</a>
 					<div class="line"></div>
 				</li>
 				<li class="item-nav">
-					<a href="index.php">Jogos Gratis</a>
+					<a href="../apiFreeGames/index.php">Jogos Gratis</a>
 					<div class="line"></div>
 				</li>
 				<li class="item-nav">
 					<a href="../sobre/index.php">Info</a>
 					<div class="line"></div>
 				</li>
-				<li class="item-nav">
-					<strong class="user-account-text" style="text-transform:uppercase;">
-						<i class="user icon"></i>
-						<?php
-						echo strtoupper($_SESSION['username']);
-						?>
-					</strong>
-					<div class="line dropdown">
-						<ul class="list-dropdown">
-							<li class="item-list-dropdown">
-								<span class="item-dropdown headProfile">
-									Perfil
-								</span>
-								<div class="line"></div>
-							</li>
-							<li class="item-list-dropdown logout">
-								<span class="item-dropdown">
-									Sair
-								</span>
-								<div class="line"></div>
-							</li>
-						</ul>
-					</div>
-				</li>
+
 			</ul>
 		</nav>
+
+		<div class="user-account-item" data-type-element="dropdown">
+			<strong class="user-account-text" style="text-transform:uppercase;">
+				<!-- <i class="user icon"></i> -->
+				<!-- pequeno elemento de imagem que -->
+				<!-- carrega a foto do perfil de usuario -->
+
+				<?= strtoupper($_SESSION['username']); ?>
+			</strong>
+			<div class="line dropdown">
+				<ul class="list-dropdown">
+					<li class="item-list-dropdown">
+						<span class="item-dropdown headProfile">
+							Perfil
+						</span>
+						<div class="line"></div>
+					</li>
+					<li class="item-list-dropdown">
+						<span class="item-dropdown logout">
+							Sair
+						</span>
+						<div class="line"></div>
+					</li>
+				</ul>
+			</div>
+		</div>
 	</header>
 	<div class="background-header">
 		<h1>Receba jogos gratis toda semana</h1>
 	</div>
 	<main>
-	<section class='content-games'>
-		<?php
-		for($i=10;$i <= 12; $i++):
-			echo "
+		<section class='content-games'>
+			<?php
+			for ($i = 10; $i <= 12; $i++) :
+				echo "
 
 				<div class='card'>
 					<div class='card-img-header'>
-						<img src=". $response[$i]['thumbnail'] .">
+						<img src=" . $response[$i]['thumbnail'] . ">
 					</div>
 					<div class='box-text'>
 					<div class='title-game'>
-						". $response[$i]['title'] ."
+						" . $response[$i]['title'] . "
 					</div>
 					<div class='game-tag'>
-					". $response[$i]['platform'] ." "."
-					". $response[$i]['genre'] ."
+					" . $response[$i]['platform'] . " " . "
+					" . $response[$i]['genre'] . "
 					</div>
 					</div>
 				</div>
 		";
-		endfor;
-		 ?>
-	 </section>
+			endfor;
+			?>
+		</section>
 
-	 <section class='content-games'>
-	 <?php
-	 for($i=13;$i <= 15; $i++):
-		 echo "
+		<section class='content-games'>
+			<?php
+			for ($i = 13; $i <= 15; $i++) :
+				echo "
 
 		 <div class='card'>
 			 <div class='card-img-header'>
-				 <img src=". $response[$i]['thumbnail'] .">
+				 <img src=" . $response[$i]['thumbnail'] . ">
 			 </div>
 			 <div class='box-text'>
 			 <div class='title-game'>
-				 ". $response[$i]['title'] ."
+				 " . $response[$i]['title'] . "
 			 </div>
 			 <div class='game-tag'>
-			 ". $response[$i]['platform'] ." "."
-			 ". $response[$i]['genre'] ."
+			 " . $response[$i]['platform'] . " " . "
+			 " . $response[$i]['genre'] . "
 			 </div>
 			 </div>
 		 </div>
 	 ";
-	 endfor;
-		?>
-	</section>
+			endfor;
+			?>
+		</section>
 
-	<section class='content-games'>
-	<?php
-	for($i=16;$i <= 18; $i++):
-		echo "
+		<section class='content-games'>
+			<?php
+			for ($i = 16; $i <= 18; $i++) :
+				echo "
 
 		<div class='card'>
 			<div class='card-img-header'>
-				<img src=". $response[$i]['thumbnail'] .">
+				<img src=" . $response[$i]['thumbnail'] . ">
 			</div>
 			<div class='box-text'>
 			<div class='title-game'>
-				". $response[$i]['title'] ."
+				" . $response[$i]['title'] . "
 			</div>
 			<div class='game-tag'>
-			". $response[$i]['platform'] ." "."
-			". $response[$i]['genre'] ."
+			" . $response[$i]['platform'] . " " . "
+			" . $response[$i]['genre'] . "
 			</div>
 			</div>
 		</div>
 	";
-	endfor;
-	 ?>
- </section>
+			endfor;
+			?>
+		</section>
 
- <section class='content-games'>
- 	<?php
- 		for($i=19;$i <= 21; $i++):
- 		echo "
+		<section class='content-games'>
+			<?php
+			for ($i = 19; $i <= 21; $i++) :
+				echo "
 
 		<div class='card'>
 			<div class='card-img-header'>
-				<img src=". $response[$i]['thumbnail'] .">
+				<img src=" . $response[$i]['thumbnail'] . ">
 			</div>
 			<div class='box-text'>
 			<div class='title-game'>
-				". $response[$i]['title'] ."
+				" . $response[$i]['title'] . "
 			</div>
 			<div class='game-tag'>
-			". $response[$i]['platform'] ." "."
-			". $response[$i]['genre'] ."
+			" . $response[$i]['platform'] . " " . "
+			" . $response[$i]['genre'] . "
 			</div>
 			</div>
 		</div>
  ";
- endfor;
-  ?>
- </section>
+			endfor;
+			?>
+		</section>
 
- <section class='content-games'>
- <?php
- for($i=27;$i <= 29; $i++):
-	 echo "
+		<section class='content-games'>
+			<?php
+			for ($i = 27; $i <= 29; $i++) :
+				echo "
 
 	 <div class='card'>
 		 <div class='card-img-header'>
-			 <img src=". $response[$i]['thumbnail'] .">
+			 <img src=" . $response[$i]['thumbnail'] . ">
 		 </div>
 		 <div class='box-text'>
 		 <div class='title-game'>
-			 ". $response[$i]['title'] ."
+			 " . $response[$i]['title'] . "
 		 </div>
 		 <div class='game-tag'>
-		 ". $response[$i]['platform'] ." "."
-		 ". $response[$i]['genre'] ."
+		 " . $response[$i]['platform'] . " " . "
+		 " . $response[$i]['genre'] . "
 		 </div>
 		 </div>
 	 </div>
  ";
- endfor;
-	?>
-</section>
+			endfor;
+			?>
+		</section>
+
+		<section class="noticias">
+			<div class="noticias-opacity"></div>
+			<div class="container">
+				<div class="noticias-text">
+					<h2>
+						Streamer termina The Witcher 3 usando apenas um botão do controle
+					</h2>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores cumque non dicta quisquam ratione similique omnis a voluptates. Veritatis fuga dicta ducimus minus consectetur accusamus illum modi placeat officia velit!</p>
+				</div>
+			</div>
+		</section>
 
 	</main>
 	<footer class="m-footer" role="footer">
@@ -286,8 +303,8 @@ session_start();
 		console.log(scrollContainer);
 		scrollContainer.forEach((item) => {
 			item.addEventListener("wheel", (evt) => {
-			evt.preventDefault();
-			item.scrollLeft += evt.deltaY;
+				evt.preventDefault();
+				item.scrollLeft += evt.deltaY;
 			});
 		})
 	</script>
