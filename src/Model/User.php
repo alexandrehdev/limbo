@@ -38,14 +38,6 @@ class User extends UserController
 		return $row;
 	}
 
-	// public function loadProfileUser($mail){
-	// 	$sql = (new Dump())->selectImage($mail);
-	// 	$stmt = $this->pdo->prepare($sql);
-	// 	$stmt->execute();
-	// 	$row = $stmt->fetch(PDO::FETCH_ASSOC);
-	// 	return $row['profileimg'];
-	// }
-
 	public function profileCapture($email){
 		$sql = (new Dump())->selectImage($email);
 		$stmt = $this->pdo->prepare($sql);
@@ -60,7 +52,13 @@ class User extends UserController
 	}
 
 	public function updateImage($file,$email){
-		$sql  =  $this->dump->updateProfilePicture($file['name'],$email);
+		$sql = $this->dump->updateProfilePicture($file['name'],$email);
+		$stmt = $this->pdo->prepare($sql);
+		$stmt->execute();
+	}
+
+	public function deleteAccount($email){
+		$sql = $this->dump->deleteQuery($email);
 		$stmt = $this->pdo->prepare($sql);
 		$stmt->execute();
 	}

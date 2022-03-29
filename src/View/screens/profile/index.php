@@ -7,10 +7,9 @@ use MyApp\Controller\User as UserController;
 
 session_start();
 
-if ($_SERVER['REQUEST_METHOD'] == "POST") {
-	(new Picture());
-	(new UserController())->userProfile();
-}
+if ($_SERVER['REQUEST_METHOD'] == "POST"):
+	(new UserController())->verifyAction();
+endif;
 ?>
 <!DOCTYPE html>
 <html lang="pt">
@@ -166,8 +165,8 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 					<button class="modal-button-cancel-delete-account">
 						Cancelar
 					</button>
-					<form>
-						<button class="modal-button-delete-account">
+					<form action="<?= $_SERVER['PHP_SELF']?>" method="POST">
+						<button name="btndelete" class="modal-button-delete-account">
 							Apagar conta
 						</button>
 					</form>
