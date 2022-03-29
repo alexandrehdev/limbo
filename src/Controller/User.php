@@ -78,6 +78,15 @@ class User extends GetDataRegister
 		endif;
 	}
 
+	public function verifyAction(){
+		if (isset($_REQUEST['btndelete'])):
+			(new UserModel())->deleteAccount($_SESSION['current_email']);
+			header("Location: ../registerLogin/index.php");
+		elseif(isset($_REQUEST['profile-btn'])):
+			$this->userProfile();
+		endif;
+	}
+
 	public function userProfile(){
 		$usermodel = new UserModel();
 		$usermodel->profileMovePicture($this->picture);
