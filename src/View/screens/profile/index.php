@@ -86,7 +86,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 			<div class="user-content">
 				<form id="form-change-image-profile" action="<?php $_SERVER['PHP_SELF'] ?>" method="POST" enctype="multipart/form-data">
 					<div class="profile-image">
-						<img id="image" src="../../img/userprofile/<?=$_SESSION['profile_usr']?>" height="150px">
+						<img id="image" src="../../img/userprofile/selectedImages/<?=$_SESSION['profile_usr']?>" height="150px">
 						<label for="file" id="button-change-image" class="change-image">
 							Alterar Image
 						</label>
