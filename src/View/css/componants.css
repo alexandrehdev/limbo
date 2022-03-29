@@ -23,6 +23,13 @@
     font-size: 1.6rem;
 }
 
+.small-profile img{
+  height: 40px;
+  width: 45px;
+  border-radius: 100px;
+
+}
+
 .btn-detalhes{
     background-color: var(--warning);
     color: var(--black);

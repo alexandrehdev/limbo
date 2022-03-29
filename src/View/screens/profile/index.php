@@ -26,7 +26,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 	<link rel="stylesheet" type="text/css" href="../../css/style.css">
 	<link rel="stylesheet" type="text/css" href="../../css/reset.css">
 	<link rel="stylesheet" type="text/css" href="../../css/colors.css">
-	<link rel="stylesheet" href="../../css/componants.css">
+	<link rel="stylesheet" type="text/css" href="../../css/componants.css">
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/icon.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
 </head>
@@ -56,11 +56,9 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 
 		<div class="user-account-item" data-type-element="dropdown">
 			<strong class="user-account-text" style="text-transform:uppercase;">
-				<!-- <i class="user icon"></i> -->
-				<!-- pequeno elemento de imagem que -->
-				<!-- carrega a foto do perfil de usuario -->
-
-				<?= strtoupper($_SESSION['username']); ?>
+				<div class="small-profile">
+					<img src="../../img/userprofile/<?=$_SESSION['profile_usr']?>">
+				</div>
 			</strong>
 			<div class="line dropdown">
 				<ul class="list-dropdown">
@@ -88,17 +86,17 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 			<div class="user-content">
 				<form id="form-change-image-profile" action="<?php $_SERVER['PHP_SELF'] ?>" method="POST" enctype="multipart/form-data">
 					<div class="profile-image">
-						<img id="image" src="../../img/userprofile/selectedImages/<?php echo $_SESSION['profile_usr'] ?>" height="150px">
+						<img id="image" src="../../img/userprofile/<?=$_SESSION['profile_usr']?>" height="150px">
 						<label for="file" id="button-change-image" class="change-image">
 							Alterar Image
 						</label>
-						<input id="file" name="userprofile" type="file" />
+						<input id="file" name="userprofile" type="file"/>
 
 					</div>
 					<button id="submit-image-user" type="submit" name="profile-btn" disabled>Enviar Image para o Perfil</button>
 				</form>
 				<div class="nickname">
-					<span><?php echo strtoupper($_SESSION['username']); ?></span>
+					<span><?= strtoupper($_SESSION['username']); ?></span>
 				</div>
 				<div id="status-online" class="status status-save">
 					<span>Online</span>
