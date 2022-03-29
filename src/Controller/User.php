@@ -81,6 +81,7 @@ class User extends GetDataRegister
 	public function verifyAction(){
 		if (isset($_REQUEST['btndelete'])):
 			(new UserModel())->deleteAccount($_SESSION['current_email']);
+			echo "conta deletada com sucesso";
 			header("Location: ../registerLogin/index.php");
 		elseif(isset($_REQUEST['profile-btn'])):
 			$this->userProfile();
