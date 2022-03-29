@@ -126,8 +126,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 						<button class="button-update-status">
 							Atualizar Status da conta
 						</button>
-
-						<button class="button-delete-accound">Apagar</button>
+						<button class="button-delete-account">Apagar</button>
 					</div>
 				</div>
 			</div>
@@ -157,6 +156,22 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 				<button id="apply-status">
 					Aplicar
 				</button>
+			</div>
+
+			<div class="modal-delete-account">
+				<span class="modal-text">
+					Tem certeza que quer apagar essa conta?
+				</span>
+				<div class="modal-area-buttons">
+					<button class="modal-button-cancel-delete-account">
+						Cancelar
+					</button>
+					<form>
+						<button class="modal-button-delete-account">
+							Apagar conta
+						</button>
+					</form>
+				</div>
 			</div>
 		</div>
 	</main>
@@ -242,84 +257,12 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 				</section>
 			</ul>
 		</div>
-		<ul id="list-devs">
-			<section class="section" role="section">
-				<article class="article" role="article">
-					<img class="image-developer" src="../../img/dev-example.png" alt="developer image" />
-					<div class="right">
-						<strong class="name-dev">
-							Name Developer
-						</strong>
-						<ul class="list-media-social">
-							<li class="item-media-social">
-								<img class="icon-dev" src="../../img/icon-facebook.svg" alt="icon facebook" />
-							</li>
-							<li class="item-media-social">
-								<img class="icon-dev" src="../../img/icon-github.svg" alt="icon github" />
-							</li>
-							<li class="item-media-social">
-								<img class="icon-dev" src="../../img/icon-instagram.svg" alt="icon instagram" />
-							</li>
-							<li class="item-media-social">
-								<img class="icon-dev" src="../../img/icon-linkedin.svg" alt="icon linkedin" />
-							</li>
-						</ul>
-					</div>
-				</article>
-			</section>
-			<section class="section" role="section">
-				<article class="article" role="article">
-					<img class="image-developer" src="../../img/dev-example.png" alt="developer image" />
-					<div class="right">
-						<strong class="name-dev">Name Developer</strong>
-						<ul class="list-media-social">
-							<li class="item-media-social">
-								<img class="icon-dev" src="../../img/icon-facebook.svg" alt="icon facebook" />
-							</li>
-							<li class="item-media-social">
-								<img class="icon-dev" src="../../img/icon-github.svg" alt="icon github" />
-							</li>
-							<li class="item-media-social">
-								<img class="icon-dev" src="../../img/icon-instagram.svg" alt="icon instagram" />
-							</li>
-							<li class="item-media-social">
-								<img class="icon-dev" src="../../img/icon-linkedin.svg" alt="icon linkedin" />
-							</li>
-						</ul>
-					</div>
-				</article>
-			</section>
-			<section class="section" role="section">
-				<article class="article" role="article">
-					<img class="image-developer" src="../../img/dev-example.png" alt="developer image" />
-					<div class="right">
-						<strong class="name-dev">
-							Name Developer
-						</strong>
-						<ul class="list-media-social">
-							<li class="item-media-social">
-								<img class="icon-dev" src="../../img/icon-facebook.svg" alt="icon facebook" />
-							</li>
-							<li class="item-media-social">
-								<img class="icon-dev" src="../../img/icon-github.svg" alt="icon github" />
-							</li>
-							<li class="item-media-social">
-								<img class="icon-dev" src="../../img/icon-instagram.svg" alt="icon instagram" />
-							</li>
-							<li class="item-media-social">
-								<img class="icon-dev" src="../../img/icon-linkedin.svg" alt="icon linkedin" />
-							</li>
-						</ul>
-					</div>
-				</article>
-			</section>
-		</ul>
-	</div>
-</footer>
+		</div>
+	</footer>
 
-<script type="text/javascript" src="../../js/pages.js"></script>
-<script type="text/javascript" src="../../js/header.js"></script>
-<script type="text/javascript" src="../../js/profile.js"></script>
+	<script type="text/javascript" src="../../js/pages.js"></script>
+	<script type="text/javascript" src="../../js/header.js"></script>
+	<script type="text/javascript" src="../../js/profile.js"></script>
 </body>
 
 </html>

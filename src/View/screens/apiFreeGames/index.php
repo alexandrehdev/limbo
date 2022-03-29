@@ -19,7 +19,7 @@ session_start();
 	<link rel="stylesheet" type="text/css" href="../../css/buttons.css">
 	<link rel="stylesheet" type="text/css" href="../../css/style.css">
 	<link rel="stylesheet" type="text/css" href="../../css/colors.css">
-	<link rel="stylesheet" href="../../css/componants.css">
+	<link rel="stylesheet" type="text/css" href="../../css/componants.css">
 </head>
 <style>
 </style>
