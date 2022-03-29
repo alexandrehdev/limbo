@@ -403,3 +403,5 @@ window.addEventListener("load", () => {
     }
 });
 
+// Modal para apagar a conta do usuário
+
