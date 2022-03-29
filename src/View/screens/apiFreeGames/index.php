@@ -32,7 +32,7 @@ session_start();
 		<nav class="navigation">
 			<ul class="list-nav">
 				<li class="item-nav">
-					<a href="index.php">Navegar</a>
+					<a href="../conteudo/index.php">Navegar</a>
 					<div class="line"></div>
 				</li>
 				<li class="item-nav">
@@ -49,11 +49,9 @@ session_start();
 
 		<div class="user-account-item" data-type-element="dropdown">
 			<strong class="user-account-text" style="text-transform:uppercase;">
-				<!-- <i class="user icon"></i> -->
-				<!-- pequeno elemento de imagem que -->
-				<!-- carrega a foto do perfil de usuario -->
-
-				<?= strtoupper($_SESSION['username']); ?>
+				<div class="small-profile">
+					<img src="../../img/userprofile/<?=$_SESSION['profile_usr']?>">
+				</div>
 			</strong>
 			<div class="line dropdown">
 				<ul class="list-dropdown">
