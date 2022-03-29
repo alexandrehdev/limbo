@@ -5,6 +5,7 @@
 	<meta charset="utf-8">
 	<title>Limbo</title>
 	<link rel="icon" type="image/png" href="../../../../favicon.png">
+	<link rel="stylesheet" type="text/css" href="../../css/preloader.css">
 	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 	<link rel="stylesheet" type="text/css" href="../../css/colors.css">
 	<link rel="stylesheet" type="text/css" href="../../css/reset.css">
@@ -32,12 +33,11 @@
 			<span>Gaming Club</span>
 		</div>
 	</main>
-
-
+	
 	<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-	<script type="text/javascript" src="../../js/intro.js"></script>
 	<script type="text/javascript" src="../../js/pages.js"></script>
+	<script type="text/javascript" src="../../js/intro.js"></script>
 </body>
 
 </html>

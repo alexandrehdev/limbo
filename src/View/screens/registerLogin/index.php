@@ -18,6 +18,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title></title>
+	<link rel="stylesheet" type="text/css" href="../../css/preloader.css">
 	<link rel="stylesheet" type="text/css" href="../../css/reset.css">
 	<link rel="stylesheet" type="text/css" href="../../css/buttons.css">
 	<link rel="stylesheet" type="text/css" href="../../css/style.css">
@@ -29,64 +30,70 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 </head>
 
 <body>
-	<header class="main-header">
-		<a id="logo-link" href="../intro/index.php">
-			<img src="../../../../favicon.png">
-		</a>
-	</header>
+	<div id="background-color-pre-loader">
+		<header class="main-header">
+			<a id="logo-link" href="../intro/index.php">
+				<img src="../../../../favicon.png">
+			</a>
+		</header>
 
-	<main class="main-register-user">
-		<section id="register-account" class="section-register">
-			<h1 class="title-register">Registrar</h1>
-			<form class="form-register-login" action="<?php $_SERVER['PHP_SELF'] ?>" method="POST">
-				<div class="area-inputs">
-					<i class="fas fa-user margin-right fa-2x"></i>
-					<input id="input-username-register" type="text" placeholder="Usuario" name="username" autocomplete="off">
-				</div>
-				<div class="area-inputs">
-					<i class="fas fa-envelope margin-right fa-2x"></i>
-					<input id="input-email-register" type="email" placeholder="Email" name="email">
-				</div>
-				<div class="area-inputs">
-					<i class="fas fa-key margin-right fa-2x"></i>
-					<input id="input-password-register" type="password" placeholder="Senha" name="pwd">
-				</div>
-				<div class="area-inputs">
-					<i class="fas fa-key margin-right fa-2x"></i>
-					<input id="input-confirm-password-register" type="password" placeholder="Confirme senha" name="cpwd">
-				</div>
-				<span id="message-capslock-warning" class="message-capslock color-warning">CAPSLOCK ATIVADO</span>
-				<button name="btn-register" title="Registrar">
-					<i class="fas fa-pencil-alt fa-2x"></i>
-					Cadastrar
-				</button>
-			</form>
-		</section>
+		<main class="main-register-user">
+			<section id="register-account" class="section-register">
+				<h1 class="title-register">Registrar</h1>
+				<form class="form-register-login" action="<?php $_SERVER['PHP_SELF'] ?>" method="POST">
+					<div class="area-inputs">
+						<i class="fas fa-user margin-right fa-2x"></i>
+						<input id="input-username-register" type="text" placeholder="Usuario" name="username" autocomplete="off">
+					</div>
+					<div class="area-inputs">
+						<i class="fas fa-envelope margin-right fa-2x"></i>
+						<input id="input-email-register" type="email" placeholder="Email" name="email">
+					</div>
+					<div class="area-inputs">
+						<i class="fas fa-key margin-right fa-2x"></i>
+						<input id="input-password-register" type="password" placeholder="Senha" name="pwd">
+					</div>
+					<div class="area-inputs">
+						<i class="fas fa-key margin-right fa-2x"></i>
+						<input id="input-confirm-password-register" type="password" placeholder="Confirme senha" name="cpwd">
+					</div>
+					<span id="message-capslock-warning" class="message-capslock color-warning">CAPSLOCK ATIVADO</span>
+					<button name="btn-register" title="Registrar">
+						<i class="fas fa-pencil-alt fa-2x"></i>
+						Cadastrar
+					</button>
+				</form>
+			</section>
 
-		<section id="login-account" class="section-register">
-			<h1 class="title-register" id="login">Login</h1>
-			<div class="msg-erro" id="msgerro">
-				<!-- <span>Login ou senha incorretos</span> -->
-			</div>
-			<form class="form-register-login" method="POST" action="<?php $_SERVER['PHP_SELF'] ?>">
+			<section id="login-account" class="section-register">
+				<h1 class="title-register" id="login">Login</h1>
+				<div class="msg-erro" id="msgerro">
+					<!-- <span>Login ou senha incorretos</span> -->
+				</div>
+				<form class="form-register-login" method="POST" action="<?php $_SERVER['PHP_SELF'] ?>">
 
-				<div class="area-inputs">
-					<i class="fas fa-envelope margin-right fa-2x"></i>
-					<input id="input-email-login" required type="email" placeholder="Email" name="log-mail">
-				</div>
-				<div class="area-inputs">
-					<i class="fas fa-key margin-right fa-2x"></i>
-					<input id="input-password-login" required type="password" placeholder="Senha" name="log-pass">
-				</div>
-				<span id="message-capslock-danger" class="message-capslock color-danger">CAPSLOCK ATIVADO</span>
-				<button name="btn-login" type="submit" title="Logar">
-					<i class="fab fa-telegram-plane fa-2x"></i>
-					Logar
-				</button>
-			</form>
-		</section>
-	</main>
+					<div class="area-inputs">
+						<i class="fas fa-envelope margin-right fa-2x"></i>
+						<input id="input-email-login" required type="email" placeholder="Email" name="log-mail">
+					</div>
+					<div class="area-inputs">
+						<i class="fas fa-key margin-right fa-2x"></i>
+						<input id="input-password-login" required type="password" placeholder="Senha" name="log-pass">
+					</div>
+					<span id="message-capslock-danger" class="message-capslock color-danger">CAPSLOCK ATIVADO</span>
+					<button name="btn-login" type="submit" title="Logar">
+						<i class="fab fa-telegram-plane fa-2x"></i>
+						Logar
+					</button>
+				</form>
+			</section>
+		</main>
+	</div>
+
+	<img id="pre-loader-element" src="../../img/pre-loader.svg" alt="pre-loader" />
+
 	<script src="../../js/registerLogin.js"></script>
+	<script src="../../js/pages.js"></script>
 </body>
 
 </html>
