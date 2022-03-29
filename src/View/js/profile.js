@@ -1,4 +1,3 @@
-
 // * Mudança de imagem de perfil
 
 // Selecionar os elementos que compõem a área da imagem
@@ -7,12 +6,15 @@ const buttonChangeImage = window.document.querySelector("#button-change-image");
 const fileInput = window.document.querySelector("#file");
 const buttonSubmitImageUser = window.document.querySelector("#submit-image-user");
 
-function applyFadeElement({ element, type }) {
-    if(!element) {
+function applyFadeElement({
+    element,
+    type
+}) {
+    if (!element) {
         throw new Error("Elemento inexistente ou indefinido");
     }
 
-    switch(type) {
+    switch (type) {
         default:
         case "out":
             element.style.display = "block";
@@ -23,7 +25,7 @@ function applyFadeElement({ element, type }) {
             element.style.opacity = 0;
             let timer;
             timer = setTimeout(() => {
-            element.style.display = "none";
+                element.style.display = "none";
             }, 520);
             clearTimeout(timer);
 
@@ -43,7 +45,7 @@ profileImage.addEventListener("mousemove", () => {
      * perfil selecionada e armazenada na 
      * variável profileImage
      */
-    const [ image ] = profileImage.children;
+    const [image] = profileImage.children;
 
     /**
      * Seta filtro de blur de 3px na imagem
@@ -66,8 +68,8 @@ profileImage.addEventListener("mousemove", () => {
  * de estilos das variáveis de elementos
  */
 profileImage.addEventListener("mouseout", () => {
-    const [ image ] = profileImage.children;
-    
+    const [image] = profileImage.children;
+
     image.style.filter = "blur(0px)";
 
     applyFadeElement({
@@ -83,8 +85,10 @@ profileImage.addEventListener("mouseout", () => {
  * e faz a interação de desativar o botão de
  * botão de enviar a imagem do usuário
  */
-fileInput.addEventListener("change", ({ target }) => {
-    if(target.value) {
+fileInput.addEventListener("change", ({
+    target
+}) => {
+    if (target.value) {
         buttonSubmitImageUser.removeAttribute("disabled");
     } else {
         buttonSubmitImageUser.setAttribute("disabled", "");
@@ -105,12 +109,12 @@ function setAccordion({
 } = {}) {
     // Pega os elementos filhos de cada accordion
     const [
-        buttonInfoAccount, 
-        contentInfoAccount 
+        buttonInfoAccount,
+        contentInfoAccount
     ] = element;
 
     // Seleciona a seta do botão do accordion
-    const [ arrowImage ] = buttonInfoAccount.children;
+    const [arrowImage] = buttonInfoAccount.children;
 
     /**
      * As 5 linhas seguintes corrige um problema
@@ -124,7 +128,7 @@ function setAccordion({
      * para a transição voltar novamente
      */
     contentInfoAccount.style.transition = "none";
-    
+
     setTimeout(() => {
         contentInfoAccount.style.transition = "";
     }, 200);
@@ -140,17 +144,17 @@ function setAccordion({
      */
     let isActiveAccordion = true;
 
-    buttonInfoAccount.addEventListener("click",() => {
+    buttonInfoAccount.addEventListener("click", () => {
 
-        if(isActiveAccordion) {
+        if (isActiveAccordion) {
             contentInfoAccount.style.height = `${contentHeight}px`;
             arrowImage.style.transform = "rotate(90deg)";
-            
+
             isActiveAccordion = false;
         } else {
             contentInfoAccount.style.height = "0";
             arrowImage.style.transform = "rotate(0deg)";
-            
+
             isActiveAccordion = true;
         }
     }, true);
@@ -158,7 +162,7 @@ function setAccordion({
 }
 
 // Seleciona cada elemento de accordion da interface
-const [ 
+const [
     informacaoContaAccordion,
     configuracaoContaAccordion
 ] = accordions;
@@ -189,7 +193,7 @@ const statusOptions = window.document.querySelectorAll(".status-clickable");
 const currentStatus = window.document.querySelector(".status-current");
 const statusSaveProfile = window.document.querySelector(".status-save");
 
-const [ textStatus ] = currentStatus.children;
+const [textStatus] = currentStatus.children;
 
 let showModal = true;
 
@@ -198,14 +202,14 @@ let showModal = true;
  * o comportamento de desaparecer e aparecer
  * de qualquer elemento de forma mais lenta
  */
-function setElementBehavior({ 
-    mode, 
+function setElementBehavior({
+    mode,
     element,
     displayDefault = "block"
 } = {}) {
     let timer;
 
-    switch(mode) {
+    switch (mode) {
         default:
         case "show":
             element.style.display = displayDefault;
@@ -214,11 +218,11 @@ function setElementBehavior({
             timer = setTimeout(() => {
                 element.style.opacity = 1;
             }, 200);
-            
+
             break;
         case "hidden":
             element.style.opacity = 0;
-            
+
             clearTimeout(timer);
             timer = setTimeout(() => {
                 element.style.display = "none";
@@ -239,20 +243,20 @@ function setElementBehavior({
  */
 
 function alternatorModalConditional() {
-    if(showModal) {
+    if (showModal) {
         setElementBehavior({
             element: modalChangeStatus,
             mode: "show",
             displayDefault: "flex"
         });
-        
+
         showModal = false;
     } else {
         setElementBehavior({
             element: modalChangeStatus,
             mode: "hidden",
         });
-    
+
         showModal = true;
     }
 }
@@ -286,10 +290,10 @@ buttonLeaveModal.addEventListener("click", () => {
  * offline: Offline
  */
 function addInteractionButtonStatus(type, action) {
-    switch(type) {
+    switch (type) {
         case "online":
             return action.online();
-        
+
         case "absent":
             return action.absent();
 
@@ -308,8 +312,8 @@ function addInteractionButtonStatus(type, action) {
  * Basicamente essa função modifica o 
  * identificador e o texto do elemento
  */
-function setModeCurrentStatus({ 
-    mode, 
+function setModeCurrentStatus({
+    mode,
     text
 }) {
     currentStatus.setAttribute("id", mode);
@@ -326,7 +330,7 @@ function setModeCurrentStatus({
  * no botão de status offline, automaticamente o 
  * status atual muda para status offline
  */
-for(let statusOption of statusOptions) {
+for (let statusOption of statusOptions) {
     statusOption.addEventListener("click", () => {
         const type = statusOption.dataset.type;
 
@@ -366,13 +370,13 @@ for(let statusOption of statusOptions) {
  * de status na tela de perfil do usuário
  */
 buttonApplyStatus.addEventListener("click", () => {
-    const [ textStatusSave ] = statusSaveProfile.children;
-    
+    const [textStatusSave] = statusSaveProfile.children;
+
     const modeStatusCurrent = currentStatus.getAttribute("id");
     const textStatusCurrent = textStatus.innerText;
 
     statusSaveProfile.setAttribute("id", modeStatusCurrent);
-    
+
     textStatusSave.innerText = textStatusCurrent;
 });
 
@@ -384,24 +388,70 @@ function getFullDirectorySrcImage({
 }) {
     const directoryString = `${directoryName}/`;
     const indexOfDirectoryInSrcImage = image.src.indexOf(directoryString);
-    
+
     const directorySrc = image.src.substring(0, indexOfDirectoryInSrcImage + directoryString.length);
 
     return directorySrc;
 }
 
 window.addEventListener("load", () => {
-    const [ image ] = profileImage.children;
-    
+    const [image] = profileImage.children;
+
     const srcUserProfileEmpty = getFullDirectorySrcImage({
         image,
         directoryName: "selectedImages"
     });
 
-    if(srcUserProfileEmpty === image.src) {
+    if (srcUserProfileEmpty === image.src) {
         image.src = "../../img/userprofile/systemProfileImageDefault/no-image-profile.png";
     }
 });
 
 // Modal para apagar a conta do usuário
 
+(
+    () => {
+        const modalDeleteAccount = window.document.querySelector(".modal-delete-account");
+        const buttonDeleteAccount = window.document.querySelector(".button-delete-account");
+        // const modalButtonDeleteAccount = window.document.querySelector(".modal-button-delete-account");
+        const modalButtonCancelDeleteAccount = window.document.querySelector(".modal-button-cancel-delete-account");
+        const HALFSECONDSINMILISECONDS = 500 + 20;
+        const FIFTYMILISECONDS = 50;
+
+        function timeout(callback, timer) {
+            try {
+                let timerShow
+                clearTimeout(timerShow);
+                timerShow = setTimeout(() => {
+                    callback();
+                }, timer);
+            } catch (error) {
+                throw new Error(error.message);
+            }
+        }
+
+        function showModal() {
+            modalDeleteAccount.style.display = "block";
+
+            timeout(() => {
+                modalDeleteAccount.style.opacity = "1";
+                modalDeleteAccount.style.transform = "translate(-50%, -50%)";
+
+            }, FIFTYMILISECONDS);
+        }
+
+        function hiddenModal() {
+            modalDeleteAccount.style.transform = "";
+            modalDeleteAccount.style.opacity = "";
+            
+            timeout(() => {
+                modalDeleteAccount.style.display = "";
+
+            }, HALFSECONDSINMILISECONDS);
+        }
+
+        buttonDeleteAccount.addEventListener("click", showModal);
+
+        modalButtonCancelDeleteAccount.addEventListener("click", hiddenModal);
+    }
+)()

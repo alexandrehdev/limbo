@@ -88,11 +88,11 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 			<div class="user-content">
 				<form id="form-change-image-profile" action="<?php $_SERVER['PHP_SELF'] ?>" method="POST" enctype="multipart/form-data">
 					<div class="profile-image">
-						<img id="image" src="../../img/userprofile/selectedImages/<?php echo $_SESSION['profile_usr']?>" height="150px">
+						<img id="image" src="../../img/userprofile/selectedImages/<?php echo $_SESSION['profile_usr'] ?>" height="150px">
 						<label for="file" id="button-change-image" class="change-image">
 							Alterar Image
 						</label>
-						<input id="file" name="userprofile" type="file"/>
+						<input id="file" name="userprofile" type="file" />
 
 					</div>
 					<button id="submit-image-user" type="submit" name="profile-btn" disabled>Enviar Image para o Perfil</button>
@@ -128,7 +128,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 						<button class="button-update-status">
 							Atualizar Status da conta
 						</button>
-							<button class="button-delete-accound">Apagar</button>
+						<button class="button-delete-account">Apagar</button>
 					</div>
 				</div>
 			</div>
@@ -158,6 +158,22 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 				<button id="apply-status">
 					Aplicar
 				</button>
+			</div>
+
+			<div class="modal-delete-account">
+				<span class="modal-text">
+					Tem certeza que quer apagar essa conta?
+				</span>
+				<div class="modal-area-buttons">
+					<button class="modal-button-cancel-delete-account">
+						Cancelar
+					</button>
+					<form>
+						<button class="modal-button-delete-account">
+							Apagar conta
+						</button>
+					</form>
+				</div>
 			</div>
 		</div>
 	</main>
@@ -243,12 +259,12 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 				</section>
 			</ul>
 		</div>
-	</div>
-</footer>
+		</div>
+	</footer>
 
-<script type="text/javascript" src="../../js/pages.js"></script>
-<script type="text/javascript" src="../../js/header.js"></script>
-<script type="text/javascript" src="../../js/profile.js"></script>
+	<script type="text/javascript" src="../../js/pages.js"></script>
+	<script type="text/javascript" src="../../js/header.js"></script>
+	<script type="text/javascript" src="../../js/profile.js"></script>
 </body>
 
 </html>
