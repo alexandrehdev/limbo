@@ -93,7 +93,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 							Alterar Image
 						</label>
 						<input id="file" name="userprofile" type="file"/>
-						
+
 					</div>
 					<button id="submit-image-user" type="submit" name="profile-btn" disabled>Enviar Image para o Perfil</button>
 				</form>
@@ -128,8 +128,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 						<button class="button-update-status">
 							Atualizar Status da conta
 						</button>
-
-						<button class="button-delete-accound">Apagar</button>
+							<button class="button-delete-accound">Apagar</button>
 					</div>
 				</div>
 			</div>
