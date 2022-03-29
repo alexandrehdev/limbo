@@ -36,29 +36,14 @@ const dataDevs = [
         backgroundColor: "#000000",
         directionAOSCard: "fade-left",
         sourceImage: "../../img/exampleDev.png",
-        name: "Josefino Pimposo",
-        description: "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum",
+        name: "Alexandre",
+        description: "Desenvolvedor Web focado na área de backend em PHP... E praticamente ou estou programando ou jogando alguma coisa ae... E tamo junto :)",
         mediaSocials: [
-            {
-                name: "facebook",
-                source: "../../img/icon-facebook-info.svg",
-                alt: "icon facebook icon"
-            },
             {
                 name: "github",
                 source: "../../img/icon-github-info.svg",
                 alt: "icon github icon"
-            },
-            {
-                name: "instagram",
-                source: "../../img/icon-instagram-info.svg",
-                alt: "icon instagram icon"
-            },
-            {
-                name: "twitter",
-                source: "../../img/icon-twitter-info.svg",
-                alt: "icon twitter icon"
-            },
+            }
         ]
     },
     {
@@ -138,11 +123,11 @@ dataDevs.forEach(item => {
     )
 
     main.innerHTML += `
-        
+
         <div id="${item.id}" class="area-cards">
             <div class="card" data-aos="${item.directionAOSCard}">
-                <div 
-                    class="backgroundColor" 
+                <div
+                    class="backgroundColor"
                     style="background-color: ${item.backgroundColor}"
                 ></div>
                 <div class="dev-details">
