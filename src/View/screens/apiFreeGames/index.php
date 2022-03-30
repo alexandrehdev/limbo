@@ -17,7 +17,6 @@ session_start();
 	<link rel="stylesheet" type="text/css" href="../../css/globals.css">
 	<link rel="stylesheet" type="text/css" href="../../css/reset.css">
 	<link rel="stylesheet" type="text/css" href="../../css/style.css">
-	<link rel="stylesheet" type="text/css" href="../../css/colors.css">
 	<link rel="stylesheet" type="text/css" href="../../css/apiFreeGames.css">
 </head>
 <style>

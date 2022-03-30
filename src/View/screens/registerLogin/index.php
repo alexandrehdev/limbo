@@ -21,7 +21,6 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 	<link rel="stylesheet" type="text/css" href="../../css/reset.css">
 	<link rel="stylesheet" type="text/css" href="../../css/globals.css">
 	<link rel="stylesheet" type="text/css" href="../../css/style.css">
-	<link rel="stylesheet" type="text/css" href="../../css/colors.css">
 	<link rel="stylesheet" href="../../css/registerLogin.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
 </head>
