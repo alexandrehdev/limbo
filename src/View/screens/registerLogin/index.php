@@ -18,6 +18,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title></title>
+	<link rel="stylesheet" type="text/css" href="../../css/preloader.css">
 	<link rel="stylesheet" type="text/css" href="../../css/reset.css">
 	<link rel="stylesheet" type="text/css" href="../../css/buttons.css">
 	<link rel="stylesheet" type="text/css" href="../../css/style.css">
@@ -30,6 +31,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 
 <body>
 	<!-- <header class="main-header"> -->
+	<div id="background-color-pre-loader">
 		<a id="logo-link" href="../intro/index.php">
 			<img src="../../../../favicon.png">
 		</a>
@@ -82,7 +84,10 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 			</form>
 		</section>
 	</main>
+	</div>
+	<img id="pre-loader-element" src="../../img/pre-loader.svg" alt="pre-loader" />
 	<script src="../../js/registerLogin.js"></script>
+	<script src="../../js/pages.js"></script>
 </body>
 
 </html>
