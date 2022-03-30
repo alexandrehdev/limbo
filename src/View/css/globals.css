@@ -37,6 +37,39 @@
     --COMPLEMENTO: #EADEDE;
 }
 
+/* Reset */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body {
+    background-color: var(--color-black);
+    display: flex;
+    flex-direction: column;
+
+    overflow-x: hidden;
+}
+
+.container{
+    width: 100%;
+    max-width: 100%;
+    /*padding: 0rem 2rem !important;*/
+    margin: 0 auto;
+}
+
+
 /* Botões */
 .btn{
     display: inline-block;
