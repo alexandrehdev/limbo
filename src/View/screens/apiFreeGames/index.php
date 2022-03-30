@@ -31,12 +31,6 @@ session_start();
 			<!-- <h1 class="title-name">
 			<img src="https://img.icons8.com/office/344/superman.png" height="65" style="margin-top: 15px; height: 60px;">
 		</h1> -->
-<<<<<<< HEAD
-			<nav class="navigation">
-				<ul class="list-nav">
-					<li class="item-nav">
-						<a href="../conteudo/index.php">Navegar</a>
-=======
 		<nav class="navigation">
 			<ul class="list-nav">
 				<li class="item-nav">
@@ -51,36 +45,8 @@ session_start();
 					<a href="../sobre/index.php">Info</a>
 					<div class="line"></div>
 				</li>
-
 			</ul>
 		</nav>
-
-		<div class="user-account-item" data-type-element="dropdown">
-			<strong class="user-account-text" style="text-transform:uppercase;">
-				<div class="small-profile">
-					<img src="../../img/userprofile/selectedImages/<?=$_SESSION['profile_usr']?>">
-				</div>
-			</strong>
-			<div class="line dropdown">
-				<ul class="list-dropdown">
-					<li class="item-list-dropdown">
-						<span class="item-dropdown headProfile">
-							Perfil
-						</span>
->>>>>>> abd4a6679494e1350ba8431971f6a35b5225f841
-						<div class="line"></div>
-					</li>
-					<li class="item-nav">
-						<a href="../apiFreeGames/index.php">Jogos Gratis</a>
-						<div class="line"></div>
-					</li>
-					<li class="item-nav">
-						<a href="../sobre/index.php">Info</a>
-						<div class="line"></div>
-					</li>
-
-				</ul>
-			</nav>
 
 			<div class="user-account-item" data-type-element="dropdown">
 				<strong class="user-account-text" style="text-transform:uppercase;">
