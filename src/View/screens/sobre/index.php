@@ -29,10 +29,7 @@ session_start();
 			<!-- <h1 class="title-name">
 			<img src="https://img.icons8.com/office/344/superman.png" height="65" style="margin-top: 15px; height: 60px;">
 		</h1> -->
-<<<<<<< HEAD
-=======
 
->>>>>>> developer
 		<nav class="navigation">
 			<ul class="list-nav">
 				<li class="item-nav">
