@@ -166,10 +166,8 @@ endif;
 						<button class="modal-button-cancel-delete-account">
 							Cancelar
 						</button>
-						<form>
-							<button class="modal-button-delete-account">
-								Apagar conta
-							</button>
+						<form action="<?= $_SERVER['PHP_SELF']?>" method="POST">
+							<input type="submit" name="btndelete" class="modal-button-delete-account" value="Apagar conta" />
 						</form>
 					</div>
 				</div>
