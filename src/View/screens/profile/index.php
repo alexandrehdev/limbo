@@ -359,9 +359,7 @@ endif;
 						Cancelar
 					</button>
 					<form action="<?= $_SERVER['PHP_SELF']?>" method="POST">
-						<button name="btndelete" class="modal-button-delete-account">
-							Apagar conta
-						</button>
+						<input type="submit" name="btndelete" class="modal-button-delete-account" value="Apagar conta" />
 					</form>
 				</div>
 			</div>
