@@ -55,11 +55,10 @@ endif;
 				</ul>
 			</nav>
 
-<<<<<<< HEAD
-			<div class="user-account-item" data-type-element="dropdown">
-				<strong class="user-account-text" style="text-transform:uppercase;">
-					<div class="small-profile">
-						<img src="../../img/userprofile/selectedImages/<?= $_SESSION['profile_usr'] ?>">
+<div class="user-account-item" data-type-element="dropdown">
+	<strong class="user-account-text" style="text-transform:uppercase;">
+		<div class="small-profile">
+			<img src="../../img/userprofile/selectedImages/<?=$_SESSION['profile_usr']?>">
 					</div>
 				</strong>
 				<div class="line dropdown">
@@ -77,16 +76,9 @@ endif;
 							<div class="line"></div>
 						</li>
 					</ul>
-=======
-		<div class="user-account-item" data-type-element="dropdown">
-			<strong class="user-account-text" style="text-transform:uppercase;">
-				<div class="small-profile">
-					<img src="../../img/userprofile/selectedImages/<?=$_SESSION['profile_usr']?>">
->>>>>>> abd4a6679494e1350ba8431971f6a35b5225f841
 				</div>
 			</div>
 		</header>
-
 		<!-- área de informações do usuário -->
 		<!---->
 		<main>
