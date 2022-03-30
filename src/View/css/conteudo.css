@@ -1,0 +1,208 @@
+.s-cards {
+    padding: 10rem 0rem;
+    background-color: var(--black-most-light);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.s-cards .container {
+    display: flex;
+    justify-content: center;
+    margin-left: 100px;
+    /* flex-direction: column; */
+}
+
+.s-cards .container .main-cards {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.s-cards .container .main-cards .card-left {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 100%;
+    max-width: 50%;
+    margin-right: 2rem;
+    box-shadow: -10px -10px 10px #333;
+}
+
+.s-cards .container .main-cards .card-left img {
+    width: 100%;
+    height: 100%;
+}
+
+.s-cards .container .main-cards .card-left span {
+    font-size: 2rem;
+    font-family: 'Mochiy Pop One', sans-serif;
+    font-weight: 600;
+    background-color: white;
+    padding: 2rem;
+}
+
+.s-cards .container .main-cards .card-right {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.s-cards .container .main-cards .card-right .card {
+    max-width: 50%;
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    box-shadow: -5px -5px 5px #333;
+}
+
+.s-cards .container .main-cards .card-right .card:hover {
+    transform: scale(1.1);
+    box-shadow: -5px -5px 15px #333;
+}
+
+.s-cards .container .main-cards .card-right .card img {
+    width: 25rem;
+    height: 14rem;
+}
+
+.s-cards .container .main-cards .card-right .card .card-text {
+    background-color: white;
+    padding: 1rem 1rem 3rem 1rem;
+    width: 100%;
+    max-width: 25rem;
+}
+
+.s-cards .container .main-cards .card-right .card .card-text span {
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 1.4rem;
+    font-family: 'Mochiy Pop One', sans-serif;
+}
+
+/* CARDS DESTAQUES DO DIA EM MOVIMENTO */
+.s-cards-destaques {
+    margin: 60px 0px 0px 0px;
+    padding: 0;
+}
+
+.s-cards-destaques .container {
+    width: 100%;
+}
+
+.s-cards-destaques .container .swiper {
+    /*padding: 5rem 0rem;*/
+    width: auto;
+    max-width: 200rem;
+    /* aumenta o tamanho dos cards do s-cards-destaques*/
+}
+
+.swiper-pagination .swiper-pagination-progressbar-fill {
+    background-color: blueviolet;
+}
+
+.s-cards-destaques .container .swiper-slide {
+    width: 100%;
+    /*position: relative;*/
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    /*justify-content: space-between;*/
+    cursor: pointer;
+}
+
+.s-cards-destaques .container .swiper-slide img {
+    height: 80vh;
+    width: 1400px;
+    transition: all .3s;
+}
+
+.s-cards-destaques .container .swiper-slide img:hover {
+    filter: opacity(60%);
+}
+
+.s-cards-destaques .container .swiper-slide .card-left,
+.s-cards-destaques .container .swiper-slide .card-right {
+    position: absolute;
+    bottom: 1rem;
+}
+
+.s-cards-destaques .container .swiper-slide .card-left {
+    display: flex;
+    flex-direction: column;
+    left: 2rem;
+}
+
+.s-cards-destaques .container .swiper-slide .card-left span,
+.s-cards-destaques .container .swiper-slide .card-left h6 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    color: wheat;
+}
+
+.s-cards-destaques .container .swiper-slide .card-left h6 {
+    font-size: 4rem;
+}
+
+.s-cards-destaques .container .swiper-slide .card-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 2rem;
+}
+
+.s-cards-destaques .container .swiper-slide .card-right span {
+    font-size: 3rem;
+}
+
+/* .swiper-horizontal .swiper-pagination-progressbar,
+.swiper-pagination-progressbar.swiper-pagination-horizontal {
+    width: 100%;
+    height: 1rem;
+    left: 0;
+    top: auto !important;
+    bottom: 1rem !important;
+} */
+
+
+
+.swiper-button-prev {
+    background-color: #0c0c0c;
+    padding: 25px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    color: #FFF;
+}
+
+.swiper-button-next {
+    background-color: #0c0c0c;
+    padding: 25px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: #FFF;
+}
+
+/* 
+    Seletores extras para algumas coisas
+    na página de conteúdo
+*/
+
+.horizontalBlock {
+    margin: 65px;
+}
+
+.horizontalBlock h2 {
+    font-size: 30px;
+    color: whitesmoke;
+    margin-bottom: 35px;
+}
+
+/* 
+    Parte do código de swiper
+*/
+
+.swiper-pagination {
+    right: -10 !important;
+}

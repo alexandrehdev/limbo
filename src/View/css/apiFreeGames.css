@@ -1,0 +1,92 @@
+/*
+    Da imagem de plano de fundo até
+    o último card de jogos grátis
+*/
+
+.background-header {
+    height: 55vh;
+    width: 100%;
+    background: url("https://wallpaperbat.com/img/612888-gamer-wallpaper-top-free-gamer-background.jpg");
+}
+
+.background-header h1 {
+    text-align: center;
+    line-height: 300px;
+    font-size: 30px;
+    color: white;
+}
+
+.content-games {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0 0 12px 0;
+    margin-top: -84px;
+}
+
+.content-games .card {
+    margin: 30px;
+    padding: 15px;
+}
+
+.content-games .card .box-text {
+    background: whitesmoke;
+    width: auto;
+    padding: 5px;
+    border-radius: 0 0 10px 10px;
+}
+
+/* CARD NOTICIAS */
+/* 
+    Estilos para o elemento que exibe noticia
+    após os jogos gratis e antes do footer
+*/
+
+.noticias {
+    width: 100%;
+    height: 70vh;
+    position: relative;
+    /* background: url("https:\/\/www.freetogame.com\/g\/26\/thumbnail.jpg") no-repeat center center; */
+
+}
+
+.noticias .container {
+    display: flex;
+    /* height: 100%; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.noticias .noticias-opacity {
+    width: inherit;
+    height: 100%;
+    background: url("https:\/\/www.freetogame.com\/g\/26\/thumbnail.jpg") no-repeat center center;
+    background-size: cover;
+    opacity: 0.2;
+}
+
+.noticias .container .noticias-text {
+    position: absolute;
+    padding: 2rem;
+    top: 50%;
+    transform: translateY(-50%);
+    font-family: 'Mochiy Pop One', sans-serif;
+
+}
+
+.noticias .container .noticias-text h2,
+.noticias .container .noticias-text p {
+    color: #fff;
+}
+
+.noticias .container .noticias-text h2 {
+    font-size: 5rem;
+}
+
+.noticias .container .noticias-text p {
+    margin-top: 2rem;
+    font-size: 2rem;
+}

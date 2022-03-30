@@ -1,0 +1,130 @@
+/* 
+    Conteúdo do main onde está toda a
+    interface responsavel por mostra
+    os dados do perfil e configurações
+*/
+
+.profile {
+    display: flex;
+    justify-content: space-around;
+
+    padding: 200px 0;
+}
+
+.profile-image {
+    position: relative;
+    
+    /* width: 150px;
+    height: 150px; */
+}
+
+.profile-image img {
+    border-radius: 100px;
+    transition: filter 2s;
+}
+
+.profile-image img:hover {
+    cursor: pointer;
+}
+
+.change-image {
+    display: none;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    background-color: var(--white);
+
+    padding: 8px 24px;
+
+    cursor: pointer;
+
+    opacity: 0;
+
+    transition: opacity 500ms;
+}
+
+.info-account {
+    color: var(--white);
+}
+
+#file {
+    display: none;
+}
+
+#submit-image-user {
+    padding: 8px;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    background-color: var(--DETALHE-ELEMENTOS);
+
+    color: var(--color-principal-black);
+
+    transition: opacity 500ms;
+
+    margin-top: 24px;
+
+    cursor: pointer;
+}
+
+#submit-image-user:disabled {
+    /* opacity: 0.2; */
+
+    display: none;
+}
+
+#form-change-image-profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.nickname {
+    margin-top: 32px;
+}
+
+.nickname span {
+    font-size: 30px;
+    
+    color: var(--white);
+}
+
+/* 
+    Estilizações para o modal usado para
+    escolher o status do usuário
+*/
+
+.status {
+    margin-top: 16px;
+}
+
+.status > span {
+    padding: 2.5px 7.5px;
+    
+    border-radius: 25px;
+}
+
+.status-save {
+    font-size: 15px;
+}
+
+#status-online > span {
+    background-color: var(--success);
+}
+
+#status-absent > span {
+    background-color: var(--warning);
+}
+
+#status-occupied > span {
+    background-color: var(--danger);
+}
+
+#status-offline > span {
+    background-color: var(--gray-2);
+}

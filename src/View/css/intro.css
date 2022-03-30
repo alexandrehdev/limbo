@@ -529,3 +529,24 @@ body {
   /*display: table;*/
 }
 
+/* Botão de cadastrar/logar usuário */
+
+.btn-account{
+  padding: 15px;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: filter 500ms;
+  background-color: var(--DETALHE-ELEMENTOS);
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: white;
+  float: right;
+}
+
+.btn-account:hover {
+  filter: brightness(0.8);
+}
+
+.user-area {
+  margin: 10px;
+}

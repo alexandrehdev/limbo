@@ -1,14 +1,40 @@
+/* Botões */
 .btn{
     display: inline-block;
-    padding: 0 2.6rem;
     font-size: 1.6rem;
     font-weight: 600;
     line-height: 4.8rem;
-    border-radius: 5rem;
     transition: all .3s;
+    padding: 1rem 2rem;
+    border-radius: 0.4rem;
+    font-size: 1.6rem;
 }
 
 .btn-primary{
     color: #ccc;
     background-color: blue;
+}
+
+/* Seta a imagem de perfil do cabeçalho */
+
+.small-profile img{
+    height: 40px;
+    width: 45px;
+    border-radius: 100px;
+}
+
+/* Cards da página de conteúdo, ApiFreeGames */
+
+.card .card-title {
+    font-size: 20px;
+}
+
+.card .card-title,
+.card-desc {
+    color: white;
+}
+
+.card-img img {
+    height: 153.28px;
+    width: 272px;
 }
