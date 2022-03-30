@@ -29,6 +29,10 @@ session_start();
 			<!-- <h1 class="title-name">
 			<img src="https://img.icons8.com/office/344/superman.png" height="65" style="margin-top: 15px; height: 60px;">
 		</h1> -->
+<<<<<<< HEAD
+=======
+
+>>>>>>> developer
 		<nav class="navigation">
 			<ul class="list-nav">
 				<li class="item-nav">
@@ -50,7 +54,7 @@ session_start();
 			<div class="user-account-item" data-type-element="dropdown">
 				<strong class="user-account-text" style="text-transform:uppercase;">
 					<div class="small-profile">
-						<img src="../../img/userprofile/selectedImages/<?= $_SESSION['profile_usr'] ?>">
+						<img src="../../img/userprofile/selectedImages/<?=$_SESSION['profile_usr'] ?>">
 					</div>
 				</strong>
 				<div class="line dropdown">

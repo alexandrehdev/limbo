@@ -51,7 +51,7 @@ session_start();
 			<div class="user-account-item" data-type-element="dropdown">
 				<strong class="user-account-text" style="text-transform:uppercase;">
 					<div class="small-profile">
-						<img src="../../img/userprofile/selectedImages/<?= $_SESSION['profile_usr'] ?>">
+						<img src="../../img/userprofile/selectedImages/<?=$_SESSION['profile_usr'] ?>">
 					</div>
 				</strong>
 				<div class="line dropdown">

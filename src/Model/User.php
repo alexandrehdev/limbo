@@ -51,13 +51,13 @@ class User extends UserController
 		move_uploaded_file($file['tmp_name'], $target);
 	}
 
-	public function updateImage($file,$email){
+	public function updateImage($file,$email){ //funcao que atualiza a image do usuario
 		$sql = $this->dump->updateProfilePicture($file['name'],$email);
 		$stmt = $this->pdo->prepare($sql);
 		$stmt->execute();
 	}
 
-	public function deleteAccount($email){
+	public function deleteAccount($email){ //funcao que apaga a conta de usuario
 		$sql = $this->dump->deleteQuery($email);
 		$stmt = $this->pdo->prepare($sql);
 		$stmt->execute();
