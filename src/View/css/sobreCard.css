@@ -53,7 +53,7 @@ div.dev-details
 div.dev-details {
     justify-content: space-around;
     align-items: flex-start;
-    
+
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 
@@ -85,7 +85,7 @@ span.description-dev {
 div.social-media {
     justify-content: flex-start;
     align-items: center;
-    
+
     margin-top: 40px;
     margin-left: 200px;
     margin-bottom: 80px;

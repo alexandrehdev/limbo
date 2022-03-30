@@ -47,6 +47,7 @@ session_start();
 				</li>
 			</ul>
 		</nav>
+
 			<div class="user-account-item" data-type-element="dropdown">
 				<strong class="user-account-text" style="text-transform:uppercase;">
 					<div class="small-profile">

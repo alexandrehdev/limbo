@@ -55,10 +55,17 @@ endif;
 				</ul>
 			</nav>
 
+<<<<<<< HEAD
+			<div class="user-account-item" data-type-element="dropdown">
+				<strong class="user-account-text" style="text-transform:uppercase;">
+					<div class="small-profile">
+						<img src="../../img/userprofile/selectedImages/<?=$_SESSION['profile_usr']?>">
+=======
 <div class="user-account-item" data-type-element="dropdown">
 	<strong class="user-account-text" style="text-transform:uppercase;">
 		<div class="small-profile">
 			<img src="../../img/userprofile/selectedImages/<?=$_SESSION['profile_usr']?>">
+>>>>>>> developer
 					</div>
 				</strong>
 				<div class="line dropdown">
@@ -257,9 +264,9 @@ endif;
 			</div>
 		</footer>
 	</div>
-
-<<<<<<< HEAD
 	<img id="pre-loader-element" src="../../img/pre-loader.svg" alt="pre-loader" />
+<<<<<<< HEAD
+=======
 =======
 	<!-- área de informações do usuário -->
 	<!---->
@@ -440,6 +447,7 @@ endif;
 		</div>
 	</footer>
 >>>>>>> abd4a6679494e1350ba8431971f6a35b5225f841
+>>>>>>> developer
 
 	<script type="text/javascript" src="../../js/pages.js"></script>
 	<script type="text/javascript" src="../../js/header.js"></script>
