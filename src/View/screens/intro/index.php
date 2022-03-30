@@ -12,7 +12,6 @@
 	<link rel="stylesheet" type="text/css" href="../../css/reset.css">
 	<link rel="stylesheet" type="text/css" href="../../css/style.css">
 	<link rel="stylesheet" type="text/css" href="../../css/intro.css">
-	<link rel="stylesheet" type="text/css" href="../../css/componants.css">
 	<link rel="stylesheet" type="text/css" href="../../css/footer.css">
 </head>
 

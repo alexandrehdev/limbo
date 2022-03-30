@@ -15,7 +15,6 @@ session_start();
 	<link rel="stylesheet" type="text/css" href="../../css/globals.css">
 	<link rel="stylesheet" type="text/css" href="../../css/style.css">
 	<link rel="stylesheet" type="text/css" href="../../css/colors.css">
-	<link rel="stylesheet" type="text/css" href="../../css/componants.css">
 	<link rel="stylesheet" type="text/css" href="../../css/footer.css">
 	<link rel="stylesheet" type="text/css" href="../../css/info.css">
 	<link rel="stylesheet" type="text/css" href="../../css/sobreCard.css">
