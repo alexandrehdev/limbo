@@ -12,7 +12,7 @@ session_start();
 	<link rel="stylesheet" type="text/css" href="../../css/preloader.css">
 	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="../../css/reset.css">
-	<link rel="stylesheet" type="text/css" href="../../css/buttons.css">
+	<link rel="stylesheet" type="text/css" href="../../css/globals.css">
 	<link rel="stylesheet" type="text/css" href="../../css/style.css">
 	<link rel="stylesheet" type="text/css" href="../../css/colors.css">
 	<link rel="stylesheet" type="text/css" href="../../css/componants.css">
