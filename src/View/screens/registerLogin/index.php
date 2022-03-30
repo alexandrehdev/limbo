@@ -79,7 +79,14 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 		</section>
 	</main>
 	</div>
+
+	<input type="hidden" id="mail-response"name="" value="<?=$_SESSION['email_response']?>"/>
+	<!-- se estiver um email duplicado ele vai retornar duplicated_email -->
 	<img id="pre-loader-element" src="../../img/pre-loader.svg" alt="pre-loader" />
+	<script type="text/javascript">
+		let mail = document.getElementById("mail-response").value;
+		console.log(mail);
+	</script>
 	<script src="../../js/registerLogin.js"></script>
 	<script src="../../js/pages.js"></script>
 </body>
