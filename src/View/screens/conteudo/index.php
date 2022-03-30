@@ -16,7 +16,6 @@ session_start();
 	<link rel="icon" href="../../../../favicon.png">
 	<meta charset="utf-8">
 	<title>Limbo</title>
-	<link rel="stylesheet" type="text/css" href="../../css/preloader.css">
 	<link rel="stylesheet" type="text/css" href="../../css/globals.css">
 	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">

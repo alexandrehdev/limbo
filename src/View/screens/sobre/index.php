@@ -9,7 +9,6 @@ session_start();
 	<meta charset="utf-8">
 	<title>Limbo</title>
 	<link rel="icon" type="image/png" href="../../favicon.png">
-	<link rel="stylesheet" type="text/css" href="../../css/preloader.css">
 	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="../../css/reset.css">
 	<link rel="stylesheet" type="text/css" href="../../css/globals.css">

@@ -1,11 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@700&display=swap');
 
-#particles-js {
-  /*position: relative;*/
-  /*width: 100%;*/
-  /*height: 100%;*/
-}
-
 body {
   background: #0C0C0C;
   overflow-y: hidden;
@@ -521,12 +515,6 @@ body {
     left: 3px;
     top: -2px;
   }
-}
-
-
-/*CSS MINI-CARDS*/
-.mini-card-contents{
-  /*display: table;*/
 }
 
 /* Botão de cadastrar/logar usuário */
