@@ -21,7 +21,6 @@ endif;
 	<link rel="icon" type="image/png" href="../../favicon.png">
 	<link rel="stylesheet" type="text/css" href="../../css/preloader.css">
 	<link rel="stylesheet" type="text/css" href="../../css/globals.css">
-	<link rel="stylesheet" href="../../css/footer.css" />
 	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="../../css/style.css">
