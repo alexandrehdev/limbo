@@ -18,14 +18,8 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title></title>
-	<link rel="stylesheet" type="text/css" href="../../css/preloader.css">
-	<link rel="stylesheet" type="text/css" href="../../css/reset.css">
-	<link rel="stylesheet" type="text/css" href="../../css/buttons.css">
-	<link rel="stylesheet" type="text/css" href="../../css/style.css">
-	<link rel="stylesheet" type="text/css" href="../../css/colors.css">
-	<link rel="stylesheet" href="../../css/componants.css">
-	<link rel="stylesheet" href="../../css/footer.css">
-	<link rel="stylesheet" href="../../css/register.css">
+	<link rel="stylesheet" type="text/css" href="../../css/globals.css">
+	<link rel="stylesheet" href="../../css/registerLogin.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
 </head>
 

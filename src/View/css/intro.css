@@ -1,11 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@700&display=swap');
 
-#particles-js {
-  /*position: relative;*/
-  /*width: 100%;*/
-  /*height: 100%;*/
-}
-
 body {
   background: #0C0C0C;
   overflow-y: hidden;
@@ -523,9 +517,24 @@ body {
   }
 }
 
+/* Botão de cadastrar/logar usuário */
 
-/*CSS MINI-CARDS*/
-.mini-card-contents{
-  /*display: table;*/
+.btn-account{
+  padding: 15px;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: filter 500ms;
+  background-color: var(--DETALHE-ELEMENTOS);
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: white;
+  float: right;
 }
 
+.btn-account:hover {
+  filter: brightness(0.8);
+}
+
+.user-area {
+  margin: 10px;
+}

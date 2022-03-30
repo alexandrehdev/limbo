@@ -19,16 +19,12 @@ endif;
 	<title>Limbo</title>
 
 	<link rel="icon" type="image/png" href="../../favicon.png">
-	<link rel="stylesheet" type="text/css" href="../../css/preloader.css">
-	<link rel="stylesheet" href="../../css/footer.css" />
+	<link rel="stylesheet" type="text/css" href="../../css/globals.css">
 	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="../../css/style.css">
-	<link rel="stylesheet" type="text/css" href="../../css/reset.css">
-	<link rel="stylesheet" type="text/css" href="../../css/colors.css">
-	<link rel="stylesheet" type="text/css" href="../../css/componants.css">
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/icon.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+	<link href="../../css/profile.css" type="text/css" rel="stylesheet"/>
 </head>
 
 <body id="body-profile">

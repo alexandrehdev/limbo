@@ -1,0 +1,408 @@
+/* 
+    Conteúdo do main onde está toda a
+    interface responsavel por mostra
+    os dados do perfil e configurações
+*/
+
+.profile {
+    display: flex;
+    justify-content: space-around;
+
+    padding: 200px 0;
+}
+
+.profile-image {
+    position: relative;
+    
+    /* width: 150px;
+    height: 150px; */
+}
+
+.profile-image img {
+    border-radius: 100px;
+    transition: filter 2s;
+}
+
+.profile-image img:hover {
+    cursor: pointer;
+}
+
+.change-image {
+    display: none;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    background-color: var(--white);
+
+    padding: 8px 24px;
+
+    cursor: pointer;
+
+    opacity: 0;
+
+    transition: opacity 500ms;
+}
+
+.info-account {
+    color: var(--white);
+}
+
+#file {
+    display: none;
+}
+
+#submit-image-user {
+    padding: 8px;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    background-color: var(--DETALHE-ELEMENTOS);
+
+    color: var(--color-principal-black);
+
+    transition: opacity 500ms;
+
+    margin-top: 24px;
+
+    cursor: pointer;
+}
+
+#submit-image-user:disabled {
+    /* opacity: 0.2; */
+
+    display: none;
+}
+
+#form-change-image-profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.nickname {
+    margin-top: 32px;
+}
+
+.nickname span {
+    font-size: 30px;
+    
+    color: var(--white);
+}
+
+/* 
+    Estilizações para o modal usado para
+    escolher o status do usuário
+*/
+
+.status {
+    margin-top: 16px;
+}
+
+.status > span {
+    padding: 2.5px 7.5px;
+    
+    border-radius: 25px;
+}
+
+.status-save {
+    font-size: 15px;
+}
+
+#status-online > span {
+    background-color: var(--success);
+}
+
+#status-absent > span {
+    background-color: var(--warning);
+}
+
+#status-occupied > span {
+    background-color: var(--danger);
+}
+
+#status-offline > span {
+    background-color: var(--gray-2);
+}
+
+.status-medium>span {
+    font-size: 24px;
+}
+
+.status-big>span {
+    font-size: 40px;
+}
+
+.status-item {
+    margin-right: 8px;
+}
+
+.status.item:last-of-type {
+    margin-right: 0;
+}
+
+#apply-status {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+
+    border: none;
+    outline: none;
+    
+    background-color: var(--white);
+    
+    border-radius: 3px;
+    
+    padding: 5px 10px;
+}
+
+.status-current>span,
+.status-save>span {
+    transition: background-color 500ms;
+}
+
+.status-clickable {
+    cursor: pointer;
+}
+
+.status-clickable>span {
+    user-select: none;
+}
+
+/*
+    Estilização do acordião
+*/
+
+.accordion {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    margin-bottom: 48px;
+}
+
+.accordion:last-of-type {
+    margin-bottom: 0;
+}
+
+.button-info-account {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    cursor: pointer;
+}
+
+.image-arrow {
+    margin-right: 16px;
+    
+    transition: transform 500ms;
+}
+
+.text-accordion {
+    font-size: 1.8rem;
+    
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+.content-info-account {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    
+    padding-top: 32px;
+    
+    overflow: hidden;
+    
+    height: 0;
+    
+    transition: height 500ms;
+}
+
+.content-info-account>span {
+    font-size: 1.2rem;
+    
+    margin-bottom: 16px;
+}
+
+.content-info-account>button {
+    margin-bottom: 16px;
+    
+    cursor: pointer;
+}
+
+.content-info-account>span:last-of-type,
+.content-info-account>button:last-of-type {
+    margin-bottom: 0;
+}
+
+
+.button-update-status {
+    color: var(--white);
+    
+    background-color: transparent;
+    
+    border: 1px solid var(--white);
+}
+
+.button-update-status,
+.button-delete-account {
+    padding: 10px 20px;
+    
+    border-radius: 10px;
+}
+
+.button-delete-account {
+    background-color: var(--danger);
+    
+    color: var(--white);
+}
+
+.align-items-center {
+    align-items: center !important;
+}
+
+#modal-change-status {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    opacity: 0;
+    
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    width: 60%;
+    height: 60vh;
+    
+    background-color: var(--black);
+    
+    box-shadow: 0px 0px 10px 5px var(--black);
+    
+    border-radius: 10px;
+    
+    transition: opacity 500ms;
+}
+
+#icon-leave-modal {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    
+    width: 25px;
+    
+    cursor: pointer;
+}
+
+#current-status {
+    margin-bottom: 48px;
+}
+
+.current-status-title {
+    color: var(--white);
+    
+    font-size: 40px;
+}
+
+#interface-control-status,
+#current-status {
+    display: flex;
+    align-items: center;
+}
+
+
+.current-status-title,
+.control-status-title {
+    margin-right: 24px;
+}
+
+.control-status-title {
+    color: var(--white);
+    
+    font-size: 24px;
+}
+
+/*
+    Modal responsavel por confirmar a 
+    remoção da conta
+*/
+
+.modal-delete-account {
+    display: none;
+    
+    opacity: 0;
+    
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -200%);
+
+    margin: auto;
+    
+    width: 400px;
+    
+    background-color: var(--black);
+    color: var(--white);
+    
+    padding: 32px;
+    
+    border: 4px solid var(--white);
+    border-radius: 20px;
+    
+    transition-property: opacity, transform;
+    transition-duration: 500ms;
+}
+
+.modal-text {
+    color: var(--white);
+    
+    font-size: 2rem;
+    
+    text-align: center;
+    
+    margin-bottom: 24px;
+    
+    display: block;
+}
+
+
+.modal-area-buttons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+/* Profile Modal Delete Account */
+
+.modal-button-cancel-delete-account {
+    background-color: transparent;
+
+    border: 2px solid var(--gray-2);
+
+    font-size: 1.5rem;
+}
+
+.modal-button-delete-account {
+    background-color: var(--danger);
+
+    font-size: 1.7rem;
+}
+
+.modal-area-buttons button {
+    color: white;
+
+    padding: 8px 16px;
+
+    cursor: pointer;
+}
