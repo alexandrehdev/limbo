@@ -4,12 +4,14 @@
 
 .btn-account{
     padding: 15px;
-    border-radius: 100px;
+    border-radius: 2px;
     cursor: pointer;
     transition: filter 500ms;
     background-color: var(--DETALHE-ELEMENTOS);
     font-size: 1.6rem;
     font-weight: bold;
+    color: white;
+    float: right;
 }
 
 .btn-account:hover {
@@ -854,7 +856,7 @@
     color: var(--white);
 
     padding: 32px;
-    
+
     border: 4px solid var(--white);
     border-radius: 20px;
 

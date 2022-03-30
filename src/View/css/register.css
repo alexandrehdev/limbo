@@ -16,10 +16,8 @@
 	position: absolute;
 	top: 0;
 	left: 0;
-}
-
-#login-account {
-	background-color: var(--black);
+	background-color: #a55c1b;
+	background-image: linear-gradient(315deg, #a55c1b 0%, #000000 74%);
 }
 
 .main-register-user,
@@ -39,8 +37,16 @@
 	height: 100%;
 }
 
+.register, .login{
+	height: 80%;
+	background:#ffff;
+	margin: 50px;
+	/* border-radius: 0px 0px 50px 50px; */
+}
+
+
 .title-register {
-	color: var(--white);
+	/* color: var(--white); */
 
 	font-size: 2rem;
 
@@ -48,7 +54,7 @@
 }
 
 .area-inputs,
-.form-register-login > button
+.form-register-login > input[type="submit"]
 {
 	margin: 15px 0;
 }
@@ -64,6 +70,9 @@
 	font-size: 12.5px;
 }
 
+.area-inputs input:not([type="submit"]){
+	border: 1 solid pink;
+}
 .area-inputs > input,
 .form-register-login > button
 {
@@ -72,7 +81,7 @@
 	border-radius: 5px;
 }
 
-.form-register-login > button {
+.form-register-login > input[type="submit"] {
 	width: 100%;
 
 	background-color: var(--DETALHE-ELEMENTOS);
@@ -91,7 +100,7 @@
 	font-weight: bold;
 }
 
-.form-register-login > button:hover {
+.form-register-login > input[type="submit"]:hover {
 	filter: brightness(0.7);
 }
 
@@ -101,8 +110,8 @@ i.fas, i.fab {
 	margin-right: 16px;
 }
 
-button[name="btn-register"] > i.fas,
-button[name="btn-login"] > i.fab
+input[name="btn-register"] > i.fas,
+input[name="btn-login"] > i.fab
 {
 	color: var(--black);
 }
