@@ -32,7 +32,7 @@ session_start();
 		<nav class="navigation">
 			<ul class="list-nav">
 				<li class="item-nav">
-					<a href="index.php">Navegar</a>
+					<a href="../conteudo/index.php">Navegar</a>
 					<div class="line"></div>
 				</li>
 				<li class="item-nav">

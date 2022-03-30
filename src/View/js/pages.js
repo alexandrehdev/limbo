@@ -1,3 +1,17 @@
+// Tools
+
+function getFullMergeSrcImage({
+    image,
+    directoryName
+}) {
+    const directoryString = `${directoryName}/`;
+    const indexOfDirectoryInSrcImage = image.src.indexOf(directoryString);
+
+    const directorySrc = image.src.substring(0, indexOfDirectoryInSrcImage + directoryString.length);
+
+    return directorySrc;
+}
+
 (() => {
     // redirect para área de perfil
     const btnPerfil = document.querySelector('.headProfile');
@@ -55,8 +69,23 @@
                 preloaderElement.style.display = "none";
 
             }, HALFSECONDSINMILISECONDS);
-
-            console.log(preloaderElement);
         });
+    }
+
+    // Image Default Profile
+
+    const profileHeader = window.document.querySelector(".small-profile");
+
+    if(profileHeader) {
+        const [ image ] = profileHeader.children;
+        
+        const directorySrc = getFullMergeSrcImage({
+            image,
+            directoryName: "selectedImages"
+        });
+        
+        if(directorySrc === image.src) {
+            image.src = "../../img/userprofile/systemProfileImageDefault/no-image-profile.png";
+        }
     }
 })()
