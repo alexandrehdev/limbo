@@ -184,7 +184,7 @@
     color: #FFF;
 }
 
-/* 
+/*
     Seletores extras para algumas coisas
     na página de conteúdo
 */
@@ -199,10 +199,32 @@
     margin-bottom: 35px;
 }
 
-/* 
+/*
     Parte do código de swiper
 */
 
 .swiper-pagination {
     right: -10 !important;
+}
+
+/*
+  Estilos para os elementos da parte de "Recomendado" da página
+*/
+
+.reco {
+    display: flex;
+    margin: 1rem;
+}
+
+.card-img > img{
+    width: 100%;
+    padding: .3rem;
+    object-fit: cover;
+}
+
+.card-desc{
+    max-width: 15ch;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
