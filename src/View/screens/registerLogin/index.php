@@ -29,29 +29,27 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 		<a id="logo-link" href="../intro/index.php">
 			<img src="../../../../favicon.png">
 		</a>
-
-
 		<!-- </header> -->
 
 		<main class="main-register-user">
 			<section id="register-account" class="section-register register">
 				<!-- <h1 class="title-register">Registrar</h1> -->
 				<form class="form-register-login" action="<?php $_SERVER['PHP_SELF'] ?>" method="POST">
-					<div class="area-inputs">
+					<div class="area-input">
 						<i class="fas fa-user margin-right fa-2x"></i>
-						<input id="input-username-register" type="text" placeholder="Usuario" name="username" autocomplete="off">
+						<input id="input-username-register" class="input-placeholder" type="text" placeholder="Usuário" name="username" autocomplete="off">
 					</div>
-					<div class="area-inputs">
+					<div class="area-input">
 						<i class="fas fa-envelope margin-right fa-2x"></i>
-						<input id="input-email-register" type="email" placeholder="Email" name="email" autocomplete="off">
+						<input id="input-email-register" class="input-placeholder" type="email" placeholder="Email" name="email" autocomplete="off">
 					</div>
-					<div class="area-inputs">
+					<div class="area-input">
 						<i class="fas fa-key margin-right fa-2x"></i>
-						<input id="input-password-register" type="password" placeholder="Senha" name="pwd" autocomplete="off">
+						<input id="input-password-register" class="input-placeholder" type="password" placeholder="Senha" name="pwd" autocomplete="off">
 					</div>
-					<div class="area-inputs">
+					<div class="area-input">
 						<i class="fas fa-key margin-right fa-2x"></i>
-						<input id="input-confirm-password-register" type="password" placeholder="Confirme senha" name="cpwd">
+						<input id="input-confirm-password-register" class="input-placeholder" type="password" placeholder="Confirmar senha" name="cpwd">
 					</div>
 					<span id="message-capslock-warning" class="message-capslock color-warning">CAPSLOCK ATIVADO</span>
 					<!-- <i class="fas fa-pencil-alt fa-2x"></i> -->
@@ -66,13 +64,21 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 				</div>
 				<form class="form-register-login" method="POST" action="<?php $_SERVER['PHP_SELF'] ?>">
 
-					<div class="area-inputs">
+					<div class="area-input">
 						<i class="fas fa-envelope margin-right fa-2x"></i>
-						<input id="input-email-login" required type="email" placeholder="Email" name="log-mail" autocomplete="off">
+						<input 
+							id="input-email-login"
+							class="input-placeholder"
+							required type="email" 
+							placeholder="Email" 
+							name="log-mail" 
+							autocomplete="off"
+						>
+
 					</div>
-					<div class="area-inputs">
+					<div class="area-input">
 						<i class="fas fa-key margin-right fa-2x"></i>
-						<input id="input-password-login" required type="password" placeholder="Senha" name="log-pass" autocomplete="off">
+						<input id="input-password-login" required class="input-placeholder" type="password" placeholder="Senha" name="log-pass" autocomplete="off">
 					</div>
 					<span id="message-capslock-danger" class="message-capslock color-danger">CAPSLOCK ATIVADO</span>
 					<input name="btn-login" type="submit" title="Logar" value="Logar" />
