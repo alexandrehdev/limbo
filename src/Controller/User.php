@@ -46,12 +46,23 @@ class User extends GetDataRegister
 		$action = $this->validateAction();
 		switch ($action) {
 			case "register":
-				$this->validateRegister();
+				$this->verifyDuplicatedMail();
 				break;
 			case "login":
 				$this->validateLogin();
 				break;
 		}
+	}
+
+	public function verifyDuplicatedMail(){
+		$user = $this->storedUser();
+		$duplicated_email = (new UserModel())->duplicatedEmail($user["register"]["email"]);
+		if (!empty($duplicated_email)):
+			$_SESSION['email_response'] = "duplicated_email";
+			echo "email já existente";
+		else:
+			$this->validateRegister();
+		endif;
 	}
 
 	public function validateRegister(){

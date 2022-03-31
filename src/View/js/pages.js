@@ -60,11 +60,11 @@ function getFullMergeSrcImage({
 
     if (preloaderElement) {
         window.addEventListener("load", () => {
-            if(backgroundColorPreloader) {
+            if (backgroundColorPreloader) {
                 backgroundColorPreloader.style.filter = "blur(0)";
             }
             preloaderElement.style.opacity = 0;
-            
+
             setTimeout(() => {
                 preloaderElement.style.display = "none";
 
@@ -76,16 +76,67 @@ function getFullMergeSrcImage({
 
     const profileHeader = window.document.querySelector(".small-profile");
 
-    if(profileHeader) {
-        const [ image ] = profileHeader.children;
-        
+    if (profileHeader) {
+        const [image] = profileHeader.children;
+
         const directorySrc = getFullMergeSrcImage({
             image,
             directoryName: "selectedImages"
         });
-        
-        if(directorySrc === image.src) {
+
+        if (directorySrc === image.src) {
             image.src = "../../img/userprofile/systemProfileImageDefault/no-image-profile.png";
         }
     }
 })()
+
+function createModal(selectorModal, type) {
+    const modal = window.document.querySelector(selectorModal);
+    const HALFSECONDSINMILISECONDS = 500 + 20;
+    const FIFTYMILISECONDS = 50;
+
+    function timeout(callback, timer) {
+        try {
+            let timerShow
+            clearTimeout(timerShow);
+            timerShow = setTimeout(() => {
+                callback();
+            }, timer);
+        } catch (error) {
+            throw new Error(error.message);
+        }
+    }
+
+    function showModal() {
+        modal.style.display = "block";
+
+        timeout(() => {
+            modal.style.opacity = "1";
+            modal.style.transform = "translate(-50%, -50%)";
+
+        }, FIFTYMILISECONDS);
+    }
+
+    function hiddenModal() {
+        modal.style.transform = "";
+        modal.style.opacity = "";
+
+        timeout(() => {
+            modal.style.display = "";
+
+        }, HALFSECONDSINMILISECONDS);
+    }
+
+    switch(type) {
+        case "show":
+            showModal();
+
+            break;
+        case "hidden":
+            hiddenModal();
+
+            break;
+        default:
+            throw new Error("parâmetro type de createModal é undefined");
+    }
+}

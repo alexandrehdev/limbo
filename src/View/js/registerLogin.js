@@ -15,7 +15,6 @@ const inputPasswordLogin = window.document.querySelector("#input-password-login"
 // Others
 let isCapslockActive = false;
 let quantityPressCapslock = 0;
-const buttonTest = window.document.querySelector("#button-test");
 
 // Arrays
 const inputsRegister = [
@@ -173,3 +172,18 @@ window.addEventListener("resize", () => {
 window.addEventListener("load", () => {
     setScrollSections(window.innerHeight);
 });
+
+(() => {
+    let mailResponse = document.querySelector("#mail-response");
+    let buttonOkeyModal = document.querySelector(".modal-register-login-button");
+
+    if(mailResponse.value === "duplicated_email") {
+        createModal("#background-black-modal", "show");
+
+        buttonOkeyModal.onclick = () => {
+            createModal("#background-black-modal", "hidden");
+        }
+    }
+
+})()
+

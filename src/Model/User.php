@@ -51,6 +51,14 @@ class User extends UserController
 		move_uploaded_file($file['tmp_name'], $target);
 	}
 
+	public function duplicatedEmail($email){
+		$sql = (new Dump())->selectEmail($email);
+		$stmt = $this->pdo->prepare($sql);
+		$stmt->execute();
+		$row = $stmt->fetch(PDO::FETCH_ASSOC);
+		return $row["email"];
+	}
+
 	public function updateImage($file,$email){ //funcao que atualiza a image do usuario
 		$sql = $this->dump->updateProfilePicture($file['name'],$email);
 		$stmt = $this->pdo->prepare($sql);

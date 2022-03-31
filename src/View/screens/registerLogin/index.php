@@ -86,7 +86,17 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 				</form>
 			</section>
 		</main>
+
 	</div>
+	<div id="background-black-modal">
+		<div class="modal-register-login">
+			<span class="modal-register-login-text">Esse email já existe</span>
+			<button class="modal-register-login-button">Okey</button>
+		</div>
+	</div>
+
+	<input type="hidden" id="mail-response" name="" value="<?= $_SESSION['email_response'] ?>" />
+	<!-- se estiver um email duplicado ele vai retornar duplicated_email -->
 	<img id="pre-loader-element" src="../../img/pre-loader.svg" alt="pre-loader" />
 	<script src="../../js/pages.js"></script>
 	<script src="../../js/registerLogin.js"></script>
