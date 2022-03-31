@@ -443,11 +443,11 @@ session_start();
 			</div>
 		</section>
 
-		<div class="swiper horizontalBlock">
+		<div class="horizontalBlock">
 			<h2>Recomendações</h2>
-			<div class="swiper-wrapper">
+			<div class="reco">
 
-				<div class="swiper-slide org-box">
+				<div class="org-box">
 					<div class="card">
 						<div class="card-img">
 							<!-- medida imagem 304 x 170.63 -->
@@ -462,7 +462,7 @@ session_start();
 					</div>
 				</div>
 
-				<div class="swiper-slide org-box">
+				<div class="org-box">
 					<div class="card">
 						<div class="card-img">
 							<img src="<?= $data[2]["img"] ?>">
@@ -476,7 +476,7 @@ session_start();
 					</div>
 				</div>
 
-				<div class="swiper-slide org-box">
+				<div class="org-box">
 					<div class="card">
 						<div class="card-img">
 							<img src="<?= $data[3]["img"] ?>">
@@ -490,7 +490,7 @@ session_start();
 					</div>
 				</div>
 
-				<div class="swiper-slide org-box">
+				<div class="org-box">
 					<div class="card">
 						<div class="card-img">
 							<img src="<?= $data[4]["img"] ?>">
@@ -504,7 +504,7 @@ session_start();
 					</div>
 				</div>
 
-				<div class="swiper-slide org-box">
+				<div class="org-box">
 					<div class="card">
 						<div class="card-img">
 							<img src="<?= $data[5]["img"] ?>">
@@ -518,7 +518,7 @@ session_start();
 					</div>
 				</div>
 
-				<div class="swiper-slide org-box">
+				<div class="org-box">
 					<div class="card">
 						<div class="card-img">
 							<img src="<?= $data[6]["img"] ?>">
@@ -532,7 +532,7 @@ session_start();
 					</div>
 				</div>
 
-				<div class="swiper-slide org-box">
+				<div class="org-box">
 					<div class="card">
 						<div class="card-img">
 							<img src="<?= $data[7]["img"] ?>">
@@ -546,7 +546,7 @@ session_start();
 					</div>
 				</div>
 
-				<div class="swiper-slide org-box">
+				<div class="org-box">
 					<div class="card">
 						<div class="card-img">
 							<img src="<?= $data[8]["img"] ?>">
@@ -560,7 +560,7 @@ session_start();
 					</div>
 				</div>
 
-				<div class="swiper-slide org-box">
+				<div class="org-box">
 					<div class="card">
 						<div class="card-img">
 							<img src="<?= $data[9]["img"] ?>">
@@ -574,8 +574,6 @@ session_start();
 					</div>
 				</div>
 			</div>
-			<div class="swiper-button-next"></div>
-			<div class="swiper-button-prev"></div>
 			<!-- <div class="swiper-pagination"></div> -->
 		</div>
 
