@@ -129,3 +129,47 @@ for(let input of inputsLogin) {
         addCaptureCapslockOfLogin();
     })
 }
+
+/**
+ * Algoritmo que quando o usuário clicar em 
+ * qualquer parte do input, a janela focar no 
+ * input
+ */
+
+(() => {
+    const areaInputs = window.document.querySelectorAll(".area-input");
+
+    for(let areaInput of areaInputs) {
+        areaInput.addEventListener("click", () => {
+            const input = areaInput.children[1];
+
+            input.focus();
+        });
+    }
+})()
+
+function setScrollSections(height) {
+    if(height <= 530) {
+        sectionRegister.style.overflowY = "scroll";
+        sectionRegister.style.paddingTop = "100px"
+        sectionRegister.style.paddingBottom = "100px"
+        sectionLogin.style.overflowY = "scroll";
+        sectionLogin.style.paddingTop = "100px"
+        sectionLogin.style.paddingBottom = "100px"
+    } else {
+        sectionRegister.style.overflowY = "";
+        sectionRegister.style.paddingTop = ""
+        sectionRegister.style.paddingBottom = ""
+        sectionLogin.style.overflowY = "";
+        sectionLogin.style.paddingTop = ""
+        sectionLogin.style.paddingBottom = ""
+    }
+}
+
+window.addEventListener("resize", () => {
+    setScrollSections(window.innerHeight);
+});
+
+window.addEventListener("load", () => {
+    setScrollSections(window.innerHeight);
+});

@@ -69,8 +69,35 @@
 	background-image: linear-gradient(315deg, #a55c1b 0%, #000000 74%);
 }
 
+.area-input {
+	padding: 10px;
+	border: 2px solid var(--color-branco);
+	border-radius: 20px 0;
+
+	transition: border 250ms;
+
+	cursor: text;
+}
+
+.area-input:hover {
+	border: 2px solid var(--DETALHE-ELEMENTOS);
+}
+
+.area-input > i, 
+.area-input > .input-placeholder, 
+.area-input > .input-placeholder::placeholder,
+.area-input > .input-placeholder::-webkit-input-placeholder
+{
+
+	font-size: 1.8rem;
+}
+
+.area-input > .input-placeholder::placeholder {
+	line-height: 3;
+}
+
 .main-register-user,
-.area-inputs
+.area-input
 {
 	display: flex;
 	justify-content: space-around;
@@ -90,7 +117,6 @@
 	height: 80%;
 	background:#ffff;
 	margin: 50px;
-	/* border-radius: 0px 0px 50px 50px; */
 }
 
 
@@ -102,7 +128,7 @@
 	margin-bottom: 30px;
 }
 
-.area-inputs,
+.area-input,
 .form-register-login > input[type="submit"]
 {
 	margin: 15px 0;
@@ -115,27 +141,17 @@
 	align-items: center;
 }
 
-.area-inputs > input::placeholder {
+.area-input > input::placeholder {
 	font-size: 12.5px;
 }
 
-.area-inputs input:not([type="submit"]){
-	border: 1 solid pink;
-}
-.area-inputs > input,
-.form-register-login > button
-{
-	padding: 10px;
-	border: 2px solid var(--color-branco);
-	border-radius: 5px;
-}
-
 .form-register-login > input[type="submit"] {
-	width: 60%;
+	width: 100%;
 	padding: 1rem;
 	border-radius: 5px;
 
 	background-color: var(--DETALHE-ELEMENTOS);
+	color: var(--black);
 
 	transition: filter 500ms;
 
@@ -147,7 +163,7 @@
 
 	color: var(--black);
 
-	font-size: 1.4rem;
+	font-size: 1.8rem;
 	font-weight: bold;
 }
 
@@ -156,15 +172,9 @@
 }
 
 i.fas, i.fab {
-	color: var(--white);
+	color: var(--DETALHE-ELEMENTOS);
 
 	margin-right: 16px;
-}
-
-input[name="btn-register"] > i.fas,
-input[name="btn-login"] > i.fab
-{
-	color: var(--black);
 }
 
 i.margin-right
