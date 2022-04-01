@@ -13,13 +13,15 @@ session_start();
 <html lang="pt">
 
 <head>
-	<link rel="icon" href="../../../../favicon.png">
 	<meta charset="utf-8">
+
 	<title>Limbo</title>
-	<link rel="stylesheet" type="text/css" href="../../css/globals.css">
-	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+	<link rel="icon" href="../../../../favicon.png">
+	<link rel="stylesheet" type="text/css" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/icon.min.css">
+	<link rel="stylesheet" type="text/css" href="../../css/globals.css">
 	<link rel="stylesheet" type="text/css" href="../../css/conteudo.css">
 </head>
 
@@ -29,28 +31,28 @@ session_start();
 		<header class="main-header">
 			<!-- <h1 class="title-name">
 			<img src="https://img.icons8.com/office/344/superman.png" height="65" style="margin-top: 15px; height: 60px;">
-		</h1> -->
-		<nav class="navigation">
-			<ul class="list-nav">
-				<li class="item-nav">
-					<a href="index.php">Navegar</a>
-					<div class="line"></div>
-				</li>
-				<li class="item-nav">
-					<a href="../apiFreeGames/index.php">Jogos Gratis</a>
-					<div class="line"></div>
-				</li>
-				<li class="item-nav">
-					<a href="../sobre/index.php">Info</a>
-					<div class="line"></div>
-				</li>
-			</ul>
-		</nav>
+			</h1> -->
+			<nav class="navigation">
+				<ul class="list-nav">
+					<li class="item-nav">
+						<a href="index.php">Navegar</a>
+						<div class="line"></div>
+					</li>
+					<li class="item-nav">
+						<a href="../apiFreeGames/index.php">Jogos Gratis</a>
+						<div class="line"></div>
+					</li>
+					<li class="item-nav">
+						<a href="../sobre/index.php">Info</a>
+						<div class="line"></div>
+					</li>
+				</ul>
+			</nav>
 
 			<div class="user-account-item" data-type-element="dropdown">
 				<strong class="user-account-text" style="text-transform:uppercase;">
 					<div class="small-profile">
-						<img src="../../img/userprofile/selectedImages/<?=$_SESSION['profile_usr'] ?>">
+						<img src="../../img/userprofile/selectedImages/<?= $_SESSION['profile_usr'] ?>">
 					</div>
 				</strong>
 				<div class="line dropdown">
@@ -77,46 +79,56 @@ session_start();
 				<div class="swiper cards-destaques">
 					<div class="swiper-wrapper">
 						<div class="swiper-slide">
-							<!-- data-aos="flip-up" -->
 							<img src="../../img/farcry6.jpg" alt="">
-							<div class="card-left">
+							<article class="article-detach">
 								<span>Now avalaible</span>
 								<h6>FACRY 6</h6>
-							</div>
-							<div class="card-right">
-							</div>
+							</article>
 						</div>
 						<div class="swiper-slide">
 							<img src="../../img/thewitcher.jpg" class="swiper-lazy" alt="">
-							<div class="card-left">
+							<div class="article-detach">
 								<span>Now avalaible</span>
 								<h6>The Witcher</h6>
-							</div>
-							<div class="card-right">
 							</div>
 						</div>
 						<div class="swiper-slide">
 							<img src="../../img/minecraft.jpg" alt="">
-							<div class="card-left">
+							<div class="article-detach">
 								<span>Now avalaible</span>
 								<h6>Minecraft</h6>
-							</div>
-							<div class="card-right">
 							</div>
 						</div>
 						<div class="swiper-slide">
 							<img src="../../img/gta5.jpg" alt="">
-							<div class="card-left">
+							<div class="article-detach">
 								<span>Now avalaible</span>
 								<h6>Minecraft</h6>
 							</div>
-							<div class="card-right">
+						</div>
+						<div class="swiper-slide">
+							<img src="../../img/gta5.jpg" alt="">
+							<div class="article-detach">
+								<span>Now avalaible</span>
+								<h6>Minecraft</h6>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<img src="../../img/gta5.jpg" alt="">
+							<div class="article-detach">
+								<span>Now avalaible</span>
+								<h6>Minecraft</h6>
 							</div>
 						</div>
 					</div>
-					<div class="swiper-button-next"></div>
-					<div class="swiper-button-prev"></div>
-					<div class="swiper-pagination"></div>
+					<div class="swiper-button-next">
+						<div>
+							
+						</div>
+					</div>
+					<div class="swiper-button-prev">
+
+					</div>
 				</div>
 			</div>
 		</section>
@@ -413,7 +425,7 @@ session_start();
 						<img src="../../img/thewitcher.jpg" alt="">
 						<span>Fallout: New Vegas Ultimate Edition</span>
 					</div>
-					<div class="card-right">
+					<div class="">
 						<div class="card" data-aos="flip-up">
 							<img src="../../img/thewitcher-mapa.jpg" alt="">
 							<div class="card-text">
@@ -576,8 +588,6 @@ session_start();
 			</div>
 			<!-- <div class="swiper-pagination"></div> -->
 		</div>
-
-
 
 		<footer class="m-footer" role="footer">
 			<div class="container">

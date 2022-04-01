@@ -1,3 +1,7 @@
+.container {
+    width: 100%;
+}
+
 .s-cards {
     padding: 10rem 0rem;
     background-color: var(--black-most-light);
@@ -6,12 +10,12 @@
     align-items: center;
 }
 
-.s-cards .container {
+/* .s-cards .container {
     display: flex;
     justify-content: center;
     margin-left: 100px;
-    /* flex-direction: column; */
-}
+    /* flex-direction: column; 
+} */
 
 .s-cards .container .main-cards {
     width: 100%;
@@ -83,78 +87,67 @@
 }
 
 /* CARDS DESTAQUES DO DIA EM MOVIMENTO */
-.s-cards-destaques {
-    margin: 60px 0px 0px 0px;
-    padding: 0;
-}
+/* .s-cards-destaques {
+} */
 
-.s-cards-destaques .container {
+/* .s-cards-destaques .container {
     width: 100%;
-}
+} */
 
-.s-cards-destaques .container .swiper {
+.s-cards-destaques .swiper {
     /*padding: 5rem 0rem;*/
     width: auto;
     max-width: 200rem;
     /* aumenta o tamanho dos cards do s-cards-destaques*/
 }
 
+.s-cards-destaques .cards-destaques {}
+
 .swiper-pagination .swiper-pagination-progressbar-fill {
     background-color: blueviolet;
 }
 
-.s-cards-destaques .container .swiper-slide {
+.s-cards-destaques .swiper-slide {
     width: 100%;
-    /*position: relative;*/
     background-size: cover;
     display: flex;
     align-items: center;
-    /*justify-content: space-between;*/
     cursor: pointer;
 }
 
-.s-cards-destaques .container .swiper-slide img {
-    height: 80vh;
-    width: 1400px;
+.s-cards-destaques .swiper-slide img {
+    width: 100%;
+    height: 70vh;
+
+    object-fit: cover;
+
     transition: all .3s;
 }
 
-.s-cards-destaques .container .swiper-slide img:hover {
+.s-cards-destaques .swiper-slide img:hover {
     filter: opacity(60%);
 }
 
-.s-cards-destaques .container .swiper-slide .card-left,
-.s-cards-destaques .container .swiper-slide .card-right {
+.article-detach {
     position: absolute;
     bottom: 1rem;
 }
 
-.s-cards-destaques .container .swiper-slide .card-left {
+.article-detach {
     display: flex;
     flex-direction: column;
     left: 2rem;
 }
 
-.s-cards-destaques .container .swiper-slide .card-left span,
-.s-cards-destaques .container .swiper-slide .card-left h6 {
+.article-detach span,
+.article-detach h6 {
     font-family: 'Inter', sans-serif;
     font-weight: 600;
-    color: wheat;
+    color: var(--wheat);
 }
 
-.s-cards-destaques .container .swiper-slide .card-left h6 {
+.article-detach h6 {
     font-size: 4rem;
-}
-
-.s-cards-destaques .container .swiper-slide .card-right {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    right: 2rem;
-}
-
-.s-cards-destaques .container .swiper-slide .card-right span {
-    font-size: 3rem;
 }
 
 /* .swiper-horizontal .swiper-pagination-progressbar,
@@ -168,20 +161,49 @@
 
 
 
-.swiper-button-prev {
-    background-color: #0c0c0c;
-    padding: 25px;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-    color: #FFF;
+/* .swiper-button-prev,
+.swiper-button-next
+{
+    background-color: var(--DETALHE-ELEMENTOS);
+    padding: 24px;
+    color: var(--black);
 }
 
 .swiper-button-next {
-    background-color: #0c0c0c;
-    padding: 25px;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
-    color: #FFF;
+}
+
+.swiper-button-prev {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+} */
+
+.swiper-button-prev {
+    background-image: url('https://www.svgrepo.com/show/37592/left-arrow.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 5.8rem;
+    height: 5.8rem;
+}
+
+.swiper-button-prev::after {
+    display: none;
+}
+
+.swiper-button-next {
+    background-image: url('https://www.svgrepo.com/show/37592/left-arrow.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 5.8rem;
+    height: 5.8rem;
+    transform: rotate(-180deg);
+}
+
+.swiper-button-next::after {
+    display: none;
 }
 
 /*
@@ -208,7 +230,7 @@
 }
 
 /*
-  Estilos para os elementos da parte de "Recomendado" da página
+    Estilos para os elementos da parte de "Recomendado" da página
 */
 
 .reco {
@@ -216,13 +238,13 @@
     margin: 1rem;
 }
 
-.card-img > img{
+.card-img>img {
     width: 100%;
     padding: .3rem;
     object-fit: cover;
 }
 
-.card-desc{
+.card-desc {
     max-width: 15ch;
     overflow: hidden;
     text-overflow: ellipsis;
