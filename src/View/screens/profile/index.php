@@ -171,85 +171,36 @@ endif;
 		</main>
 
 		<footer class="m-footer" role="footer">
-			<div class="container">
-				<div id="area-logo">
-					<strong id="logo">
-						Limbo
-					</strong>
-					<span id="data">2021</span>
+			<div class="footer-container">
+				<div class="footer-row">
+					<div class="footer-col">
+						<h4>Sobre</h4>
+						<ul>
+							<li><a href="../apiFreeGames/index.php">Jogos Grátis</a></li>
+							<li><a href="../sobre/index.php">Desenvolvedores</a></li>
+						</ul>
+					</div>
+					<div class="footer-col">
+						<h4>Limbo</h4>
+							<p class="footer-desc">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, odit.
+							</p>
+					</div>
+					<div class="footer-col">
+						<h4>Desenvolvedores</h4>
+						<div class="developers-links">
+							<a href="../sobre/index.php">
+								<img src="https://github.com/alexandrehdev.png" alt="Desenvolvedor do Limbo">
+								<img src="https://github.com/AstronautoLunar.png" alt="Desenvolvedor do Limbo">
+								<img src="https://github.com/GuiLeoni14.png" alt="Desenvolvedor do Limbo">
+								<img src="https://github.com/eduardo-sdev.png" alt="Desenvolvedor do Limbo">
+							</a>
+						</div>
+					</div>
 				</div>
-				<ul id="list-devs">
-					<section class="section" role="section">
-						<article class="article" role="article">
-							<img class="image-developer" src="../../img/dev-example.png" alt="developer image" />
-							<div class="right">
-								<strong class="name-dev">
-									Name Developer
-								</strong>
-								<ul class="list-media-social">
-									<li class="item-media-social">
-										<img class="icon-dev" src="../../img/icon-facebook.svg" alt="icon facebook" />
-									</li>
-									<li class="item-media-social">
-										<img class="icon-dev" src="../../img/icon-github.svg" alt="icon github" />
-									</li>
-									<li class="item-media-social">
-										<img class="icon-dev" src="../../img/icon-instagram.svg" alt="icon instagram" />
-									</li>
-									<li class="item-media-social">
-										<img class="icon-dev" src="../../img/icon-linkedin.svg" alt="icon linkedin" />
-									</li>
-								</ul>
-							</div>
-						</article>
-					</section>
-					<section class="section" role="section">
-						<article class="article" role="article">
-							<img class="image-developer" src="../../img/dev-example.png" alt="developer image" />
-							<div class="right">
-								<strong class="name-dev">Name Developer</strong>
-								<ul class="list-media-social">
-									<li class="item-media-social">
-										<img class="icon-dev" src="../../img/icon-facebook.svg" alt="icon facebook" />
-									</li>
-									<li class="item-media-social">
-										<img class="icon-dev" src="../../img/icon-github.svg" alt="icon github" />
-									</li>
-									<li class="item-media-social">
-										<img class="icon-dev" src="../../img/icon-instagram.svg" alt="icon instagram" />
-									</li>
-									<li class="item-media-social">
-										<img class="icon-dev" src="../../img/icon-linkedin.svg" alt="icon linkedin" />
-									</li>
-								</ul>
-							</div>
-						</article>
-					</section>
-					<section class="section" role="section">
-						<article class="article" role="article">
-							<img class="image-developer" src="../../img/dev-example.png" alt="developer image" />
-							<div class="right">
-								<strong class="name-dev">
-									Name Developer
-								</strong>
-								<ul class="list-media-social">
-									<li class="item-media-social">
-										<img class="icon-dev" src="../../img/icon-facebook.svg" alt="icon facebook" />
-									</li>
-									<li class="item-media-social">
-										<img class="icon-dev" src="../../img/icon-github.svg" alt="icon github" />
-									</li>
-									<li class="item-media-social">
-										<img class="icon-dev" src="../../img/icon-instagram.svg" alt="icon instagram" />
-									</li>
-									<li class="item-media-social">
-										<img class="icon-dev" src="../../img/icon-linkedin.svg" alt="icon linkedin" />
-									</li>
-								</ul>
-							</div>
-						</article>
-					</section>
-				</ul>
+			</div>
+			<div class="footer-bottom">
+				<p>copyright &copy;2022 Limbo</p>
 			</div>
 		</footer>
 	</div>
