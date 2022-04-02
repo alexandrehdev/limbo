@@ -1,5 +1,35 @@
-.container {
-    width: 100%;
+.sections-card-others {
+    padding: 64px 0 ;
+}
+
+.sections-card-others > .container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.section-row-card-others {
+    margin-bottom: 32px;
+}
+
+.main-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-cards-right {
+    display: grid;
+    grid-template: auto auto / auto auto;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.card > img {
+    width: 200px;
+    height: 200px;
 }
 
 .s-cards {
@@ -10,27 +40,29 @@
     align-items: center;
 }
 
-/* .s-cards .container {
+.s-cards .container {
     display: flex;
     justify-content: center;
-    margin-left: 100px;
-    /* flex-direction: column; 
-} */
+    align-items: center;
+    /* flex-direction: column;  */
+}
 
 .s-cards .container .main-cards {
-    width: 100%;
+    width: 80%;
     display: flex;
     justify-content: center;
 }
 
 .s-cards .container .main-cards .card-left {
     display: flex;
-    justify-content: flex-start;
     flex-direction: column;
-    width: 100%;
-    max-width: 50%;
+    justify-content: center;
+    align-items: center;
+    /* width: 100%;
+    max-width: 50%; */
     margin-right: 2rem;
-    box-shadow: -10px -10px 10px #333;
+    flex: 2;
+    /* box-shadow: -10px -10px 10px #333; */
 }
 
 .s-cards .container .main-cards .card-left img {
@@ -39,6 +71,7 @@
 }
 
 .s-cards .container .main-cards .card-left span {
+    width: 100%;
     font-size: 2rem;
     font-family: 'Mochiy Pop One', sans-serif;
     font-weight: 600;
@@ -72,14 +105,14 @@
     height: 14rem;
 }
 
-.s-cards .container .main-cards .card-right .card .card-text {
+.card-text {
     background-color: white;
     padding: 1rem 1rem 3rem 1rem;
     width: 100%;
     max-width: 25rem;
 }
 
-.s-cards .container .main-cards .card-right .card .card-text span {
+.card-text span {
     font-family: 'Inter', sans-serif;
     font-weight: 300;
     font-size: 1.4rem;
@@ -94,6 +127,10 @@
     width: 100%;
 } */
 
+.container-swiper-cards-normal {
+    margin-left: 64px;
+}
+
 .s-cards-destaques .swiper {
     /*padding: 5rem 0rem;*/
     width: auto;
@@ -101,11 +138,13 @@
     /* aumenta o tamanho dos cards do s-cards-destaques*/
 }
 
-.s-cards-destaques .cards-destaques {}
+/* .s-cards-destaques .cards-destaques {} */
 
 .swiper-pagination .swiper-pagination-progressbar-fill {
     background-color: blueviolet;
 }
+
+
 
 .s-cards-destaques .swiper-slide {
     width: 100%;
@@ -120,7 +159,7 @@
     height: 70vh;
 
     object-fit: cover;
-
+    
     transition: all .3s;
 }
 
@@ -150,36 +189,9 @@
     font-size: 4rem;
 }
 
-/* .swiper-horizontal .swiper-pagination-progressbar,
-.swiper-pagination-progressbar.swiper-pagination-horizontal {
-    width: 100%;
-    height: 1rem;
-    left: 0;
-    top: auto !important;
-    bottom: 1rem !important;
-} */
-
-
-
-/* .swiper-button-prev,
+.swiper-button-prev, 
 .swiper-button-next
 {
-    background-color: var(--DETALHE-ELEMENTOS);
-    padding: 24px;
-    color: var(--black);
-}
-
-.swiper-button-next {
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-}
-
-.swiper-button-prev {
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-} */
-
-.swiper-button-prev {
     background-image: url('https://www.svgrepo.com/show/37592/left-arrow.svg');
     background-repeat: no-repeat;
     background-position: center;
@@ -188,28 +200,15 @@
     height: 5.8rem;
 }
 
-.swiper-button-prev::after {
+.swiper-button-prev::after, 
+.swiper-button-next::after
+{
     display: none;
 }
 
 .swiper-button-next {
-    background-image: url('https://www.svgrepo.com/show/37592/left-arrow.svg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    width: 5.8rem;
-    height: 5.8rem;
     transform: rotate(-180deg);
 }
-
-.swiper-button-next::after {
-    display: none;
-}
-
-/*
-    Seletores extras para algumas coisas
-    na página de conteúdo
-*/
 
 .horizontalBlock {
     margin: 65px;
@@ -222,11 +221,21 @@
 }
 
 /*
+    Outros cards
+*/
+
+/*
     Parte do código de swiper
 */
 
 .swiper-pagination {
     right: -10 !important;
+}
+
+.title-cards-others {
+    font-size: 3.2rem;
+    color: var(--white);
+    margin-bottom: 16px;
 }
 
 /*
@@ -245,8 +254,7 @@
 }
 
 .card-desc {
-    max-width: 15ch;
+    max-width: 100ch;
     overflow: hidden;
     text-overflow: ellipsis;
-    white-space: nowrap;
 }

@@ -74,343 +74,348 @@ session_start();
 			</div>
 		</header>
 		<!-- SLIDER -->
-		<section class="s-cards-destaques">
-			<div class="container">
-				<div class="swiper cards-destaques">
-					<div class="swiper-wrapper">
-						<div class="swiper-slide">
-							<img src="../../img/farcry6.jpg" alt="">
-							<article class="article-detach">
-								<span>Now avalaible</span>
-								<h6>FACRY 6</h6>
-							</article>
-						</div>
-						<div class="swiper-slide">
-							<img src="../../img/thewitcher.jpg" class="swiper-lazy" alt="">
-							<div class="article-detach">
-								<span>Now avalaible</span>
-								<h6>The Witcher</h6>
-							</div>
-						</div>
-						<div class="swiper-slide">
-							<img src="../../img/minecraft.jpg" alt="">
-							<div class="article-detach">
-								<span>Now avalaible</span>
-								<h6>Minecraft</h6>
-							</div>
-						</div>
-						<div class="swiper-slide">
-							<img src="../../img/gta5.jpg" alt="">
-							<div class="article-detach">
-								<span>Now avalaible</span>
-								<h6>Minecraft</h6>
-							</div>
-						</div>
-						<div class="swiper-slide">
-							<img src="../../img/gta5.jpg" alt="">
-							<div class="article-detach">
-								<span>Now avalaible</span>
-								<h6>Minecraft</h6>
-							</div>
-						</div>
-						<div class="swiper-slide">
-							<img src="../../img/gta5.jpg" alt="">
-							<div class="article-detach">
-								<span>Now avalaible</span>
-								<h6>Minecraft</h6>
-							</div>
-						</div>
-					</div>
-					<div class="swiper-button-next">
-						<div>
-							
-						</div>
-					</div>
-					<div class="swiper-button-prev">
 
+		<section class="s-cards-destaques">
+			<!-- <h1 class="title-card-destaque">Ultimas noticias</h1> -->
+			<div class="swiper cards-destaques">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<img src="../../img/farcry6.jpg" alt="">
+						<article class="article-detach">
+							<span>Now avalaible</span>
+							<h6>FACRY 6</h6>
+						</article>
 					</div>
+					<div class="swiper-slide">
+						<img src="../../img/thewitcher.jpg" class="swiper-lazy" alt="">
+						<div class="article-detach">
+							<span>Now avalaible</span>
+							<h6>The Witcher</h6>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<img src="../../img/minecraft.jpg" alt="">
+						<div class="article-detach">
+							<span>Now avalaible</span>
+							<h6>Minecraft</h6>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<img src="../../img/gta5.jpg" alt="">
+						<div class="article-detach">
+							<span>Now avalaible</span>
+							<h6>Minecraft</h6>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<img src="../../img/gta5.jpg" alt="">
+						<div class="article-detach">
+							<span>Now avalaible</span>
+							<h6>Minecraft</h6>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<img src="../../img/gta5.jpg" alt="">
+						<div class="article-detach">
+							<span>Now avalaible</span>
+							<h6>Minecraft</h6>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-button-next">
+				</div>
+				<div class="swiper-button-prev">
+
 				</div>
 			</div>
 		</section>
 
 
 		<!-- CARDS -->
-		<section>
+		<section class="sections-card-others">
+			<div class="container">
+				<section class="section-row-card-others">
+					<h2 class="title-cards-others">Ultimas Noticias</h2>
+					<div class="container-swiper-cards-normal">
+						<div class="swiper cards-normal">
+							<div class="swiper-wrapper">
 
-			<div class="swiper horizontalBlock">
-				<h2>Ultimas Noticias</h2>
-				<div class="swiper-wrapper">
+								<div class="swiper-slide org-box">
+									<div class="card">
+										<div class="card-img">
+											<img src="<?= $data[1]["img"] ?>	">
+										</div>
+										<div class="card-title">
+											<?= $data[1]["name"]; ?>
+										</div>
+										<div class="card-desc">
+											<?= $data[1]["desc"]; ?>
+										</div>
+									</div>
+								</div>
 
-					<div class="swiper-slide org-box">
-						<div class="card">
-							<div class="card-img">
-								<!-- medida imagem 304 x 170.63 -->
-								<img src="<?= $data[1]["img"] ?>	">
+								<div class="swiper-slide org-box">
+									<div class="card">
+										<div class="card-img">
+											<img src="<?= $data[2]["img"] ?>">
+										</div>
+										<div class="card-title">
+											<?= $data[2]["name"]; ?>
+										</div>
+										<div class="card-desc">
+											<?= $data[2]["desc"] ?>
+										</div>
+									</div>
+								</div>
+
+								<div class="swiper-slide org-box">
+									<div class="card">
+										<div class="card-img">
+											<img src="<?= $data[3]["img"] ?>">
+										</div>
+										<div class="card-title">
+											<?= $data[3]["name"]; ?>
+										</div>
+										<div class="card-desc">
+											<?= $data[3]["desc"] ?>
+										</div>
+									</div>
+								</div>
+
+								<div class="swiper-slide org-box">
+									<div class="card">
+										<div class="card-img">
+											<img src="<?= $data[4]["img"] ?>">
+										</div>
+										<div class="card-title">
+											<?= $data[4]["name"]; ?>
+										</div>
+										<div class="card-desc">
+											<?= $data[4]["desc"] ?>
+										</div>
+									</div>
+								</div>
+
+								<div class="swiper-slide org-box">
+									<div class="card">
+										<div class="card-img">
+											<img src="<?= $data[5]["img"] ?>">
+										</div>
+										<div class="card-title">
+											<?= $data[5]["name"]; ?>
+										</div>
+										<div class="card-desc">
+											<?= $data[5]["desc"]; ?>
+										</div>
+									</div>
+								</div>
+
+								<div class="swiper-slide org-box">
+									<div class="card">
+										<div class="card-img">
+											<img src="<?= $data[6]["img"] ?>">
+										</div>
+										<div class="card-title">
+											<?= $data[6]["name"]; ?>
+										</div>
+										<div class="card-desc">
+											<?= $data[6]["desc"]; ?>
+										</div>
+									</div>
+								</div>
+
+								<div class="swiper-slide org-box">
+									<div class="card">
+										<div class="card-img">
+											<img src="<?= $data[7]["img"] ?>">
+										</div>
+										<div class="card-title">
+											<?= $data[7]["name"]; ?>
+										</div>
+										<div class="card-desc">
+											<?= $data[7]["desc"] ?>
+										</div>
+									</div>
+								</div>
+
+								<div class="swiper-slide org-box">
+									<div class="card">
+										<div class="card-img">
+											<img src="<?= $data[8]["img"] ?>">
+										</div>
+										<div class="card-title">
+											<?= $data[8]["name"]; ?>
+										</div>
+										<div class="card-desc">
+											<?= $data[8]["desc"] ?>
+										</div>
+									</div>
+								</div>
+
+								<div class="swiper-slide org-box">
+									<div class="card">
+										<div class="card-img">
+											<img src="<?= $data[9]["img"] ?>">
+										</div>
+										<div class="card-title">
+											<?= $data[9]["name"]; ?>
+										</div>
+										<div class="card-desc">
+											<?= $data[9]["desc"] ?>
+										</div>
+									</div>
+								</div>
 							</div>
-							<div class="card-title">
-								<?= $data[1]["name"]; ?>
-							</div>
-							<div class="card-desc">
-								<?= $data[1]["desc"]; ?>
-							</div>
+							<!-- <div class="swiper-button-next"></div>
+							<div class="swiper-button-prev"></div>
+							<div class="swiper-pagination"></div> -->
+							<div class="swiper-pagination"></div>
 						</div>
 					</div>
+				</section>
 
-					<div class="swiper-slide org-box">
-						<div class="card">
-							<div class="card-img">
-								<img src="<?= $data[2]["img"] ?>">
+				<section class="section-row-card-others">
+					<h2 class="title-cards-others">Novidades geek</h2>
+					<div class="container-swiper-cards-normal">
+						<div class="swiper cards-normal">
+							<div class="swiper-wrapper">
+
+								<div class="swiper-slide org-box">
+									<div class="card">
+										<div class="card-img">
+											<!-- medida imagem 304 x 170.63 -->
+											<img src="<?= $data[1]["img"] ?>	">
+										</div>
+										<div class="card-title">
+											<?= $data[1]["name"]; ?>
+										</div>
+										<div class="card-desc">
+											<?= $data[1]["desc"] ?>
+										</div>
+									</div>
+								</div>
+
+								<div class="swiper-slide org-box">
+									<div class="card">
+										<div class="card-img">
+											<img src="<?= $data[2]["img"] ?>">
+										</div>
+										<div class="card-title">
+											<?= $data[2]["name"]; ?>
+										</div>
+										<div class="card-desc">
+											<?= $data[2]["desc"] ?>
+										</div>
+									</div>
+								</div>
+
+								<div class="swiper-slide org-box">
+									<div class="card">
+										<div class="card-img">
+											<img src="<?= $data[3]["img"] ?>">
+										</div>
+										<div class="card-title">
+											<?= $data[3]["name"]; ?>
+										</div>
+										<div class="card-desc">
+											<?= $data[3]["desc"] ?>
+										</div>
+									</div>
+								</div>
+
+								<div class="swiper-slide org-box">
+									<div class="card">
+										<div class="card-img">
+											<img src="<?= $data[4]["img"] ?>">
+										</div>
+										<div class="card-title">
+											<?= $data[4]["name"]; ?>
+										</div>
+										<div class="card-desc">
+											<?= $data[4]["desc"] ?>
+										</div>
+									</div>
+								</div>
+
+								<div class="swiper-slide org-box">
+									<div class="card">
+										<div class="card-img">
+											<img src="<?= $data[5]["img"] ?>">
+										</div>
+										<div class="card-title">
+											<?= $data[5]["name"]; ?>
+										</div>
+										<div class="card-desc">
+											<?= $data[5]["desc"] ?>
+										</div>
+									</div>
+								</div>
+
+								<div class="swiper-slide org-box">
+									<div class="card">
+										<div class="card-img">
+											<img src="<?= $data[6]["img"] ?>">
+										</div>
+										<div class="card-title">
+											<?= $data[6]["name"]; ?>
+										</div>
+										<div class="card-desc">
+											<?= $data[6]["desc"] ?>
+										</div>
+									</div>
+								</div>
+
+								<div class="swiper-slide org-box">
+									<div class="card">
+										<div class="card-img">
+											<img src="<?= $data[7]["img"] ?>">
+										</div>
+										<div class="card-title">
+											<?= $data[7]["name"]; ?>
+										</div>
+										<div class="card-desc">
+											<?= $data[7]["desc"] ?>
+										</div>
+									</div>
+								</div>
+
+								<div class="swiper-slide org-box">
+									<div class="card">
+										<div class="card-img">
+											<img src="<?= $data[8]["img"] ?>">
+										</div>
+										<div class="card-title">
+											<?= $data[8]["name"]; ?>
+										</div>
+										<div class="card-desc">
+											<?= $data[8]["desc"] ?>
+										</div>
+									</div>
+								</div>
+
+								<div class="swiper-slide org-box">
+									<div class="card">
+										<div class="card-img">
+											<img src="<?= $data[9]["img"] ?>">
+										</div>
+										<div class="card-title">
+											<?= $data[9]["name"]; ?>
+										</div>
+										<div class="card-desc">
+											<?= $data[9]["desc"] ?>
+										</div>
+									</div>
+								</div>
 							</div>
-							<div class="card-title">
-								<?= $data[2]["name"]; ?>
-							</div>
-							<div class="card-desc">
-								<?= $data[2]["desc"] ?>
-							</div>
+							<!-- <div class="swiper-button-next"></div>
+							<div class="swiper-button-prev"></div> -->
+							<!-- <div class="swiper-pagination"></div> -->
+							<div class="swiper-pagination"></div>
 						</div>
 					</div>
+				</section>
 
-					<div class="swiper-slide org-box">
-						<div class="card">
-							<div class="card-img">
-								<img src="<?= $data[3]["img"] ?>">
-							</div>
-							<div class="card-title">
-								<?= $data[3]["name"]; ?>
-							</div>
-							<div class="card-desc">
-								<?= $data[3]["desc"] ?>
-							</div>
-						</div>
-					</div>
-
-					<div class="swiper-slide org-box">
-						<div class="card">
-							<div class="card-img">
-								<img src="<?= $data[4]["img"] ?>">
-							</div>
-							<div class="card-title">
-								<?= $data[4]["name"]; ?>
-							</div>
-							<div class="card-desc">
-								<?= $data[4]["desc"] ?>
-							</div>
-						</div>
-					</div>
-
-					<div class="swiper-slide org-box">
-						<div class="card">
-							<div class="card-img">
-								<img src="<?= $data[5]["img"] ?>">
-							</div>
-							<div class="card-title">
-								<?= $data[5]["name"]; ?>
-							</div>
-							<div class="card-desc">
-								<?= $data[5]["desc"]; ?>
-							</div>
-						</div>
-					</div>
-
-					<div class="swiper-slide org-box">
-						<div class="card">
-							<div class="card-img">
-								<img src="<?= $data[6]["img"] ?>">
-							</div>
-							<div class="card-title">
-								<?= $data[6]["name"]; ?>
-							</div>
-							<div class="card-desc">
-								<?= $data[6]["desc"]; ?>
-							</div>
-						</div>
-					</div>
-
-					<div class="swiper-slide org-box">
-						<div class="card">
-							<div class="card-img">
-								<img src="<?= $data[7]["img"] ?>">
-							</div>
-							<div class="card-title">
-								<?= $data[7]["name"]; ?>
-							</div>
-							<div class="card-desc">
-								<?= $data[7]["desc"] ?>
-							</div>
-						</div>
-					</div>
-
-					<div class="swiper-slide org-box">
-						<div class="card">
-							<div class="card-img">
-								<img src="<?= $data[8]["img"] ?>">
-							</div>
-							<div class="card-title">
-								<?= $data[8]["name"]; ?>
-							</div>
-							<div class="card-desc">
-								<?= $data[8]["desc"] ?>
-							</div>
-						</div>
-					</div>
-
-					<div class="swiper-slide org-box">
-						<div class="card">
-							<div class="card-img">
-								<img src="<?= $data[9]["img"] ?>">
-							</div>
-							<div class="card-title">
-								<?= $data[9]["name"]; ?>
-							</div>
-							<div class="card-desc">
-								<?= $data[9]["desc"] ?>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="swiper-button-next"></div>
-				<div class="swiper-button-prev"></div>
-				<!-- <div class="swiper-pagination"></div> -->
 			</div>
-
-
-
-			<div class="swiper horizontalBlock">
-				<h2>Novidades Geek</h2>
-				<div class="swiper-wrapper">
-
-					<div class="swiper-slide org-box">
-						<div class="card">
-							<div class="card-img">
-								<!-- medida imagem 304 x 170.63 -->
-								<img src="<?= $data[1]["img"] ?>	">
-							</div>
-							<div class="card-title">
-								<?= $data[1]["name"]; ?>
-							</div>
-							<div class="card-desc">
-								<?= $data[1]["desc"] ?>
-							</div>
-						</div>
-					</div>
-
-					<div class="swiper-slide org-box">
-						<div class="card">
-							<div class="card-img">
-								<img src="<?= $data[2]["img"] ?>">
-							</div>
-							<div class="card-title">
-								<?= $data[2]["name"]; ?>
-							</div>
-							<div class="card-desc">
-								<?= $data[2]["desc"] ?>
-							</div>
-						</div>
-					</div>
-
-					<div class="swiper-slide org-box">
-						<div class="card">
-							<div class="card-img">
-								<img src="<?= $data[3]["img"] ?>">
-							</div>
-							<div class="card-title">
-								<?= $data[3]["name"]; ?>
-							</div>
-							<div class="card-desc">
-								<?= $data[3]["desc"] ?>
-							</div>
-						</div>
-					</div>
-
-					<div class="swiper-slide org-box">
-						<div class="card">
-							<div class="card-img">
-								<img src="<?= $data[4]["img"] ?>">
-							</div>
-							<div class="card-title">
-								<?= $data[4]["name"]; ?>
-							</div>
-							<div class="card-desc">
-								<?= $data[4]["desc"] ?>
-							</div>
-						</div>
-					</div>
-
-					<div class="swiper-slide org-box">
-						<div class="card">
-							<div class="card-img">
-								<img src="<?= $data[5]["img"] ?>">
-							</div>
-							<div class="card-title">
-								<?= $data[5]["name"]; ?>
-							</div>
-							<div class="card-desc">
-								<?= $data[5]["desc"] ?>
-							</div>
-						</div>
-					</div>
-
-					<div class="swiper-slide org-box">
-						<div class="card">
-							<div class="card-img">
-								<img src="<?= $data[6]["img"] ?>">
-							</div>
-							<div class="card-title">
-								<?= $data[6]["name"]; ?>
-							</div>
-							<div class="card-desc">
-								<?= $data[6]["desc"] ?>
-							</div>
-						</div>
-					</div>
-
-					<div class="swiper-slide org-box">
-						<div class="card">
-							<div class="card-img">
-								<img src="<?= $data[7]["img"] ?>">
-							</div>
-							<div class="card-title">
-								<?= $data[7]["name"]; ?>
-							</div>
-							<div class="card-desc">
-								<?= $data[7]["desc"] ?>
-							</div>
-						</div>
-					</div>
-
-					<div class="swiper-slide org-box">
-						<div class="card">
-							<div class="card-img">
-								<img src="<?= $data[8]["img"] ?>">
-							</div>
-							<div class="card-title">
-								<?= $data[8]["name"]; ?>
-							</div>
-							<div class="card-desc">
-								<?= $data[8]["desc"] ?>
-							</div>
-						</div>
-					</div>
-
-					<div class="swiper-slide org-box">
-						<div class="card">
-							<div class="card-img">
-								<img src="<?= $data[9]["img"] ?>">
-							</div>
-							<div class="card-title">
-								<?= $data[9]["name"]; ?>
-							</div>
-							<div class="card-desc">
-								<?= $data[9]["desc"] ?>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="swiper-button-next"></div>
-				<div class="swiper-button-prev"></div>
-				<!-- <div class="swiper-pagination"></div> -->
-			</div>
-
 
 		</section>
 
@@ -425,7 +430,7 @@ session_start();
 						<img src="../../img/thewitcher.jpg" alt="">
 						<span>Fallout: New Vegas Ultimate Edition</span>
 					</div>
-					<div class="">
+					<div class="grid-cards-right">
 						<div class="card" data-aos="flip-up">
 							<img src="../../img/thewitcher-mapa.jpg" alt="">
 							<div class="card-text">
@@ -681,7 +686,6 @@ session_start();
 	<script type="text/javascript" src="../../js/pages.js"></script>
 	<script type="text/javascript" src="../../js/conteudo.js"></script>
 	<script type="text/javascript" src="../../js/header.js"></script>
-
 </body>
 
 </html>
