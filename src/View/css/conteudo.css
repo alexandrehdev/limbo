@@ -276,6 +276,7 @@
     padding: 8px;
     background-color: var(--black);
     z-index: 2;
+    cursor: pointer;
 }
 
 .card-recommended:hover {

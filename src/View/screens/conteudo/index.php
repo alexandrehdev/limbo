@@ -467,7 +467,7 @@ session_start();
 						<span class="card-title">
 							<?= $data[1]["name"]; ?>
 						</span>
-						<span class="card-description">
+						<span class="card-description" title="<?= $data[1]["desc"] ?>">
 							<?= $data[1]["desc"] ?>
 						</span>
 					</div>
@@ -481,7 +481,7 @@ session_start();
 						<span class="card-title">
 							<?= $data[2]["name"]; ?>
 						</span>
-						<span class="card-description">
+						<span class="card-description" title="<?= $data[2]["desc"] ?>">
 							<?= $data[2]["desc"] ?>
 						</span>
 					</div>
@@ -495,7 +495,7 @@ session_start();
 						<span class="card-title">
 							<?= $data[3]["name"]; ?>
 						</span>
-						<span class="card-description">
+						<span class="card-description" title="<?= $data[3]["desc"] ?>">
 							<?= $data[3]["desc"] ?>
 						</span>
 					</div>
@@ -509,7 +509,7 @@ session_start();
 						<span class="card-title">
 							<?= $data[4]["name"]; ?>
 						</span>
-						<span class="card-description">
+						<span class="card-description" title="<?= $data[4]["desc"] ?>">
 							<?= $data[4]["desc"] ?>
 						</span>
 					</div>
@@ -523,7 +523,7 @@ session_start();
 						<span class="card-title">
 							<?= $data[5]["name"]; ?>
 						</span>
-						<span class="card-description">
+						<span class="card-description" title="<?= $data[5]["desc"] ?>">
 							<?= $data[5]["desc"] ?>
 						</span>
 					</div>
@@ -537,7 +537,7 @@ session_start();
 						<span class="card-title">
 							<?= $data[6]["name"]; ?>
 						</span>
-						<span class="card-description">
+						<span class="card-description" title="<?= $data[6]["desc"] ?>">
 							<?= $data[6]["desc"] ?>
 						</span>
 					</div>
@@ -551,7 +551,7 @@ session_start();
 						<span class="card-title">
 							<?= $data[7]["name"]; ?>
 						</span>
-						<span class="card-description">
+						<span class="card-description" title="<?= $data[7]["desc"] ?>">
 							<?= $data[7]["desc"] ?>
 						</span>
 					</div>
@@ -565,7 +565,7 @@ session_start();
 						<span class="card-title">
 							<?= $data[8]["name"]; ?>
 						</span>
-						<span class="card-description">
+						<span class="card-description" title="<?= $data[8]["desc"] ?>">
 							<?= $data[8]["desc"] ?>
 						</span>
 					</div>
@@ -579,7 +579,7 @@ session_start();
 						<span class="card-title">
 							<?= $data[9]["name"]; ?>
 						</span>
-						<span class="card-description">
+						<span class="card-description" title="<?= $data[9]["desc"] ?>">
 							<?= $data[9]["desc"] ?>
 						</span>
 					</div>
