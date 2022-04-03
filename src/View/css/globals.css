@@ -81,13 +81,18 @@ body {
 /* Estilos para o header*/
 
 .main-header {
-
 	background: var(--color-black);
 	justify-content: space-between;
 	height: 69px;
 	width: 100%;
 	z-index: 999;
-	position: fixed;
+	position: sticky;
+    opacity: 0.7;
+    transition: opacity 350ms;
+}
+
+.main-header:hover {
+    opacity: 1;
 }
 
 .main-header,

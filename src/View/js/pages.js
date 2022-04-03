@@ -140,3 +140,18 @@ function createModal(selectorModal, type) {
             throw new Error("parâmetro type de createModal é undefined");
     }
 }
+
+// Header
+const header = window.document.querySelector(".main-header");
+
+function applyOpacityHeader() {
+    if(window.scrollY === 0) {
+        header.style.opacity = 1;
+    } else {
+        header.style.opacity = "";
+    }
+}
+
+window.addEventListener("scroll", applyOpacityHeader);
+
+window.addEventListener("load", applyOpacityHeader);
