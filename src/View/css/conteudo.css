@@ -27,9 +27,28 @@
     gap: 20px;
 }
 
+.grid-cards-right > .card {
+    width: 210px;
+}
+
 .card > img {
-    width: 200px;
-    height: 200px;
+    width: 100%;
+    height: 137px;
+    object-fit: cover;
+}
+
+.card-text {
+    background-color: white;
+    padding: 1rem 1rem 3rem 1rem;
+    width: 100%;
+}
+
+.card-text span {
+    font-weight: 300;
+    font-size: 1.4rem;
+    font-family: 'Mochiy Pop One', sans-serif;
+    max-width: 10ch;
+    text-overflow: ellipsis;
 }
 
 .s-cards {
@@ -105,19 +124,7 @@
     height: 14rem;
 }
 
-.card-text {
-    background-color: white;
-    padding: 1rem 1rem 3rem 1rem;
-    width: 100%;
-    max-width: 25rem;
-}
 
-.card-text span {
-    font-family: 'Inter', sans-serif;
-    font-weight: 300;
-    font-size: 1.4rem;
-    font-family: 'Mochiy Pop One', sans-serif;
-}
 
 /* CARDS DESTAQUES DO DIA EM MOVIMENTO */
 /* .s-cards-destaques {
@@ -239,7 +246,7 @@
     box-shadow: 0px 0px 15px 3px var(--DETALHE-ELEMENTOS);
 }
 
-.swiper-wrapper {
+.cards-normal > .swiper-wrapper {
     padding-top: 10px;
 }
 

@@ -266,9 +266,6 @@ session_start();
 									</div>
 								</div>
 							</div>
-							<!-- <div class="swiper-button-next"></div>
-							<div class="swiper-button-prev"></div>
-							<div class="swiper-pagination"></div> -->
 							<div class="swiper-pagination"></div>
 						</div>
 					</div>
@@ -407,9 +404,6 @@ session_start();
 									</div>
 								</div>
 							</div>
-							<!-- <div class="swiper-button-next"></div>
-							<div class="swiper-button-prev"></div> -->
-							<!-- <div class="swiper-pagination"></div> -->
 							<div class="swiper-pagination"></div>
 						</div>
 					</div>
@@ -440,7 +434,7 @@ session_start();
 						<div class="card" data-aos="flip-up">
 							<img src="../../img//thewitcher-batle.jpg" alt="">
 							<div class="card-text">
-								<span>Novos monstros adicinados lore</span>
+								<span>Novos monstros adicinados</span>
 							</div>
 						</div>
 						<div class="card" data-aos="flip-down">
@@ -465,7 +459,7 @@ session_start();
 			<div class="reco">
 
 				<div class="org-box">
-					<div class="card">
+					<div class="card-recommended">
 						<div class="card-img">
 							<!-- medida imagem 304 x 170.63 -->
 							<img src="<?= $data[1]["img"] ?>	">
@@ -480,7 +474,7 @@ session_start();
 				</div>
 
 				<div class="org-box">
-					<div class="card">
+					<div class="card-recommended">
 						<div class="card-img">
 							<img src="<?= $data[2]["img"] ?>">
 						</div>
@@ -494,7 +488,7 @@ session_start();
 				</div>
 
 				<div class="org-box">
-					<div class="card">
+					<div class="card-recommended">
 						<div class="card-img">
 							<img src="<?= $data[3]["img"] ?>">
 						</div>
@@ -508,7 +502,7 @@ session_start();
 				</div>
 
 				<div class="org-box">
-					<div class="card">
+					<div class="card-recommended">
 						<div class="card-img">
 							<img src="<?= $data[4]["img"] ?>">
 						</div>
@@ -522,7 +516,7 @@ session_start();
 				</div>
 
 				<div class="org-box">
-					<div class="card">
+					<div class="card-recommended">
 						<div class="card-img">
 							<img src="<?= $data[5]["img"] ?>">
 						</div>
@@ -536,7 +530,7 @@ session_start();
 				</div>
 
 				<div class="org-box">
-					<div class="card">
+					<div class="card-recommended">
 						<div class="card-img">
 							<img src="<?= $data[6]["img"] ?>">
 						</div>
@@ -550,7 +544,7 @@ session_start();
 				</div>
 
 				<div class="org-box">
-					<div class="card">
+					<div class="card-recommended">
 						<div class="card-img">
 							<img src="<?= $data[7]["img"] ?>">
 						</div>
@@ -564,7 +558,7 @@ session_start();
 				</div>
 
 				<div class="org-box">
-					<div class="card">
+					<div class="card-recommended">
 						<div class="card-img">
 							<img src="<?= $data[8]["img"] ?>">
 						</div>
@@ -578,7 +572,7 @@ session_start();
 				</div>
 
 				<div class="org-box">
-					<div class="card">
+					<div class="card-recommended">
 						<div class="card-img">
 							<img src="<?= $data[9]["img"] ?>">
 						</div>
