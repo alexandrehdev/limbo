@@ -16,7 +16,7 @@ var swiperOthers = new Swiper(".cards-normal", {
 	centeredSlides: false,
 	pagination: {
 		el: ".swiper-pagination",
-		type: "progressBar",
+		type: "progressbar",
 		
 	},
 });

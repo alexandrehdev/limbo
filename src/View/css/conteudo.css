@@ -228,14 +228,19 @@
     Parte do código de swiper
 */
 
-.swiper-pagination {
-    right: -10 !important;
-}
-
 .title-cards-others {
     font-size: 3.2rem;
     color: var(--white);
     margin-bottom: 16px;
+}
+
+.swiper-pagination .swiper-pagination-progressbar-fill {
+    background-color: var(--DETALHE-ELEMENTOS);
+    box-shadow: 0px 0px 15px 3px var(--DETALHE-ELEMENTOS);
+}
+
+.swiper-wrapper {
+    padding-top: 10px;
 }
 
 /*
