@@ -257,16 +257,47 @@
 .reco {
     display: flex;
     margin: 1rem;
+    justify-content: space-between;
 }
 
-.card-img>img {
+.org-box {
+    width: 185px;
+}
+
+.org-box:last-of-type {
+    margin-right: 0;
+}
+
+.card-recommended {
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+    transition: transform 200ms;
+    padding: 8px;
+    background-color: var(--black);
+    z-index: 2;
+}
+
+.card-recommended:hover {
+    transform: scale(2);
+}
+
+.card-image > img {
     width: 100%;
     padding: .3rem;
     object-fit: cover;
+    border-radius: 6px;
 }
 
-.card-desc {
+.card-title {
+    font-size: 1.8rem;
+    margin-top: 8px;
+    margin-bottom: 16px;
+    color: var(--DETALHE-ELEMENTOS);
+}
+
+.card-description {
     max-width: 100ch;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    font-size: 1.3rem;
+    color: var(--white);
 }

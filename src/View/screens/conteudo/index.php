@@ -460,130 +460,130 @@ session_start();
 
 				<div class="org-box">
 					<div class="card-recommended">
-						<div class="card-img">
+						<div class="card-image">
 							<!-- medida imagem 304 x 170.63 -->
 							<img src="<?= $data[1]["img"] ?>	">
 						</div>
-						<div class="card-title">
+						<span class="card-title">
 							<?= $data[1]["name"]; ?>
-						</div>
-						<div class="card-desc">
+						</span>
+						<span class="card-description">
 							<?= $data[1]["desc"] ?>
-						</div>
+						</span>
 					</div>
 				</div>
 
 				<div class="org-box">
 					<div class="card-recommended">
-						<div class="card-img">
+						<div class="card-image">
 							<img src="<?= $data[2]["img"] ?>">
 						</div>
-						<div class="card-title">
+						<span class="card-title">
 							<?= $data[2]["name"]; ?>
-						</div>
-						<div class="card-desc">
+						</span>
+						<span class="card-description">
 							<?= $data[2]["desc"] ?>
-						</div>
+						</span>
 					</div>
 				</div>
 
 				<div class="org-box">
 					<div class="card-recommended">
-						<div class="card-img">
+						<div class="card-image">
 							<img src="<?= $data[3]["img"] ?>">
 						</div>
-						<div class="card-title">
+						<span class="card-title">
 							<?= $data[3]["name"]; ?>
-						</div>
-						<div class="card-desc">
+						</span>
+						<span class="card-description">
 							<?= $data[3]["desc"] ?>
-						</div>
+						</span>
 					</div>
 				</div>
 
 				<div class="org-box">
 					<div class="card-recommended">
-						<div class="card-img">
+						<div class="card-image">
 							<img src="<?= $data[4]["img"] ?>">
 						</div>
-						<div class="card-title">
+						<span class="card-title">
 							<?= $data[4]["name"]; ?>
-						</div>
-						<div class="card-desc">
+						</span>
+						<span class="card-description">
 							<?= $data[4]["desc"] ?>
-						</div>
+						</span>
 					</div>
 				</div>
 
 				<div class="org-box">
 					<div class="card-recommended">
-						<div class="card-img">
+						<div class="card-image">
 							<img src="<?= $data[5]["img"] ?>">
 						</div>
-						<div class="card-title">
+						<span class="card-title">
 							<?= $data[5]["name"]; ?>
-						</div>
-						<div class="card-desc">
+						</span>
+						<span class="card-description">
 							<?= $data[5]["desc"] ?>
-						</div>
+						</span>
 					</div>
 				</div>
 
 				<div class="org-box">
 					<div class="card-recommended">
-						<div class="card-img">
+						<div class="card-image">
 							<img src="<?= $data[6]["img"] ?>">
 						</div>
-						<div class="card-title">
+						<span class="card-title">
 							<?= $data[6]["name"]; ?>
-						</div>
-						<div class="card-desc">
+						</span>
+						<span class="card-description">
 							<?= $data[6]["desc"] ?>
-						</div>
+						</span>
 					</div>
 				</div>
 
-				<div class="org-box">
+				<!-- <div class="org-box">
 					<div class="card-recommended">
-						<div class="card-img">
+						<div class="card-image">
 							<img src="<?= $data[7]["img"] ?>">
 						</div>
-						<div class="card-title">
+						<span class="card-title">
 							<?= $data[7]["name"]; ?>
-						</div>
-						<div class="card-desc">
+						</span>
+						<span class="card-description">
 							<?= $data[7]["desc"] ?>
-						</div>
+						</span>
 					</div>
 				</div>
 
 				<div class="org-box">
 					<div class="card-recommended">
-						<div class="card-img">
+						<div class="card-image">
 							<img src="<?= $data[8]["img"] ?>">
 						</div>
-						<div class="card-title">
+						<span class="card-title">
 							<?= $data[8]["name"]; ?>
-						</div>
-						<div class="card-desc">
+						</span>
+						<span class="card-description">
 							<?= $data[8]["desc"] ?>
-						</div>
+						</span>
 					</div>
 				</div>
 
 				<div class="org-box">
 					<div class="card-recommended">
-						<div class="card-img">
+						<div class="card-image">
 							<img src="<?= $data[9]["img"] ?>">
 						</div>
-						<div class="card-title">
+						<span class="card-title">
 							<?= $data[9]["name"]; ?>
-						</div>
-						<div class="card-desc">
+						</span>
+						<span class="card-description">
 							<?= $data[9]["desc"] ?>
-						</div>
+						</span>
 					</div>
-				</div>
+				</div> -->
 			</div>
 			<!-- <div class="swiper-pagination"></div> -->
 		</div>
