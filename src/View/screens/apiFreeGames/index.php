@@ -72,125 +72,28 @@ session_start();
 			<h1>Receba jogos gratis toda semana</h1>
 		</div>
 		<main>
-			<section class='content-games'>
+			<div class="grid-of-free-games">
 				<?php
-				for ($i = 10; $i <= 12; $i++) :
-					echo "
-
-				<div class='card'>
-					<div class='card-img-header'>
-						<img src=" . $response[$i]['thumbnail'] . ">
-					</div>
-					<div class='box-text'>
-					<div class='title-game'>
-						" . $response[$i]['title'] . "
-					</div>
-					<div class='game-tag'>
-					" . $response[$i]['platform'] . " " . "
-					" . $response[$i]['genre'] . "
-					</div>
-					</div>
-				</div>
-		";
-				endfor;
+					for ($i = 10; $i <= 30; $i++) :
+						echo "
+								<div class='card'>
+									<div class='card-img-header'>
+										<img src=" . $response[$i]['thumbnail'] . ">
+									</div>
+									<div class='box-text'>
+										<span class='title-game'>
+											" . $response[$i]['title'] . "
+										</span>
+										<span class='game-tag'>
+										" . $response[$i]['platform'] . " " . "
+										" . $response[$i]['genre'] . "
+										</span>
+									</div>
+								</div>
+							";
+					endfor;
 				?>
-			</section>
-
-			<section class='content-games'>
-				<?php
-				for ($i = 13; $i <= 15; $i++) :
-					echo "
-
-		 <div class='card'>
-			 <div class='card-img-header'>
-				 <img src=" . $response[$i]['thumbnail'] . ">
-			 </div>
-			 <div class='box-text'>
-			 <div class='title-game'>
-				 " . $response[$i]['title'] . "
-			 </div>
-			 <div class='game-tag'>
-			 " . $response[$i]['platform'] . " " . "
-			 " . $response[$i]['genre'] . "
-			 </div>
-			 </div>
-		 </div>
-	 ";
-				endfor;
-				?>
-			</section>
-
-			<section class='content-games'>
-				<?php
-				for ($i = 16; $i <= 18; $i++) :
-					echo "
-
-		<div class='card'>
-			<div class='card-img-header'>
-				<img src=" . $response[$i]['thumbnail'] . ">
 			</div>
-			<div class='box-text'>
-			<div class='title-game'>
-				" . $response[$i]['title'] . "
-			</div>
-			<div class='game-tag'>
-			" . $response[$i]['platform'] . " " . "
-			" . $response[$i]['genre'] . "
-			</div>
-			</div>
-		</div>
-	";
-				endfor;
-				?>
-			</section>
-
-			<section class='content-games'>
-				<?php
-				for ($i = 19; $i <= 21; $i++) :
-					echo "
-
-		<div class='card'>
-			<div class='card-img-header'>
-				<img src=" . $response[$i]['thumbnail'] . ">
-			</div>
-			<div class='box-text'>
-			<div class='title-game'>
-				" . $response[$i]['title'] . "
-			</div>
-			<div class='game-tag'>
-			" . $response[$i]['platform'] . " " . "
-			" . $response[$i]['genre'] . "
-			</div>
-			</div>
-		</div>
- ";
-				endfor;
-				?>
-			</section>
-
-			<section class='content-games'>
-				<?php
-				for ($i = 27; $i <= 29; $i++) :
-					echo "
-
-	 <div class='card'>
-		 <div class='card-img-header'>
-			 <img src=" . $response[$i]['thumbnail'] . ">
-		 </div>
-		 <div class='box-text'>
-		 <div class='title-game'>
-			 " . $response[$i]['title'] . "
-		 </div>
-		 <div class='game-tag'>
-		 " . $response[$i]['platform'] . " " . "
-		 " . $response[$i]['genre'] . "
-		 </div>
-		 </div>
-	 </div>
- ";
-				endfor;
-				?>
-			</section>
 
 			<section class="noticias">
 				<div class="noticias-opacity"></div>
@@ -202,8 +105,7 @@ session_start();
 						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores cumque non dicta quisquam ratione similique omnis a voluptates. Veritatis fuga dicta ducimus minus consectetur accusamus illum modi placeat officia velit!</p>
 					</div>
 				</div>
-			</section>
-
+			</section> -->
 		</main>
 
 		<footer class="m-footer" role="footer">
@@ -218,9 +120,9 @@ session_start();
 					</div>
 					<div class="footer-col">
 						<h4>Limbo</h4>
-							<p class="footer-desc">
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, odit.
-							</p>
+						<p class="footer-desc">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, odit.
+						</p>
 					</div>
 					<div class="footer-col">
 						<h4>Desenvolvedores</h4>
