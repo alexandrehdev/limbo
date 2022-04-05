@@ -4,38 +4,60 @@
 */
 
 .background-header {
-    height: 55vh;
     width: 100%;
-    background: url("https://wallpaperbat.com/img/612888-gamer-wallpaper-top-free-gamer-background.jpg");
+    height: 55vh;
+    background-image: url("https://wallpaperbat.com/img/612888-gamer-wallpaper-top-free-gamer-background.jpg"),
+    linear-gradient(transparent, #000000);;
 }
 
 .background-header h1 {
     text-align: center;
-    line-height: 300px;
-    font-size: 30px;
+    line-height: 250px;
+    font-size: 48px;
     color: white;
 }
 
-.content-games {
-    display: -webkit-flex;
-    display: flex;
-    -webkit-flex-direction: row;
-    flex-direction: row;
+.grid-of-free-games {
+    margin-top: -136px;
+    margin-bottom: 80px;
+    display: grid;
+    grid-template-columns: auto auto auto;
     justify-content: center;
-    padding: 0 0 12px 0;
-    margin-top: -84px;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+    gap: 32px;
 }
 
-.content-games .card {
-    margin: 30px;
-    padding: 15px;
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
 }
 
-.content-games .card .box-text {
+.box-text {
     background: whitesmoke;
     width: auto;
-    padding: 5px;
+    padding: 16px;
     border-radius: 0 0 10px 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-img-header > img {
+    border-radius: 10px 10px 0 0;
+}
+
+.title-game {
+    margin-bottom: 8px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.game-tag {
+    font-size: 16px;
+    font-weight: bold;
 }
 
 /* CARD NOTICIAS */
@@ -49,7 +71,6 @@
     height: 70vh;
     position: relative;
     /* background: url("https:\/\/www.freetogame.com\/g\/26\/thumbnail.jpg") no-repeat center center; */
-
 }
 
 .noticias .container {
