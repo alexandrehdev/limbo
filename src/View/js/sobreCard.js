@@ -4,7 +4,7 @@ const dataDevs = [{
     id: "dev1",
     backgroundColor: "#7A54E5",
     directionAOSCard: "fade-right",
-    sourceImage: "../../img/exampleDev.png",
+    sourceImage: "https://github.com/AstronautoLunar.png",
     name: "Pedro Paulo",
     description: "Um desenvolvedor Web e Mobile apaixonado pelo o que faz e em estado de evolução constante, enquanto minha sede de conhecimento existir irei decolar para além das minha barreiras que me impedem de voar, <span style='color: #7A54E5;'>Hora de decolar!!!</span>",
     mediaSocials: [{
@@ -31,11 +31,12 @@ const dataDevs = [{
     id: "dev2",
     backgroundColor: "#000000",
     directionAOSCard: "fade-left",
-    sourceImage: "../../img/exampleDev.png",
+    sourceImage: "https://github.com/alexandrehdev.png",
     name: "Alexandre",
     description: "Desenvolvedor Web focado na área de backend em PHP... E praticamente ou estou programando ou jogando alguma coisa ae... E tamo junto :)",
     mediaSocials: [{
       name: "github",
+      href: "https://github.com/alexandrehdev",
       source: "../../img/icon-github-info.svg",
       alt: "icon github icon"
     }]
@@ -44,66 +45,68 @@ const dataDevs = [{
     id: "dev3",
     backgroundColor: "#000000",
     directionAOSCard: "fade-right",
-    sourceImage: "../../img/exampleDev.png",
-    name: "Josefino Pimposo",
-    description: "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum",
-    mediaSocials: [{
-        name: "facebook",
-        href: "",
-        source: "../../img/icon-facebook-info.svg",
-        alt: "icon facebook icon"
-      },
+    sourceImage: "https://github.com/eduardo-sdev.png",
+    name: "Eduardo Silva",
+    description: "Sou um Desenvolvedor Front-end, Apaixonado pelas melhores tecnologias de desenvolvimento web.",
+    mediaSocials: [
+      // {
+      //   name: "facebook",
+      //   href: "",
+      //   source: "../../img/icon-facebook-info.svg",
+      //   alt: "icon facebook icon"
+      // },
       {
         name: "github",
-        href: "",
+        href: "https://github.com/eduardo-sdev",
         source: "../../img/icon-github-info.svg",
         alt: "icon github icon"
       },
-      {
-        name: "instagram",
-        href: "",
-        source: "../../img/icon-instagram-info.svg",
-        alt: "icon instagram icon"
-      },
-      {
-        name: "twitter",
-        href: "",
-        source: "../../img/icon-twitter-info.svg",
-        alt: "icon twitter icon"
-      },
+      // {
+      //   name: "instagram",
+      //   href: "",
+      //   source: "../../img/icon-instagram-info.svg",
+      //   alt: "icon instagram icon"
+      // },
+      // {
+      //   name: "twitter",
+      //   href: "",
+      //   source: "../../img/icon-twitter-info.svg",
+      //   alt: "icon twitter icon"
+      // },
     ]
   },
   {
     id: "dev4",
     backgroundColor: "#000000",
     directionAOSCard: "fade-left",
-    sourceImage: "../../img/exampleDev.png",
-    name: "Josefino Pimposo",
-    description: "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum",
-    mediaSocials: [{
-        name: "facebook",
-        href: "",
-        source: "../../img/icon-facebook-info.svg",
-        alt: "icon facebook icon"
-      },
+    sourceImage: "https://github.com/GuiLeoni14.png",
+    name: "Guilherme Loani",
+    description: "Olá! Me chamo Guilherme, sou um garoto apaixonado por programação e tecnologia!",
+    mediaSocials: [
+      // {
+      //   name: "facebook",
+      //   href: "",
+      //   source: "../../img/icon-facebook-info.svg",
+      //   alt: "icon facebook icon"
+      // },
       {
         name: "github",
-        href: "",
+        href: "https://github.com/GuiLeoni14",
         source: "../../img/icon-github-info.svg",
         alt: "icon github icon"
       },
       {
         name: "instagram",
-        href: "",
+        href: "https://www.instagram.com/gui_leoni14/",
         source: "../../img/icon-instagram-info.svg",
         alt: "icon instagram icon"
       },
-      {
-        name: "twitter",
-        href: "",
-        source: "../../img/icon-twitter-info.svg",
-        alt: "icon twitter icon"
-      },
+      // {
+      //   name: "twitter",
+      //   href: "",
+      //   source: "../../img/icon-twitter-info.svg",
+      //   alt: "icon twitter icon"
+      // },
     ]
   }
 ]
