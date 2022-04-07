@@ -17,10 +17,10 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title></title>
+	<title>Limbo - Cadastro e Login</title>
 	<link rel="stylesheet" type="text/css" href="../../css/globals.css">
-	<link rel="stylesheet" href="../../css/registerLogin.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+	<link rel="stylesheet" type="text/css" href="../../css/registerLogin.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
 </head>
 
 <body>

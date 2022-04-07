@@ -12,8 +12,12 @@ const sectionLogin = window.document.querySelector("#login-account");
 const inputEmailLogin = window.document.querySelector("#input-email-login");
 const inputPasswordLogin = window.document.querySelector("#input-password-login");
 
+// LocalStorage
+const storage = window.localStorage;
+const KEYSTORAGE = "@isCapslock";
+
 // Others
-let isCapslockActive = false;
+let isCapslockActive = getIsCapslock();
 let quantityPressCapslock = 0;
 
 // Arrays
@@ -31,50 +35,64 @@ const inputsLogin = [
 
 // Functions
 
-function captureKeyCapslockLogin({ key }) {
-    if(key === "CapsLock") {
-        messageCapslockLogin.style.display = "block"
+function getIsCapslock() {
+    const isCapslockStorage = storage.getItem(KEYSTORAGE) === "true";
 
-        isCapslockActive = true;
-        quantityPressCapslock += 1;
-    }
+    return isCapslockStorage;
+}
 
+function setCapslock(value) {
+    const isValueString = typeof value === "string";
+    const applyValue = isValueString ? value : String(value);
+    console.log(value);
+
+    storage.setItem(KEYSTORAGE, applyValue);
+};
+
+function closeCapslock() {
     if(quantityPressCapslock === 2) {
         messageCapslockLogin.style.display = "none";
 
-        isCapslockActive = false;
+        setCapslock("false");
         quantityPressCapslock = 0;
     }
 }
 
+function applyStorageMessageCapslock(message) {
+    if(getIsCapslock()) {
+        message.style.display = "block";
+    } else {
+        message.style.display = "none";
+    }
+}
 
-function captureKeyCapslockRegister({ key }) {
+function captureKeyCapslockLogin({ key }) {
+    
+
     if(key === "CapsLock") {
-        messageCapslockRegister.style.display = "block"
-
-        isCapslockActive = true;
+        setCapslock("true");
         quantityPressCapslock += 1;
     }
 
-    if(quantityPressCapslock === 2) {
-        messageCapslockRegister.style.display = "none";
+    messageCapslockLogin.style.display = "block";
+    closeCapslock();
+}
 
-        isCapslockActive = false;
-        quantityPressCapslock = 0;
+function captureKeyCapslockRegister({ key }) {
+    if(key === "CapsLock") {
+        setCapslock("true");
+        quantityPressCapslock += 1;
     }
+
+    messageCapslockRegister.style.display = "block";
+    closeCapslock()
 }
 
 function activeEventsSectionRegister() {
     sectionRegister.addEventListener("mousemove", () => {
         window.document.addEventListener("keyup", captureKeyCapslockRegister);
 
-        messageCapslockLogin.style.display = "none";
-
-        if(isCapslockActive) {
-            messageCapslockRegister.style.display = "block";
-        } else {
-            messageCapslockRegister.style.display = "none";
-        }
+        applyStorageMessageCapslock(messageCapslockRegister);
     })
 
     sectionRegister.addEventListener("mouseout", () => {
@@ -88,13 +106,7 @@ function activeEventsSectionLogin() {
     sectionLogin.addEventListener("mousemove", () => {
         window.document.addEventListener("keyup", captureKeyCapslockLogin);
 
-        messageCapslockRegister.style.display = "none";
-
-        if(isCapslockActive) {
-            messageCapslockLogin.style.display = "block";
-        } else {
-            messageCapslockLogin.style.display = "none";
-        }
+        applyStorageMessageCapslock(messageCapslockLogin);
     });
 
     sectionLogin.addEventListener("mouseout", () => {
@@ -117,21 +129,21 @@ function addCaptureCapslockOfLogin() {
 activeEventsSectionRegister();
 activeEventsSectionLogin();
 
-for(let input of inputsRegister) {
-    input.addEventListener("focus", () => {
-        addCaptureCapslockOfRegister();
-    })
-}
+// for(let input of inputsRegister) {
+//     input.addEventListener("focus", () => {
+//         addCaptureCapslockOfRegister();
+//     });
+// }
 
-for(let input of inputsLogin) {
-    input.addEventListener("focus", () => {
-        addCaptureCapslockOfLogin();
-    })
-}
+// for(let input of inputsLogin) {
+//     input.addEventListener("focus", () => {
+//         addCaptureCapslockOfLogin();
+//     });
+// }
 
 /**
- * Algoritmo que quando o usuário clicar em 
- * qualquer parte do input, a janela focar no 
+ * Algoritmo que quando o usuário clicar em
+ * qualquer parte do input, a janela focar no
  * input
  */
 
@@ -186,4 +198,3 @@ window.addEventListener("load", () => {
     }
 
 })()
-
