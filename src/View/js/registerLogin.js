@@ -1,8 +1,8 @@
 // Register
-const inputUsernameRegister = window.document.querySelector("#input-username-register");
-const inputEmailRegister = window.document.querySelector("#input-email-register");
 const messageCapslockRegister = window.document.querySelector("#message-capslock-warning");
 const sectionRegister = window.document.querySelector("#register-account");
+const inputUsernameRegister = window.document.querySelector("#input-username-register");
+const inputEmailRegister = window.document.querySelector("#input-email-register");
 const inputPasswordRegister = window.document.querySelector("#input-password-register");
 const inputConfirmPasswordRegister = window.document.querySelector("#input-confirm-password-register");
 
@@ -13,133 +13,125 @@ const inputEmailLogin = window.document.querySelector("#input-email-login");
 const inputPasswordLogin = window.document.querySelector("#input-password-login");
 
 // LocalStorage
-const storage = window.localStorage;
-const KEYSTORAGE = "@isCapslock";
 
 // Others
-let isCapslockActive = getIsCapslock();
+// let isCapslockActive = getIsCapslock();
 let quantityPressCapslock = 0;
 
 // Arrays
 const inputsRegister = [
-    inputUsernameRegister,
-    inputEmailRegister,
-    inputPasswordRegister,
-    inputConfirmPasswordRegister
+  inputUsernameRegister,
+  inputEmailRegister,
+  inputPasswordRegister,
+  inputConfirmPasswordRegister
 ];
 
 const inputsLogin = [
-    inputEmailLogin,
-    inputPasswordLogin
+  inputEmailLogin,
+  inputPasswordLogin,
+  inputPasswordRegister
 ];
 
-// Functions
+// Class
 
-function getIsCapslock() {
-    const isCapslockStorage = storage.getItem(KEYSTORAGE) === "true";
+class SectionPanel {
+  constructor(sectionData) {
+    this._sectionData = sectionData;
+  }
 
-    return isCapslockStorage;
-}
+  get sectionData() {
+    return this._sectionData;
+  }
 
-function setCapslock(value) {
-    const isValueString = typeof value === "string";
-    const applyValue = isValueString ? value : String(value);
-    console.log(value);
-
-    storage.setItem(KEYSTORAGE, applyValue);
-};
-
-function closeCapslock() {
-    if(quantityPressCapslock === 2) {
-        messageCapslockLogin.style.display = "none";
-
-        setCapslock("false");
-        quantityPressCapslock = 0;
+  addSectionHoverListener({
+    mouseenter,
+    mouseleave
+  }) {
+    if (mouseenter) {
+      this.sectionData.sectionElement.addEventListener("mouseenter", () => {
+        mouseenter(this.sectionData);
+      });
     }
-}
 
-function applyStorageMessageCapslock(message) {
-    if(getIsCapslock()) {
-        message.style.display = "block";
-    } else {
-        message.style.display = "none";
+    if (mouseleave) {
+      this.sectionData.sectionElement.addEventListener("mouseleave", () => {
+        mouseleave(this.sectionData);
+      });
     }
+  }
 }
 
-function captureKeyCapslockLogin({ key }) {
+class Capslock {
+  _sections = [];
+
+  constructor(...sections) {
+    this._sections = sections;
+  };
+
+  get sections() {
+    return this._sections;
+  };
+
+  create() {
     
+    for (let section of this.sections) {
 
-    if(key === "CapsLock") {
-        setCapslock("true");
-        quantityPressCapslock += 1;
+      section.addSectionHoverListener({
+        mouseenter: ({ messageElement, sectionElement }) => {
+          this.AddCapslockListener(sectionElement, {
+            applyCapslockTrue: () => {
+              messageElement.style.display = "block";
+
+              console.log("Funcionou");
+            },
+            applyCapslockFalse: () => {
+              messageElement.style.display = "none";
+              
+              console.log("Funcionou");
+            }
+          
+          });
+        },
+        mouseleave: ({ messageElement }) => {
+          messageElement.style.display = "none";
+        
+        },
+      });
     }
 
-    messageCapslockLogin.style.display = "block";
-    closeCapslock();
-}
+  }
+  
+  AddCapslockListener(element, { applyCapslockTrue, applyCapslockFalse }) {
+    element.addEventListener("keyup", event => {
+      let isCapslock = event.getModifierState && event.getModifierState("CapsLock");
 
-function captureKeyCapslockRegister({ key }) {
-    if(key === "CapsLock") {
-        setCapslock("true");
-        quantityPressCapslock += 1;
-    }
-
-    messageCapslockRegister.style.display = "block";
-    closeCapslock()
-}
-
-function activeEventsSectionRegister() {
-    sectionRegister.addEventListener("mousemove", () => {
-        window.document.addEventListener("keyup", captureKeyCapslockRegister);
-
-        applyStorageMessageCapslock(messageCapslockRegister);
-    })
-
-    sectionRegister.addEventListener("mouseout", () => {
-        window.document.removeEventListener("keyup", captureKeyCapslockRegister);
-
-        messageCapslockRegister.style.display = "none";
-    });
-}
-
-function activeEventsSectionLogin() {
-    sectionLogin.addEventListener("mousemove", () => {
-        window.document.addEventListener("keyup", captureKeyCapslockLogin);
-
-        applyStorageMessageCapslock(messageCapslockLogin);
+      if(isCapslock) {
+        applyCapslockTrue();
+      } else {
+        applyCapslockFalse();
+      }
     });
 
-    sectionLogin.addEventListener("mouseout", () => {
-        window.document.removeEventListener("keyup", captureKeyCapslockLogin);
-
-        messageCapslockLogin.style.display = "none";
-    });
+  }
 }
 
-function addCaptureCapslockOfRegister() {
-    window.document.addEventListener("keyup", captureKeyCapslockRegister);
-}
+const sectionPanelRegister = new SectionPanel({
+  name: "register",
+  sectionElement: sectionRegister,
+  messageElement: messageCapslockRegister,
+  inputs: inputsRegister
+});
 
-function addCaptureCapslockOfLogin() {
-    window.document.addEventListener("keyup", captureKeyCapslockLogin);
-}
+const sectionPanelLogin = new SectionPanel({
+  name: "login",
+  sectionElement: sectionLogin,
+  messageElement: messageCapslockLogin,
+  inputs: inputsLogin
+});
 
-// Execute Functions
+const capslock = new Capslock(sectionPanelRegister, sectionPanelLogin);
 
-activeEventsSectionRegister();
-activeEventsSectionLogin();
-
-// for(let input of inputsRegister) {
-//     input.addEventListener("focus", () => {
-//         addCaptureCapslockOfRegister();
-//     });
-// }
-
-// for(let input of inputsLogin) {
-//     input.addEventListener("focus", () => {
-//         addCaptureCapslockOfLogin();
-//     });
-// }
+capslock.create();
 
 /**
  * Algoritmo que quando o usuário clicar em
@@ -148,53 +140,53 @@ activeEventsSectionLogin();
  */
 
 (() => {
-    const areaInputs = window.document.querySelectorAll(".area-input");
+  const areaInputs = window.document.querySelectorAll(".area-input");
 
-    for(let areaInput of areaInputs) {
-        areaInput.addEventListener("click", () => {
-            const input = areaInput.children[1];
+  for (let areaInput of areaInputs) {
+    areaInput.addEventListener("click", () => {
+      const input = areaInput.children[1];
 
-            input.focus();
-        });
-    }
+      input.focus();
+    });
+  }
 })()
 
 function setScrollSections(height) {
-    if(height <= 530) {
-        sectionRegister.style.overflowY = "scroll";
-        sectionRegister.style.paddingTop = "100px"
-        sectionRegister.style.paddingBottom = "100px"
-        sectionLogin.style.overflowY = "scroll";
-        sectionLogin.style.paddingTop = "100px"
-        sectionLogin.style.paddingBottom = "100px"
-    } else {
-        sectionRegister.style.overflowY = "";
-        sectionRegister.style.paddingTop = ""
-        sectionRegister.style.paddingBottom = ""
-        sectionLogin.style.overflowY = "";
-        sectionLogin.style.paddingTop = ""
-        sectionLogin.style.paddingBottom = ""
-    }
+  if (height <= 530) {
+    sectionRegister.style.overflowY = "scroll";
+    sectionRegister.style.paddingTop = "100px"
+    sectionRegister.style.paddingBottom = "100px"
+    sectionLogin.style.overflowY = "scroll";
+    sectionLogin.style.paddingTop = "100px"
+    sectionLogin.style.paddingBottom = "100px"
+  } else {
+    sectionRegister.style.overflowY = "";
+    sectionRegister.style.paddingTop = ""
+    sectionRegister.style.paddingBottom = ""
+    sectionLogin.style.overflowY = "";
+    sectionLogin.style.paddingTop = ""
+    sectionLogin.style.paddingBottom = ""
+  }
 }
 
 window.addEventListener("resize", () => {
-    setScrollSections(window.innerHeight);
+  setScrollSections(window.innerHeight);
 });
 
 window.addEventListener("load", () => {
-    setScrollSections(window.innerHeight);
+  setScrollSections(window.innerHeight);
 });
 
 (() => {
-    let mailResponse = document.querySelector("#mail-response");
-    let buttonOkeyModal = document.querySelector(".modal-register-login-button");
+  let mailResponse = document.querySelector("#mail-response");
+  let buttonOkeyModal = document.querySelector(".modal-register-login-button");
 
-    if(mailResponse.value === "duplicated_email") {
-        createModal("#background-black-modal", "show");
+  if (mailResponse.value === "duplicated_email") {
+    createModal("#background-black-modal", "show");
 
-        buttonOkeyModal.onclick = () => {
-            createModal("#background-black-modal", "hidden");
-        }
+    buttonOkeyModal.onclick = () => {
+      createModal("#background-black-modal", "hidden");
     }
+  }
 
 })()
