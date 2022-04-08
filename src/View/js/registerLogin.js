@@ -32,8 +32,7 @@ const inputsLogin = [
   inputPasswordRegister
 ];
 
-// Class
-
+// Classes
 class SectionPanel {
   constructor(sectionData) {
     this._sectionData = sectionData;
@@ -74,24 +73,32 @@ class Capslock {
     for (let item of this.sectionsPanel) {
       const { sectionData } = item;
       
-      window.addEventListener("keyup", event => {
+      const eventKeyUp = event => {
         let isCapslock = event.getModifierState && event.getModifierState("CapsLock");
 
         if(isCapslock) {
           sectionData.messageElement.style.display = "block";
-        
+
         } else {
           sectionData.messageElement.style.display = "none";
           
         }
+      }
 
+      sectionData.sectionElement.addEventListener("mouseover", () => {
+        window.addEventListener("keyup", eventKeyUp);
+      });
+
+      sectionData.sectionElement.addEventListener("mouseleave", () => {
+        window.removeEventListener("keyup", eventKeyUp);
+
+        sectionData.messageElement.style.display = "none";
       });
     }
-    
   }
 }
 
-
+// Implementation execute
 const sectionPanelRegister = new SectionPanel({
   name: "register",
   sectionElement: sectionRegister,
