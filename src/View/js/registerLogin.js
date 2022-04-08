@@ -62,58 +62,35 @@ class SectionPanel {
 }
 
 class Capslock {
-  _sections = [];
-
-  constructor(...sections) {
-    this._sections = sections;
+  constructor(...sectionsPanel) {
+    this._sectionsPanel = sectionsPanel;
   };
 
-  get sections() {
-    return this._sections;
+  get sectionsPanel() {
+    return this._sectionsPanel;
   };
 
   create() {
-    
-    for (let section of this.sections) {
+    for (let item of this.sectionsPanel) {
+      const { sectionData } = item;
+      
+      window.addEventListener("keyup", event => {
+        let isCapslock = event.getModifierState && event.getModifierState("CapsLock");
 
-      section.addSectionHoverListener({
-        mouseenter: ({ messageElement, sectionElement }) => {
-          this.AddCapslockListener(sectionElement, {
-            applyCapslockTrue: () => {
-              messageElement.style.display = "block";
-
-              console.log("Funcionou");
-            },
-            applyCapslockFalse: () => {
-              messageElement.style.display = "none";
-              
-              console.log("Funcionou");
-            }
-          
-          });
-        },
-        mouseleave: ({ messageElement }) => {
-          messageElement.style.display = "none";
+        if(isCapslock) {
+          sectionData.messageElement.style.display = "block";
         
-        },
+        } else {
+          sectionData.messageElement.style.display = "none";
+          
+        }
+
       });
     }
-
-  }
-  
-  AddCapslockListener(element, { applyCapslockTrue, applyCapslockFalse }) {
-    element.addEventListener("keyup", event => {
-      let isCapslock = event.getModifierState && event.getModifierState("CapsLock");
-
-      if(isCapslock) {
-        applyCapslockTrue();
-      } else {
-        applyCapslockFalse();
-      }
-    });
-
+    
   }
 }
+
 
 const sectionPanelRegister = new SectionPanel({
   name: "register",
