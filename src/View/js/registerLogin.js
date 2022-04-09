@@ -71,28 +71,58 @@ class Capslock {
 
   create() {
     for (let item of this.sectionsPanel) {
-      const { sectionData } = item;
+
+      /**
+       * I select two elements of the class that stores
+       * the page section data
+       * 
+       * @constant {Element} messageElement
+       * @constant {Element} sectionElement
+       */
+      const { 
+        messageElement,
+        sectionElement
+      } = item.sectionData;
       
+      /**
+       * Function that will be captured by press event
+       * responsible for capturing capslock of the page
+       * and showing the message in the interface
+       * 
+       * @param {KeyboardEvent} event
+       * Api: https://developer.mozilla.org/en-US/docs/web/api/keyboardevent
+       * Event KeyUp: https://developer.mozilla.org/pt-BR/docs/Web/API/Document/keyup_event
+       */
       const eventKeyUp = event => {
         let isCapslock = event.getModifierState && event.getModifierState("CapsLock");
 
         if(isCapslock) {
-          sectionData.messageElement.style.display = "block";
+          messageElement.style.display = "block";
 
         } else {
-          sectionData.messageElement.style.display = "none";
+          messageElement.style.display = "none";
           
         }
       }
 
-      sectionData.sectionElement.addEventListener("mouseover", () => {
-        window.addEventListener("keyup", eventKeyUp);
-      });
+      /**
+       * Add hover functionality to section
+       * 
+       * @method  
+       * @param {object} - Event Configuration
+       *  @property {mouseenter} - Event fired when mouse enters section
+       *  @property {mouseleave} - Event fired when mouse leaves section
+       */
 
-      sectionData.sectionElement.addEventListener("mouseleave", () => {
-        window.removeEventListener("keyup", eventKeyUp);
+      item.addSectionHoverListener({
+        mouseenter: () => {
+          window.addEventListener("keyup", eventKeyUp);
+        },
+        mouseleave: () => {
+          window.removeEventListener("keyup", eventKeyUp);
 
-        sectionData.messageElement.style.display = "none";
+          messageElement.style.display = "none";
+        }
       });
     }
   }
