@@ -120,12 +120,11 @@
 }
 
 
-.title-register {
-	/* color: var(--white); */
-
-	font-size: 2rem;
-
-	margin-bottom: 30px;
+.title {
+	color: var(--DETALHE-ELEMENTOS);
+	font-size: 3rem;
+	font-weight: bold;
+	margin-bottom: 16px;
 }
 
 .area-input,
@@ -151,7 +150,7 @@
 	border-radius: 5px;
 
 	background-color: var(--DETALHE-ELEMENTOS);
-	color: var(--black);
+	color: var(--white);
 
 	transition: filter 500ms;
 
@@ -160,8 +159,6 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-
-	color: var(--black);
 
 	font-size: 1.8rem;
 	font-weight: bold;

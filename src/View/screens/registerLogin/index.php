@@ -17,10 +17,10 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title></title>
+	<title>Limbo - Cadastro e Login</title>
 	<link rel="stylesheet" type="text/css" href="../../css/globals.css">
-	<link rel="stylesheet" href="../../css/registerLogin.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+	<link rel="stylesheet" type="text/css" href="../../css/registerLogin.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
 </head>
 
 <body>
@@ -33,7 +33,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 
 		<main class="main-register-user">
 			<section id="register-account" class="section-register register">
-				<!-- <h1 class="title-register">Registrar</h1> -->
+				<h1 class="title">Cadastro</h1>
 				<form class="form-register-login" action="<?php $_SERVER['PHP_SELF'] ?>" method="POST">
 					<div class="area-input">
 						<i class="fas fa-user margin-right fa-2x"></i>
@@ -58,7 +58,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 			</section>
 
 			<section id="login-account" class="section-register login">
-				<!-- <h1 class="title-register" id="login">Login</h1> -->
+				<h1 class="title">Login</h1>
 				<div class="msg-erro" id="msgerro">
 					<!-- <span>Login ou senha incorretos</span> -->
 				</div>

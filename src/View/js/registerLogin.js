@@ -1,8 +1,8 @@
 // Register
-const inputUsernameRegister = window.document.querySelector("#input-username-register");
-const inputEmailRegister = window.document.querySelector("#input-email-register");
 const messageCapslockRegister = window.document.querySelector("#message-capslock-warning");
 const sectionRegister = window.document.querySelector("#register-account");
+const inputUsernameRegister = window.document.querySelector("#input-username-register");
+const inputEmailRegister = window.document.querySelector("#input-email-register");
 const inputPasswordRegister = window.document.querySelector("#input-password-register");
 const inputConfirmPasswordRegister = window.document.querySelector("#input-confirm-password-register");
 
@@ -12,178 +12,195 @@ const sectionLogin = window.document.querySelector("#login-account");
 const inputEmailLogin = window.document.querySelector("#input-email-login");
 const inputPasswordLogin = window.document.querySelector("#input-password-login");
 
+// LocalStorage
+
 // Others
-let isCapslockActive = false;
+// let isCapslockActive = getIsCapslock();
 let quantityPressCapslock = 0;
 
 // Arrays
 const inputsRegister = [
-    inputUsernameRegister,
-    inputEmailRegister,
-    inputPasswordRegister,
-    inputConfirmPasswordRegister
+  inputUsernameRegister,
+  inputEmailRegister,
+  inputPasswordRegister,
+  inputConfirmPasswordRegister
 ];
 
 const inputsLogin = [
-    inputEmailLogin,
-    inputPasswordLogin
+  inputEmailLogin,
+  inputPasswordLogin,
+  inputPasswordRegister
 ];
 
-// Functions
+// Classes
+class SectionPanel {
+  constructor(sectionData) {
+    this._sectionData = sectionData;
+  }
 
-function captureKeyCapslockLogin({ key }) {
-    if(key === "CapsLock") {
-        messageCapslockLogin.style.display = "block"
+  get sectionData() {
+    return this._sectionData;
+  }
 
-        isCapslockActive = true;
-        quantityPressCapslock += 1;
+  addSectionHoverListener({
+    mouseenter,
+    mouseleave
+  }) {
+    if (mouseenter) {
+      this.sectionData.sectionElement.addEventListener("mouseenter", () => {
+        mouseenter(this.sectionData);
+      });
     }
 
-    if(quantityPressCapslock === 2) {
-        messageCapslockLogin.style.display = "none";
-
-        isCapslockActive = false;
-        quantityPressCapslock = 0;
+    if (mouseleave) {
+      this.sectionData.sectionElement.addEventListener("mouseleave", () => {
+        mouseleave(this.sectionData);
+      });
     }
+  }
 }
 
+class Capslock {
+  constructor(...sectionsPanel) {
+    this._sectionsPanel = sectionsPanel;
+  };
 
-function captureKeyCapslockRegister({ key }) {
-    if(key === "CapsLock") {
-        messageCapslockRegister.style.display = "block"
+  get sectionsPanel() {
+    return this._sectionsPanel;
+  };
 
-        isCapslockActive = true;
-        quantityPressCapslock += 1;
-    }
+  create() {
+    for (let item of this.sectionsPanel) {
 
-    if(quantityPressCapslock === 2) {
-        messageCapslockRegister.style.display = "none";
+      /**
+       * I select two elements of the class that stores
+       * the page section data
+       * 
+       * @constant {Element} messageElement
+       * @constant {Element} sectionElement
+       */
+      const { 
+        messageElement,
+        sectionElement
+      } = item.sectionData;
+      
+      /**
+       * Function that will be captured by press event
+       * responsible for capturing capslock of the page
+       * and showing the message in the interface
+       * 
+       * @param {KeyboardEvent} event
+       * Api: https://developer.mozilla.org/en-US/docs/web/api/keyboardevent
+       * Event KeyUp: https://developer.mozilla.org/pt-BR/docs/Web/API/Document/keyup_event
+       */
+      const eventKeyUp = event => {
+        let isCapslock = event.getModifierState && event.getModifierState("CapsLock");
 
-        isCapslockActive = false;
-        quantityPressCapslock = 0;
-    }
-}
+        if(isCapslock) {
+          messageElement.style.display = "block";
 
-function activeEventsSectionRegister() {
-    sectionRegister.addEventListener("mousemove", () => {
-        window.document.addEventListener("keyup", captureKeyCapslockRegister);
-
-        messageCapslockLogin.style.display = "none";
-
-        if(isCapslockActive) {
-            messageCapslockRegister.style.display = "block";
         } else {
-            messageCapslockRegister.style.display = "none";
+          messageElement.style.display = "none";
+          
         }
-    })
+      }
 
-    sectionRegister.addEventListener("mouseout", () => {
-        window.document.removeEventListener("keyup", captureKeyCapslockRegister);
+      /**
+       * Add hover functionality to section
+       * 
+       * @method  
+       * @param {object} - Event Configuration
+       *  @property {mouseenter} - Event fired when mouse enters section
+       *  @property {mouseleave} - Event fired when mouse leaves section
+       */
 
-        messageCapslockRegister.style.display = "none";
-    });
-}
+      item.addSectionHoverListener({
+        mouseenter: () => {
+          window.addEventListener("keyup", eventKeyUp);
+        },
+        mouseleave: () => {
+          window.removeEventListener("keyup", eventKeyUp);
 
-function activeEventsSectionLogin() {
-    sectionLogin.addEventListener("mousemove", () => {
-        window.document.addEventListener("keyup", captureKeyCapslockLogin);
-
-        messageCapslockRegister.style.display = "none";
-
-        if(isCapslockActive) {
-            messageCapslockLogin.style.display = "block";
-        } else {
-            messageCapslockLogin.style.display = "none";
+          messageElement.style.display = "none";
         }
-    });
-
-    sectionLogin.addEventListener("mouseout", () => {
-        window.document.removeEventListener("keyup", captureKeyCapslockLogin);
-
-        messageCapslockLogin.style.display = "none";
-    });
+      });
+    }
+  }
 }
 
-function addCaptureCapslockOfRegister() {
-    window.document.addEventListener("keyup", captureKeyCapslockRegister);
-}
+// Implementation execute
+const sectionPanelRegister = new SectionPanel({
+  name: "register",
+  sectionElement: sectionRegister,
+  messageElement: messageCapslockRegister,
+  inputs: inputsRegister
+});
 
-function addCaptureCapslockOfLogin() {
-    window.document.addEventListener("keyup", captureKeyCapslockLogin);
-}
+const sectionPanelLogin = new SectionPanel({
+  name: "login",
+  sectionElement: sectionLogin,
+  messageElement: messageCapslockLogin,
+  inputs: inputsLogin
+});
 
-// Execute Functions
+const capslock = new Capslock(sectionPanelRegister, sectionPanelLogin);
 
-activeEventsSectionRegister();
-activeEventsSectionLogin();
-
-for(let input of inputsRegister) {
-    input.addEventListener("focus", () => {
-        addCaptureCapslockOfRegister();
-    })
-}
-
-for(let input of inputsLogin) {
-    input.addEventListener("focus", () => {
-        addCaptureCapslockOfLogin();
-    })
-}
+capslock.create();
 
 /**
- * Algoritmo que quando o usuário clicar em 
- * qualquer parte do input, a janela focar no 
+ * Algoritmo que quando o usuário clicar em
+ * qualquer parte do input, a janela focar no
  * input
  */
 
 (() => {
-    const areaInputs = window.document.querySelectorAll(".area-input");
+  const areaInputs = window.document.querySelectorAll(".area-input");
 
-    for(let areaInput of areaInputs) {
-        areaInput.addEventListener("click", () => {
-            const input = areaInput.children[1];
+  for (let areaInput of areaInputs) {
+    areaInput.addEventListener("click", () => {
+      const input = areaInput.children[1];
 
-            input.focus();
-        });
-    }
+      input.focus();
+    });
+  }
 })()
 
 function setScrollSections(height) {
-    if(height <= 530) {
-        sectionRegister.style.overflowY = "scroll";
-        sectionRegister.style.paddingTop = "100px"
-        sectionRegister.style.paddingBottom = "100px"
-        sectionLogin.style.overflowY = "scroll";
-        sectionLogin.style.paddingTop = "100px"
-        sectionLogin.style.paddingBottom = "100px"
-    } else {
-        sectionRegister.style.overflowY = "";
-        sectionRegister.style.paddingTop = ""
-        sectionRegister.style.paddingBottom = ""
-        sectionLogin.style.overflowY = "";
-        sectionLogin.style.paddingTop = ""
-        sectionLogin.style.paddingBottom = ""
-    }
+  if (height <= 530) {
+    sectionRegister.style.overflowY = "scroll";
+    sectionRegister.style.paddingTop = "100px"
+    sectionRegister.style.paddingBottom = "100px"
+    sectionLogin.style.overflowY = "scroll";
+    sectionLogin.style.paddingTop = "100px"
+    sectionLogin.style.paddingBottom = "100px"
+  } else {
+    sectionRegister.style.overflowY = "";
+    sectionRegister.style.paddingTop = ""
+    sectionRegister.style.paddingBottom = ""
+    sectionLogin.style.overflowY = "";
+    sectionLogin.style.paddingTop = ""
+    sectionLogin.style.paddingBottom = ""
+  }
 }
 
 window.addEventListener("resize", () => {
-    setScrollSections(window.innerHeight);
+  setScrollSections(window.innerHeight);
 });
 
 window.addEventListener("load", () => {
-    setScrollSections(window.innerHeight);
+  setScrollSections(window.innerHeight);
 });
 
 (() => {
-    let mailResponse = document.querySelector("#mail-response");
-    let buttonOkeyModal = document.querySelector(".modal-register-login-button");
+  let mailResponse = document.querySelector("#mail-response");
+  let buttonOkeyModal = document.querySelector(".modal-register-login-button");
 
-    if(mailResponse.value === "duplicated_email") {
-        createModal("#background-black-modal", "show");
+  if (mailResponse.value === "duplicated_email") {
+    createModal("#background-black-modal", "show");
 
-        buttonOkeyModal.onclick = () => {
-            createModal("#background-black-modal", "hidden");
-        }
+    buttonOkeyModal.onclick = () => {
+      createModal("#background-black-modal", "hidden");
     }
+  }
 
 })()
-

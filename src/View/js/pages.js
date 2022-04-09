@@ -144,14 +144,16 @@ function createModal(selectorModal, type) {
 // Header
 const header = window.document.querySelector(".main-header");
 
-function applyOpacityHeader() {
-    if(window.scrollY === 0) {
-        header.style.opacity = 1;
-    } else {
-        header.style.opacity = "";
+if(header) {
+    function applyOpacityHeader() {
+        if(window.scrollY === 0) {
+            header.style.opacity = 1;
+        } else {
+            header.style.opacity = "";
+        }
     }
+    
+    window.addEventListener("scroll", applyOpacityHeader);
+    
+    window.addEventListener("load", applyOpacityHeader);
 }
-
-window.addEventListener("scroll", applyOpacityHeader);
-
-window.addEventListener("load", applyOpacityHeader);
