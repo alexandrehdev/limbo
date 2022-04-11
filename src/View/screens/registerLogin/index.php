@@ -51,7 +51,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 						<i class="fas fa-key margin-right fa-2x"></i>
 						<input id="input-confirm-password-register" class="input-placeholder" type="password" placeholder="Confirmar senha" name="cpwd">
 					</div>
-					<span id="message-capslock-warning" class="message-capslock color-warning">CAPSLOCK ATIVADO</span>
+					<span id="message-capslock-register" class="message-capslock color-danger">CAPSLOCK ATIVADO</span>
 					<!-- <i class="fas fa-pencil-alt fa-2x"></i> -->
 					<input type="submit" name="btn-register" title="Registrar" value="Cadastrar" />
 				</form>
@@ -80,7 +80,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 						<i class="fas fa-key margin-right fa-2x"></i>
 						<input id="input-password-login" required class="input-placeholder" type="password" placeholder="Senha" name="log-pass" autocomplete="off">
 					</div>
-					<span id="message-capslock-danger" class="message-capslock color-danger">CAPSLOCK ATIVADO</span>
+					<span id="message-capslock-login" class="message-capslock color-danger">CAPSLOCK ATIVADO</span>
 					<input name="btn-login" type="submit" title="Logar" value="Logar" />
 					<!-- <i class="fab fa-telegram-plane fa-2x"></i> -->
 				</form>

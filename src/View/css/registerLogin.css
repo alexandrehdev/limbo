@@ -35,10 +35,6 @@
     font-weight: bold;
 }
 
-.color-warning {
-    color: var(--warning);
-}
-
 .color-danger {
     color: var(--danger);
 }

@@ -1,5 +1,5 @@
 // Register
-const messageCapslockRegister = window.document.querySelector("#message-capslock-warning");
+const messageCapslockRegister = window.document.querySelector("#message-capslock-register");
 const sectionRegister = window.document.querySelector("#register-account");
 const inputUsernameRegister = window.document.querySelector("#input-username-register");
 const inputEmailRegister = window.document.querySelector("#input-email-register");
@@ -7,7 +7,7 @@ const inputPasswordRegister = window.document.querySelector("#input-password-reg
 const inputConfirmPasswordRegister = window.document.querySelector("#input-confirm-password-register");
 
 // Login
-const messageCapslockLogin = window.document.querySelector("#message-capslock-danger");
+const messageCapslockLogin = window.document.querySelector("#message-capslock-login");
 const sectionLogin = window.document.querySelector("#login-account");
 const inputEmailLogin = window.document.querySelector("#input-email-login");
 const inputPasswordLogin = window.document.querySelector("#input-password-login");
