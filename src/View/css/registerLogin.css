@@ -75,10 +75,6 @@
 	cursor: text;
 }
 
-.area-input:hover {
-	border: 2px solid var(--DETALHE-ELEMENTOS);
-}
-
 .area-input > i, 
 .area-input > .input-placeholder, 
 .area-input > .input-placeholder::placeholder,

@@ -24,12 +24,10 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 </head>
 
 <body>
-	<!-- <header class="main-header"> -->
 	<div id="background-color-pre-loader">
 		<a id="logo-link" href="../intro/index.php">
 			<img src="../../../../favicon.png">
 		</a>
-		<!-- </header> -->
 
 		<main class="main-register-user">
 			<section id="register-account" class="section-register register">
@@ -52,7 +50,6 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 						<input id="input-confirm-password-register" class="input-placeholder" type="password" placeholder="Confirmar senha" name="cpwd">
 					</div>
 					<span id="message-capslock-register" class="message-capslock color-danger">CAPSLOCK ATIVADO</span>
-					<!-- <i class="fas fa-pencil-alt fa-2x"></i> -->
 					<input type="submit" name="btn-register" title="Registrar" value="Cadastrar" />
 				</form>
 			</section>
@@ -60,7 +57,6 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 			<section id="login-account" class="section-register login">
 				<h1 class="title">Login</h1>
 				<div class="msg-erro" id="msgerro">
-					<!-- <span>Login ou senha incorretos</span> -->
 				</div>
 				<form class="form-register-login" method="POST" action="<?php $_SERVER['PHP_SELF'] ?>">
 
@@ -82,7 +78,6 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 					</div>
 					<span id="message-capslock-login" class="message-capslock color-danger">CAPSLOCK ATIVADO</span>
 					<input name="btn-login" type="submit" title="Logar" value="Logar" />
-					<!-- <i class="fab fa-telegram-plane fa-2x"></i> -->
 				</form>
 			</section>
 		</main>

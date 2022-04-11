@@ -204,3 +204,49 @@ window.addEventListener("load", () => {
   }
 
 })()
+
+const areaInputs = document.querySelectorAll(".area-input");
+
+class FocusInput {
+  constructor(...areaInputs) {
+    this._areaInputs = areaInputs;
+  }
+
+  set areaInputs(value) {
+    this._areaInputs = value;
+  }
+
+  get areaInputs() {
+    return this._areaInputs;
+  }
+
+  renderColorBorder(color) {
+    for(let areaInput of this.areaInputs) {
+      const input = this.selectChildrenInput(areaInput);
+
+      const styleActiveBorder = `2px solid ${color}`;
+      const styleDisableBorder = '';
+
+      const actionFocus = this.applyBorder(areaInput, styleActiveBorder);
+      const actionBlur = this.applyBorder(areaInput, styleDisableBorder);
+
+      input.addEventListener("focus", actionFocus);
+      
+      input.addEventListener("blur", actionBlur);
+    }
+  }
+
+  selectChildrenInput(areaInput) {
+    return areaInput.children[1];
+  }
+
+  applyBorder(element, valueBorder) {
+    return () => {
+      element.style.border = valueBorder;
+    }
+  }
+}
+
+const focusInput = new FocusInput(...areaInputs);
+
+focusInput.renderColorBorder("var(--DETALHE-ELEMENTOS)");
