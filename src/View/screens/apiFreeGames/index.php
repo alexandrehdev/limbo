@@ -121,7 +121,7 @@ session_start();
 					<div class="footer-col">
 						<h4>Limbo</h4>
 						<p class="footer-desc">
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, odit.
+							Recebe jogos grátis toda semana ;)
 						</p>
 					</div>
 					<div class="footer-col">

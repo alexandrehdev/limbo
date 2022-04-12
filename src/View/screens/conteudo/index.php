@@ -29,9 +29,6 @@ session_start();
 <body>
 	<div id="background-color-pre-loader">
 		<header class="main-header">
-			<!-- <h1 class="title-name">
-			<img src="https://img.icons8.com/office/344/superman.png" height="65" style="margin-top: 15px; height: 60px;">
-			</h1> -->
 			<nav class="navigation">
 				<ul class="list-nav">
 					<li class="item-nav">
@@ -145,12 +142,12 @@ session_start();
 										<div class="card-img">
 											<img src="<?= $data[1]["img"] ?>	">
 										</div>
-										<div class="card-title">
+										<strong class="card-title">
 											<?= $data[1]["name"]; ?>
-										</div>
-										<div class="card-desc">
+										</strong>
+										<span class="card-desc">
 											<?= $data[1]["desc"]; ?>
-										</div>
+										</span>
 									</div>
 								</div>
 
@@ -159,12 +156,12 @@ session_start();
 										<div class="card-img">
 											<img src="<?= $data[2]["img"] ?>">
 										</div>
-										<div class="card-title">
+										<strong class="card-title">
 											<?= $data[2]["name"]; ?>
-										</div>
-										<div class="card-desc">
+										</strong>
+										<span class="card-desc">
 											<?= $data[2]["desc"] ?>
-										</div>
+										</span>
 									</div>
 								</div>
 
@@ -173,12 +170,12 @@ session_start();
 										<div class="card-img">
 											<img src="<?= $data[3]["img"] ?>">
 										</div>
-										<div class="card-title">
+										<strong class="card-title">
 											<?= $data[3]["name"]; ?>
-										</div>
-										<div class="card-desc">
+										</strong>
+										<span class="card-desc">
 											<?= $data[3]["desc"] ?>
-										</div>
+										</span>
 									</div>
 								</div>
 
@@ -187,12 +184,12 @@ session_start();
 										<div class="card-img">
 											<img src="<?= $data[4]["img"] ?>">
 										</div>
-										<div class="card-title">
+										<strong class="card-title">
 											<?= $data[4]["name"]; ?>
-										</div>
-										<div class="card-desc">
+										</strong>
+										<span class="card-desc">
 											<?= $data[4]["desc"] ?>
-										</div>
+										</span>
 									</div>
 								</div>
 
@@ -201,12 +198,12 @@ session_start();
 										<div class="card-img">
 											<img src="<?= $data[5]["img"] ?>">
 										</div>
-										<div class="card-title">
+										<strong class="card-title">
 											<?= $data[5]["name"]; ?>
-										</div>
-										<div class="card-desc">
+										</strong>
+										<span class="card-desc">
 											<?= $data[5]["desc"]; ?>
-										</div>
+										</span>
 									</div>
 								</div>
 
@@ -215,12 +212,12 @@ session_start();
 										<div class="card-img">
 											<img src="<?= $data[6]["img"] ?>">
 										</div>
-										<div class="card-title">
+										<strong class="card-title">
 											<?= $data[6]["name"]; ?>
-										</div>
-										<div class="card-desc">
+										</strong>
+										<span class="card-desc">
 											<?= $data[6]["desc"]; ?>
-										</div>
+										</span>
 									</div>
 								</div>
 
@@ -229,12 +226,12 @@ session_start();
 										<div class="card-img">
 											<img src="<?= $data[7]["img"] ?>">
 										</div>
-										<div class="card-title">
+										<strong class="card-title">
 											<?= $data[7]["name"]; ?>
-										</div>
-										<div class="card-desc">
+										</strong>
+										<span class="card-desc">
 											<?= $data[7]["desc"] ?>
-										</div>
+										</span>
 									</div>
 								</div>
 
@@ -243,12 +240,12 @@ session_start();
 										<div class="card-img">
 											<img src="<?= $data[8]["img"] ?>">
 										</div>
-										<div class="card-title">
+										<strong class="card-title">
 											<?= $data[8]["name"]; ?>
-										</div>
-										<div class="card-desc">
+										</strong>
+										<span class="card-desc">
 											<?= $data[8]["desc"] ?>
-										</div>
+										</span>
 									</div>
 								</div>
 
@@ -257,12 +254,12 @@ session_start();
 										<div class="card-img">
 											<img src="<?= $data[9]["img"] ?>">
 										</div>
-										<div class="card-title">
+										<strong class="card-title">
 											<?= $data[9]["name"]; ?>
-										</div>
-										<div class="card-desc">
+										</strong>
+										<span class="card-desc">
 											<?= $data[9]["desc"] ?>
-										</div>
+										</span>
 									</div>
 								</div>
 							</div>
@@ -283,12 +280,12 @@ session_start();
 											<!-- medida imagem 304 x 170.63 -->
 											<img src="<?= $data[1]["img"] ?>	">
 										</div>
-										<div class="card-title">
+										<strong class="card-title">
 											<?= $data[1]["name"]; ?>
-										</div>
-										<div class="card-desc">
+										</strong>
+										<span class="card-desc">
 											<?= $data[1]["desc"] ?>
-										</div>
+										</span>
 									</div>
 								</div>
 
@@ -297,12 +294,12 @@ session_start();
 										<div class="card-img">
 											<img src="<?= $data[2]["img"] ?>">
 										</div>
-										<div class="card-title">
+										<strong class="card-title">
 											<?= $data[2]["name"]; ?>
-										</div>
-										<div class="card-desc">
+										</strong>
+										<span class="card-desc">
 											<?= $data[2]["desc"] ?>
-										</div>
+										</span>
 									</div>
 								</div>
 
@@ -311,12 +308,12 @@ session_start();
 										<div class="card-img">
 											<img src="<?= $data[3]["img"] ?>">
 										</div>
-										<div class="card-title">
+										<strong class="card-title">
 											<?= $data[3]["name"]; ?>
-										</div>
-										<div class="card-desc">
+										</strong>
+										<span class="card-desc">
 											<?= $data[3]["desc"] ?>
-										</div>
+										</span>
 									</div>
 								</div>
 
@@ -325,12 +322,12 @@ session_start();
 										<div class="card-img">
 											<img src="<?= $data[4]["img"] ?>">
 										</div>
-										<div class="card-title">
+										<strong class="card-title">
 											<?= $data[4]["name"]; ?>
-										</div>
-										<div class="card-desc">
+										</strong>
+										<span class="card-desc">
 											<?= $data[4]["desc"] ?>
-										</div>
+										</span>
 									</div>
 								</div>
 
@@ -339,12 +336,12 @@ session_start();
 										<div class="card-img">
 											<img src="<?= $data[5]["img"] ?>">
 										</div>
-										<div class="card-title">
+										<strong class="card-title">
 											<?= $data[5]["name"]; ?>
-										</div>
-										<div class="card-desc">
+										</strong>
+										<span class="card-desc">
 											<?= $data[5]["desc"] ?>
-										</div>
+										</span>
 									</div>
 								</div>
 
@@ -353,12 +350,12 @@ session_start();
 										<div class="card-img">
 											<img src="<?= $data[6]["img"] ?>">
 										</div>
-										<div class="card-title">
+										<strong class="card-title">
 											<?= $data[6]["name"]; ?>
-										</div>
-										<div class="card-desc">
+										</strong>
+										<span class="card-desc">
 											<?= $data[6]["desc"] ?>
-										</div>
+										</span>
 									</div>
 								</div>
 
@@ -367,12 +364,12 @@ session_start();
 										<div class="card-img">
 											<img src="<?= $data[7]["img"] ?>">
 										</div>
-										<div class="card-title">
+										<strong class="card-title">
 											<?= $data[7]["name"]; ?>
-										</div>
-										<div class="card-desc">
+										</strong>
+										<span class="card-desc">
 											<?= $data[7]["desc"] ?>
-										</div>
+										</span>
 									</div>
 								</div>
 
@@ -381,12 +378,12 @@ session_start();
 										<div class="card-img">
 											<img src="<?= $data[8]["img"] ?>">
 										</div>
-										<div class="card-title">
+										<strong class="card-title">
 											<?= $data[8]["name"]; ?>
-										</div>
-										<div class="card-desc">
+										</strong>
+										<span class="card-desc">
 											<?= $data[8]["desc"] ?>
-										</div>
+										</span>
 									</div>
 								</div>
 
@@ -395,12 +392,12 @@ session_start();
 										<div class="card-img">
 											<img src="<?= $data[9]["img"] ?>">
 										</div>
-										<div class="card-title">
+										<strong class="card-title">
 											<?= $data[9]["name"]; ?>
-										</div>
-										<div class="card-desc">
+										</strong>
+										<span class="card-desc">
 											<?= $data[9]["desc"] ?>
-										</div>
+										</span>
 									</div>
 								</div>
 							</div>
@@ -416,9 +413,6 @@ session_start();
 		<!-- DESTAQUE -->
 		<section class="s-cards">
 			<div class="container">
-				<!-- <div class="titulo-section">
-				<span>What's good?</span>
-			</div> -->
 				<div class="main-cards">
 					<div class="card-left">
 						<img src="../../img/thewitcher.jpg" alt="">
@@ -542,50 +536,7 @@ session_start();
 						</span>
 					</div>
 				</div>
-
-				<!-- <div class="org-box">
-					<div class="card-recommended">
-						<div class="card-image">
-							<img src="<?= $data[7]["img"] ?>">
-						</div>
-						<span class="card-title">
-							<?= $data[7]["name"]; ?>
-						</span>
-						<span class="card-description" title="<?= $data[7]["desc"] ?>">
-							<?= $data[7]["desc"] ?>
-						</span>
-					</div>
-				</div>
-
-				<div class="org-box">
-					<div class="card-recommended">
-						<div class="card-image">
-							<img src="<?= $data[8]["img"] ?>">
-						</div>
-						<span class="card-title">
-							<?= $data[8]["name"]; ?>
-						</span>
-						<span class="card-description" title="<?= $data[8]["desc"] ?>">
-							<?= $data[8]["desc"] ?>
-						</span>
-					</div>
-				</div>
-
-				<div class="org-box">
-					<div class="card-recommended">
-						<div class="card-image">
-							<img src="<?= $data[9]["img"] ?>">
-						</div>
-						<span class="card-title">
-							<?= $data[9]["name"]; ?>
-						</span>
-						<span class="card-description" title="<?= $data[9]["desc"] ?>">
-							<?= $data[9]["desc"] ?>
-						</span>
-					</div>
-				</div> -->
 			</div>
-			<!-- <div class="swiper-pagination"></div> -->
 		</div>
 
 		<footer class="m-footer" role="footer">
@@ -601,7 +552,7 @@ session_start();
 					<div class="footer-col">
 						<h4>Limbo</h4>
 							<p class="footer-desc">
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, odit.
+								Recebe jogos grátis toda semana ;)
 							</p>
 					</div>
 					<div class="footer-col">

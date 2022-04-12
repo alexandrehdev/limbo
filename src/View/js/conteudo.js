@@ -32,7 +32,6 @@ var swiperOthers = new Swiper(".cards-normal", {
 		const oldText = element.innerText;
 		const textArray = oldText.split("");
 		const textArraySimplified = textArray.slice(0, maxString);
-		console.log(textArray.length);
 
 		let newText = textArraySimplified.join("");
 		

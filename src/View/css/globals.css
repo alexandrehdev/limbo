@@ -310,6 +310,29 @@ footer.m-footer
 	font-size: 24px;
 	text-transform: capitalize;
 	margin-bottom: 20px;
+    text-align: center;
+}
+
+.footer-container
+.footer-row
+.footer-col:first-of-type
+h4{
+    text-align: start;
+}
+
+.footer-container
+.footer-row
+.footer-col:nth-of-type(2)
+h4, .footer-desc
+{
+    text-align: center;
+}
+
+.footer-container
+.footer-row
+.footer-col:last-of-type
+h4{
+    text-align: end;
 }
 
 .footer-container
@@ -331,13 +354,13 @@ footer.m-footer
 .footer-row
 .developers-links {
 	width: 100%;
-	text-align: center;
 }
 
 .footer-container
-.footer-row
+.footer-row:last-of-type
 .developers-links a{
     display: flex;
+    justify-content: flex-end;
 	height: 40px;
     gap: 10px;
 }
