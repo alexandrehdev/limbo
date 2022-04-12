@@ -300,15 +300,33 @@
     border-radius: 6px;
 }
 
-.card-title {
-    font-size: 1.8rem;
-    margin-top: 8px;
-    margin-bottom: 16px;
-    color: var(--DETALHE-ELEMENTOS);
-}
 
 .card-description {
     max-width: 100ch;
     font-size: 1.3rem;
     color: var(--white);
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.card-img img {
+    height: auto;
+    width: auto;
+    object-fit: cover;
+}
+
+.card .card-title {
+    font-size: 2.4rem;
+    margin-top: 8px;
+    margin-bottom: 16px;
+    color: var(--DETALHE-ELEMENTOS);
+}
+
+.card .card-desc {
+    font-size: 1.5rem;
 }

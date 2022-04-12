@@ -35,10 +35,6 @@
     font-weight: bold;
 }
 
-.color-warning {
-    color: var(--warning);
-}
-
 .color-danger {
     color: var(--danger);
 }
@@ -77,10 +73,6 @@
 	transition: border 250ms;
 
 	cursor: text;
-}
-
-.area-input:hover {
-	border: 2px solid var(--DETALHE-ELEMENTOS);
 }
 
 .area-input > i, 
