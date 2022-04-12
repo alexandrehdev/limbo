@@ -89,10 +89,12 @@ endif;
 						<button id="submit-image-user" type="submit" name="profile-btn" disabled>Enviar Image para o Perfil</button>
 					</form>
 					<div class="nickname">
-						<span><?= strtoupper($_SESSION['username']); ?></span>
+						<span class="align-text">
+							<?= strtoupper($_SESSION['username']); ?>
+						</span>
 					</div>
 					<div id="status-online" class="status status-save">
-						<span>Online</span>
+						<span class="align-text">Online</span>
 					</div>
 				</div>
 
@@ -104,9 +106,18 @@ endif;
 							<span class="text-accordion">Informação de Conta</span>
 						</div>
 						<div class="content-info-account">
-							<span><strong>Quando a conta foi criada:</strong> 22/09/2001</span>
-
-							<span><strong>Descrição:</strong> Esse é somente um perfil para teste</span>
+							<span>
+								<strong>
+									Quando a conta foi criada:
+								</strong>
+								22/09/2001
+							</span>
+							<span>
+								<strong>
+									Descrição:
+								</strong>
+								Esse é somente um perfil para teste
+							</span>
 						</div>
 					</div>
 

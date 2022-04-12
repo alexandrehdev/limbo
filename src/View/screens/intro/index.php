@@ -10,26 +10,24 @@
 	<link rel="stylesheet" type="text/css" href="../../css/intro.css">
 </head>
 
-<body id="particles-js">
-	<h1 class="title-name">
-	</h1>
-	<div class="user-area">
-		<button class="btn-account">Criar Conta</button>
-	</div>
-
-	<main>
-		<div class="text middle" data-text="LIMBO">
-			LIMBO
+	<body id="particles-js">
+		<div class="user-area">
+			<button class="btn-account">Start</button>
 		</div>
-		<div class="text-description">
-			<span>Gaming Club</span>
-		</div>
-	</main>
+		<main>
+			<div class="text middle" data-text="LIMBO">
+				LIMBO
+			</div>
+			<div class="text-description">
+				<span>Gaming Club</span>
+			</div>
+		</main>
 
-	<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-	<script type="text/javascript" src="../../js/pages.js"></script>
-	<script type="text/javascript" src="../../js/intro.js"></script>
-</body>
 
-</html>
+		<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<script type="text/javascript" src="../../js/pages.js"></script>
+		<script type="text/javascript" src="../../js/intro.js"></script>
+	</body>
+
+	</html>
