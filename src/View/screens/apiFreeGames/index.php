@@ -12,7 +12,7 @@ session_start();
 
 <head>
 	<meta charset="utf-8">
-	<title></title>
+	<title>Limbo - Jogos grátis</title>
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/icon.min.css">
 	<link rel="stylesheet" type="text/css" href="../../css/globals.css">
 	<link rel="stylesheet" type="text/css" href="../../css/apiFreeGames.css">
@@ -23,9 +23,6 @@ session_start();
 <body>
 	<div id="background-color-pre-loader">
 		<header class="main-header">
-			<!-- <h1 class="title-name">
-			<img src="https://img.icons8.com/office/344/superman.png" height="65" style="margin-top: 15px; height: 60px;">
-		</h1> -->
 			<nav class="navigation">
 				<ul class="list-nav">
 					<li class="item-nav">

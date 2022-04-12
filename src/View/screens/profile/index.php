@@ -16,23 +16,20 @@ endif;
 
 <head>
 	<meta charset="utf-8">
-	<title>Limbo</title>
+	<title>Limbo - Perfil</title>
 
 	<link rel="icon" type="image/png" href="../../favicon.png">
-	<link rel="stylesheet" type="text/css" href="../../css/globals.css">
-	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+	<link rel="stylesheet" type="text/css" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/icon.min.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
-	<link href="../../css/profile.css" type="text/css" rel="stylesheet"/>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+	<link rel="stylesheet" type="text/css" href="../../css/globals.css">
+	<link rel="stylesheet" type="text/css" href="../../css/profile.css"/>
 </head>
 
 <body id="body-profile">
 	<div id="background-color-pre-loader">
 		<header class="main-header">
-			<!-- <h1 class="title-name">
-			<img src="https://img.icons8.com/office/344/superman.png" height="65" style="margin-top: 15px; height: 60px;">
-		</h1> -->
 			<nav class="navigation">
 				<ul class="list-nav">
 					<li class="item-nav">

@@ -26,8 +26,7 @@ var swiperOthers = new Swiper(".cards-normal", {
 (() => {
 	function modeTextSimplified({
 		element, 
-		maxString = 65,
-		mode = "simplified"
+		maxString = 65
 	} = {}) {
 		const oldText = element.innerText;
 		const textArray = oldText.split("");
@@ -40,14 +39,14 @@ var swiperOthers = new Swiper(".cards-normal", {
 		}
 	}
 
-	const cardsRecommended = document.querySelectorAll(".card-recommended");
+	const cardOther = document.querySelectorAll(".card-other");
 
-	for (let item of cardsRecommended) {
-		const cardDescription = item.children[2];
-		const oldText = cardDescription.innerText;
+	for (let item of cardOther) {
+		const cardDescriptionOther = item.children[2];
 
 		modeTextSimplified({
-			element: cardDescription,
+			element: cardDescriptionOther,
+			maxString: 100
 		});
 	}
 })()
