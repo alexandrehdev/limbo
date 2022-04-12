@@ -166,7 +166,7 @@
     height: 70vh;
 
     object-fit: cover;
-    
+
     transition: all .3s;
 }
 
@@ -195,11 +195,16 @@
 .article-detach h6 {
     font-size: 4rem;
 }
-
-.swiper-button-prev, 
+.slide-title{
+  text-transform: uppercase;
+}
+.slide-sub-title{
+  font-size: 11px;
+}
+.swiper-button-prev,
 .swiper-button-next
 {
-    background-image: url('https://www.svgrepo.com/show/37592/left-arrow.svg');
+    background-image: url('https://www.svgrepo.com/show/247756/left-arrow-back.svg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -207,7 +212,7 @@
     height: 5.8rem;
 }
 
-.swiper-button-prev::after, 
+.swiper-button-prev::after,
 .swiper-button-next::after
 {
     display: none;
@@ -236,11 +241,16 @@
 */
 
 .title-cards-others {
-    font-size: 3.2rem;
+    font-size: 2.0rem;
+    text-transform: uppercase;
     color: var(--white);
     margin-bottom: 16px;
 }
+#recommended{
+  font-size: 2.0rem;
+  text-transform: uppercase;
 
+}
 .swiper-pagination .swiper-pagination-progressbar-fill {
     background-color: var(--DETALHE-ELEMENTOS);
     box-shadow: 0px 0px 15px 3px var(--DETALHE-ELEMENTOS);

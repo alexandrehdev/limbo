@@ -252,6 +252,11 @@ div.line,
 
 /* Seta a imagem de perfil do cabeçalho */
 
+.small-profile{
+  border-radius: 110px;
+  padding: 5px;
+}
+
 .small-profile img{
     height: 40px;
     width: 45px;
@@ -452,7 +457,7 @@ span#data {
 
     transition-property: filter, background-color;
     transition-duration: 500ms;
-    
+
     filter: blur(7px);
     background-color: rgba(0, 0, 0, 0.5);
 }

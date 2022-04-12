@@ -183,7 +183,7 @@ endif;
 					<div class="footer-col">
 						<h4>Limbo</h4>
 							<p class="footer-desc">
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, odit.
+								Fique por dentro de tudo que acontece no mundo geek.
 							</p>
 					</div>
 					<div class="footer-col">
