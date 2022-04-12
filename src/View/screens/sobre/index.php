@@ -83,7 +83,7 @@ session_start();
 					<div class="footer-col">
 						<h4>Limbo</h4>
 							<p class="footer-desc">
-								Recebe jogos grátis toda semana ;)
+								Fique por dentro de tudo que acontece no mundo geek.
 							</p>
 					</div>
 					<div class="footer-col">

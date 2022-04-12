@@ -100,9 +100,13 @@ session_start();
 				<div class="container">
 					<div class="noticias-text">
 						<h2>
-							Streamer termina The Witcher 3 usando apenas um botão do controle
+							PlayerUnknown's Battlegrounds
 						</h2>
-						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores cumque non dicta quisquam ratione similique omnis a voluptates. Veritatis fuga dicta ducimus minus consectetur accusamus illum modi placeat officia velit!</p>
+						<p>
+							PlayerUnknown's Battlegrounds ou conhecido por sua abreviação de PUBG recebe mais players após sua mudança de aquisição passando a ser totalmente gratuito dentro a plataforma Steam.
+							Nova atualização que ocorre no dia 18 de março de 2022 que conta com algumas modificações de desempenho e itens na loja. Para quem adquiriu o jogo antes de se tornar gratuito, o jogos
+							contabilizou os players que realizaram a compra fornecendo alguns pacotes e/ou bonus para sua conta como skins, status e alguns itens que apareceram em seu inventário.
+						</p>
 					</div>
 				</div>
 			</section> -->
@@ -121,7 +125,7 @@ session_start();
 					<div class="footer-col">
 						<h4>Limbo</h4>
 						<p class="footer-desc">
-							Recebe jogos grátis toda semana ;)
+							Fique por dentro de tudo que acontece no mundo geek.
 						</p>
 					</div>
 					<div class="footer-col">
