@@ -128,7 +128,7 @@ session_start();
 							<div class="swiper-wrapper">
 
 								<div class="swiper-slide org-box">
-									<div class="card">
+									<div class="card card-other">
 										<div class="card-img">
 											<img src="<?= $data[1]["img"] ?>	">
 										</div>
@@ -142,7 +142,7 @@ session_start();
 								</div>
 
 								<div class="swiper-slide org-box">
-									<div class="card">
+									<div class="card card-other">
 										<div class="card-img">
 											<img src="<?= $data[2]["img"] ?>">
 										</div>
@@ -156,7 +156,7 @@ session_start();
 								</div>
 
 								<div class="swiper-slide org-box">
-									<div class="card">
+									<div class="card card-other">
 										<div class="card-img">
 											<img src="<?= $data[3]["img"] ?>">
 										</div>
@@ -170,7 +170,7 @@ session_start();
 								</div>
 
 								<div class="swiper-slide org-box">
-									<div class="card">
+									<div class="card card-other">
 										<div class="card-img">
 											<img src="<?= $data[4]["img"] ?>">
 										</div>
@@ -184,7 +184,7 @@ session_start();
 								</div>
 
 								<div class="swiper-slide org-box">
-									<div class="card">
+									<div class="card card-other">
 										<div class="card-img">
 											<img src="<?= $data[5]["img"] ?>">
 										</div>
@@ -198,7 +198,7 @@ session_start();
 								</div>
 
 								<div class="swiper-slide org-box">
-									<div class="card">
+									<div class="card card-other">
 										<div class="card-img">
 											<img src="<?= $data[6]["img"] ?>">
 										</div>
@@ -212,7 +212,7 @@ session_start();
 								</div>
 
 								<div class="swiper-slide org-box">
-									<div class="card">
+									<div class="card card-other">
 										<div class="card-img">
 											<img src="<?= $data[7]["img"] ?>">
 										</div>
@@ -226,7 +226,7 @@ session_start();
 								</div>
 
 								<div class="swiper-slide org-box">
-									<div class="card">
+									<div class="card card-other">
 										<div class="card-img">
 											<img src="<?= $data[8]["img"] ?>">
 										</div>
@@ -240,7 +240,7 @@ session_start();
 								</div>
 
 								<div class="swiper-slide org-box">
-									<div class="card">
+									<div class="card card-other">
 										<div class="card-img">
 											<img src="<?= $data[9]["img"] ?>">
 										</div>
@@ -265,7 +265,7 @@ session_start();
 							<div class="swiper-wrapper">
 
 								<div class="swiper-slide org-box">
-									<div class="card">
+									<div class="card card-other">
 										<div class="card-img">
 											<!-- medida imagem 304 x 170.63 -->
 											<img src="<?= $data[1]["img"] ?>	">
@@ -280,7 +280,7 @@ session_start();
 								</div>
 
 								<div class="swiper-slide org-box">
-									<div class="card">
+									<div class="card card-other">
 										<div class="card-img">
 											<img src="<?= $data[2]["img"] ?>">
 										</div>
@@ -294,7 +294,7 @@ session_start();
 								</div>
 
 								<div class="swiper-slide org-box">
-									<div class="card">
+									<div class="card card-other">
 										<div class="card-img">
 											<img src="<?= $data[3]["img"] ?>">
 										</div>
@@ -308,7 +308,7 @@ session_start();
 								</div>
 
 								<div class="swiper-slide org-box">
-									<div class="card">
+									<div class="card card-other">
 										<div class="card-img">
 											<img src="<?= $data[4]["img"] ?>">
 										</div>
@@ -322,7 +322,7 @@ session_start();
 								</div>
 
 								<div class="swiper-slide org-box">
-									<div class="card">
+									<div class="card card-other">
 										<div class="card-img">
 											<img src="<?= $data[5]["img"] ?>">
 										</div>
@@ -336,7 +336,7 @@ session_start();
 								</div>
 
 								<div class="swiper-slide org-box">
-									<div class="card">
+									<div class="card card-other">
 										<div class="card-img">
 											<img src="<?= $data[6]["img"] ?>">
 										</div>
@@ -350,7 +350,7 @@ session_start();
 								</div>
 
 								<div class="swiper-slide org-box">
-									<div class="card">
+									<div class="card card-other">
 										<div class="card-img">
 											<img src="<?= $data[7]["img"] ?>">
 										</div>
@@ -364,7 +364,7 @@ session_start();
 								</div>
 
 								<div class="swiper-slide org-box">
-									<div class="card">
+									<div class="card card-other">
 										<div class="card-img">
 											<img src="<?= $data[8]["img"] ?>">
 										</div>
@@ -378,7 +378,7 @@ session_start();
 								</div>
 
 								<div class="swiper-slide org-box">
-									<div class="card">
+									<div class="card card-other">
 										<div class="card-img">
 											<img src="<?= $data[9]["img"] ?>">
 										</div>
