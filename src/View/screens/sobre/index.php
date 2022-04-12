@@ -9,20 +9,16 @@ session_start();
 	<meta charset="utf-8">
 	<title>Limbo</title>
 	<link rel="icon" type="image/png" href="../../favicon.png">
-	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/icon.min.css">
+	<link rel="stylesheet" type="text/css" href="https://unpkg.com/aos@next/dist/aos.css"/>
 	<link rel="stylesheet" type="text/css" href="../../css/globals.css">
 	<link rel="stylesheet" type="text/css" href="../../css/info.css">
-	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/icon.min.css">
-	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
 	<div id="background-color-pre-loader">
 		<header class="main-header">
-			<!-- <h1 class="title-name">
-			<img src="https://img.icons8.com/office/344/superman.png" height="65" style="margin-top: 15px; height: 60px;">
-		</h1> -->
-
 		<nav class="navigation">
 			<ul class="list-nav">
 				<li class="item-nav">

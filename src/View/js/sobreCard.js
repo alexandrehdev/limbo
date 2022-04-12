@@ -7,7 +7,7 @@
       directionAOSCard: "fade-right",
       sourceImage: "https://github.com/AstronautoLunar.png",
       name: "Pedro Paulo",
-      description: "Um desenvolvedor Web e Mobile apaixonado pelo o que faz e em estado de evolução constante, enquanto minha sede de conhecimento existir irei decolar para além das minha barreiras que me impedem de voar, <span style='color: #7A54E5;'>Hora de decolar!!!</span>",
+      description: "Um desenvolvedor Web e Mobile apaixonado pelo o que faz e em estado de evolução constante, enquanto minha sede de conhecimento existir irei decolar para além das minha barreiras que me impedem de voar",
       mediaSocials: [{
           name: "facebook",
           href: "https://www.facebook.com/Pyedrown/",
