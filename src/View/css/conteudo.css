@@ -124,16 +124,6 @@
     height: 14rem;
 }
 
-
-
-/* CARDS DESTAQUES DO DIA EM MOVIMENTO */
-/* .s-cards-destaques {
-} */
-
-/* .s-cards-destaques .container {
-    width: 100%;
-} */
-
 .container-swiper-cards-normal {
     margin-left: 64px;
 }
@@ -145,13 +135,9 @@
     /* aumenta o tamanho dos cards do s-cards-destaques*/
 }
 
-/* .s-cards-destaques .cards-destaques {} */
-
 .swiper-pagination .swiper-pagination-progressbar-fill {
     background-color: blueviolet;
 }
-
-
 
 .s-cards-destaques .swiper-slide {
     width: 100%;
@@ -196,10 +182,10 @@
     font-size: 4rem;
 }
 .slide-title{
-  text-transform: uppercase;
+    text-transform: uppercase;
 }
 .slide-sub-title{
-  font-size: 11px;
+    font-size: 11px;
 }
 .swiper-button-prev,
 .swiper-button-next
@@ -231,11 +217,6 @@
     color: whitesmoke;
     margin-bottom: 35px;
 }
-
-/*
-    Outros cards
-*/
-
 /*
     Parte do código de swiper
 */
@@ -247,8 +228,8 @@
     margin-bottom: 16px;
 }
 #recommended{
-  font-size: 2.0rem;
-  text-transform: uppercase;
+    font-size: 2.0rem;
+    text-transform: uppercase;
 
 }
 .swiper-pagination .swiper-pagination-progressbar-fill {
@@ -314,9 +295,12 @@
     align-items: flex-start;
 }
 
+.card-img {
+    width: 100%;
+}
+
 .card-img img {
-    height: auto;
-    width: auto;
+    width: inherit;
     object-fit: cover;
 }
 
