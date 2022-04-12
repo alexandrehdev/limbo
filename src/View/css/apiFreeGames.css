@@ -61,7 +61,7 @@
 }
 
 /* CARD NOTICIAS */
-/* 
+/*
     Estilos para o elemento que exibe noticia
     após os jogos gratis e antes do footer
 */
@@ -84,7 +84,7 @@
 .noticias .noticias-opacity {
     width: inherit;
     height: 100%;
-    background: url("https:\/\/www.freetogame.com\/g\/26\/thumbnail.jpg") no-repeat center center;
+    background: url("https://cdn.cloudflare.steamstatic.com/steam/apps/578080/capsule_616x353.jpg?t=1649663090") no-repeat center center;
     background-size: cover;
     opacity: 0.2;
 }

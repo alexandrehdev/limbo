@@ -2,9 +2,13 @@
 require_once("../../../../vendor/autoload.php");
 
 use MyApp\Controller\GeekContent;
+use MyApp\Controller\LoadApi;
 
 $geek = new GeekContent();
 $data = $geek->getResponse();
+
+$api = new LoadApi();
+$response = $api->getResult();
 
 session_start();
 
@@ -29,9 +33,6 @@ session_start();
 <body>
 	<div id="background-color-pre-loader">
 		<header class="main-header">
-			<!-- <h1 class="title-name">
-			<img src="https://img.icons8.com/office/344/superman.png" height="65" style="margin-top: 15px; height: 60px;">
-			</h1> -->
 			<nav class="navigation">
 				<ul class="list-nav">
 					<li class="item-nav">
@@ -80,45 +81,31 @@ session_start();
 			<div class="swiper cards-destaques">
 				<div class="swiper-wrapper">
 					<div class="swiper-slide">
-						<img src="../../img/farcry6.jpg" alt="">
+						<img src="../../img/game-console.webp" alt="">
 						<article class="article-detach">
-							<span>Now avalaible</span>
-							<h6>FACRY 6</h6>
+							<h6 class="slide-title">playstation 4</h6>
+							<span class="slide-sub-title">Alguns jogos na loja apresentam desconto</span>
 						</article>
 					</div>
 					<div class="swiper-slide">
-						<img src="../../img/thewitcher.jpg" class="swiper-lazy" alt="">
+						<img src="../../img/celgamin.webp" class="swiper-lazy" alt="">
 						<div class="article-detach">
-							<span>Now avalaible</span>
-							<h6>The Witcher</h6>
+							<h6 class="slide-title">celulares gaming</h6>
+							<span class="slide-sub-title">Celulares apresentam configuração gaming</span>
 						</div>
 					</div>
 					<div class="swiper-slide">
-						<img src="../../img/minecraft.jpg" alt="">
+						<img src="../../img/mario.webp" alt="">
 						<div class="article-detach">
-							<span>Now avalaible</span>
-							<h6>Minecraft</h6>
+							<h6 class="slide-title">nintendo</h6>
+							<span class="slide-sub-title">empresa pode estar trabalhando em um emulador para 3DS</span>
 						</div>
 					</div>
 					<div class="swiper-slide">
-						<img src="../../img/gta5.jpg" alt="">
+						<img src="../../img/board.webp" alt="">
 						<div class="article-detach">
-							<span>Now avalaible</span>
-							<h6>Minecraft</h6>
-						</div>
-					</div>
-					<div class="swiper-slide">
-						<img src="../../img/gta5.jpg" alt="">
-						<div class="article-detach">
-							<span>Now avalaible</span>
-							<h6>Minecraft</h6>
-						</div>
-					</div>
-					<div class="swiper-slide">
-						<img src="../../img/gta5.jpg" alt="">
-						<div class="article-detach">
-							<span>Now avalaible</span>
-							<h6>Minecraft</h6>
+							<h6 class="slide-title">rtx 4090ti</h6>
+							<span class="slide-sub-title">nova placa de video promete o dobro de desempenho</span>
 						</div>
 					</div>
 				</div>
@@ -421,7 +408,7 @@ session_start();
 			</div> -->
 				<div class="main-cards">
 					<div class="card-left">
-						<img src="../../img/thewitcher.jpg" alt="">
+						<img src="../../img/thewitcher-mapa.jpg" alt="">
 						<span>Fallout: New Vegas Ultimate Edition</span>
 					</div>
 					<div class="grid-cards-right">
@@ -455,20 +442,17 @@ session_start();
 		</section>
 
 		<div class="horizontalBlock">
-			<h2>Recomendações</h2>
+			<h2 id="recommended">Recomendações</h2>
 			<div class="reco">
 
 				<div class="org-box">
 					<div class="card-recommended">
 						<div class="card-image">
 							<!-- medida imagem 304 x 170.63 -->
-							<img src="<?= $data[1]["img"] ?>	">
+							<img src="<?= $response[55]["thumbnail"] ?>	">
 						</div>
 						<span class="card-title">
-							<?= $data[1]["name"]; ?>
-						</span>
-						<span class="card-description" title="<?= $data[1]["desc"] ?>">
-							<?= $data[1]["desc"] ?>
+							<?= $response[55]["title"]; ?>
 						</span>
 					</div>
 				</div>
@@ -476,13 +460,11 @@ session_start();
 				<div class="org-box">
 					<div class="card-recommended">
 						<div class="card-image">
-							<img src="<?= $data[2]["img"] ?>">
+							<!-- medida imagem 304 x 170.63 -->
+							<img src="<?= $response[56]["thumbnail"] ?>	">
 						</div>
 						<span class="card-title">
-							<?= $data[2]["name"]; ?>
-						</span>
-						<span class="card-description" title="<?= $data[2]["desc"] ?>">
-							<?= $data[2]["desc"] ?>
+							<?= $response[56]["title"]; ?>
 						</span>
 					</div>
 				</div>
@@ -490,13 +472,11 @@ session_start();
 				<div class="org-box">
 					<div class="card-recommended">
 						<div class="card-image">
-							<img src="<?= $data[3]["img"] ?>">
+							<!-- medida imagem 304 x 170.63 -->
+							<img src="<?= $response[57]["thumbnail"] ?>	">
 						</div>
 						<span class="card-title">
-							<?= $data[3]["name"]; ?>
-						</span>
-						<span class="card-description" title="<?= $data[3]["desc"] ?>">
-							<?= $data[3]["desc"] ?>
+							<?= $response[57]["title"]; ?>
 						</span>
 					</div>
 				</div>
@@ -504,13 +484,11 @@ session_start();
 				<div class="org-box">
 					<div class="card-recommended">
 						<div class="card-image">
-							<img src="<?= $data[4]["img"] ?>">
+							<!-- medida imagem 304 x 170.63 -->
+							<img src="<?= $response[58]["thumbnail"] ?>	">
 						</div>
 						<span class="card-title">
-							<?= $data[4]["name"]; ?>
-						</span>
-						<span class="card-description" title="<?= $data[4]["desc"] ?>">
-							<?= $data[4]["desc"] ?>
+							<?= $response[58]["title"]; ?>
 						</span>
 					</div>
 				</div>
@@ -518,13 +496,11 @@ session_start();
 				<div class="org-box">
 					<div class="card-recommended">
 						<div class="card-image">
-							<img src="<?= $data[5]["img"] ?>">
+							<!-- medida imagem 304 x 170.63 -->
+							<img src="<?= $response[59]["thumbnail"] ?>	">
 						</div>
 						<span class="card-title">
-							<?= $data[5]["name"]; ?>
-						</span>
-						<span class="card-description" title="<?= $data[5]["desc"] ?>">
-							<?= $data[5]["desc"] ?>
+							<?= $response[59]["title"]; ?>
 						</span>
 					</div>
 				</div>
@@ -532,58 +508,14 @@ session_start();
 				<div class="org-box">
 					<div class="card-recommended">
 						<div class="card-image">
-							<img src="<?= $data[6]["img"] ?>">
+							<!-- medida imagem 304 x 170.63 -->
+							<img src="<?= $response[60]["thumbnail"] ?>	">
 						</div>
 						<span class="card-title">
-							<?= $data[6]["name"]; ?>
-						</span>
-						<span class="card-description" title="<?= $data[6]["desc"] ?>">
-							<?= $data[6]["desc"] ?>
+							<?= $response[60]["title"]; ?>
 						</span>
 					</div>
 				</div>
-
-				<!-- <div class="org-box">
-					<div class="card-recommended">
-						<div class="card-image">
-							<img src="<?= $data[7]["img"] ?>">
-						</div>
-						<span class="card-title">
-							<?= $data[7]["name"]; ?>
-						</span>
-						<span class="card-description" title="<?= $data[7]["desc"] ?>">
-							<?= $data[7]["desc"] ?>
-						</span>
-					</div>
-				</div>
-
-				<div class="org-box">
-					<div class="card-recommended">
-						<div class="card-image">
-							<img src="<?= $data[8]["img"] ?>">
-						</div>
-						<span class="card-title">
-							<?= $data[8]["name"]; ?>
-						</span>
-						<span class="card-description" title="<?= $data[8]["desc"] ?>">
-							<?= $data[8]["desc"] ?>
-						</span>
-					</div>
-				</div>
-
-				<div class="org-box">
-					<div class="card-recommended">
-						<div class="card-image">
-							<img src="<?= $data[9]["img"] ?>">
-						</div>
-						<span class="card-title">
-							<?= $data[9]["name"]; ?>
-						</span>
-						<span class="card-description" title="<?= $data[9]["desc"] ?>">
-							<?= $data[9]["desc"] ?>
-						</span>
-					</div>
-				</div> -->
 			</div>
 			<!-- <div class="swiper-pagination"></div> -->
 		</div>
@@ -601,7 +533,7 @@ session_start();
 					<div class="footer-col">
 						<h4>Limbo</h4>
 							<p class="footer-desc">
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, odit.
+								Fique por dentro de tudo que acontece no mundo geek.
 							</p>
 					</div>
 					<div class="footer-col">
