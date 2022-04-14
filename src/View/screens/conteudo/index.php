@@ -405,32 +405,32 @@ session_start();
 			<div class="container">
 				<div class="main-cards">
 					<div class="card-left">
-						<img src="../../img/thewitcher-mapa.jpg" alt="">
-						<span>Fallout: New Vegas Ultimate Edition</span>
+						<img src="https://cdn.pixabay.com/photo/2021/09/07/07/11/game-console-6603120_960_720.jpg" alt="">
+						<span>Jogos de PS4 entram em promoção</span>
 					</div>
 					<div class="grid-cards-right">
 						<div class="card" data-aos="flip-up">
-							<img src="../../img/thewitcher-mapa.jpg" alt="">
+							<img src="<?= $data[3]["img"] ?>">
 							<div class="card-text">
-								<span>Expansão confirmada</span>
+								<span>Hightlight setups</span>
 							</div>
 						</div>
 						<div class="card" data-aos="flip-up">
-							<img src="../../img//thewitcher-batle.jpg" alt="">
+							<img src="<?= $data[2]["img"] ?>" alt="">
 							<div class="card-text">
-								<span>Novos monstros adicinados</span>
+								<span>Lançamento do novo filme do Batman</span>
 							</div>
 						</div>
 						<div class="card" data-aos="flip-down">
-							<img src="../../img/thewitcher-person.jpg" alt="">
+							<img src="<?= $data[7]["img"] ?>" alt="">
 							<div class="card-text">
-								<span>Nova personagem</span>
+								<span>Sequencia de mulher maravilha</span>
 							</div>
 						</div>
 						<div class="card" data-aos="flip-down">
-							<img src="../../img/fallout3-img.jpg" alt="">
+							<img src="<?= $data[1]["img"] ?>" alt="">
 							<div class="card-text">
-								<span>Muito Loko</span>
+								<span>Retorno de atriz</span>
 							</div>
 						</div>
 					</div>
