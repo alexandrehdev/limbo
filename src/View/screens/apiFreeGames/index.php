@@ -13,6 +13,7 @@ session_start();
 <head>
 	<meta charset="utf-8">
 	<title>Limbo - Jogos grátis</title>
+	<link rel="icon" type="image/png" href="../../../../favicon.png">
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/icon.min.css">
 	<link rel="stylesheet" type="text/css" href="../../css/globals.css">
 	<link rel="stylesheet" type="text/css" href="../../css/apiFreeGames.css">
